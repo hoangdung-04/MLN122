@@ -141,17 +141,17 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
       <div class="chapter-track">
         ${chaptersHTML}
 
-        <!-- Special Module: Capital Tycoon -->
-        <section class="glass-panel chapter-card animate-slide-up" style="border: 2px solid rgba(217, 119, 6, 0.4); background: linear-gradient(180deg, var(--bg-card) 0%, rgba(254, 243, 199, 0.5) 100%);">
+        <!-- Special Module: Quizizz Arena MLN122 -->
+        <section class="glass-panel chapter-card animate-slide-up" style="border: 2px solid rgba(139, 92, 246, 0.4); background: linear-gradient(180deg, var(--bg-card) 0%, rgba(245, 243, 255, 0.6) 100%);">
           <div class="chapter-top">
             <div class="chapter-heading">
-              <div class="ch-code" style="color: var(--accent-gold);">MINI-GAME MÔ PHỎNG CHIẾN LƯỢC</div>
-              <h3>Thao Trường Doanh Nghiệp (Capital Tycoon 4.0)</h3>
-              <p>Hóa thân thành Nhà khởi nghiệp tư bản: Trải nghiệm công thức T - H - T', bóc lột GTTD, vượt qua bão táp độc quyền và kiến tạo doanh nghiệp KTTT định hướng XHCN 4.0!</p>
+              <div class="ch-code" style="color: #8b5cf6;">🎮 ĐẤU TRƯỜNG TRẮC NGHIỆM QUIZIZZ</div>
+              <h3>Đấu Trường Tri Thức MLN122 (Quiz Arena)</h3>
+              <p>Tranh tài trắc nghiệm phong cách Quizizz: Hỏi nhanh đáp chuẩn, tranh đoạt Streak Combo, làm chủ trọn vẹn kiến thức 6 chương (đặc biệt Chương 3 GTTD, Chương 5 KTTT XHCN, Chương 6 CNH-HĐH)!</p>
             </div>
             <div style="text-align: right;">
-              <button class="btn-primary" id="map-enter-tycoon-btn" style="background: linear-gradient(135deg, #f59e0b, #d97706); padding: 0.75rem 1.6rem;">
-                <span>🏭 VÀO CHƠI NGAY →</span>
+              <button class="btn-primary" id="map-enter-tycoon-btn" style="background: linear-gradient(135deg, #8b5cf6, #ec4899); padding: 0.75rem 1.6rem;">
+                <span>🚀 VÀO ĐẤU TRƯỜNG NGAY →</span>
               </button>
             </div>
           </div>

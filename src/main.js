@@ -8,6 +8,7 @@ import { renderScenarioPlayer } from './components/ScenarioPlayer.js';
 import { renderInteractiveSlider } from './components/InteractiveSlider.js';
 import { renderDetectiveBureau } from './components/DetectiveBureau.js';
 import { renderCapitalTycoon } from './components/CapitalTycoon.js';
+import { renderQuizArena } from './components/QuizArena.js';
 import { renderProfileModal } from './components/ProfileModal.js';
 import { renderBadgesModal } from './components/BadgesModal.js';
 import { renderHandbookModal } from './components/HandbookModal.js';
@@ -150,8 +151,8 @@ function renderApp() {
       () => navigateTo('map'),
       (nextCaseId) => navigateTo('detective', nextCaseId)
     );
-  } else if (currentView === 'tycoon') {
-    renderCapitalTycoon(
+  } else if (currentView === 'tycoon' || currentView === 'quiz' || currentView === 'game') {
+    renderQuizArena(
       mainContainer,
       () => navigateTo('map')
     );

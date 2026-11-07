@@ -55,8 +55,8 @@ export function renderLandingHero(container, onNavigate) {
               <button class="btn-secondary" id="hero-detective-btn" style="padding: 0.95rem 1.8rem; font-size: 1rem;">
                 <span>🔍 PHÒNG PHÁ ÁN KINH TẾ</span>
               </button>
-              <button class="btn-secondary" id="hero-tycoon-btn" style="padding: 0.95rem 1.8rem; font-size: 1rem; border-color: rgba(217, 119, 6, 0.4); color: var(--accent-gold);">
-                <span>🏭 THAO TRƯỜNG TYCOON</span>
+              <button class="btn-secondary" id="hero-tycoon-btn" style="padding: 0.95rem 1.8rem; font-size: 1rem; border-color: rgba(139, 92, 246, 0.4); color: #8b5cf6;">
+                <span>🎮 ĐẤU TRƯỜNG QUIZIZZ</span>
               </button>
             </div>
 

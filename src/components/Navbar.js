@@ -28,8 +28,8 @@ export function renderNavbar(container, onNavigate, onOpenModal, onResetProgress
             <span>🔍 Phá Án Kinh Tế</span>
           </button>
 
-          <button class="nav-btn" id="nav-tycoon-btn" style="border-color: rgba(217, 119, 6, 0.4); color: var(--accent-gold);" title="Thao Trường Doanh Nghiệp Tycoon">
-            <span>🏭 Game Tycoon</span>
+          <button class="nav-btn" id="nav-tycoon-btn" style="border-color: rgba(139, 92, 246, 0.4); color: #8b5cf6;" title="Đấu Trường Quizizz MLN122">
+            <span>🎮 Game Quizizz</span>
           </button>
 
           <button class="nav-btn" id="nav-handbook-btn" title="Sổ tay lý luận MLN122">
