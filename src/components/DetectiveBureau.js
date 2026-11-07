@@ -3,6 +3,8 @@ import { stateManager } from '../core/state.js';
 import { sound } from '../core/audio.js';
 import { resolveAssetUrl } from '../utils/assetUrl.js';
 
+let activeChapterFilter = 'all'; // 'all' | '1' | '2' | '3' | '4' | '5' | '6'
+
 export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOtherCase) {
   // If no caseId specified, pick first or solved state
   const activeCase = DETECTIVE_CASES.find(c => c.id === caseId) || DETECTIVE_CASES[0];
@@ -31,6 +33,16 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
     renderView();
   }
 
+  function resetCurrentDossier() {
+    activeCase.clues.forEach(c => {
+      delete assignments[c.id];
+    });
+    selectedClueId = null;
+    validationResult = null;
+    sound.playClick();
+    renderView();
+  }
+
   function renderView() {
     // Unassigned clues
     const unassignedClues = activeCase.clues.filter(c => !assignments[c.id]);
@@ -42,7 +54,7 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
       // Generate quick assign pills for each category
       let quickPillsHTML = '';
       if (isSelected) {
-        activeCase.categories.forEach((cat, cIdx) => {
+        activeCase.categories.forEach((cat) => {
           const shortCode = cat.name.split(':')[0].trim();
           quickPillsHTML += `
             <button class="quick-assign-btn" data-assign-clue="${clue.id}" data-target-cat="${cat.id}" style="--btn-color: ${cat.color};" title="Ghim ngay vào ${cat.name}">
@@ -82,7 +94,7 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
 
     // Category Buckets
     let bucketsHTML = '';
-    activeCase.categories.forEach((cat, idx) => {
+    activeCase.categories.forEach((cat) => {
       // Clues in this bucket
       const cluesInBucket = activeCase.clues.filter(c => assignments[c.id] === cat.id);
 
@@ -133,37 +145,70 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
       `;
     });
 
-    // Case Selector Tabs (All 6 Cases - Clean Grid No Overflow)
+    // Case Selector Tabs (Balanced 3x3 Grid with Filter Tabs)
     const solvedCasesCount = Object.keys(stateManager.state.detectiveSolved || {}).length;
+    
+    // Filter cases if a chapter filter is active
+    const filteredCases = activeChapterFilter === 'all' 
+      ? DETECTIVE_CASES 
+      : DETECTIVE_CASES.filter(c => String(c.chapterNum) === String(activeChapterFilter));
+
     let caseTabsHTML = '';
-    DETECTIVE_CASES.forEach((c, idx) => {
+    filteredCases.forEach((c) => {
       const isCur = c.id === activeCase.id;
       const solved = !!stateManager.state.detectiveSolved[c.id];
-      const chapterLabel = c.chapterBadge ? c.chapterBadge.split('•')[0].trim() : `Chương ${idx + 1}`;
+      const chapterLabel = c.chapterBadge ? c.chapterBadge.split('•')[0].trim() : `Chương ${c.chapterNum || 1}`;
       
-      // Short thematic summary for each case
-      const shortTopics = [
-        'Mục 3.1: Lý luận GTTD',
-        'Mục 3.2-3.3: Tích lũy & p',
-        'Mục 5.1: KTTT định hướng XHCN',
-        'Mục 5.2: Hoàn thiện thể chế',
-        'Mục 6.1: CNH, HĐH 4.0',
-        'Mục 6.2: Hội nhập quốc tế'
-      ];
-
       caseTabsHTML += `
-        <button class="dossier-tab-card ${isCur ? 'active' : ''} ${solved ? 'is-solved' : ''}" data-switch-case="${c.id}" title="${c.title}">
+        <button class="dossier-tab-card ${isCur ? 'active' : ''} ${solved ? 'is-solved' : ''}" data-switch-case="${c.id}" style="--card-accent: ${c.accentColor || '#dc2626'};" title="${c.title}">
           <div class="tab-card-top">
+            <span class="tab-card-chapter" style="--ch-color: ${c.accentColor};">
+              <span class="ch-dot" style="background: ${c.accentColor};"></span>
+              ${chapterLabel}
+            </span>
             <span class="tab-card-code">${c.code}</span>
-            <span class="tab-card-badge">${chapterLabel}</span>
           </div>
-          <div class="tab-card-topic">${c.shortTopic || c.subtitle?.split(":")[0] || ("Hồ sơ " + (idx+1))}</div>
+
+          <div class="tab-card-topic">
+            <span class="tab-card-icon">${c.icon || '📁'}</span>
+            <span class="tab-card-topic-title">${c.shortTopic || c.title}</span>
+          </div>
+
+          <div class="tab-card-sub" title="${c.subtitle}">
+            ${c.subtitle.split(':')[0]}
+          </div>
+
           <div class="tab-card-status">
             ${solved 
-              ? '<span class="status-pill-solved">✓ Đã phá giải</span>' 
-              : (isCur ? '<span class="status-pill-active">🔍 Đang mở</span>' : '<span class="status-pill-open">Khám phá</span>')
+              ? '<span class="status-pill-solved">✓ ĐÃ PHÁ GIẢI</span>' 
+              : (isCur 
+                  ? '<span class="status-pill-active"><span class="pulse-dot"></span> ĐANG THỤ LÝ</span>' 
+                  : '<span class="status-pill-open">Khám phá →</span>')
             }
           </div>
+          ${isCur ? '<div class="tab-card-active-arrow"></div>' : ''}
+        </button>
+      `;
+    });
+
+    // Chapter Filter Pills HTML
+    const filterOptions = [
+      { id: 'all', label: 'Tất cả (9)', icon: '🏛️' },
+      { id: '1', label: 'Chương 1 (1)', icon: '📜' },
+      { id: '2', label: 'Chương 2 (1)', icon: '⚖️' },
+      { id: '3', label: 'Chương 3 (2)', icon: '🔍' },
+      { id: '4', label: 'Chương 4 (1)', icon: '🏢' },
+      { id: '5', label: 'Chương 5 (2)', icon: '🇻🇳' },
+      { id: '6', label: 'Chương 6 (2)', icon: '⚡' }
+    ];
+
+    let filterPillsHTML = '';
+    filterOptions.forEach(opt => {
+      const isActive = activeChapterFilter === opt.id;
+      filterPillsHTML += `
+        <button class="ch-filter-pill ${isActive ? 'active' : ''}" data-filter-ch="${opt.id}">
+          <span>${opt.icon}</span>
+          <span>${opt.label}</span>
         </button>
       `;
     });
@@ -201,45 +246,59 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
 
     container.innerHTML = `
       <div class="container detective-wrap animate-fade-in">
-        <!-- Top Navigation Header -->
+        <!-- Top Command Bar -->
         <div class="detective-header-section">
           <div class="detective-top-action-bar">
             <button class="back-to-map-btn" id="detective-back-btn">
-              <span>← Quay lại bản đồ hành trình</span>
+              <span>← Bản đồ hành trình</span>
             </button>
 
+            <!-- Chapter Filter Segmented Control -->
+            <div class="detective-filter-bar">
+              ${filterPillsHTML}
+            </div>
+
+            <!-- Overall Progress Pill -->
             <div class="detective-overall-progress">
               <span class="progress-trophy">🏆</span>
-              <span class="progress-text">Tiến độ phá án: <strong>${solvedCasesCount}/${DETECTIVE_CASES.length}</strong> đại án (${Math.round((solvedCasesCount / DETECTIVE_CASES.length) * 100)}%)</span>
+              <span class="progress-text">Tiến độ: <strong>${solvedCasesCount}/${DETECTIVE_CASES.length}</strong> (${Math.round((solvedCasesCount / DETECTIVE_CASES.length) * 100)}%)</span>
               <div class="progress-mini-track">
                 <div class="progress-mini-fill" style="width: ${(solvedCasesCount / DETECTIVE_CASES.length) * 100}%;"></div>
               </div>
             </div>
           </div>
 
-          <!-- 6 Dossier Tab Cards Grid (Balanced, No clipping, No horizontal scrollbar) -->
+          <!-- Dossier Cards Grid (Balanced 3x3 layout) -->
           <div class="dossier-nav-grid">
             ${caseTabsHTML}
           </div>
         </div>
 
-        <!-- Case Dossier Header Card -->
-        <div class="dossier-card">
+        <!-- Case Dossier Header Card (Classified Executive Theme) -->
+        <div class="dossier-card" style="--case-accent: ${activeCase.accentColor || '#dc2626'};">
           <div class="dossier-header-bar">
             <div class="dossier-header-left">
-              <span class="stamp-confidential">📁 HỒ SƠ ĐIỀU TRA MẬT</span>
+              <span class="stamp-confidential">
+                <span class="stamp-dot"></span>
+                TOP SECRET // HỒ SƠ ĐIỀU TRA MẬT
+              </span>
               <span class="dossier-sub-badge">${activeCase.code} • ${activeCase.chapterBadge || 'MLN122'}</span>
             </div>
             <div class="dossier-header-right">
-              <span>BỘ MÔN MLN122 • ECONOMIC DETECTIVE BUREAU</span>
+              <span class="dossier-bureau-label">BỘ MÔN MLN122 • ECONOMIC DETECTIVE BUREAU</span>
+              <button class="btn-reset-dossier" id="reset-dossier-btn" title="Đặt lại khay luận điểm của hồ sơ này">
+                <span>↺ Xếp lại</span>
+              </button>
             </div>
           </div>
 
           <div class="detective-intro-body">
-            <!-- Mandatory Case Image with Evidence Frame -->
+            <!-- Case Evidence Frame (High-res SVG Image) -->
             <div class="detective-image-box">
               <div class="evidence-tag">
-                <span>🔍 SƠ ĐỒ CHỨNG CỨ #${activeCase.code.replace(/\D/g, '')}</span>
+                <span class="evidence-icon">🔍</span>
+                <span>SƠ ĐỒ CHỨNG CỨ #${String(activeCase.caseNumber || activeIndex + 1).padStart(2, '0')}</span>
+                <span class="evidence-badge-sub">CHỨNG CỨ GỐC</span>
               </div>
               <img src="${resolveAssetUrl(activeCase.image)}" alt="${activeCase.title}" class="detective-hero-img" onerror="this.onerror=null; this.src='${activeCase.image}';" />
             </div>
@@ -252,6 +311,12 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
                 </span>
                 <span class="dossier-chapter-pill">
                   ${activeCase.chapterBadge}
+                </span>
+                <span class="dossier-clues-count-pill">
+                  📁 5 Manh Mối
+                </span>
+                <span class="dossier-xp-pill">
+                  🌟 +${activeCase.philosophicalVerdict?.xpAwarded || 150} XP
                 </span>
               </div>
 
@@ -278,7 +343,7 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
               <div class="board-badge">ĐỐI CHIẾU NỘI DUNG SLIDE BÀI GIẢNG &amp; GIÁO TRÌNH</div>
               <h3 class="board-main-heading">Bàn Phân Loại Luận Điểm Kinh Tế Chính Trị (${activeCase.chapterBadge})</h3>
               <p class="board-guide-text">
-                👉 Hướng dẫn: Đọc kỹ từng luận điểm ở khay bên dưới; <strong>bấm vào luận điểm</strong> rồi <strong>bấm vào đề mục bên dưới</strong> (hoặc bấm nút ghim nhanh) để phân loại.
+                👉 Hướng dẫn: Đọc kỹ từng luận điểm ở khay; <strong>bấm vào luận điểm</strong> rồi <strong>bấm vào đề mục bên dưới</strong> (hoặc bấm nút ghim nhanh) để phân loại.
               </p>
             </div>
             ${!isCaseSolved && !validationResult?.isAllCorrect ? `
@@ -329,6 +394,23 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
         onBackToMap();
       });
     }
+
+    // Reset current dossier button
+    const resetBtn = document.getElementById('reset-dossier-btn');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        resetCurrentDossier();
+      });
+    }
+
+    // Chapter filter pills
+    container.querySelectorAll('[data-filter-ch]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        sound.playClick();
+        activeChapterFilter = btn.getAttribute('data-filter-ch');
+        renderView();
+      });
+    });
 
     // Switch case buttons
     container.querySelectorAll('[data-switch-case]').forEach(btn => {

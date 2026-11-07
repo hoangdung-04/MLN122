@@ -24,14 +24,19 @@
 export const DETECTIVE_CASES = [
   {
     id: 'CASE-000',
-    code: 'HỒ SƠ KHỞI NGUYÊN',
+    caseNumber: 1,
+    code: 'ĐẠI ÁN #01',
+    shortCode: '#01',
+    chapterNum: 1,
     chapterBadge: 'CHƯƠNG 1 • NỀN TẢNG',
-    shortTopic: 'Chương 1: Tiến trình KTCT',
+    shortTopic: 'Tiến trình tư tưởng KTCT',
+    icon: '📜',
+    accentColor: '#0284c7',
     title: 'Hồ Sơ Nền Tảng: Đại Án Tiến Trình Tư Tưởng & Bản Chất Khoa Học Của KTCT Mác – Lênin',
     subtitle: 'Chuẩn Chương 1: Từ "Kinh bang tế thế" (1615), Adam Smith (1776) đến KTCT Mác – Lênin đỉnh cao khoa học',
     image: './assets/images/cases/case-c1-origin.svg',
     dossierLevel: 'CẤP ĐỘ: CƠ BẢN',
-    accentColor: '#0284c7',
+    
     backgroundStory: 'Một nhóm chuyên gia tư vấn chiến lược tuyên bố: "Xã hội số ngày nay không cần sản xuất vật chất, chỉ cần lưu thông buôn bán và phân tích tâm lý hành vi vi mô là đất nước tự khắc giàu có; kinh tế chính trị chỉ là lý thuyết cũ kỹ". Với tư cách là Chuyên gia Điều tra Kinh tế Chính trị MLN122, bạn hãy phân loại 5 manh mối lịch sử - học thuật chuẩn Slide bài giảng vào 5 ngăn nội dung khoa học để vạch trần sai lầm của quan điểm này và khẳng định bản chất khoa học của KTCT Mác – Lênin!',
     categories: [
       { 
@@ -106,14 +111,19 @@ export const DETECTIVE_CASES = [
   },
   {
     id: 'CASE-000B',
-    code: 'HỒ SƠ HÀNG HÓA',
+    caseNumber: 2,
+    code: 'ĐẠI ÁN #02',
+    shortCode: '#02',
+    chapterNum: 2,
     chapterBadge: 'CHƯƠNG 2 • HÀNG HÓA & THỊ TRƯỜNG',
-    shortTopic: 'Chương 2: Bí mật hàng hóa',
+    shortTopic: 'Bí mật hàng hóa & Giá trị',
+    icon: '⚖️',
+    accentColor: '#10b981',
     title: 'Hồ Sơ Bí Ẩn Giá Trị Hàng Hóa: Tỷ Lệ 1m Vải = 5kg Thóc & Tính Hai Mặt Của Lao Động',
     subtitle: 'Chuẩn Chương 2: Hai thuộc tính của hàng hóa, tỷ lệ trao đổi 1m vải = 5kg thóc và tính chất hai mặt của lao động sản xuất',
     image: './assets/images/cases/case-c2-commodity.svg',
     dossierLevel: 'CẤP ĐỘ: CƠ BẢN',
-    accentColor: '#10b981',
+    
     backgroundStory: 'Trong một phiên chợ trao đổi nông sản và thủ công mỹ nghệ, một thương lái đưa ra nhận định: "Hàng hóa trao đổi được với nhau chỉ vì sở thích chủ quan và sự may rủi, hoàn toàn không có cơ sở khách quan nào". Một người thợ may đổi 1 mét vải lấy 5 kg thóc của người nông dân. Cả hai cùng thắc mắc: Hai vật có công dụng khác biệt hoàn toàn (vải để may mặc, thóc để ăn), tại sao lại trao đổi ngang bằng nhau? Để giải mã bí ẩn này, điều tra viên cần sắp xếp các bằng chứng lý luận của C. Mác vào đúng 4 ngăn hồ sơ khoa học!',
     categories: [
       { 
@@ -200,13 +210,19 @@ export const DETECTIVE_CASES = [
   },
   {
     id: 'CASE-001',
-    code: 'HỒ SƠ #001',
-    chapterBadge: 'CHƯƠNG 3 • MỤC 3.1',
+    caseNumber: 3,
+    code: 'ĐẠI ÁN #03',
+    shortCode: '#03',
+    chapterNum: 3,
+    chapterBadge: 'CHƯƠNG 3 • GIÁ TRỊ THẶNG DƯ',
+    shortTopic: 'Bóc trần giá trị thặng dư (m)',
+    icon: '🔍',
+    accentColor: '#f59e0b',
     title: 'Hồ Sơ Lý Luận C. Mác Về Giá Trị Thặng Dư',
     subtitle: 'Chuẩn Mục 3.1: Nguồn gốc, bản chất và các phương pháp sản xuất giá trị thặng dư trong nền KTTT',
     image: './assets/images/cases/case-c3-surplus-value.svg',
     dossierLevel: 'CẤP ĐỘ: CƠ BẢN',
-    accentColor: '#0284c7',
+    
     backgroundStory: 'Một nghiên cứu thực tế tại một doanh nghiệp công nghệ lớn tuyên bố: "Doanh thu và lợi nhuận nghìn tỷ của công ty hoàn toàn do hệ thống máy chủ, bằng sáng chế thuật toán tự sinh ra, không hề có việc chiếm đoạt lao động của kỹ sư hay công nhân". Để làm sáng tỏ chân lý khoa học, điều tra viên cần căn cứ vào Lý luận của C. Mác về giá trị thặng dư (Mục 3.1 Slide bài giảng) để phân loại đúng đắn các luận điểm vào từng ngăn nội dung khoa học!',
     categories: [
       { 
@@ -282,13 +298,19 @@ export const DETECTIVE_CASES = [
 
   {
     id: 'CASE-002',
-    code: 'HỒ SƠ #002',
-    chapterBadge: 'CHƯƠNG 3 • MỤC 3.2 & 3.3',
+    caseNumber: 4,
+    code: 'ĐẠI ÁN #04',
+    shortCode: '#04',
+    chapterNum: 3,
+    chapterBadge: 'CHƯƠNG 3 • TÍCH LŨY & LỢI NHUẬN',
+    shortTopic: 'Tích lũy tư bản & Lợi nhuận',
+    icon: '📈',
+    accentColor: '#f59e0b',
     title: 'Hồ Sơ Tích Lũy Tư Bản & Các Hình Thức Biểu Hiện Của Giá Trị Thặng Dư',
     subtitle: 'Chuẩn Mục 3.2 (Tích lũy tư bản, c/v) & Mục 3.3 (Chi phí k, Lợi nhuận p, p\', Lợi tức, Địa tô)',
     image: './assets/images/cases/case-c3-accumulation.svg',
     dossierLevel: 'CẤP ĐỘ: TRUNG BÌNH',
-    accentColor: '#f59e0b',
+    
     backgroundStory: 'Một tập đoàn kinh tế tư nhân thực hiện chiến lược tái đầu tư mở rộng, nhập khẩu dây chuyền robot tự động hóa để tăng năng lực cạnh tranh, đồng thời thâu tóm hàng loạt công ty con. Báo cáo tài chính của tập đoàn chỉ ghi nhận "Chi phí k" và "Lợi nhuận p", tuyên bố lợi nhuận là thành quả kinh doanh của toàn bộ vốn đầu tư chứ không liên quan gì đến bóc lột. Hãy đối chiếu Mục 3.2 và Mục 3.3 Slide bài giảng để sắp xếp đúng các luận điểm lý luận!',
     categories: [
       { 
@@ -364,14 +386,19 @@ export const DETECTIVE_CASES = [
 
   {
     id: 'CASE-002B',
-    code: 'HỒ SƠ ĐỘC QUYỀN',
+    caseNumber: 5,
+    code: 'ĐẠI ÁN #05',
+    shortCode: '#05',
+    chapterNum: 4,
     chapterBadge: 'CHƯƠNG 4 • CẠNH TRANH & ĐỘC QUYỀN',
-    shortTopic: 'Chương 4: Độc quyền & CNTB',
+    shortTopic: 'Liên minh Cartel & Độc quyền',
+    icon: '🏢',
+    accentColor: '#8b5cf6',
     title: 'Hồ Sơ Đại Án Độc Quyền: 5 Đặc Điểm Kinh Tế & Biểu Hiện Mới Của Tư Bản Tài Chính',
     subtitle: 'Chuẩn Chương 4: Cartel - Syndicate - Trust - Consortium, Xuất khẩu tư bản và Vai trò lịch sử của CNTB',
     image: './assets/images/cases/case-c4-monopoly.svg',
     dossierLevel: 'CẤP ĐỘ: NÂNG CAO',
-    accentColor: '#a855f7',
+    
     backgroundStory: 'Một liên minh siêu tập đoàn công nghệ và tài chính đa quốc gia áp đặt giá cả độc quyền mua và bán trên thị trường toàn cầu, thâu tóm các công ty khởi nghiệp và chi phối chính sách của nhiều chính phủ. Ban thanh tra kinh tế cần vận dụng Lý luận của V.I. Lênin về 5 đặc điểm kinh tế của độc quyền và vai trò lịch sử của CNTB (Slide Chương 4 MLN122) để phân loại đúng các bằng chứng vào từng ngăn hồ sơ!',
     categories: [
       { 
@@ -447,13 +474,19 @@ export const DETECTIVE_CASES = [
 
   {
     id: 'CASE-003',
-    code: 'HỒ SƠ #003',
-    chapterBadge: 'CHƯƠNG 5 • MỤC 5.1',
+    caseNumber: 6,
+    code: 'ĐẠI ÁN #06',
+    shortCode: '#06',
+    chapterNum: 5,
+    chapterBadge: 'CHƯƠNG 5 • KTTT ĐỊNH HƯỚNG XHCN',
+    shortTopic: 'Bản chất KTTT XHCN Việt Nam',
+    icon: '🇻🇳',
+    accentColor: '#ec4899',
     title: 'Hồ Sơ Bản Chất & Đặc Trưng Kinh Tế Thị Trường Định Hướng XHCN Ở Việt Nam',
     subtitle: 'Chuẩn Mục 5.1: Khái niệm (5.1.1), Tính tất yếu khách quan (5.1.2) & Các đặc trưng của KTTT định hướng XHCN (5.1.3)',
     image: './assets/images/cases/case-c5-socialist-market.svg',
     dossierLevel: 'CẤP ĐỘ: CƠ BẢN',
-    accentColor: '#10b981',
+    
     backgroundStory: 'Nhiều quan điểm tranh luận về con đường phát triển kinh tế của nước ta: Có người cho rằng phát triển kinh tế thị trường tất yếu phải tư nhân hóa toàn bộ; có ý kiến lại muốn quay về mô hình chỉ huy tập trung bao cấp. Bằng tri thức Mục 5.1 trong Slide bài giảng Chương 5, hãy phân loại chính xác các luận điểm vào đúng các đề mục khoa học!',
     categories: [
       { 
@@ -529,13 +562,19 @@ export const DETECTIVE_CASES = [
 
   {
     id: 'CASE-004',
-    code: 'HỒ SƠ #004',
-    chapterBadge: 'CHƯƠNG 5 • MỤC 5.2',
+    caseNumber: 7,
+    code: 'ĐẠI ÁN #07',
+    shortCode: '#07',
+    chapterNum: 5,
+    chapterBadge: 'CHƯƠNG 5 • HOÀN THIỆN THỂ CHẾ',
+    shortTopic: 'Hoàn thiện thể chế KTTT',
+    icon: '🏛️',
+    accentColor: '#ec4899',
     title: 'Hồ Sơ Hoàn Thiện Thể Chế Kinh Tế Thị Trường Định Hướng XHCN Ở Việt Nam',
     subtitle: 'Chuẩn Mục 5.2: Sự cần thiết hoàn thiện thể chế (5.2.1) & Các nội dung hoàn thiện chủ yếu (5.2.2)',
     image: './assets/images/cases/case-c5-institutions.svg',
     dossierLevel: 'CẤP ĐỘ: NÂNG CAO',
-    accentColor: '#ec4899',
+    
     backgroundStory: 'Thực tiễn phát triển kinh tế bộc lộ những bất cập: Hệ thống pháp luật về đất đai còn kẽ hở dẫn đến đầu cơ thổi giá; thị trường vốn và trái phiếu doanh nghiệp thiếu minh bạch; năng lực thực thi và giám sát của bộ máy quản lý nhà nước có lúc còn lúng túng. Những hạn chế này đòi hỏi phải đẩy mạnh hoàn thiện thể chế kinh tế. Căn cứ Mục 5.2 Slide bài giảng, bạn hãy phân loại các luận điểm vào đúng các khía cạnh thể chế!',
     categories: [
       { 
@@ -611,13 +650,19 @@ export const DETECTIVE_CASES = [
 
   {
     id: 'CASE-005',
-    code: 'HỒ SƠ #005',
-    chapterBadge: 'CHƯƠNG 6 • MỤC 6.1',
+    caseNumber: 8,
+    code: 'ĐẠI ÁN #08',
+    shortCode: '#08',
+    chapterNum: 6,
+    chapterBadge: 'CHƯƠNG 6 • CNH - HĐH 4.0',
+    shortTopic: 'CNH - HĐH thích ứng 4.0',
+    icon: '⚡',
+    accentColor: '#06b6d4',
     title: 'Hồ Sơ Công Nghiệp Hóa, Hiện Đại Hóa Ở Việt Nam',
     subtitle: 'Chuẩn Mục 6.1: Khái quát CMCN (6.1.1) & Tính tất yếu, Nội dung CNH - HĐH thích ứng CMCN 4.0 (6.1.2)',
     image: './assets/images/cases/case-c6-industry40.svg',
     dossierLevel: 'CẤP ĐỘ: NÂNG CAO',
-    accentColor: '#06b6d4',
+    
     backgroundStory: 'Trong bối cảnh cuộc Cách mạng công nghiệp lần thứ tư (CMCN 4.0) bùng nổ, nhiều doanh nghiệp sản xuất gia công của Việt Nam đứng trước nguy cơ mất đơn hàng vào tay robot và công nghệ tự động hóa. Đứng trước câu hỏi: Việt Nam có cần công nghiệp hóa nữa không và CNH thời kỳ này có gì khác trước? Hãy đối chiếu Mục 6.1 trong Slide bài giảng Chương 6 để sắp xếp đúng các luận điểm lý luận!',
     categories: [
       { 
@@ -693,13 +738,19 @@ export const DETECTIVE_CASES = [
 
   {
     id: 'CASE-006',
-    code: 'HỒ SƠ #006',
-    chapterBadge: 'CHƯƠNG 6 • MỤC 6.2',
+    caseNumber: 9,
+    code: 'ĐẠI ÁN #09',
+    shortCode: '#09',
+    chapterNum: 6,
+    chapterBadge: 'CHƯƠNG 6 • HỘI NHẬP QUỐC TẾ',
+    shortTopic: 'Hội nhập quốc tế & Tự chủ',
+    icon: '🌐',
+    accentColor: '#06b6d4',
     title: 'Hồ Sơ Hội Nhập Kinh Tế Quốc Tế Của Việt Nam',
     subtitle: 'Chuẩn Mục 6.2: Khái niệm & Hình thức (6.2.1), Tác động (6.2.2) & Phương hướng nâng cao hiệu quả, Độc lập tự chủ (6.2.3)',
     image: './assets/images/cases/case-c6-integration.svg',
     dossierLevel: 'CẤP ĐỘ: NÂNG CAO',
-    accentColor: '#818cf8',
+    
     backgroundStory: 'Hội nhập kinh tế quốc tế mang lại cho nước ta cơ hội mở rộng thị trường xuất khẩu kỷ lục và thu hút hàng trăm tỷ USD vốn đầu tư FDI. Tuy nhiên, đi kèm với đó là sức ép cạnh tranh gay gắt, nguy cơ gian lận xuất xứ hàng hóa và rủi ro bị phụ thuộc vào chuỗi cung ứng bên ngoài. Làm thế nào để vừa hội nhập sâu rộng, vừa giữ vững độc lập tự chủ kinh tế? Hãy phân loại các luận điểm khoa học theo Mục 6.2 Slide bài giảng!',
     categories: [
       { 
