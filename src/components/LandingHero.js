@@ -55,6 +55,9 @@ export function renderLandingHero(container, onNavigate) {
               <button class="btn-secondary" id="hero-detective-btn" style="padding: 0.95rem 1.8rem; font-size: 1rem;">
                 <span>🔍 PHÒNG PHÁ ÁN KINH TẾ</span>
               </button>
+              <button class="btn-secondary" id="hero-tycoon-btn" style="padding: 0.95rem 1.8rem; font-size: 1rem; border-color: rgba(217, 119, 6, 0.4); color: var(--accent-gold);">
+                <span>🏭 THAO TRƯỜNG TYCOON</span>
+              </button>
             </div>
 
             <!-- Quick Chapter Roadmap Navigation -->
@@ -130,6 +133,14 @@ export function renderLandingHero(container, onNavigate) {
     sound.playClick();
     onNavigate('detective');
   });
+
+  const tycoonBtn = document.getElementById('hero-tycoon-btn');
+  if (tycoonBtn) {
+    tycoonBtn.addEventListener('click', () => {
+      sound.playClick();
+      onNavigate('tycoon');
+    });
+  }
 
   container.querySelectorAll('[data-nav-chapter]').forEach(btn => {
     btn.addEventListener('click', () => {

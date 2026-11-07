@@ -1,0 +1,343 @@
+/* =================================================================
+   CAPITAL TYCOON: TỪ TƯ BẢN SƠ KHAI ĐẾN KTTT 4.0
+   Styles for interactive simulation game
+================================================================= */
+
+.tycoon-container {
+  padding: 2rem 0 5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tycoon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.8rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tycoon-badge-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+/* Stage Stepper Banner */
+.tycoon-stage-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stage-step-card {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.1rem 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s var(--ease-out);
+  position: relative;
+  overflow: hidden;
+}
+
+.stage-step-card.active {
+  border-color: var(--accent-gold);
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--accent-gold-light) 100%);
+  box-shadow: 0 8px 25px -5px rgba(217, 119, 6, 0.25);
+  transform: translateY(-2px);
+}
+
+.stage-step-card.completed {
+  border-color: var(--accent-emerald);
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--accent-emerald-light) 100%);
+}
+
+.stage-step-card.locked {
+  opacity: 0.55;
+  filter: grayscale(0.6);
+}
+
+.stage-num-badge {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  background: var(--bg-secondary);
+  color: var(--text-dim);
+}
+
+.stage-step-card.active .stage-num-badge {
+  background: var(--accent-gold);
+  color: #ffffff;
+}
+
+.stage-step-card.completed .stage-num-badge {
+  background: var(--accent-emerald);
+  color: #ffffff;
+}
+
+/* Dashboard Metrics Panel */
+.tycoon-dashboard {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 1.8rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--card-shadow);
+}
+
+.metrics-grid-tycoon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.metric-pill-box {
+  background: var(--bg-alt);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.metric-pill-box:hover {
+  transform: translateY(-2px);
+}
+
+.metric-label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+  font-family: var(--font-heading);
+  margin-bottom: 0.4rem;
+}
+
+.metric-val-number {
+  font-size: 1.55rem;
+  font-weight: 900;
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+}
+
+.metric-subtext {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+  line-height: 1.4;
+}
+
+/* Factory / Enterprise Stage Canvas */
+.factory-view-panel {
+  background: linear-gradient(180deg, var(--bg-alt) 0%, var(--bg-card) 100%);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.factory-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-card);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 1.2rem;
+}
+
+.factory-narrative-story {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+}
+
+/* Strategic Decision Choices Grid */
+.decision-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.3rem;
+  margin-top: 1.5rem;
+}
+
+.decision-card-btn {
+  background: var(--bg-card);
+  border: 2px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.25s var(--ease-spring);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.decision-card-btn:hover:not(:disabled) {
+  border-color: var(--accent-blue);
+  box-shadow: 0 12px 30px -8px rgba(37, 99, 235, 0.2);
+  transform: translateY(-3px);
+}
+
+.decision-card-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.decision-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.decision-tag {
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  letter-spacing: 0.04em;
+}
+
+.decision-card-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-heading);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-heading);
+  line-height: 1.4;
+}
+
+.decision-card-desc {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.decision-card-impacts {
+  border-top: 1px dashed var(--border-subtle);
+  padding-top: 0.8rem;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.impact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.impact-pos {
+  color: var(--accent-emerald-dark);
+  font-weight: 700;
+}
+
+.impact-neg {
+  color: var(--accent-crimson);
+  font-weight: 700;
+}
+
+/* Event Feedback Box (After choosing a decision) */
+.event-feedback-box {
+  background: var(--bg-alt);
+  border-radius: var(--radius-xl);
+  padding: 1.8rem;
+  margin-top: 1.5rem;
+  border: 2px solid var(--border-medium);
+  animation: slideUpFade 0.4s var(--ease-out);
+}
+
+.event-feedback-box.success {
+  border-color: var(--accent-emerald);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--accent-emerald-light) 100%);
+}
+
+.event-feedback-box.warning {
+  border-color: var(--accent-gold);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--accent-gold-light) 100%);
+}
+
+.event-feedback-box.danger {
+  border-color: var(--accent-crimson);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--accent-crimson-light) 100%);
+}
+
+.lens-analysis-box {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: 1.1rem 1.3rem;
+  margin: 1.2rem 0;
+  border-left: 4px solid var(--accent-purple);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+/* Victory & Game Over Screens */
+.tycoon-endgame-modal {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: var(--bg-card);
+  border-radius: var(--radius-xl);
+  border: 2.5px solid var(--accent-gold);
+  box-shadow: var(--card-shadow-lg);
+  animation: slideUpFade 0.5s var(--ease-spring);
+}
+
+.endgame-trophy {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 10px 20px rgba(217, 119, 6, 0.3));
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .tycoon-stage-nav {
+    grid-template-columns: 1fr;
+  }
+  .metrics-grid-tycoon {
+    grid-template-columns: 1fr 1fr;
+  }
+  .decision-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

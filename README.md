@@ -33,9 +33,16 @@ Dự án web sáng tạo đổi mới phương pháp học tập môn **MLN122 �
    - Biểu đồ Radar 5 trục: Mối liên hệ, Xử lý mâu thuẫn, Tôn trọng khách quan, Vận dụng thực tiễn, Đào sâu bản chất.
    - Khắc họa Hình mẫu tư duy (Archetype) cá nhân hóa (Nhà tư duy toàn diện, Chiến lược gia thị trường, Nhà kiến tạo lợi ích...).
    - Hỗ trợ in / lưu Giấy chứng nhận trực tiếp từ trình duyệt.
-   - Hệ thống 7 huy hiệu mở khóa tự động theo thành tích.
+   - Hệ thống 8 huy hiệu mở khóa tự động theo thành tích (bao gồm huy hiệu Doanh nhân Tycoon 4.0).
 
-6. **HOẠT ĐỘNG HOÀN TOÀN TRÊN CLIENT & TỰ DO RESET**:
+6. **THAO TRƯỜNG DOANH NGHIỆP TYCOON (CAPITAL TYCOON 4.0)**:
+   - Mô phỏng tương tác 3 giai đoạn quản trị thực tế theo tiến trình giáo trình:
+     + **Giai đoạn 1 (Chương 3)**: Khởi nghiệp & Bí mật Giá trị thặng dư (cân đối $c, v, m$, GTTD tuyệt đối vs tương đối, tái sản xuất mở rộng).
+     + **Giai đoạn 2 (Chương 4)**: Cạnh tranh & Độc quyền (Tập trung tư bản M&A, quy luật dịch chuyển vốn & lợi nhuận bình quân, chống giá cả độc quyền).
+     + **Giai đoạn 3 (Chương 5 & 6)**: KTTT Định hướng XHCN & CMCN 4.0 (Chuyển đổi số AI, chuỗi giá trị xanh ESG, hài hòa 3 lợi ích Cá nhân - Doanh nghiệp - Xã hội).
+   - Cơ chế bãi công & phá sản: Nếu quá tham lam bóc lột $m'$ cực đoan, tinh thần thợ tụt dưới 10% sẽ nổ ra đình công toàn diện!
+
+7. **HOẠT ĐỘNG HOÀN TOÀN TRÊN CLIENT & TỰ DO RESET**:
    - Tự động lưu tiến trình vào `localStorage`.
    - Hỗ trợ nút **"↺ Làm Lại"** trên thanh điều hướng để xóa tiến trình về 0 bất cứ lúc nào (thuận tiện cho việc thuyết trình, chấm điểm bài thi).
    - Thiết kế chuẩn Responsive: Chạy mượt mà trên Desktop, Laptop, Tablet và Mobile.
@@ -96,18 +103,19 @@ MLN122/
     │   ├── chapters.js          # Dữ liệu 6 chương môn KTCT MLN122
     │   ├── scenarios.js         # Ngân hàng 28 tình huống thực tế đầy đủ schema
     │   ├── detectiveCases.js    # 3 vụ án điều tra phá án thực tế
-    │   ├── badges.js            # Danh sách 7 huy hiệu thành tích
+    │   ├── badges.js            # Danh sách 8 huy hiệu thành tích
     │   ├── archetypes.js        # Hình mẫu tư duy và thang đo 5 chiều
     │   └── handbook.js          # Sổ tay lý luận Kinh tế chính trị bỏ túi
     ├── components/
     │   ├── Navbar.js            # Thanh điều hướng, bộ đếm XP, đổi theme, bật/tắt tiếng, reset
     │   ├── LandingHero.js       # Trang chủ giới thiệu, slogan, thống kê
-    │   ├── ChapterMap.js        # Bản đồ hành trình 6 chương và phòng phá án
+    │   ├── ChapterMap.js        # Bản đồ hành trình 6 chương, phòng phá án và game Tycoon
     │   ├── ScenarioPlayer.js    # Trình diễn tình huống 4 giai đoạn chuẩn UX
     │   ├── InteractiveSlider.js # Phòng thí nghiệm Ngày lao động & Giá trị thặng dư
     │   ├── DetectiveBureau.js   # Bàn phá án ghim manh mối tương tác
+    │   ├── CapitalTycoon.js     # Thao trường mô phỏng doanh nghiệp 3 giai đoạn (Capital Tycoon)
     │   ├── ProfileModal.js      # Modal Hồ sơ tư duy & Giấy chứng nhận Radar Chart
-    │   ├── BadgesModal.js       # Modal Bảng vinh danh 7 huy hiệu
+    │   ├── BadgesModal.js       # Modal Bảng vinh danh 8 huy hiệu
     │   ├── HandbookModal.js     # Modal Sổ tay lý thuyết KTCT bỏ túi
     │   └── BadgeUnlockPopup.js  # Popup chúc mừng khi mở khóa huy hiệu
     └── styles/
@@ -117,5 +125,6 @@ MLN122/
         ├── scenario.css         # Style trình diễn tình huống & 4 bước phản hồi
         ├── detective.css        # Style hồ sơ vụ án & bảng ghim manh mối
         ├── slider.css           # Style phòng thí nghiệm ngày lao động
+        ├── tycoon.css           # Style giao diện mô phỏng Capital Tycoon
         └── animations.css       # Hiệu ứng chuyển động mượt mà
 ```

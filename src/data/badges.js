@@ -61,5 +61,14 @@ export const BADGES = [
     desc: 'Chinh phục toàn diện giáo trình MLN122 và đạt điểm tư duy kinh tế xuất sắc.',
     requirement: 'Hoàn thành tối thiểu 8 tình huống và phá giải ít nhất 2 vụ án điều tra.',
     unlockedAt: null
+  },
+  {
+    id: 'capital-tycoon-master',
+    name: 'Capital Tycoon Champion',
+    nameVi: 'Nhà Quản Trị Doanh Nghiệp 4.0',
+    icon: '🏭',
+    desc: 'Vượt qua 3 giai đoạn của Thao trường Tycoon: Khởi nghiệp GTTD, Cạnh tranh độc quyền và KTTT 4.0.',
+    requirement: 'Xây dựng thành công doanh nghiệp thịnh vượng trong game Capital Tycoon.',
+    unlockedAt: null
   }
 ];

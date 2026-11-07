@@ -7,6 +7,7 @@ import { renderChapterMap } from './components/ChapterMap.js';
 import { renderScenarioPlayer } from './components/ScenarioPlayer.js';
 import { renderInteractiveSlider } from './components/InteractiveSlider.js';
 import { renderDetectiveBureau } from './components/DetectiveBureau.js';
+import { renderCapitalTycoon } from './components/CapitalTycoon.js';
 import { renderProfileModal } from './components/ProfileModal.js';
 import { renderBadgesModal } from './components/BadgesModal.js';
 import { renderHandbookModal } from './components/HandbookModal.js';
@@ -99,7 +100,8 @@ function renderApp() {
       mainContainer, 
       (scenarioId) => navigateTo('scenario', scenarioId),
       (caseId) => navigateTo('detective', caseId),
-      handleResetProgress
+      handleResetProgress,
+      () => navigateTo('tycoon')
     );
   } else if (currentView === 'scenario') {
     renderScenarioPlayer(
@@ -119,6 +121,11 @@ function renderApp() {
       currentCaseId,
       () => navigateTo('map'),
       (nextCaseId) => navigateTo('detective', nextCaseId)
+    );
+  } else if (currentView === 'tycoon') {
+    renderCapitalTycoon(
+      mainContainer,
+      () => navigateTo('map')
     );
   }
 
@@ -145,7 +152,8 @@ stateManager.subscribe(() => {
       mainContainer, 
       (scenarioId) => navigateTo('scenario', scenarioId),
       (caseId) => navigateTo('detective', caseId),
-      handleResetProgress
+      handleResetProgress,
+      () => navigateTo('tycoon')
     );
   }
   if (stateManager.state.activeBadgePopup) {

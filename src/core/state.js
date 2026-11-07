@@ -148,6 +148,14 @@ class StateManager {
     this.saveState();
   }
 
+  // Record Tycoon completed
+  recordTycoonVictory() {
+    this.state.tycoonCompleted = true;
+    this.state.xp += 200;
+    this.checkBadges();
+    this.saveState();
+  }
+
   // Check badges achievement triggers
   checkBadges() {
     const completedCount = Object.keys(this.state.completedScenarios).length;
@@ -193,6 +201,11 @@ class StateManager {
     // 7. Master Political Economist
     if (completedCount >= 6 && solvedCases >= 1) {
       unlock('dialectical-thinker');
+    }
+
+    // 8. Capital Tycoon Master
+    if (this.state.tycoonCompleted) {
+      unlock('capital-tycoon-master');
     }
 
     if (newlyUnlocked.length > 0) {
