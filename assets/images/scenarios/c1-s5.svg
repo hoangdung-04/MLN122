@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="boxShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#0284c7" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" rx="20" fill="url(#bgGrad)" />
+
+  <!-- Blueprint Grid Lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.45">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Top Left Badge -->
+  <g transform="translate(36, 30)">
+    <rect width="280" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="16" cy="15" r="4.5" fill="#38bdf8" />
+    <text x="28" y="15" fill="#e2e8f0" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="10.5" font-weight="800" letter-spacing="0.3" dominant-baseline="central">MLN122 • CHƯƠNG 1 • TÁI SẢN XUẤT</text>
+  </g>
+
+  <!-- Top Right Title and Subtitle -->
+  <text x="764" y="44" fill="#38bdf8" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">BỐN KHÂU TÁI SẢN XUẤT XÃ HỘI</text>
+  <text x="764" y="64" fill="#94a3b8" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="end">Sản xuất – Phân phối – Trao đổi – Tiêu dùng &amp; Quan hệ lợi ích</text>
+
+  <!-- 4 Flow Boxes: Center y = 205, width = 148, height = 118 -->
+  <!-- Box 1: SẢN XUẤT (Center x=119, Left: 45, Right: 193) -->
+  <g transform="translate(119, 205)">
+    <rect x="-74" y="-59" width="148" height="118" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2.2" filter="url(#boxShadow)"/>
+    <text x="0" y="-22" fill="#38bdf8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="0.3">1. SẢN XUẤT</text>
+    <circle cx="0" cy="12" r="18" fill="rgba(56, 189, 248, 0.15)"/>
+    <text x="0" y="18" fill="#bae6fd" font-size="15" text-anchor="middle">🏭</text>
+    <text x="0" y="42" fill="#38bdf8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="9" font-weight="700" text-anchor="middle">GIỮ VAI TRÒ QUYẾT ĐỊNH</text>
+  </g>
+
+  <!-- Arrow 1: From Box 1 (193) to Box 2 (232) -->
+  <path d="M195 205 L225 205" stroke="#38bdf8" stroke-width="2.2" stroke-dasharray="4 2"/>
+  <polygon points="225,200 232,205 225,210" fill="#38bdf8"/>
+
+  <!-- Box 2: PHÂN PHỐI (Center x=306, Left: 232, Right: 380) -->
+  <g transform="translate(306, 205)">
+    <rect x="-74" y="-59" width="148" height="118" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2.2" filter="url(#boxShadow)"/>
+    <text x="0" y="-22" fill="#38bdf8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="0.3">2. PHÂN PHỐI</text>
+    <circle cx="0" cy="12" r="18" fill="rgba(56, 189, 248, 0.15)"/>
+    <text x="0" y="18" fill="#bae6fd" font-size="15" text-anchor="middle">⚖️</text>
+    <text x="0" y="42" fill="#94a3b8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="9" font-weight="700" text-anchor="middle">ĐỊNH HƯỚNG LỢI ÍCH</text>
+  </g>
+
+  <!-- Arrow 2: From Box 2 (380) to Box 3 (419) -->
+  <path d="M382 205 L412 205" stroke="#38bdf8" stroke-width="2.2" stroke-dasharray="4 2"/>
+  <polygon points="412,200 419,205 412,210" fill="#38bdf8"/>
+
+  <!-- Box 3: TRAO ĐỔI (Center x=493, Left: 419, Right: 567) -->
+  <g transform="translate(493, 205)">
+    <rect x="-74" y="-59" width="148" height="118" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2.2" filter="url(#boxShadow)"/>
+    <text x="0" y="-22" fill="#38bdf8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="0.3">3. TRAO ĐỔI</text>
+    <circle cx="0" cy="12" r="18" fill="rgba(56, 189, 248, 0.15)"/>
+    <text x="0" y="18" fill="#bae6fd" font-size="15" text-anchor="middle">🔄</text>
+    <text x="0" y="42" fill="#94a3b8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="9" font-weight="700" text-anchor="middle">CẦU NỐI LƯU THÔNG</text>
+  </g>
+
+  <!-- Arrow 3: From Box 3 (567) to Box 4 (606) -->
+  <path d="M569 205 L599 205" stroke="#38bdf8" stroke-width="2.2" stroke-dasharray="4 2"/>
+  <polygon points="599,200 606,205 599,210" fill="#38bdf8"/>
+
+  <!-- Box 4: TIÊU DÙNG (Center x=680, Left: 606, Right: 754) -->
+  <g transform="translate(680, 205)">
+    <rect x="-74" y="-59" width="148" height="118" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2.2" filter="url(#boxShadow)"/>
+    <text x="0" y="-22" fill="#38bdf8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="0.3">4. TIÊU DÙNG</text>
+    <circle cx="0" cy="12" r="18" fill="rgba(56, 189, 248, 0.15)"/>
+    <text x="0" y="18" fill="#bae6fd" font-size="15" text-anchor="middle">🎯</text>
+    <text x="0" y="42" fill="#38bdf8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="9" font-weight="700" text-anchor="middle">MỤC ĐÍCH &amp; ĐỘNG LỰC</text>
+  </g>
+
+  <!-- Feedback Loop Path: Tiêu dùng tạo nhu cầu thúc đẩy Sản xuất chu kỳ mới -->
+  <path d="M680 264 C680 348, 119 348, 119 270" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="5 3"/>
+  <polygon points="114,272 119,264 124,272" fill="#38bdf8"/>
+  
+  <!-- Central Badge for Loop Feedback -->
+  <g transform="translate(400, 348)">
+    <rect x="-175" y="-14" width="350" height="28" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="0" y="1" fill="#bae6fd" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="9.8" font-weight="700" text-anchor="middle" dominant-baseline="central">Tiêu dùng thỏa mãn nhu cầu &amp; kích thích chu kỳ sản xuất mới</text>
+  </g>
+
+  <!-- Bottom Metadata -->
+  <text x="40" y="422" fill="#475569" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="700">KINH TẾ CHÍNH TRỊ TRONG ĐỜI SỐNG</text>
+  <text x="760" y="422" fill="#475569" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="end">MLN122 • KHOA HỌC KINH TẾ CHÍNH TRỊ MÁC – LÊNIN</text>
+</svg>
+

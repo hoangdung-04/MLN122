@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06121e" />
+      <stop offset="50%" stop-color="#0a192f" />
+      <stop offset="100%" stop-color="#08221b" />
+    </linearGradient>
+    <filter id="boxShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#10b981" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" rx="20" fill="url(#bgGrad)" />
+
+  <!-- Blueprint Grid Lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.45">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Top Left Badge -->
+  <g transform="translate(36, 30)">
+    <rect width="308" height="30" rx="15" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+    <circle cx="16" cy="15" r="4.5" fill="#10b981" />
+    <text x="28" y="15" fill="#e2e8f0" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="10.5" font-weight="800" letter-spacing="0.3" dominant-baseline="central">MLN122 • CHƯƠNG 2 • SẢN XUẤT HÀNG HÓA</text>
+  </g>
+
+  <!-- Top Right Title and Subtitle -->
+  <text x="764" y="44" fill="#10b981" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">LÝ LUẬN CỦA C. MÁC VỀ HÀNG HÓA</text>
+  <text x="764" y="64" fill="#94a3b8" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="end">Sản xuất hàng hóa &amp; Hai thuộc tính (GTSD &amp; Giá trị)</text>
+
+  <!-- Left Box: Sản xuất hàng hóa (Center: 190, Width: 250, Left: 65, Right: 315) -->
+  <g transform="translate(190, 220)">
+    <rect x="-125" y="-105" width="250" height="210" rx="14" fill="#0f172a" stroke="#10b981" stroke-width="2.5" filter="url(#boxShadow)"/>
+    <rect x="-125" y="-105" width="250" height="32" rx="14" fill="rgba(16, 185, 129, 0.2)"/>
+    <text x="0" y="-84" fill="#34d399" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle">SẢN XUẤT HÀNG HÓA</text>
+    
+    <text x="0" y="-55" fill="#f8fafc" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="9.6" font-weight="700" text-anchor="middle">Sản xuất nhằm mục đích Trao đổi – Mua bán</text>
+    <text x="0" y="-38" fill="#94a3b8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="8.8" font-weight="600" text-anchor="middle">(Cơ sở vật chất sinh tồn của xã hội)</text>
+    
+    <circle cx="0" cy="-3" r="18" fill="rgba(16, 185, 129, 0.15)"/>
+    <text x="0" y="3" fill="#34d399" font-size="17" text-anchor="middle">📦</text>
+    
+    <rect x="-112" y="22" width="224" height="38" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="0" y="37" fill="#38bdf8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="8.5" font-weight="700" text-anchor="middle">2 ĐIỀU KIỆN RA ĐỜI TẤT YẾU:</text>
+    <text x="0" y="51" fill="#cbd5e1" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="8.2" font-weight="600" text-anchor="middle">1. Phân công LĐXH • 2. Tách biệt kinh tế</text>
+
+    <rect x="-112" y="66" width="224" height="26" rx="6" fill="rgba(14, 165, 233, 0.12)" stroke="rgba(14, 165, 233, 0.35)"/>
+    <text x="0" y="82" fill="#bae6fd" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="8.2" font-weight="700" text-anchor="middle">📦 Hữu hình (vật thể) &amp; 🌐 Vô hình (dịch vụ)</text>
+  </g>
+
+  <!-- Center Arrow connecting to Attributes -->
+  <path d="M319 220 L379 220" stroke="#10b981" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <polygon points="379,214 389,220 379,226" fill="#10b981"/>
+  
+  <g transform="translate(354, 188)">
+    <circle cx="0" cy="0" r="16" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="1.2"/>
+    <text x="0" y="5" fill="#34d399" font-size="12" text-anchor="middle">✨</text>
+  </g>
+
+  <!-- Right Group: Two Attributes of Commodity (Left edge: 389, Width: 345, Right: 734) -->
+  <!-- Top Attribute: Giá trị sử dụng (Center: 562, y: 160, Width: 345, Height: 90) -->
+  <g transform="translate(562, 160)">
+    <rect x="-172" y="-45" width="345" height="90" rx="12" fill="#0f172a" stroke="#0ea5e9" stroke-width="2" filter="url(#boxShadow)"/>
+    <circle cx="-135" cy="0" r="22" fill="rgba(14, 165, 233, 0.15)"/>
+    <text x="-135" y="7" fill="#38bdf8" font-size="20" text-anchor="middle">🛠️</text>
+    
+    <text x="-95" y="-18" fill="#38bdf8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="11.5" font-weight="800">1. GIÁ TRỊ SỬ DỤNG (Công dụng)</text>
+    <text x="-95" y="0" fill="#cbd5e1" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="9.5" font-weight="600">Thỏa mãn nhu cầu con người (tiêu dùng/sản xuất)</text>
+    <text x="-95" y="18" fill="#94a3b8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="9" font-weight="600">Thuộc tính tự nhiên • <tspan fill="#38bdf8" font-weight="700">Phạm trù vĩnh viễn</tspan></text>
+  </g>
+
+  <!-- Bottom Attribute: Giá trị hàng hóa (Center: 562, y: 280, Width: 345, Height: 90) -->
+  <g transform="translate(562, 280)">
+    <rect x="-172" y="-45" width="345" height="90" rx="12" fill="#0f172a" stroke="#f59e0b" stroke-width="2" filter="url(#boxShadow)"/>
+    <circle cx="-135" cy="0" r="22" fill="rgba(245, 158, 11, 0.15)"/>
+    <text x="-135" y="7" fill="#fbbf24" font-size="20" text-anchor="middle">⚖️</text>
+    
+    <text x="-95" y="-18" fill="#fbbf24" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="11.5" font-weight="800">2. GIÁ TRỊ HÀNG HÓA (Lao động)</text>
+    <text x="-95" y="0" fill="#cbd5e1" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="9.5" font-weight="600">Lao động xã hội của người sản xuất kết tinh</text>
+    <text x="-95" y="18" fill="#94a3b8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="9" font-weight="600">Biểu hiện bằng Giá cả • <tspan fill="#fbbf24" font-weight="700">Phạm trù lịch sử</tspan></text>
+  </g>
+
+  <!-- Bottom Metadata -->
+  <text x="40" y="422" fill="#475569" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="700">KINH TẾ CHÍNH TRỊ TRONG ĐỜI SỐNG</text>
+  <text x="760" y="422" fill="#475569" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="end">MLN122 • KHOA HỌC KINH TẾ CHÍNH TRỊ MÁC – LÊNIN</text>
+</svg>

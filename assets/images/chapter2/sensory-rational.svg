@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="pinkGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#db2777" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" rx="20" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Grid lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Header Badge -->
+  <g transform="translate(40, 36)">
+    <rect width="180" height="28" rx="14" fill="#1e293b" stroke="#ec4899" stroke-width="1.5" />
+    <circle cx="16" cy="14" r="5" fill="#ec4899" />
+    <text x="32" y="19" fill="#e2e8f0" font-size="11" font-weight="bold" letter-spacing="1">MLN122 • CASE SCENARIO</text>
+  </g>
+
+  <!-- Title &amp; Subtitle inside SVG for standalone view -->
+  <text x="760" y="44" fill="#ec4899" font-size="13" font-weight="bold" text-anchor="end" letter-spacing="0.5">NHẬN THỨC CẢM TÍNH &amp; LÝ TÍNH</text>
+  <text x="760" y="62" fill="#94a3b8" font-size="11" text-anchor="end">Từ trực quan sinh động đến tư duy trừu tượng</text>
+
+  <!-- Main Illustration Graphics -->
+  
+      <!-- Left: Sensory (Eye, Appearance) -->
+      <g transform="translate(250, 220)">
+        <rect x="-80" y="-70" width="160" height="140" rx="16" fill="#1e293b" stroke="#ec4899" stroke-width="2"/>
+        <text x="0" y="-40" fill="#f472b6" font-size="14" font-weight="bold" text-anchor="middle">CẢM TÍNH</text>
+        <path d="M-40 0 Q0 -25 40 0 Q0 25 -40 0 Z" fill="none" stroke="#fb7185" stroke-width="3"/>
+        <circle cx="0" cy="0" r="10" fill="#fb7185"/>
+        <text x="0" y="45" fill="#cbd5e1" font-size="11" text-anchor="middle">Cảm giác, tri giác</text>
+      </g>
+
+      <!-- Upward dialectical jump -->
+      <path d="M350 220 L430 220" stroke="#facc15" stroke-width="4"/>
+      <polygon points="430,212 445,220 430,228" fill="#facc15"/>
+
+      <!-- Right: Rational (Brain, Concepts, Logic) -->
+      <g transform="translate(540, 220)">
+        <rect x="-80" y="-70" width="160" height="140" rx="16" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+        <text x="0" y="-40" fill="#d8b4fe" font-size="14" font-weight="bold" text-anchor="middle">LÝ TÍNH</text>
+        <circle cx="0" cy="0" r="24" fill="none" stroke="#c084fc" stroke-width="3"/>
+        <text x="0" y="5" fill="#f3e8ff" font-size="16" font-weight="bold" text-anchor="middle">f(x)</text>
+        <text x="0" y="45" fill="#cbd5e1" font-size="11" text-anchor="middle">Khái niệm, phán đoán</text>
+      </g>
+    
+
+  <!-- Bottom Brand Watermark -->
+  <text x="40" y="420" fill="#475569" font-size="11" font-weight="500">PHILOSOPHY IN LIFE — TRIẾT HỌC TRONG ĐỜI SỐNG</text>
+  <text x="760" y="420" fill="#475569" font-size="11" text-anchor="end">FPT UNIVERSITY • MLN122</text>
+</svg>

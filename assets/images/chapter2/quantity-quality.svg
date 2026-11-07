@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="pinkGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#db2777" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" rx="20" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Grid lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Header Badge -->
+  <g transform="translate(40, 36)">
+    <rect width="180" height="28" rx="14" fill="#1e293b" stroke="#ec4899" stroke-width="1.5" />
+    <circle cx="16" cy="14" r="5" fill="#ec4899" />
+    <text x="32" y="19" fill="#e2e8f0" font-size="11" font-weight="bold" letter-spacing="1">MLN122 • CASE SCENARIO</text>
+  </g>
+
+  <!-- Title &amp; Subtitle inside SVG for standalone view -->
+  <text x="760" y="44" fill="#ec4899" font-size="13" font-weight="bold" text-anchor="end" letter-spacing="0.5">QUY LUẬT LƯỢNG – CHẤT</text>
+  <text x="760" y="62" fill="#94a3b8" font-size="11" text-anchor="end">Tích lũy về Lượng vượt Điểm Nút dẫn đến Bước Nhảy về Chất</text>
+
+  <!-- Main Illustration Graphics -->
+  
+      <!-- Boiling Water / Energy Bar Metaphor -->
+      <rect x="180" y="160" width="440" height="30" rx="15" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+      <!-- Filled gradient progress -->
+      <rect x="180" y="160" width="350" height="30" rx="15" fill="url(#pinkGlow)"/>
+      
+      <!-- Node point marker (100°C / Node Point) -->
+      <line x1="530" y1="130" x2="530" y2="220" stroke="#facc15" stroke-width="3" stroke-dasharray="4 2"/>
+      <polygon points="522,125 538,125 530,138" fill="#facc15"/>
+      <text x="530" y="115" fill="#fef08a" font-size="13" font-weight="bold" text-anchor="middle">ĐIỂM NÚT (100h)</text>
+      
+      <!-- Measure zone (Độ) -->
+      <text x="320" y="145" fill="#94a3b8" font-size="13" text-anchor="middle">GIỚI HẠN ĐỘ (0h - 100h)</text>
+      
+      <!-- Leap explosion effect -->
+      <g transform="translate(580, 220)">
+        <polygon points="0,-20 7,-5 22,-9 11,3 20,17 4,11 -5,22 -8,7 -22,6 -11,-4" fill="#fbbf24"/>
+        <text x="45" y="5" fill="#fbbf24" font-size="14" font-weight="bold">BƯỚC NHẢY!</text>
+        <text x="45" y="23" fill="#cbd5e1" font-size="12">Biến đổi về Chất</text>
+      </g>
+    
+
+  <!-- Bottom Brand Watermark -->
+  <text x="40" y="420" fill="#475569" font-size="11" font-weight="500">PHILOSOPHY IN LIFE — TRIẾT HỌC TRONG ĐỜI SỐNG</text>
+  <text x="760" y="420" fill="#475569" font-size="11" text-anchor="end">FPT UNIVERSITY • MLN122</text>
+</svg>

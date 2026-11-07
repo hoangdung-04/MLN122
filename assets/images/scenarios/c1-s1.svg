@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="boxShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#0284c7" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" rx="20" fill="url(#bgGrad)" />
+
+  <!-- Subtle Blueprint Grid Lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.45">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Top Left Badge - Sized to comfortably fit text without overflow -->
+  <g transform="translate(36, 30)">
+    <rect width="268" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="16" cy="15" r="4.5" fill="#38bdf8" />
+    <text x="28" y="15" fill="#e2e8f0" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="10.5" font-weight="800" letter-spacing="0.3" dominant-baseline="central">MLN122 • CHƯƠNG 1 • ĐỐI TƯỢNG</text>
+  </g>
+
+  <!-- Top Right Title and Subtitle -->
+  <text x="764" y="44" fill="#38bdf8" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">QUAN HỆ SẢN XUẤT &amp; TRAO ĐỔI</text>
+  <text x="764" y="64" fill="#94a3b8" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="end">Đối tượng nghiên cứu của Kinh tế chính trị Mác – Lênin</text>
+
+  <!-- Flow Diagrams - Symmetrical Layout: 3 boxes, width 186, arrow tips touch exactly at box borders -->
+  <!-- Box 1: Sở hữu TLSX (Center: 158, Left: 65, Right: 251) -->
+  <g transform="translate(158, 220)">
+    <rect x="-93" y="-62" width="186" height="124" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2.5" filter="url(#boxShadow)"/>
+    <text x="0" y="-18" fill="#38bdf8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="12.5" font-weight="800" text-anchor="middle" letter-spacing="0.3">SỞ HỮU TLSX</text>
+    <circle cx="0" cy="15" r="22" fill="rgba(56, 189, 248, 0.15)"/>
+    <text x="0" y="21" fill="#bae6fd" font-size="18" text-anchor="middle">⚙️</text>
+    <text x="0" y="48" fill="#94a3b8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">Tư liệu sản xuất</text>
+  </g>
+
+  <!-- Arrow 1: From Box 1 (x=251) to Box 2 (x=307) -->
+  <path d="M255 220 L297 220" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <polygon points="297,214 307,220 297,226" fill="#38bdf8"/>
+
+  <!-- Box 2: Tổ chức quản lý (Center: 400, Left: 307, Right: 493) -->
+  <g transform="translate(400, 220)">
+    <rect x="-93" y="-62" width="186" height="124" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2.5" filter="url(#boxShadow)"/>
+    <text x="0" y="-18" fill="#38bdf8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="12.5" font-weight="800" text-anchor="middle" letter-spacing="0.3">TỔ CHỨC QUẢN LÝ</text>
+    <circle cx="0" cy="15" r="22" fill="rgba(56, 189, 248, 0.15)"/>
+    <text x="0" y="21" fill="#bae6fd" font-size="18" text-anchor="middle">📊</text>
+    <text x="0" y="48" fill="#94a3b8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">Phân công lao động</text>
+  </g>
+
+  <!-- Arrow 2: From Box 2 (x=493) to Box 3 (x=549) -->
+  <path d="M497 220 L539 220" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <polygon points="539,214 549,220 539,226" fill="#38bdf8"/>
+
+  <!-- Box 3: Phân phối sản phẩm (Center: 642, Left: 549, Right: 735) -->
+  <g transform="translate(642, 220)">
+    <rect x="-93" y="-62" width="186" height="124" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2.5" filter="url(#boxShadow)"/>
+    <text x="0" y="-18" fill="#38bdf8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing="0.2">PHÂN PHỐI SẢN PHẨM</text>
+    <circle cx="0" cy="15" r="22" fill="rgba(56, 189, 248, 0.15)"/>
+    <text x="0" y="21" fill="#bae6fd" font-size="18" text-anchor="middle">⚖️</text>
+    <text x="0" y="48" fill="#94a3b8" font-family="'Be Vietnam Pro', 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">Lợi ích kinh tế</text>
+  </g>
+
+  <!-- Bottom Metadata -->
+  <text x="40" y="422" fill="#475569" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="700">KINH TẾ CHÍNH TRỊ TRONG ĐỜI SỐNG</text>
+  <text x="760" y="422" fill="#475569" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="end">MLN122 • KHOA HỌC KINH TẾ CHÍNH TRỊ MÁC – LÊNIN</text>
+</svg>

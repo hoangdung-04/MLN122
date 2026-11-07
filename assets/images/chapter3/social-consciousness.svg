@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="pinkGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#db2777" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" rx="20" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Grid lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Header Badge -->
+  <g transform="translate(40, 36)">
+    <rect width="180" height="28" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+    <circle cx="16" cy="14" r="5" fill="#f59e0b" />
+    <text x="32" y="19" fill="#e2e8f0" font-size="11" font-weight="bold" letter-spacing="1">MLN122 • CASE SCENARIO</text>
+  </g>
+
+  <!-- Title &amp; Subtitle inside SVG for standalone view -->
+  <text x="760" y="44" fill="#f59e0b" font-size="13" font-weight="bold" text-anchor="end" letter-spacing="0.5">TỒN TẠI XÃ HỘI &amp; Ý THỨC XÃ HỘI</text>
+  <text x="760" y="62" fill="#94a3b8" font-size="11" text-anchor="end">Tồn tại xã hội quyết định ý thức xã hội, YTXH có tính độc lập tương đối</text>
+
+  <!-- Main Illustration Graphics -->
+  
+      <!-- Base: Economic life / Social Being -->
+      <rect x="180" y="270" width="440" height="70" rx="14" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+      <text x="400" y="305" fill="#f1f5f9" font-size="15" font-weight="bold" text-anchor="middle">TỒN TẠI XÃ HỘI (KINH TẾ - VẬT CHẤT)</text>
+      <text x="400" y="325" fill="#94a3b8" font-size="12" text-anchor="middle">Phương thức sản xuất, điều kiện tự nhiên, dân cư</text>
+
+      <!-- Upward determination arrow -->
+      <path d="M400 260 L400 190" stroke="#f59e0b" stroke-width="4"/>
+      <polygon points="392,190 400,175 408,190" fill="#f59e0b"/>
+
+      <!-- Top: Social Consciousness (Social Media, Trend, Morals) -->
+      <rect x="220" y="90" width="360" height="75" rx="14" fill="#312e81" stroke="#818cf8" stroke-width="2"/>
+      <text x="400" y="125" fill="#c7d2fe" font-size="15" font-weight="bold" text-anchor="middle">Ý THỨC XÃ HỘI</text>
+      <text x="400" y="145" fill="#a5b4fc" font-size="12" text-anchor="middle">Tâm lý xã hội, hệ tư tưởng, xu hướng mạng xã hội</text>
+    
+
+  <!-- Bottom Brand Watermark -->
+  <text x="40" y="420" fill="#475569" font-size="11" font-weight="500">PHILOSOPHY IN LIFE — TRIẾT HỌC TRONG ĐỜI SỐNG</text>
+  <text x="760" y="420" fill="#475569" font-size="11" text-anchor="end">FPT UNIVERSITY • MLN122</text>
+</svg>

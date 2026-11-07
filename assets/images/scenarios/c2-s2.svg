@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#be123c" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#38bdf8" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" rx="20" fill="url(#bgGrad)" />
+
+  <!-- Subtle Blueprint Grid Lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.45">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Top Left Badge -->
+  <g transform="translate(36, 24)">
+    <rect width="300" height="28" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+    <circle cx="15" cy="14" r="4" fill="#10b981" />
+    <text x="28" y="14" fill="#e2e8f0" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="10" font-weight="800" letter-spacing="0.3" dominant-baseline="central">MLN122 • CHƯƠNG 2 • TÍNH HAI MẶT</text>
+  </g>
+
+  <!-- Top Right Title & Subtitle -->
+  <text x="764" y="34" fill="#10b981" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="12.5" font-weight="800" text-anchor="end" letter-spacing="0.5">SƠ ĐỒ TỔNG THỂ MÂU THUẪN CƠ BẢN CỦA SX HÀNG HÓA</text>
+  <text x="764" y="52" fill="#94a3b8" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="end">Lao động tư nhân vs Lao động xã hội • Giá trị sử dụng vs Giá trị</text>
+
+  <!-- TOP HEADER BOX: SẢN PHẨM CUỐI - HÀNG HÓA -->
+  <g transform="translate(400, 85)">
+    <rect x="-110" y="-18" width="220" height="36" rx="10" fill="#0b1329" stroke="#38bdf8" stroke-width="2" filter="url(#glow)" />
+    <text x="0" y="0" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="14" font-weight="900" text-anchor="middle" dominant-baseline="central">HÀNG HÓA</text>
+  </g>
+
+  <!-- CONNECTING ARROWS TO HÀNG HÓA -->
+  <path d="M 235 85 L 290 85" fill="none" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 565 85 L 510 85" fill="none" stroke="#10b981" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- LEFT TRACK (GIÁ TRỊ & LAO ĐỘNG XÃ HỘI) -->
+  <g transform="translate(60, 68)">
+    <!-- Box 1: Giá trị -->
+    <rect x="0" y="0" width="175" height="34" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+    <text x="87.5" y="17" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle" dominant-baseline="central">GIÁ TRỊ (Thuộc tính XH)</text>
+
+    <!-- Up arrow from LĐ Xã hội -->
+    <line x1="87.5" y1="48" x2="87.5" y2="34" stroke="#f59e0b" stroke-width="2" />
+    <polygon points="87.5,34 83.5,42 91.5,42" fill="#f59e0b" />
+
+    <!-- Box 2: Lao động xã hội -->
+    <rect x="0" y="48" width="175" height="36" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2" />
+    <text x="87.5" y="66" fill="#ffffff" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="700" text-anchor="middle" dominant-baseline="central">Lao động xã hội</text>
+
+    <!-- Up arrow from LĐ Trừu tượng -->
+    <line x1="87.5" y1="98" x2="87.5" y2="84" stroke="#f59e0b" stroke-width="2" />
+    <polygon points="87.5,84 83.5,92 91.5,92" fill="#f59e0b" />
+
+    <!-- Box 3: Lao động trừu tượng -->
+    <rect x="0" y="98" width="175" height="74" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+    <text x="87.5" y="114" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="800" text-anchor="middle">LAO ĐỘNG TRỪU TƯỢNG</text>
+    <text x="87.5" y="130" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="9" text-anchor="middle">• Hao phí SLĐ nói chung</text>
+    <text x="87.5" y="144" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="9" text-anchor="middle">• Là phạm trù lịch sử</text>
+    <text x="87.5" y="158" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5" font-weight="700" text-anchor="middle">Tạo nên Giá trị hàng hóa</text>
+  </g>
+
+  <!-- CENTER OVAL: MÂU THUẪN CƠ BẢN CỦA SX HÀNG HÓA -->
+  <g transform="translate(400, 195)">
+    <!-- Outer Glow Capsule -->
+    <ellipse cx="0" cy="0" rx="130" ry="46" fill="rgba(244, 63, 94, 0.12)" stroke="#f43f5e" stroke-width="2" stroke-dasharray="5 3" />
+    <ellipse cx="0" cy="0" rx="118" ry="38" fill="#1e111a" stroke="#f43f5e" stroke-width="1.5" />
+    <text x="0" y="-12" fill="#fda4af" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" font-weight="800" text-anchor="middle">MÂU THUẪN CƠ BẢN</text>
+    <text x="0" y="4" fill="#f43f5e" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="900" text-anchor="middle">CỦA SX HÀNG HÓA</text>
+    <text x="0" y="20" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5" text-anchor="middle">Lao động tư nhân ⚡ Lao động xã hội</text>
+  </g>
+
+  <!-- Horizontal Conflict Arrows -->
+  <path d="M 235 195 L 270 195" fill="none" stroke="#f43f5e" stroke-width="2" />
+  <polygon points="270,195 262,191 262,199" fill="#f43f5e" />
+  <path d="M 565 195 L 530 195" fill="none" stroke="#f43f5e" stroke-width="2" />
+  <polygon points="530,195 538,191 538,199" fill="#f43f5e" />
+
+  <!-- RIGHT TRACK (GIÁ TRỊ SỬ DỤNG & LAO ĐỘNG CỤ THỂ) -->
+  <g transform="translate(565, 68)">
+    <!-- Box 1: Giá trị sử dụng -->
+    <rect x="0" y="0" width="175" height="34" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+    <text x="87.5" y="17" fill="#34d399" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle" dominant-baseline="central">GIÁ TRỊ SỬ DỤNG</text>
+
+    <!-- Up arrow from LĐ Cá nhân -->
+    <line x1="87.5" y1="48" x2="87.5" y2="34" stroke="#10b981" stroke-width="2" />
+    <polygon points="87.5,34 83.5,42 91.5,42" fill="#10b981" />
+
+    <!-- Box 2: Lao động cá nhân (Tư nhân) -->
+    <rect x="0" y="48" width="175" height="36" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.2" />
+    <text x="87.5" y="66" fill="#ffffff" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="700" text-anchor="middle" dominant-baseline="central">Lao động cá nhân (Tư nhân)</text>
+
+    <!-- Up arrow from LĐ Cụ thể -->
+    <line x1="87.5" y1="98" x2="87.5" y2="84" stroke="#10b981" stroke-width="2" />
+    <polygon points="87.5,84 83.5,92 91.5,92" fill="#10b981" />
+
+    <!-- Box 3: Lao động cụ thể -->
+    <rect x="0" y="98" width="175" height="74" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+    <text x="87.5" y="114" fill="#34d399" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="800" text-anchor="middle">LAO ĐỘNG CỤ THỂ</text>
+    <text x="87.5" y="130" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="9" text-anchor="middle">• 4 đặc trưng riêng biệt</text>
+    <text x="87.5" y="144" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="9" text-anchor="middle">• Là phạm trù vĩnh viễn</text>
+    <text x="87.5" y="158" fill="#10b981" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5" font-weight="700" text-anchor="middle">Tạo ra Giá trị sử dụng</text>
+  </g>
+
+  <!-- MID-BOTTOM: SẢN XUẤT HÀNG HÓA -->
+  <g transform="translate(400, 290)">
+    <rect x="-135" y="-18" width="270" height="36" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.8" />
+    <text x="0" y="0" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="13" font-weight="800" text-anchor="middle" dominant-baseline="central">SẢN XUẤT HÀNG HÓA</text>
+  </g>
+
+  <!-- Upward branching paths from Sản xuất hàng hóa to Left/Right Tracks -->
+  <path d="M 330 272 L 147 242" fill="none" stroke="#f59e0b" stroke-width="1.8" stroke-dasharray="4 3" />
+  <polygon points="147,242 153,248 156,240" fill="#f59e0b" />
+  <path d="M 470 272 L 653 242" fill="none" stroke="#10b981" stroke-width="1.8" stroke-dasharray="4 3" />
+  <polygon points="653,242 644,240 647,248" fill="#10b981" />
+
+  <!-- BOTTOM ROOT LEVEL: 2 ĐIỀU KIỆN RA ĐỜI CỦA SẢN XUẤT HÀNG HÓA -->
+  <g transform="translate(60, 345)">
+    <!-- Left Condition: Phân công LĐXH -->
+    <rect x="0" y="0" width="310" height="48" rx="10" fill="#0f291e" stroke="#10b981" stroke-width="1.5" />
+    <text x="155" y="17" fill="#34d399" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="800" text-anchor="middle">ĐIỀU KIỆN 1: PHÂN CÔNG LĐXH</text>
+    <text x="155" y="33" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="9" text-anchor="middle">Chuyên môn hóa sản xuất • Tạo mối liên hệ phụ thuộc</text>
+
+    <!-- Arrow up to Center -->
+    <path d="M 270 0 L 340 -19" fill="none" stroke="#10b981" stroke-width="2" />
+    <polygon points="340,-19 331,-18 335,-25" fill="#10b981" />
+  </g>
+
+  <g transform="translate(430, 345)">
+    <!-- Right Condition: Sự độc lập kinh tế -->
+    <rect x="0" y="0" width="310" height="48" rx="10" fill="#1e2238" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="155" y="17" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="800" text-anchor="middle">ĐIỀU KIỆN 2: SỰ ĐỘC LẬP KT GIỮA NGƯỜI SX</text>
+    <text x="155" y="33" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="9" text-anchor="middle">Khác biệt chế độ sở hữu tư liệu sản xuất &amp; sản phẩm</text>
+
+    <!-- Arrow up to Center -->
+    <path d="M 40 0 L -30 -19" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <polygon points="-30,-19 -25,-25 -21,-18" fill="#38bdf8" />
+  </g>
+
+  <!-- Bottom Metadata -->
+  <text x="40" y="428" fill="#475569" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="10" font-weight="700">KINH TẾ CHÍNH TRỊ TRONG ĐỜI SỐNG</text>
+  <text x="760" y="428" fill="#475569" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="end">MLN122 • KHOA HỌC KINH TẾ CHÍNH TRỊ MÁC – LÊNIN</text>
+</svg>
