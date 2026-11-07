@@ -6,32 +6,24 @@
       <stop offset="50%" stop-color="#111827" />
       <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
-    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#0284c7" />
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
     </linearGradient>
-    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbbf24" />
-      <stop offset="100%" stop-color="#d97706" />
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0e7490" />
     </linearGradient>
-    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#34d399" />
-      <stop offset="100%" stop-color="#059669" />
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
     </linearGradient>
-    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#c084fc" />
-      <stop offset="100%" stop-color="#7c3aed" />
-    </linearGradient>
-    <linearGradient id="roseGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fb7185" />
-      <stop offset="100%" stop-color="#e11d48" />
-    </linearGradient>
-    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#22d3ee" />
-      <stop offset="100%" stop-color="#0891b2" />
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6d28d9" />
     </linearGradient>
     <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feGaussianBlur stdDeviation="6" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
@@ -39,7 +31,7 @@
   <!-- Background Canvas -->
   <rect width="800" height="450" rx="20" fill="url(#bgGrad)" />
 
-  <!-- Subtle Blueprint Grid Lines -->
+  <!-- Technical Blueprint Grid Lines -->
   <g stroke="#1e293b" stroke-width="1" opacity="0.45">
     <line x1="0" y1="75" x2="800" y2="75"/>
     <line x1="0" y1="150" x2="800" y2="150"/>
@@ -53,42 +45,129 @@
   </g>
 
   <!-- Top Left Badge -->
-  <g transform="translate(36, 30)">
-    <rect width="286" height="30" rx="15" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
-    <circle cx="16" cy="15" r="4.5" fill="#10b981" />
-    <text x="28" y="15" fill="#e2e8f0" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="10.5" font-weight="800" letter-spacing="0.3" dominant-baseline="central">MLN122 • CHƯƠNG 2 • TÍNH HAI MẶT</text>
+  <g transform="translate(36, 26)">
+    <rect width="296" height="28" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+    <circle cx="15" cy="14" r="4" fill="#10b981" />
+    <text x="28" y="14" fill="#e2e8f0" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="10.5" font-weight="800" letter-spacing="0.3" dominant-baseline="central">MLN122 • CHƯƠNG 2 • TÍNH HAI MẶT</text>
   </g>
 
-  <!-- Top Right Title and Subtitle -->
-  <text x="760" y="44" fill="#10b981" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">TÍNH HAI MẶT CỦA LAO ĐỘNG SẢN XUẤT</text>
-  <text x="760" y="64" fill="#94a3b8" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="end">Lao động cụ thể (Tạo ra GTSD) vs Lao động trừu tượng (Tạo ra Giá trị)</text>
+  <!-- Top Right Title & Subtitle -->
+  <text x="764" y="38" fill="#10b981" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">TÍNH CHẤT HAI MẶT CỦA LAO ĐỘNG SẢN XUẤT</text>
+  <text x="764" y="56" fill="#94a3b8" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="10.5" font-weight="600" text-anchor="end">Bắt nguồn từ Phân công LĐXH • Tạo ra Giá trị sử dụng &amp; Thực thể Giá trị</text>
 
-  <!-- Main Illustration Graphics -->
-  
-      <g transform="translate(400, 220)">
-        <!-- Top: One labor activity -->
-        <rect x="-140" y="-130" width="280" height="50" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="2.5"/>
-        <text x="0" y="-98" fill="#ffffff" font-family="'Be Vietnam Pro', sans-serif" font-size="14" font-weight="900" text-anchor="middle">LAO ĐỘNG SẢN XUẤT HÀNG HÓA</text>
+  <!-- ROOT NODE: Phân công lao động xã hội -> Lao động sản xuất hàng hóa -->
+  <g transform="translate(400, 88)">
+    <rect x="-170" y="-18" width="340" height="36" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.8" filter="url(#softGlow)" />
+    <text x="0" y="0" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle" dominant-baseline="central">PHÂN CÔNG LAO ĐỘNG XÃ HỘI ➔ LAO ĐỘNG SẢN XUẤT HÀNG HÓA</text>
+  </g>
 
-        <!-- Fork lines -->
-        <path d="M-60 -80 L-140 -20" stroke="#10b981" stroke-width="3"/>
-        <path d="M60 -80 L140 -20" stroke="#f59e0b" stroke-width="3"/>
+  <!-- FORK CONNECTING PATHS -->
+  <path d="M 320 106 L 210 135" fill="none" stroke="#10b981" stroke-width="2" stroke-dasharray="4 3" />
+  <path d="M 480 106 L 590 135" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 3" />
 
-        <!-- Left Box: Cụ thể -->
-        <rect x="-240" y="-20" width="180" height="110" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
-        <text x="-150" y="10" fill="#34d399" font-family="'Be Vietnam Pro', sans-serif" font-size="13" font-weight="800" text-anchor="middle">LAO ĐỘNG CỤ THỂ</text>
-        <text x="-150" y="32" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="11" text-anchor="middle">Nghề nghiệp, công cụ riêng</text>
-        <text x="-150" y="65" fill="#facc15" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="800" text-anchor="middle">➔ Tạo ra GTSD</text>
-
-        <!-- Right Box: Trừu tượng -->
-        <rect x="60" y="-20" width="180" height="110" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
-        <text x="150" y="10" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="13" font-weight="800" text-anchor="middle">LAO ĐỘNG TRỪU TƯỢNG</text>
-        <text x="150" y="32" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="11" text-anchor="middle">Hao phí óc, bắp thịt chung</text>
-        <text x="150" y="65" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="800" text-anchor="middle">➔ Tạo ra GIÁ TRỊ</text>
-      </g>
+  <!-- LEFT BRANCH: LAO ĐỘNG CỤ THỂ -->
+  <g transform="translate(36, 135)">
+    <!-- Box Container -->
+    <rect width="346" height="175" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="1.8" />
+    <rect width="346" height="32" rx="12" fill="rgba(16, 185, 129, 0.15)" />
     
+    <!-- Header -->
+    <text x="173" y="16" fill="#34d399" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="800" text-anchor="middle" dominant-baseline="central">LAO ĐỘNG CỤ THỂ (4 ĐẶC TRƯNG RIÊNG)</text>
+    
+    <!-- 4 'Riêng' items from Slide -->
+    <g transform="translate(16, 44)">
+      <!-- Item 1 -->
+      <rect x="0" y="0" width="150" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="10" y="13" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="10" font-weight="700" dominant-baseline="central">🎯 Có mục đích riêng</text>
+      
+      <!-- Item 2 -->
+      <rect x="162" y="0" width="152" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="172" y="13" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="10" font-weight="700" dominant-baseline="central">🧱 Có đối tượng riêng</text>
+      
+      <!-- Item 3 -->
+      <rect x="0" y="32" width="150" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="10" y="45" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="9.5" font-weight="700" dominant-baseline="central">⚙️ Phương pháp, cách thức</text>
+      
+      <!-- Item 4 -->
+      <rect x="162" y="32" width="152" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="172" y="45" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="10" font-weight="700" dominant-baseline="central">📦 Có kết quả riêng</text>
+    </g>
+
+    <!-- Result Banner: Tạo ra Giá trị sử dụng -->
+    <g transform="translate(16, 114)">
+      <rect width="314" height="48" rx="8" fill="rgba(16, 185, 129, 0.12)" stroke="#10b981" stroke-width="1" />
+      <text x="157" y="16" fill="#10b981" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="800" text-anchor="middle">➔ TẠO RA GIÁ TRỊ SỬ DỤNG HÀNG HÓA</text>
+      <text x="157" y="34" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="9.5" text-anchor="middle">Thỏa mãn nhu cầu: Tiêu dùng cá nhân (Bánh mì) &amp; SX (Thép)</text>
+    </g>
+  </g>
+
+  <!-- RIGHT BRANCH: LAO ĐỘNG TRỪU TƯỢNG -->
+  <g transform="translate(418, 135)">
+    <!-- Box Container -->
+    <rect width="346" height="175" rx="12" fill="#0f172a" stroke="#f59e0b" stroke-width="1.8" />
+    <rect width="346" height="32" rx="12" fill="rgba(245, 158, 11, 0.15)" />
+    
+    <!-- Header -->
+    <text x="173" y="16" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="800" text-anchor="middle" dominant-baseline="central">LAO ĐỘNG TRỪU TƯỢNG (4 ĐẶC TÍNH GIÁ TRỊ)</text>
+    
+    <!-- 4 Characteristics from Slide -->
+    <g transform="translate(16, 44)">
+      <!-- Item 1 -->
+      <rect x="0" y="0" width="150" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="10" y="13" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="9.5" font-weight="700" dominant-baseline="central">💎 LĐ xã hội kết tinh</text>
+      
+      <!-- Item 2 -->
+      <rect x="162" y="0" width="152" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="172" y="13" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="9.5" font-weight="700" dominant-baseline="central">⚖️ Cơ sở của giá trị TĐ</text>
+      
+      <!-- Item 3 -->
+      <rect x="0" y="32" width="150" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="10" y="45" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="9.5" font-weight="700" dominant-baseline="central">🤝 Quan hệ kinh tế xã hội</text>
+      
+      <!-- Item 4 -->
+      <rect x="162" y="32" width="152" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="172" y="45" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="9.5" font-weight="700" dominant-baseline="central">⏳ Là phạm trù lịch sử</text>
+    </g>
+
+    <!-- Result Banner: Tạo ra Giá trị hàng hóa -->
+    <g transform="translate(16, 114)">
+      <rect width="314" height="48" rx="8" fill="rgba(245, 158, 11, 0.12)" stroke="#f59e0b" stroke-width="1" />
+      <text x="157" y="16" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="800" text-anchor="middle">➔ TẠO RA GIÁ TRỊ CỦA HÀNG HÓA</text>
+      <text x="157" y="34" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="9.5" text-anchor="middle">Hao phí sức óc, thần kinh, bắp thịt nói chung của người sản xuất</text>
+    </g>
+  </g>
+
+  <!-- BOTTOM PANEL: THÍ DỤ TRAO ĐỔI CHUẨN SLIDE (1m vải = 5kg thóc) -->
+  <g transform="translate(36, 324)">
+    <rect width="728" height="82" rx="12" fill="#0b1329" stroke="#38bdf8" stroke-width="1.5" />
+    
+    <!-- Title banner -->
+    <rect x="0" y="0" width="728" height="24" rx="12" fill="rgba(56, 189, 248, 0.15)" />
+    <text x="364" y="12" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" font-weight="800" text-anchor="middle" dominant-baseline="central">CƠ CHẾ GIÁ TRỊ TRAO ĐỔI (THÍ DỤ SLIDE: 1M VẢI = 5KG THÓC)</text>
+
+    <!-- Equation Visualization -->
+    <g transform="translate(60, 34)">
+      <!-- Box 1m Vải -->
+      <rect x="0" y="0" width="170" height="36" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.2" />
+      <text x="85" y="13" fill="#ffffff" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="800" text-anchor="middle">1 MÉT VẢI</text>
+      <text x="85" y="27" fill="#94a3b8" font-family="'Be Vietnam Pro', sans-serif" font-size="9" text-anchor="middle">GTSD 1: May mặc</text>
+
+      <!-- Equals Sign -->
+      <text x="210" y="20" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="20" font-weight="900" text-anchor="middle">=</text>
+
+      <!-- Box 5kg Thóc -->
+      <rect x="250" y="0" width="170" height="36" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.2" />
+      <text x="335" y="13" fill="#ffffff" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="800" text-anchor="middle">5 KG THÓC</text>
+      <text x="335" y="27" fill="#94a3b8" font-family="'Be Vietnam Pro', sans-serif" font-size="9" text-anchor="middle">GTSD 2: Lương thực</text>
+
+      <!-- Common Basis Note -->
+      <rect x="450" y="0" width="168" height="36" rx="8" fill="rgba(56, 189, 248, 0.1)" stroke="#38bdf8" stroke-width="1" />
+      <text x="534" y="12" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="9" font-weight="800" text-anchor="middle">CƠ SỞ CHUNG TRAO ĐỔI</text>
+      <text x="534" y="26" fill="#facc15" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5" font-weight="700" text-anchor="middle">Hao phí lao động ngang nhau</text>
+    </g>
+  </g>
 
   <!-- Bottom Metadata -->
-  <text x="40" y="422" fill="#475569" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="700">KINH TẾ CHÍNH TRỊ TRONG ĐỜI SỐNG</text>
-  <text x="760" y="422" fill="#475569" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="end">MLN122 • KHOA HỌC KINH TẾ CHÍNH TRỊ MÁC – LÊNIN</text>
+  <text x="40" y="428" fill="#475569" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="10" font-weight="700">KINH TẾ CHÍNH TRỊ TRONG ĐỜI SỐNG</text>
+  <text x="760" y="428" fill="#475569" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="end">MLN122 • KHOA HỌC KINH TẾ CHÍNH TRỊ MÁC – LÊNIN</text>
 </svg>

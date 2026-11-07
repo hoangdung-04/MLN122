@@ -105,6 +105,88 @@ export const DETECTIVE_CASES = [
     }
   },
   {
+    id: 'CASE-000B',
+    code: 'HỒ SƠ HÀNG HÓA',
+    chapterBadge: 'CHƯƠNG 2 • HÀNG HÓA & THỊ TRƯỜNG',
+    shortTopic: 'Chương 2: Bí mật hàng hóa',
+    title: 'Hồ Sơ Bí Ẩn Giá Trị Hàng Hóa: Tỷ Lệ 1m Vải = 5kg Thóc & Tính Hai Mặt Của Lao Động',
+    subtitle: 'Chuẩn Chương 2: Hai thuộc tính của hàng hóa, tỷ lệ trao đổi 1m vải = 5kg thóc và tính chất hai mặt của lao động sản xuất',
+    image: './assets/images/cases/case-c2-commodity.svg',
+    dossierLevel: 'CẤP ĐỘ: CƠ BẢN',
+    accentColor: '#10b981',
+    backgroundStory: 'Trong một phiên chợ trao đổi nông sản và thủ công mỹ nghệ, một thương lái đưa ra nhận định: "Hàng hóa trao đổi được với nhau chỉ vì sở thích chủ quan và sự may rủi, hoàn toàn không có cơ sở khách quan nào". Một người thợ may đổi 1 mét vải lấy 5 kg thóc của người nông dân. Cả hai cùng thắc mắc: Hai vật có công dụng khác biệt hoàn toàn (vải để may mặc, thóc để ăn), tại sao lại trao đổi ngang bằng nhau? Để giải mã bí ẩn này, điều tra viên cần sắp xếp các bằng chứng lý luận của C. Mác vào đúng 4 ngăn hồ sơ khoa học!',
+    categories: [
+      { 
+        id: 'muc_2_1_gtsd', 
+        name: 'GIÁ TRỊ SỬ DỤNG & LAO ĐỘNG CỤ THỂ', 
+        desc: 'Công dụng hàng hóa, thỏa mãn nhu cầu cá nhân (bánh mì) hoặc sản xuất (khung thép); 4 đặc trưng riêng của lao động cụ thể', 
+        color: '#10b981' 
+      },
+      { 
+        id: 'muc_2_1_gttd', 
+        name: 'GIÁ TRỊ TRAO ĐỔI & THÍ DỤ 1M VẢI = 5KG THÓC', 
+        desc: 'Quan hệ tỷ lệ về số lượng; cơ sở chung của trao đổi chính là hao phí lao động để tạo ra hàng hóa', 
+        color: '#06b6d4' 
+      },
+      { 
+        id: 'muc_2_1_gt', 
+        name: 'BẢN CHẤT GIÁ TRỊ & 4 ĐẶC TÍNH CỐT LÕI', 
+        desc: 'Lao động xã hội kết tinh; cơ sở của giá trị trao đổi; quan hệ kinh tế người với người; là phạm trù lịch sử', 
+        color: '#f59e0b' 
+      },
+      { 
+        id: 'muc_2_2_two_fold', 
+        name: 'TÍNH HAI MẶT & MÂU THUẪN TƯ NHÂN - XÃ HỘI', 
+        desc: 'Bắt nguồn từ phân công lao động xã hội; lao động cụ thể tạo GTSD, lao động trừu tượng tạo Giá trị', 
+        color: '#8b5cf6' 
+      }
+    ],
+    clues: [
+      {
+        id: 'c2-clue-1',
+        text: 'Giá trị sử dụng là công dụng của hàng hóa, có thể thỏa mãn nhu cầu tiêu dùng cá nhân (bánh mì) hoặc nhu cầu tiêu dùng sản xuất (khung sắt thép công trình)',
+        correctCategory: 'muc_2_1_gtsd',
+        hint: 'Slide định nghĩa Giá trị sử dụng và ví dụ hình ảnh Bánh mì, Khung thép.'
+      },
+      {
+        id: 'c2-clue-2',
+        text: 'Lao động cụ thể bắt nguồn từ phân công lao động xã hội, có 4 đặc trưng: mục đích riêng, đối tượng riêng, phương pháp riêng và kết quả riêng',
+        correctCategory: 'muc_2_1_gtsd',
+        hint: 'Slide phân tích tính chất của Lao động Cụ thể với 4 chữ "riêng".'
+      },
+      {
+        id: 'c2-clue-3',
+        text: 'Giá trị trao đổi là một quan hệ về số lượng, là tỷ lệ theo đó một giá trị sử dụng loại này được trao đổi với những giá trị sử dụng loại khác',
+        correctCategory: 'muc_2_1_gttd',
+        hint: 'Slide định nghĩa Giá trị trao đổi - cầu nối để đi đến bản chất Giá trị.'
+      },
+      {
+        id: 'c2-clue-4',
+        text: 'Thí dụ 1m vải = 5kg thóc: Hai hàng hóa công dụng khác nhau trao đổi được vì chính lao động hao phí để tạo ra hàng hóa là cơ sở chung',
+        correctCategory: 'muc_2_1_gttd',
+        hint: 'Thí dụ kinh điển trong slide: 1 mét vải có giá trị trao đổi bằng 5 kg thóc.'
+      },
+      {
+        id: 'c2-clue-5',
+        text: 'Giá trị là lao động xã hội của người sản xuất kết tinh trong hàng hóa, là cơ sở của giá trị trao đổi và là một phạm trù lịch sử',
+        correctCategory: 'muc_2_1_gt',
+        hint: '4 đặc điểm cốt lõi của Giá trị được nêu rõ trong Slide 4.'
+      },
+      {
+        id: 'c2-clue-6',
+        text: 'Lao động sản xuất hàng hóa có tính hai mặt: Lao động cụ thể tạo ra giá trị sử dụng, lao động trừu tượng tạo ra thực thể giá trị của hàng hóa',
+        correctCategory: 'muc_2_2_two_fold',
+        hint: 'Phát kiến vĩ đại của C. Mác về tính hai mặt của lao động sản xuất hàng hóa.'
+      }
+    ],
+    philosophicalVerdict: {
+      headline: 'Phá án thành công: Giải mã trọn vẹn bí mật của hàng hóa và học thuyết giá trị lao động!',
+      concept: 'Chương 2: Hai thuộc tính của hàng hóa, Thí dụ 1m vải = 5kg thóc & Tính hai mặt của lao động',
+      analysis: 'Căn cứ các slide chuẩn Chương 2: Tỷ lệ trao đổi 1m vải = 5kg thóc không hề ngẫu nhiên mà được quyết định bởi hao phí lao động xã hội kết tinh bên trong. C. Mác đã tạo nên bước ngoặt vĩ đại trong lịch sử kinh tế khi phát hiện ra tính hai mặt của lao động sản xuất hàng hóa: Lao động cụ thể (với 4 nét riêng biệt) sáng tạo ra giá trị sử dụng, còn lao động trừu tượng (hao phí óc, bắp thịt) kết tinh thành thực thể giá trị!',
+      xpAwarded: 180
+    }
+  },
+  {
     id: 'CASE-001',
     code: 'HỒ SƠ #001',
     chapterBadge: 'CHƯƠNG 3 • MỤC 3.1',

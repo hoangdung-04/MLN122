@@ -554,6 +554,86 @@ export const QUIZ_QUESTIONS = [
     quote: 'Slide Chương 2 • Mục 1.1: Sự tách biệt tương đối về kinh tế'
   },
   {
+    id: 'q-c2-07',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.1. Giá trị sử dụng',
+    question: 'Theo slide bài giảng MLN122, khái niệm "Giá trị sử dụng" của hàng hóa được định nghĩa như thế nào và bao gồm những mục đích thỏa mãn nào?',
+    options: [
+      'Là công dụng của hàng hóa, có thể thỏa mãn những nhu cầu nhất định của con người (nhu cầu tiêu dùng cá nhân như bánh mì hoặc nhu cầu tiêu dùng sản xuất như khung sắt thép)',
+      'Là số lượng tiền tệ tối đa mà người mua sẵn sàng chi trả trên thị trường tự do',
+      'Là lượng calo hóa học chứa trong vật phẩm tiêu dùng nhanh',
+      'Là mức độ khan hiếm tương đối của tài nguyên khoáng sản trong tự nhiên'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide nêu rõ: Giá trị sử dụng là công dụng của hàng hóa, có thể thỏa mãn những nhu cầu nhất định của con người (ví dụ: bánh mì thỏa mãn nhu cầu ăn uống đời sống, khung sắt thép thỏa mãn nhu cầu xây dựng sản xuất).',
+    quote: 'Slide Chương 2 • Mục 1.2: Giá trị sử dụng của hàng hóa'
+  },
+  {
+    id: 'q-c2-08',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.1. Giá trị trao đổi',
+    question: 'Slide bài giảng MLN122 định nghĩa "Giá trị trao đổi" của hàng hóa là gì?',
+    options: [
+      'Là một quan hệ về số lượng, là tỷ lệ theo đó một giá trị sử dụng loại này được trao đổi với những giá trị sử dụng loại khác',
+      'Là mức lãi suất chiết khấu do ngân hàng trung ương áp đặt cho giao dịch ngoại tệ',
+      'Là khối lượng thực tế cân nặng của hàng hóa khi đem ra chợ bán',
+      'Là tổng số ngày công lao động mà người mua phải làm thuê cho người bán'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide Chương 2 Mục 1.2 định nghĩa chuẩn: Để hiểu được giá trị hàng hóa phải đi từ giá trị trao đổi. Giá trị trao đổi là một quan hệ về số lượng, là tỷ lệ theo đó một giá trị sử dụng loại này được trao đổi với những giá trị sử dụng loại khác.',
+    quote: 'Slide Chương 2 • Mục 1.2: Giá trị trao đổi'
+  },
+  {
+    id: 'q-c2-09',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.1. Thí dụ 1m vải = 5kg thóc',
+    question: 'Trong thí dụ của slide bài giảng: "1m vải = 5kg thóc", điều gì là cơ sở chung cho phép hai hàng hóa có giá trị sử dụng khác nhau hoàn toàn có thể trao đổi ngang giá với nhau?',
+    options: [
+      'Chính lao động hao phí để tạo ra hàng hóa là cơ sở chung của việc trao đổi và nó tạo thành giá trị của hàng hóa',
+      'Do trọng lượng vật lý và kích thước hình học của 1m vải bằng đúng 5kg thóc',
+      'Do sự can thiệp chỉ định giá bán bắt buộc của cơ quan quản lý thị trường',
+      'Do sở thích ngẫu nhiên và cảm tính nhất thời của người mua và người bán'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide Chương 2 khẳng định: Vải và thóc là 2 giá trị sử dụng khác nhau, nhưng trao đổi được với nhau vì có một điểm chung: Cả 1m vải và 5kg thóc đều là sản phẩm của lao động; chính lao động hao phí để tạo ra chúng là cơ sở chung của trao đổi và tạo thành giá trị hàng hóa.',
+    quote: 'Slide Chương 2 • Mục 1.2: Thí dụ 1m vải = 5kg thóc'
+  },
+  {
+    id: 'q-c2-10',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.1. Bốn đặc tính của Giá trị',
+    question: 'Luận điểm nào sau đây KHÔNG PHẢI là một trong 4 đặc tính cốt lõi của Giá trị hàng hóa được nêu trong slide bài giảng MLN122?',
+    options: [
+      'Giá trị là thuộc tính tự nhiên thuần túy của vật thể và là phạm trù vĩnh viễn tồn tại trong mọi hình thái kinh tế',
+      'Là lao động xã hội của người sản xuất kết tinh trong hàng hóa',
+      'Giá trị là cơ sở của giá trị trao đổi (giá trị trao đổi là hình thức biểu hiện của giá trị)',
+      'Biểu hiện quan hệ kinh tế giữa những người sản xuất hàng hóa và là một phạm trù lịch sử'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide 4 chỉ rõ 4 đặc tính của Giá trị: (1) Là lao động xã hội kết tinh; (2) Là cơ sở của giá trị trao đổi; (3) Biểu hiện quan hệ kinh tế giữa người sản xuất; (4) Là phạm trù lịch sử (chỉ tồn tại trong sản xuất hàng hóa). Do đó, coi giá trị là "thuộc tính tự nhiên thuần túy và phạm trù vĩnh viễn" là hoàn toàn sai (đó là đặc tính của giá trị sử dụng).',
+    quote: 'Slide Chương 2 • Mục 1.2: Bốn đặc tính của Giá trị hàng hóa'
+  },
+  {
+    id: 'q-c2-11',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.2. Tính hai mặt - Lao động cụ thể',
+    question: 'Theo slide bài giảng MLN122, Lao động Cụ thể bắt nguồn từ Phân công lao động xã hội và mang 4 đặc trưng riêng biệt nào?',
+    options: [
+      'Có mục đích riêng, có đối tượng riêng, có phương pháp/cách thức riêng, và có kết quả riêng',
+      'Có tiền lương riêng, có hợp đồng riêng, có trợ cấp riêng, và có địa điểm riêng',
+      'Có nhãn hiệu riêng, có bao bì riêng, có giá cả riêng, và có hóa đơn riêng',
+      'Có thuế suất riêng, có giấy phép riêng, có bảo hiểm riêng, và có chứng nhận xuất xứ riêng'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide 5 nêu rõ: Lao động Cụ thể bắt nguồn từ Phân công lao động xã hội, có 4 đặc trưng riêng biệt: (1) Mục đích riêng, (2) Đối tượng riêng, (3) Phương pháp, cách thức riêng, (4) Kết quả riêng. Lao động cụ thể tạo ra Giá trị sử dụng của hàng hóa.',
+    quote: 'Slide Chương 2 • Mục 2.1: Lao động Cụ thể & 4 đặc trưng riêng'
+  },
+  {
     id: 'q-c4-01',
     chapter: 4,
     chapterTitle: 'Chương 4: Cạnh tranh & Độc quyền',

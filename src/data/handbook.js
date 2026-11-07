@@ -87,26 +87,39 @@ export const HANDBOOK_ENTRIES = [
         code: '2.1',
         title: 'Lý luận của C. Mác về sản xuất hàng hóa & Hai thuộc tính của hàng hóa',
         summary: '• Tiền đề thực tiễn & Cơ sở duy vật lịch sử: Đời sống xã hội loài người có nhiều mặt hoạt động khác nhau (chính trị, văn hoá, nghệ thuật, khoa học, kỹ thuật, tôn giáo…). Nhưng trước khi tiến hành các hoạt động đó, con người phải có thức ăn, quần áo mặc, nhà ở… Do đó, sản xuất của cải vật chất là cơ sở sinh tồn và phát triển của xã hội.\n' +
-          '• Khái niệm Sản xuất hàng hóa chuẩn slide: Là kiểu tổ chức hoạt động kinh tế mà ở đó, những người sản xuất ra sản phẩm nhằm mục đích trao đổi, mua bán (khác với sản xuất tự cung tự cấp).\n' +
+          '• Khái niệm Sản xuất hàng hóa: Là kiểu tổ chức hoạt động kinh tế mà ở đó, những người sản xuất ra sản phẩm nhằm mục đích trao đổi, mua bán (khác với sản xuất tự nhiên tự cấp tự túc).\n' +
           '• 2 điều kiện lịch sử tất yếu để sản xuất hàng hóa ra đời và tồn tại:\n' +
-          '  1. Phân công lao động xã hội: Sự chuyên môn hóa sản xuất thành nhiều ngành nghề khác nhau (nông dân trồng lúa, thợ thủ công dệt vải, ngư dân đánh cá, công nhân lắp ráp ô tô...). Mỗi người sản xuất một loại sản phẩm nhưng lại có nhu cầu tiêu dùng nhiều loại sản phẩm, tạo nên sự phụ thuộc và tất yếu phải trao đổi.\n' +
-          '  2. Sự tách biệt tương đối về mặt kinh tế giữa các chủ thể sản xuất: Do chế độ sở hữu khác nhau về tư liệu sản xuất và sản phẩm lao động quy định (quyền tài sản riêng biệt, giấy chứng nhận quyền sử dụng đất/sổ đỏ). Người này muốn tiêu dùng sản phẩm của người khác phải thông qua trao đổi, mua bán bình đẳng dưới hình thức hàng hóa.\n' +
-          '• Khái niệm Hàng hóa & 2 dạng biểu hiện cơ bản:\n' +
+          '  1. Phân công lao động xã hội: Sự chuyên môn hóa sản xuất thành nhiều ngành nghề khác nhau (nông dân, thợ dệt, thợ rèn, công nhân...). Mỗi người chỉ sản xuất một thứ nhưng cần tiêu dùng nhiều thứ, dẫn đến tất yếu phải trao đổi.\n' +
+          '  2. Sự tách biệt tương đối về mặt kinh tế giữa các chủ thể sản xuất: Do chế độ sở hữu khác nhau về TLSX và sản phẩm quy định (quyền tài sản riêng biệt). Muốn tiêu dùng sản phẩm của người khác phải thông qua trao đổi, mua bán bình đẳng.\n' +
+          '• Khái niệm Hàng hóa & 2 dạng biểu hiện:\n' +
           '  - Định nghĩa: Là sản phẩm của lao động, có thể thỏa mãn nhu cầu nào đó của con người thông qua trao đổi, mua bán.\n' +
-          '  - Dạng hữu hình (vật thể): Sắt, thép, lương thực (thóc, gạo), thực phẩm (bánh mì), ô tô, máy tính...\n' +
-          '  - Dạng vô hình (phi vật thể): Các dịch vụ thương mại, dịch vụ vận tải, hay dịch vụ của giáo viên, bác sĩ, nghệ sĩ, lập trình viên...\n' +
+          '  - 2 dạng tồn tại: Dạng hữu hình (vật thể như sắt, thép, lương thực thóc lúa, bánh mì...) và Dạng vô hình (phi vật thể như dịch vụ vận tải, thương mại, giáo viên, bác sĩ, nghệ sĩ, lập trình viên...).\n' +
           '• Hai thuộc tính biện chứng của hàng hóa:\n' +
-          '  1. Giá trị sử dụng (Công dụng): Thỏa mãn nhu cầu con người (tiêu dùng cá nhân hoặc sản xuất). Là thuộc tính tự nhiên, phạm trù vĩnh viễn do thuộc tính lý - hóa của vật quyết định.\n' +
-          '  2. Giá trị hàng hóa (Lao động): Lao động xã hội của người sản xuất kết tinh trong hàng hóa. Là thuộc tính xã hội, phạm trù lịch sử biểu hiện mối quan hệ giữa những người sản xuất. Giá cả là hình thức biểu hiện bằng tiền của giá trị.',
-        lifeLesson: 'Một sản phẩm muốn thành công trên thị trường phải có giá trị sử dụng xuất sắc (giải quyết nỗi đau khách hàng) và được thị trường thừa nhận giá trị xã hội thông qua mức giá phù hợp.'
+          '  1. Giá trị sử dụng: Là công dụng của hàng hóa, có thể thỏa mãn những nhu cầu nhất định của con người (nhu cầu tiêu dùng cá nhân như bánh mì; nhu cầu tiêu dùng sản xuất như khung sắt thép xây dựng). Là thuộc tính tự nhiên, phạm trù vĩnh viễn.\n' +
+          '  2. Giá trị của hàng hóa & Giá trị trao đổi:\n' +
+          '     - Để hiểu được giá trị hàng hóa phải đi từ giá trị trao đổi.\n' +
+          '     - Giá trị trao đổi: Là một quan hệ về số lượng, là tỷ lệ theo đó một giá trị sử dụng loại này được trao đổi với những giá trị sử dụng loại khác.\n' +
+          '     - Thí dụ chuẩn slide: 1m vải = 5kg thóc (tức 1 mét vải có giá trị trao đổi bằng 5 kg thóc). Hai vật có GTSD khác nhau trao đổi được với nhau vì có cơ sở chung: "Chính lao động hao phí để tạo ra hàng hóa là cơ sở chung của việc trao đổi và nó tạo thành giá trị của hàng hóa".\n' +
+          '     - 4 đặc điểm cốt lõi của Giá trị:\n' +
+          '       + Là lao động xã hội của người sản xuất kết tinh trong hàng hóa.\n' +
+          '       + Giá trị là cơ sở của giá trị trao đổi (giá trị trao đổi là hình thức biểu hiện ra bên ngoài của giá trị).\n' +
+          '       + Biểu hiện quan hệ kinh tế giữa những người sản xuất hàng hóa (quan hệ giữa người với người thông qua vật).\n' +
+          '       + Là một phạm trù lịch sử (chỉ tồn tại trong nền sản xuất hàng hóa).',
+        lifeLesson: 'Một sản phẩm muốn thành công trên thị trường phải có giá trị sử dụng xuất sắc (giải quyết nhu cầu thiết thực) và phải được thị trường thừa nhận giá trị thông qua giá cả và hành vi trao đổi.'
       },
       {
         code: '2.2',
         title: 'Tính hai mặt của lao động sản xuất hàng hóa (Phát kiến vĩ đại của C. Mác)',
-        summary: 'Lao động sản xuất hàng hóa không phải là hai thứ lao động khác nhau, mà là một quá trình lao động có hai mặt biện chứng:\n' +
-          '• Lao động cụ thể: Là lao động có ích dưới một hình thức chuyên môn cụ thể (công cụ riêng, phương pháp riêng, kết quả riêng). Tạo ra Giá trị sử dụng của hàng hóa, bảo tồn và chuyển dịch giá trị tư liệu sản xuất cũ (c) vào sản phẩm mới.\n' +
-          '• Lao động trừu tượng: Là sự hao phí sức lao động nói chung của con người (cơ bắp, thần kinh, trí óc) không kể hình thức biểu hiện cụ thể. Tạo ra Giá trị mới của hàng hóa (v + m).\n' +
-          '• Ý nghĩa: Giải thích được mâu thuẫn giữa lao động tư nhân và lao động xã hội - mầm mống mọi cuộc khủng hoảng trong sản xuất hàng hóa.',
+        summary: 'Lao động sản xuất hàng hóa bắt nguồn từ Phân công lao động xã hội và có tính hai mặt biện chứng (không phải hai hành vi lao động riêng rẽ):\n' +
+          '• Lao động Cụ thể: Là lao động có ích dưới một hình thức nghề nghiệp chuyên môn nhất định. Có 4 đặc trưng riêng biệt:\n' +
+          '  1. Có mục đích riêng (mục đích tạo ra sản phẩm đặc thù);\n' +
+          '  2. Có đối tượng riêng (nguyên vật liệu đặc trưng, vd: vải đối với thợ may, gỗ đối với thợ mộc);\n' +
+          '  3. Có phương pháp, cách thức riêng (kỹ thuật, quy trình thao tác riêng);\n' +
+          '  4. Có kết quả riêng (sản phẩm thành phẩm có công dụng xác định).\n' +
+          '  ➔ Vai trò: Lao động cụ thể tạo ra Giá trị sử dụng của hàng hóa, bảo tồn và chuyển dịch giá trị TLSX cũ (c) vào sản phẩm mới; là phạm trù vĩnh viễn cùng với sự tồn tại của con người.\n' +
+          '• Lao động Trừu tượng: Là sự tiêu hao sức lao động nói chung của người sản xuất hàng hóa (sự tiêu hao sức óc, thần kinh, cơ bắp) không kể hình thức biểu hiện cụ thể.\n' +
+          '  ➔ Vai trò: Lao động trừu tượng tạo ra Giá trị của hàng hóa (lao động sống tạo ra giá trị mới v + m); là một phạm trù lịch sử.\n' +
+          '• Ý nghĩa lý luận: Phát hiện tính hai mặt của lao động giải thích bản chất mâu thuẫn giữa Lao động tư nhân (biểu hiện qua lao động cụ thể) và Lao động xã hội (biểu hiện qua lao động trừu tượng) - nguồn gốc của mọi mâu thuẫn và khủng hoảng trong kinh tế hàng hóa.',
         lifeLesson: 'Kỹ năng cụ thể giúp bạn làm ra sản phẩm, nhưng khả năng lao động trừu tượng (tư duy logic, quản lý cảm xúc, sức bền trí tuệ) mới tạo ra bước nhảy vọt về giá trị bản thân.'
       },
       {

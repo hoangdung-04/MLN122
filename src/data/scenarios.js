@@ -269,13 +269,13 @@ export const SCENARIOS = [
   {
     "id": "C2-S2",
     "chapter": 2,
-    "topic": "Mục 2.1 • Tính hai mặt của lao động sản xuất hàng hóa",
-    "title": "Lao Động Cụ Thể Hay Lao Động Trừu Tượng: Chiến Lược Cải Tiến App",
+    "topic": "Mục 2.2 • Tính hai mặt của lao động & Bí mật trao đổi (1m vải = 5kg thóc)",
+    "title": "Lao Động Cụ Thể Hay Lao Động Trừu Tượng: Chiến Lược Cải Tiến Sản Phẩm",
     "difficulty": "Trung bình",
-    "philosophyConcept": "Tính hai mặt của lao động sản xuất hàng hóa",
+    "philosophyConcept": "Tính hai mặt của lao động sản xuất hàng hóa & Cơ sở của giá trị trao đổi",
     "image": "./assets/images/scenarios/c2-s2.svg",
-    "situation": "Trong một công ty phần mềm, đội ngũ lập trình viên mất 3 tháng nghiên cứu thuật toán nén ảnh mới. Lao động của họ vừa là thao tác kỹ thuật viết code cụ thể, vừa là sự tiêu hao trí lực, thần kinh và cơ bắp nói chung. Khi định giá phần mềm cho khách hàng doanh nghiệp, ban giám đốc tranh cãi về nguồn gốc thực sự tạo nên giá trị tính bằng tiền của gói phần mềm.",
-    "question": "Học thuyết tính hai mặt của lao động sản xuất hàng hóa của C. Mác khẳng định điều gì?",
+    "situation": "Trong một dự án hợp tác giữa xưởng dệt thủ công và công ty phần mềm quản lý kho, ban quản trị đối mặt với câu hỏi kinh điển: 'Tại sao 1m vải lại đổi được 5kg thóc dù công dụng may mặc và ăn uống hoàn toàn khác biệt? Và đối với một gói phần mềm hay một mét vải cao cấp, đâu là yếu tố thực sự tạo nên giá trị trao đổi để định giá trên thị trường?'. Trưởng phòng kỹ thuật cho rằng chỉ cần tập trung vào tính năng cụ thể của sản phẩm, trong khi cố vấn kinh tế cho rằng phải hiểu rõ hai mặt của lao động.",
+    "question": "Học thuyết của C. Mác về tính hai mặt của lao động sản xuất hàng hóa và cơ sở của giá trị trao đổi khẳng định điều gì?",
     "dimensionScores": {
       "connection": 30,
       "contradiction": 30,
@@ -286,28 +286,28 @@ export const SCENARIOS = [
     "options": [
       {
         "id": "A",
-        "text": "Lao động cụ thể tạo ra Giá trị sử dụng (tính năng nén ảnh), còn Lao động trừu tượng (hao phí sức óc, trí lực chung) tạo ra Giá trị của phần mềm.",
+        "text": "Lao động cụ thể (với 4 nét riêng: mục đích, đối tượng, phương pháp, kết quả riêng) tạo ra Giá trị sử dụng; còn Lao động trừu tượng (hao phí sức óc, thần kinh, bắp thịt chung) kết tinh tạo ra Giá trị hàng hóa - chính là cơ sở chung của mọi quan hệ trao đổi (như 1m vải = 5kg thóc).",
         "isDialectical": true,
-        "consequence": "Công ty hiểu rõ cơ chế cấu thành giá trị, tối ưu hóa năng suất lao động trừu tượng và nâng cao chất lượng lao động cụ thể, đàm phán hợp đồng thành công vang dội.",
-        "philosophicalLens": "Phát kiến vĩ đại của C. Mác: Lao động sản xuất hàng hóa có tính hai mặt. Lao động cụ thể tạo ra giá trị sử dụng, lao động trừu tượng của người sản xuất kết tinh thành giá trị hàng hóa."
+        "consequence": "Doanh nghiệp nắm vững bản chất, vừa nâng cao chất lượng sử dụng (lao động cụ thể), vừa tối ưu hóa hao phí lao động xã hội cần thiết (lao động trừu tượng), định vị sản phẩm cạnh tranh bền vững.",
+        "philosophicalLens": "Phát kiến vĩ đại của C. Mác: Lao động sản xuất hàng hóa có tính chất hai mặt. Lao động cụ thể tạo ra giá trị sử dụng (phạm trù vĩnh viễn), còn lao động trừu tượng tạo ra giá trị (phạm trù lịch sử, cơ sở của giá trị trao đổi)."
       },
       {
         "id": "B",
-        "text": "Chính chiếc máy tính và ngôn ngữ lập trình tự sinh ra giá trị của phần mềm chứ không phải con người.",
+        "text": "Chính chiếc máy tính, công cụ may mặc và nguyên vật liệu tự sinh ra giá trị mới của hàng hóa mà không cần sự hao phí lao động sống của con người.",
         "isDialectical": false,
-        "consequence": "Đầu tư ồ ạt mua máy chủ đắt đỏ nhưng xem nhẹ chế độ đãi ngộ kỹ sư, dẫn đến việc lập trình viên giỏi rời bỏ công ty và dự án đình trệ.",
-        "philosophicalLens": "Sai lầm sùng bái vật chất: Tư liệu sản xuất (máy tính) chỉ chuyển dịch giá trị cũ (c), chỉ có lao động sống trừu tượng của con người mới tạo ra giá trị mới (v + m)."
+        "consequence": "Đầu tư mua sắm dàn máy móc đắt đỏ nhưng trả lương bèo bọt khiến nhân tài ra đi, máy móc đắp chiếu và doanh nghiệp thua lỗ nặng.",
+        "philosophicalLens": "Sai lầm sùng bái vật chất: Tư liệu sản xuất chỉ chuyển dịch giá trị cũ (c) vào sản phẩm, chỉ có lao động sống trừu tượng của con người mới sáng tạo ra giá trị mới (v + m)."
       },
       {
         "id": "C",
-        "text": "Giá trị phần mềm chỉ do lời giới thiệu tiếp thị khéo léo quyết định, không liên quan đến hao phí lao động của kỹ sư.",
+        "text": "Tỷ lệ trao đổi 1m vải = 5kg thóc hay giá bán phần mềm chỉ là trò may rủi ngẫu nhiên hoặc do người bán tùy tiện quyết định, không có cơ sở khách quan nào.",
         "isDialectical": false,
-        "consequence": "Quảng cáo sai sự thật bị khách hàng phát hiện và kiện tụng đòi bồi thường hợp đồng.",
-        "philosophicalLens": "Lẫn lộn giữa giá cả thị trường ngắn hạn với thực thể giá trị bên trong do lao động trừu tượng kết tinh."
+        "consequence": "Định giá tùy tiện dẫn đến việc bị người tiêu dùng tẩy chay hoặc bán dưới giá thành gây kiệt quệ tài chính.",
+        "philosophicalLens": "Thuyết chủ quan tầm thường, phủ nhận thực thể giá trị khách quan do hao phí lao động xã hội kết tinh quyết định."
       }
     ],
-    "explanation": "Tính hai mặt của lao động sản xuất hàng hóa (Lao động cụ thể và Lao động trừu tượng) là phát hiện đột phá của C. Mác giải thích nguồn gốc của giá trị hàng hóa.",
-    "coreLesson": "Công nghệ và máy móc chỉ là phương tiện truyền dẫn giá trị, lao động trừu tượng của con người mới là nguồn gốc sáng tạo nên giá trị mới."
+    "explanation": "Tính hai mặt của lao động sản xuất hàng hóa (Lao động cụ thể và Lao động trừu tượng) là phát hiện đột phá của C. Mác, giải mã vì sao hai hàng hóa có công dụng hoàn toàn khác nhau vẫn có thể trao đổi ngang giá với nhau.",
+    "coreLesson": "Cải tiến công cụ và phương pháp (lao động cụ thể) để tạo ra sản phẩm hữu ích, nhưng kiểm soát và tối ưu hao phí lao động xã hội (lao động trừu tượng) mới là chìa khóa quyết định giá trị và lợi thế cạnh tranh."
   },
   {
     "id": "C2-S3",
