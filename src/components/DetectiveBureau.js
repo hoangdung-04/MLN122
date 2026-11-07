@@ -22,6 +22,15 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
     validationResult = { isAllCorrect: true, errors: [] };
   }
 
+  function assignClueToCategory(clueId, categoryId) {
+    if (!clueId || !categoryId) return;
+    assignments[clueId] = categoryId;
+    selectedClueId = null;
+    sound.playClueSnap();
+    validationResult = null;
+    renderView();
+  }
+
   function renderView() {
     // Unassigned clues
     const unassignedClues = activeCase.clues.filter(c => !assignments[c.id]);
@@ -29,10 +38,35 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
     let unassignedHTML = '';
     unassignedClues.forEach(clue => {
       const isSelected = selectedClueId === clue.id;
+      
+      // Generate quick assign pills for each category
+      let quickPillsHTML = '';
+      if (isSelected) {
+        activeCase.categories.forEach((cat, cIdx) => {
+          const shortCode = cat.name.split(':')[0].trim();
+          quickPillsHTML += `
+            <button class="quick-assign-btn" data-assign-clue="${clue.id}" data-target-cat="${cat.id}" style="--btn-color: ${cat.color};" title="Ghim ngay vào ${cat.name}">
+              <span>📌 ${shortCode}</span>
+            </button>
+          `;
+        });
+      }
+
       unassignedHTML += `
-        <div class="clue-chip ${isSelected ? 'active-selection' : ''}" data-clue-id="${clue.id}">
-          <span class="clue-pin-icon">📌</span>
-          <span class="clue-text">${clue.text}</span>
+        <div class="clue-chip ${isSelected ? 'active-selection' : ''}" data-clue-id="${clue.id}" draggable="true">
+          <div class="clue-chip-main">
+            <span class="clue-pin-icon">📌</span>
+            <span class="clue-text">${clue.text}</span>
+            <span class="clue-click-hint">${isSelected ? 'Đang chọn' : 'Bấm để ghim'}</span>
+          </div>
+          ${isSelected ? `
+            <div class="quick-assign-bar animate-fade-in">
+              <span class="quick-assign-label">⚡ Ghim nhanh vào:</span>
+              <div class="quick-assign-btns">
+                ${quickPillsHTML}
+              </div>
+            </div>
+          ` : ''}
         </div>
       `;
     });
@@ -41,14 +75,14 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
       unassignedHTML = `
         <div class="clues-all-placed-note">
           <span>✨</span>
-          <span>Đã xếp toàn bộ manh mối vào các ngăn danh mục. Hãy bấm nút <strong>Kiểm tra phân loại</strong> bên dưới!</span>
+          <span>Bạn đã xếp toàn bộ 5 luận điểm vào các đề mục. Hãy bấm nút <strong>Kiểm tra phân loại</strong> bên dưới!</span>
         </div>
       `;
     }
 
     // Category Buckets
     let bucketsHTML = '';
-    activeCase.categories.forEach(cat => {
+    activeCase.categories.forEach((cat, idx) => {
       // Clues in this bucket
       const cluesInBucket = activeCase.clues.filter(c => assignments[c.id] === cat.id);
 
@@ -63,9 +97,9 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
 
         chipsInBucketHTML += `
           <div class="clue-chip in-bucket ${errorClass}" data-clue-id="${clue.id}">
-            <span class="clue-pin-icon">🔍</span>
+            <span class="clue-pin-icon">📌</span>
             <span class="clue-text">${clue.text}</span>
-            <button class="remove-clue-btn" data-remove-id="${clue.id}" title="Gỡ manh mối ra khay">✕</button>
+            <button class="remove-clue-btn" data-remove-id="${clue.id}" title="Gỡ luận điểm ra khay">✕</button>
           </div>
         `;
       });
@@ -74,30 +108,62 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
         <div class="category-bucket ${selectedClueId ? 'ready-to-assign' : ''}" data-bucket-id="${cat.id}" style="--cat-accent: ${cat.color};">
           <div class="bucket-header">
             <div class="bucket-color-tag" style="background: ${cat.color};"></div>
-            <div>
+            <div style="flex: 1;">
               <div class="bucket-name" style="color: ${cat.color};">${cat.name}</div>
               <div class="bucket-desc">${cat.desc}</div>
             </div>
           </div>
+          
           <div class="bucket-clues-list">
-            ${chipsInBucketHTML.length > 0 ? chipsInBucketHTML : '<div class="bucket-empty-hint">Bấm manh mối ở khay rồi bấm vào ô này để ghim</div>'}
+            ${chipsInBucketHTML.length > 0 ? chipsInBucketHTML : `
+              <div class="bucket-empty-hint ${selectedClueId ? 'highlight-hint' : ''}">
+                ${selectedClueId 
+                  ? `<span class="glow-assign-txt">👉 Bấm vào ô này để ghim luận điểm đang chọn!</span>` 
+                  : `Bấm chọn 1 luận điểm ở khay rồi bấm vào đây để ghim`}
+              </div>
+            `}
           </div>
+
+          ${selectedClueId ? `
+            <button class="bucket-direct-pin-btn" data-direct-bucket="${cat.id}" style="border-color: ${cat.color}; color: ${cat.color};">
+              <span>➕ Ghim luận điểm đang chọn vào đây</span>
+            </button>
+          ` : ''}
         </div>
       `;
     });
 
-    // Case Selector Tabs (All 6 Cases)
+    // Case Selector Tabs (All 6 Cases - Clean Grid No Overflow)
+    const solvedCasesCount = Object.keys(stateManager.state.detectiveSolved || {}).length;
     let caseTabsHTML = '';
     DETECTIVE_CASES.forEach((c, idx) => {
       const isCur = c.id === activeCase.id;
       const solved = !!stateManager.state.detectiveSolved[c.id];
+      const chapterLabel = c.chapterBadge ? c.chapterBadge.split('•')[0].trim() : `Chương ${idx + 1}`;
+      
+      // Short thematic summary for each case
+      const shortTopics = [
+        'Mục 3.1: Lý luận GTTD',
+        'Mục 3.2-3.3: Tích lũy & p',
+        'Mục 5.1: KTTT định hướng XHCN',
+        'Mục 5.2: Hoàn thiện thể chế',
+        'Mục 6.1: CNH, HĐH 4.0',
+        'Mục 6.2: Hội nhập quốc tế'
+      ];
+
       caseTabsHTML += `
-        <button class="case-nav-tab ${isCur ? 'active' : ''} ${solved ? 'is-solved' : ''}" data-switch-case="${c.id}">
-          <div class="case-tab-main">
-            <span class="case-tab-code">${c.code}</span>
-            <span class="case-tab-chapter">${c.chapterBadge ? c.chapterBadge.split('•')[0].trim() : `Chương ${idx + 1}`}</span>
+        <button class="dossier-tab-card ${isCur ? 'active' : ''} ${solved ? 'is-solved' : ''}" data-switch-case="${c.id}" title="${c.title}">
+          <div class="tab-card-top">
+            <span class="tab-card-code">${c.code}</span>
+            <span class="tab-card-badge">${chapterLabel}</span>
           </div>
-          ${solved ? '<span class="case-tab-check">✓ Đã phá</span>' : ''}
+          <div class="tab-card-topic">${shortTopics[idx]}</div>
+          <div class="tab-card-status">
+            ${solved 
+              ? '<span class="status-pill-solved">✓ Đã phá giải</span>' 
+              : (isCur ? '<span class="status-pill-active">🔍 Đang mở</span>' : '<span class="status-pill-open">Khám phá</span>')
+            }
+          </div>
         </button>
       `;
     });
@@ -135,20 +201,29 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
 
     container.innerHTML = `
       <div class="container detective-wrap animate-fade-in">
-        <!-- Top Nav & Case Selector Bar -->
-        <div class="detective-top-bar">
-          <button class="back-to-map-btn" id="detective-back-btn">
-            <span>← Quay lại bản đồ hành trình</span>
-          </button>
-          
-          <div class="case-selector-scroll-wrap">
-            <div class="case-selector-tabs">
-              ${caseTabsHTML}
+        <!-- Top Navigation Header -->
+        <div class="detective-header-section">
+          <div class="detective-top-action-bar">
+            <button class="back-to-map-btn" id="detective-back-btn">
+              <span>← Quay lại bản đồ hành trình</span>
+            </button>
+
+            <div class="detective-overall-progress">
+              <span class="progress-trophy">🏆</span>
+              <span class="progress-text">Tiến độ phá án: <strong>${solvedCasesCount}/${DETECTIVE_CASES.length}</strong> đại án (${Math.round((solvedCasesCount / DETECTIVE_CASES.length) * 100)}%)</span>
+              <div class="progress-mini-track">
+                <div class="progress-mini-fill" style="width: ${(solvedCasesCount / DETECTIVE_CASES.length) * 100}%;"></div>
+              </div>
             </div>
+          </div>
+
+          <!-- 6 Dossier Tab Cards Grid (Balanced, No clipping, No horizontal scrollbar) -->
+          <div class="dossier-nav-grid">
+            ${caseTabsHTML}
           </div>
         </div>
 
-        <!-- Case Dossier Header -->
+        <!-- Case Dossier Header Card -->
         <div class="dossier-card">
           <div class="dossier-header-bar">
             <div class="dossier-header-left">
@@ -156,7 +231,7 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
               <span class="dossier-sub-badge">${activeCase.code} • ${activeCase.chapterBadge || 'MLN122'}</span>
             </div>
             <div class="dossier-header-right">
-              <span>BỘ MÔN MLN122 • ECONOMIC DETECTIVE BUREAU: GIẢI MÃ KỲ ÁN THỊ TRƯỜNG</span>
+              <span>BỘ MÔN MLN122 • ECONOMIC DETECTIVE BUREAU</span>
             </div>
           </div>
 
@@ -203,7 +278,7 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
               <div class="board-badge">ĐỐI CHIẾU NỘI DUNG SLIDE BÀI GIẢNG &amp; GIÁO TRÌNH</div>
               <h3 class="board-main-heading">Bàn Phân Loại Luận Điểm Kinh Tế Chính Trị (${activeCase.chapterBadge})</h3>
               <p class="board-guide-text">
-                👉 Hướng dẫn: Đọc kỹ từng luận điểm ở khay bên dưới; <strong>bấm chọn một luận điểm</strong> rồi <strong>bấm vào ô đề mục tương ứng</strong> để ghim phân loại chuẩn xác theo nội dung bài học.
+                👉 Hướng dẫn: Đọc kỹ từng luận điểm ở khay bên dưới; <strong>bấm vào luận điểm</strong> rồi <strong>bấm vào đề mục bên dưới</strong> (hoặc bấm nút ghim nhanh) để phân loại.
               </p>
             </div>
             ${!isCaseSolved && !validationResult?.isAllCorrect ? `
@@ -234,8 +309,8 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
             <div class="detective-validation-error animate-shake">
               <div class="error-icon">⚠️</div>
               <div class="error-text">
-                <strong>Vẫn còn manh mối bị xếp sai danh mục hoặc chưa xếp hết!</strong>
-                <p>Hãy đọc kỹ định nghĩa và đặc trưng của từng phạm trù kinh tế chính trị, quan sát các gợi ý và thử lại nhé.</p>
+                <strong>Vẫn còn luận điểm bị xếp sai đề mục hoặc chưa xếp hết!</strong>
+                <p>Hãy đọc kỹ định nghĩa và đặc trưng của từng đề mục khoa học, quan sát các gợi ý và thử lại nhé.</p>
               </div>
             </div>
           ` : ''}
@@ -266,7 +341,8 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
 
     // Clue click to select
     container.querySelectorAll('.unassigned-clues-section .clue-chip').forEach(chip => {
-      chip.addEventListener('click', () => {
+      chip.addEventListener('click', (e) => {
+        if (e.target.closest('.quick-assign-btn')) return;
         sound.playClick();
         const clueId = chip.getAttribute('data-clue-id');
         selectedClueId = (selectedClueId === clueId) ? null : clueId;
@@ -274,17 +350,72 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
       });
     });
 
+    // Quick assign buttons inside clue chip
+    container.querySelectorAll('.quick-assign-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const clueId = btn.getAttribute('data-assign-clue');
+        const catId = btn.getAttribute('data-target-cat');
+        assignClueToCategory(clueId, catId);
+      });
+    });
+
     // Target bucket click to assign
     container.querySelectorAll('.category-bucket').forEach(bucket => {
       bucket.addEventListener('click', (e) => {
-        if (e.target.classList.contains('remove-clue-btn')) return;
+        if (e.target.closest('.remove-clue-btn')) return;
+        if (e.target.closest('.bucket-direct-pin-btn')) return;
+        const bucketId = bucket.getAttribute('data-bucket-id');
         if (selectedClueId) {
-          const bucketId = bucket.getAttribute('data-bucket-id');
-          assignments[selectedClueId] = bucketId;
-          selectedClueId = null;
-          sound.playClueSnap();
-          validationResult = null;
-          renderView();
+          assignClueToCategory(selectedClueId, bucketId);
+        } else {
+          // If no clue selected yet, pick the first unassigned clue and assign it!
+          const unassigned = activeCase.clues.filter(c => !assignments[c.id]);
+          if (unassigned.length > 0) {
+            assignClueToCategory(unassigned[0].id, bucketId);
+          }
+        }
+      });
+    });
+
+    // Direct Pin Button inside bucket
+    container.querySelectorAll('.bucket-direct-pin-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const bucketId = btn.getAttribute('data-direct-bucket');
+        if (selectedClueId) {
+          assignClueToCategory(selectedClueId, bucketId);
+        }
+      });
+    });
+
+    // Drag and drop support
+    container.querySelectorAll('.clue-chip[draggable="true"]').forEach(chip => {
+      chip.addEventListener('dragstart', (e) => {
+        const clueId = chip.getAttribute('data-clue-id');
+        e.dataTransfer.setData('text/plain', clueId);
+        chip.classList.add('dragging');
+      });
+      chip.addEventListener('dragend', () => {
+        chip.classList.remove('dragging');
+      });
+    });
+
+    container.querySelectorAll('.category-bucket').forEach(bucket => {
+      bucket.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        bucket.classList.add('drag-over');
+      });
+      bucket.addEventListener('dragleave', () => {
+        bucket.classList.remove('drag-over');
+      });
+      bucket.addEventListener('drop', (e) => {
+        e.preventDefault();
+        bucket.classList.remove('drag-over');
+        const clueId = e.dataTransfer.getData('text/plain');
+        const bucketId = bucket.getAttribute('data-bucket-id');
+        if (clueId && bucketId) {
+          assignClueToCategory(clueId, bucketId);
         }
       });
     });
@@ -308,7 +439,7 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
         // Check if all clues assigned
         const allAssigned = activeCase.clues.every(c => assignments[c.id]);
         if (!allAssigned) {
-          alert('Vui lòng xếp toàn bộ 5 manh mối vào các ngăn danh mục trước khi kiểm tra!');
+          alert('Vui lòng xếp toàn bộ 5 luận điểm vào các đề mục trước khi kiểm tra!');
           return;
         }
 
