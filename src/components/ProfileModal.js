@@ -249,6 +249,7 @@ export function renderProfileModal(container, onClose) {
 
   function handleClose() {
     sound.playClick();
+    document.body.style.overflow = '';
     window.removeEventListener('keydown', handleKeyDown);
     onClose();
   }

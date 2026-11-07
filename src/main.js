@@ -87,6 +87,7 @@ function handleNextScenario(currentId) {
 
 // Modal handler
 function openModal(modalType) {
+  document.body.style.overflow = 'hidden';
   if (modalType === 'profile') {
     renderProfileModal(modalContainer, closeModal);
   } else if (modalType === 'badges') {
@@ -97,6 +98,7 @@ function openModal(modalType) {
 }
 
 function closeModal() {
+  document.body.style.overflow = '';
   modalContainer.innerHTML = '';
 }
 
