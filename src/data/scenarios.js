@@ -438,6 +438,49 @@ export const SCENARIOS = [
     "explanation": "Người sản xuất trong nền KTTT hiện đại phải kết hợp hài hòa giữa mục tiêu lợi nhuận với trách nhiệm xã hội và tôn trọng quyền lợi của người tiêu dùng.",
     "coreLesson": "Kinh doanh chân chính là phụng sự con người; lợi nhuận chỉ là phần thưởng cho những giá trị đích thực mang lại cho xã hội."
   },
+  {
+    "id": "C2-S6",
+    "chapter": 2,
+    "topic": "Mục 1.3 • Lịch sử các hình thái giá trị & Sự ra đời của Tiền tệ",
+    "title": "Bí Ẩn Tiến Trình Tiền Tệ: Từ 20 Vuông Vải Đến Chế Độ Bản Vị Vàng Bạc",
+    "difficulty": "Trung bình",
+    "philosophyConcept": "4 hình thái giá trị & Bản chất quy luật tiền tệ",
+    "image": "./assets/images/scenarios/c2-s6.svg",
+    "situation": "Một startup Fintech phát triển đồng tiền kỹ thuật số mới tuyên bố: 'Tiền tệ chỉ là quy ước ký hiệu do con người tùy ý ấn định bằng công nghệ, không cần gắn liền với bất kỳ giá trị vật chất hay lịch sử sản xuất hàng hóa nào cả.' Một nhà nghiên cứu kinh tế phản biện lại bằng lịch sử 4 hình thái giá trị của C. Mác: từ hình thái Giản đơn (1 con cừu = 2 cái rìu), Mở rộng (1 con cừu = nhiều hàng hóa khác), Chung (nhiều hàng hóa = 20 vuông vải), đến Tiền tệ (vàng, bạc độc quyền làm vật ngang giá chung và chế độ song bản vị).",
+    "question": "Dưới góc nhìn Kinh tế chính trị Mác - Lênin, nhận định nào giải thích đúng đắn nhất về bản chất và nguồn gốc của tiền tệ?",
+    "dimensionScores": {
+      "connection": 25,
+      "contradiction": 25,
+      "depth": 25,
+      "objective": 15,
+      "practice": 10
+    },
+    "options": [
+      {
+        "id": "A",
+        "text": "Tiền tệ không phải là do quy ước tùy tiện hay ý muốn chủ quan, mà là sản phẩm tất yếu lịch sử của quá trình phát triển sản xuất và các hình thái giá trị trao đổi hàng hóa; vàng và bạc được cố định làm vật ngang giá chung nhờ thuộc tính tự nhiên đặc biệt (thuần nhất, dễ chia nhỏ, không hư hỏng, giá trị tập trung cao).",
+        "isDialectical": true,
+        "consequence": "Startup hiểu sâu sắc bản chất tiền tệ, định vị đúng tài sản bảo chứng và quy luật lưu thông, tránh được nguy cơ bong bóng tài chính ảo và sụp đổ thanh khoản.",
+        "philosophicalLens": "Quan điểm duy vật biện chứng và lịch sử: Tiền tệ là hàng hóa đặc biệt được tách ra làm vật ngang giá chung cho tất cả các hàng hóa khác, thể hiện lao động xã hội và quan hệ sản xuất giữa những người sản xuất hàng hóa."
+      },
+      {
+        "id": "B",
+        "text": "Tiền tệ hoàn toàn do nhà nước hoặc một tổ chức công nghệ tạo ra từ con số không thông qua luật pháp hoặc mã nguồn máy tính, bất kể hàng hóa trên thị trường có hay không.",
+        "isDialectical": false,
+        "consequence": "Phát hành vô tội vạ dẫn đến lạm phát phi mã, mất giá hoàn toàn niềm tin và phương tiện lưu thông bị đào thải.",
+        "philosophicalLens": "Chủ nghĩa duy tâm chủ quan: Coi tiền tệ chỉ là danh nghĩa quy ước thuần túy, phủ nhận cơ sở giá trị khách quan của sản xuất xã hội."
+      },
+      {
+        "id": "C",
+        "text": "Nên quay trở lại thời kỳ đổi hàng lấy hàng trực tiếp (H-H) để triệt tiêu mọi mâu thuẫn xã hội và không cần dùng đến tiền tệ nữa.",
+        "isDialectical": false,
+        "consequence": "Giao thương tắc nghẽn nghiêm trọng, chi phí giao dịch đội lên cực đại, nền kinh tế tụt lùi về thời kỳ nguyên thủy.",
+        "philosophicalLens": "Tư tưởng bảo thủ thụt lùi, phủ nhận sự phát triển biện chứng của các hình thái giá trị và phân công lao động xã hội."
+      }
+    ],
+    "explanation": "Tiền tệ ra đời là kết quả lâu dài của quá trình phát triển sản xuất và trao đổi hàng hóa qua 4 hình thái giá trị: Giản đơn -> Mở rộng -> Chung -> Tiền tệ (Vàng/Bạc).",
+    "coreLesson": "Hiểu rõ nguồn gốc tiền tệ giúp chúng ta nắm bắt quy luật lưu thông tiền tệ và phân biệt rõ giá trị thực chất với hiện tượng danh nghĩa của các phương tiện thanh toán hiện đại."
+  },
 
   // =================================================================
   // CHƯƠNG 3: GIÁ TRỊ THẶNG DƯ TRONG NỀN KINH TẾ THỊ TRƯỜNG (TRỌNG TÂM)

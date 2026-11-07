@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" rx="20" fill="url(#bgGrad)" />
+
+  <!-- Subtle Blueprint Grid Lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.45">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Top Left Badge -->
+  <g transform="translate(36, 24)">
+    <rect width="320" height="28" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+    <circle cx="15" cy="14" r="4" fill="#10b981" />
+    <text x="28" y="14" fill="#e2e8f0" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="10" font-weight="800" letter-spacing="0.3" dominant-baseline="central">MLN122 • CHƯƠNG 2 • SỰ RA ĐỜI CỦA TIỀN</text>
+  </g>
+
+  <!-- Top Right Title & Subtitle -->
+  <text x="764" y="34" fill="#10b981" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="12.5" font-weight="800" text-anchor="end" letter-spacing="0.5">LỊCH SỬ 4 HÌNH THÁI GIÁ TRỊ &amp; CHẾ ĐỘ SONG BẢN VỊ</text>
+  <text x="764" y="52" fill="#94a3b8" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="end">Từ mầm mống phôi thai đến vật ngang giá chung độc quyền (0,2g Vàng)</text>
+
+  <!-- 4 HORIZONTAL CONNECTED STAGES -->
+  <!-- STAGE 1: HÌNH THÁI GIẢN ĐƠN / NGẪU NHIÊN -->
+  <g transform="translate(36, 75)">
+    <rect width="168" height="235" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-width="1.6" />
+    <rect width="168" height="30" rx="12" fill="rgba(56, 189, 248, 0.15)" />
+    <text x="84" y="15" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="10" font-weight="800" text-anchor="middle" dominant-baseline="central">1. HÌNH THÁI GIẢN ĐƠN</text>
+
+    <text x="84" y="44" fill="#94a3b8" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5" text-anchor="middle">Cuối thời CS nguyên thủy</text>
+
+    <rect x="10" y="58" width="148" height="42" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="84" y="74" fill="#ffffff" font-family="'Be Vietnam Pro', sans-serif" font-size="9" font-weight="800" text-anchor="middle">Giá trị A ⇄ GTSD B</text>
+    <text x="84" y="90" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="8" text-anchor="middle">B làm vật ngang giá</text>
+
+    <text x="14" y="118" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5">• Trao đổi trực tiếp</text>
+    <text x="14" y="134" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5">• Tỷ lệ ngẫu nhiên</text>
+    <text x="14" y="150" fill="#facc15" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5" font-weight="700">• Mầm mống của tiền</text>
+    <text x="14" y="166" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5" font-weight="700">• Hình thái phôi thai</text>
+
+    <rect x="10" y="186" width="148" height="38" rx="6" fill="rgba(56, 189, 248, 0.1)" stroke="#38bdf8" stroke-width="1" />
+    <text x="84" y="200" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="8" font-weight="800" text-anchor="middle">1 HÀNG HÓA A</text>
+    <text x="84" y="214" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="8" text-anchor="middle">⇄ 1 HÀNG HÓA B</text>
+  </g>
+
+  <!-- STAGE 2: HÌNH THÁI MỞ RỘNG / ĐẦY ĐỦ -->
+  <g transform="translate(222, 75)">
+    <rect width="168" height="235" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="1.6" />
+    <rect width="168" height="30" rx="12" fill="rgba(16, 185, 129, 0.15)" />
+    <text x="84" y="15" fill="#34d399" font-family="'Be Vietnam Pro', sans-serif" font-size="10" font-weight="800" text-anchor="middle" dominant-baseline="central">2. HÌNH THÁI MỞ RỘNG</text>
+
+    <text x="84" y="44" fill="#94a3b8" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5" text-anchor="middle">LLSX phát triển hơn</text>
+
+    <rect x="10" y="58" width="148" height="42" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="84" y="74" fill="#ffffff" font-family="'Be Vietnam Pro', sans-serif" font-size="9" font-weight="800" text-anchor="middle">1 Hóa A ⇄ Nhiều Hóa</text>
+    <text x="84" y="90" fill="#34d399" font-family="'Be Vietnam Pro', sans-serif" font-size="8" text-anchor="middle">Trao đổi thường xuyên</text>
+
+    <text x="14" y="118" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5">• Sản phẩm đem trao đổi</text>
+    <text x="14" y="132" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5">  ngày càng nhiều hơn</text>
+    <text x="14" y="148" fill="#34d399" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5" font-weight="700">• Quan hệ với nhiều</text>
+    <text x="14" y="162" fill="#34d399" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5" font-weight="700">  vật ngang giá khác nhau</text>
+
+    <rect x="10" y="186" width="148" height="38" rx="6" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="1" />
+    <text x="84" y="200" fill="#34d399" font-family="'Be Vietnam Pro', sans-serif" font-size="8" font-weight="800" text-anchor="middle">VẢI = ÁO = CÀ PHÊ</text>
+    <text x="84" y="214" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="8" text-anchor="middle">(Chưa có vật chung)</text>
+  </g>
+
+  <!-- STAGE 3: HÌNH THÁI CHUNG CỦA GIÁ TRỊ (20 VUÔNG VẢI) -->
+  <g transform="translate(408, 75)">
+    <rect width="168" height="235" rx="12" fill="#0f172a" stroke="#f59e0b" stroke-width="1.6" />
+    <rect width="168" height="30" rx="12" fill="rgba(245, 158, 11, 0.15)" />
+    <text x="84" y="15" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="10" font-weight="800" text-anchor="middle" dominant-baseline="central">3. HÌNH THÁI CHUNG</text>
+
+    <text x="84" y="44" fill="#94a3b8" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5" text-anchor="middle">Vật ngang giá chung vùng</text>
+
+    <rect x="10" y="58" width="148" height="42" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="84" y="74" fill="#facc15" font-family="'Be Vietnam Pro', sans-serif" font-size="9" font-weight="800" text-anchor="middle">Mọi hàng hóa = } 20 VẢI</text>
+    <text x="84" y="90" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="8" text-anchor="middle">Thí dụ chuẩn Slide</text>
+
+    <text x="14" y="118" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5">• 1 cái áo = 20 vuông vải</text>
+    <text x="14" y="132" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5">• 10 đấu chè = 20 vuông vải</text>
+    <text x="14" y="146" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5">• 40 đấu cà phê = 20 v.vải</text>
+    <text x="14" y="162" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="8" font-weight="700">• Vải làm vật ngang giá</text>
+
+    <rect x="10" y="186" width="148" height="38" rx="6" fill="rgba(245, 158, 11, 0.1)" stroke="#f59e0b" stroke-width="1" />
+    <text x="84" y="200" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="8" font-weight="800" text-anchor="middle">VẬT NGANG GIÁ CHUNG</text>
+    <text x="84" y="214" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="8" text-anchor="middle">Biểu hiện giá trị hàng hóa</text>
+  </g>
+
+  <!-- STAGE 4: HÌNH THÁI TIỀN TỆ (0,2G VÀNG & SONG BẢN VỊ) -->
+  <g transform="translate(594, 75)">
+    <rect width="168" height="235" rx="12" fill="#0f172a" stroke="#eab308" stroke-width="2" filter="url(#softGlow)" />
+    <rect width="168" height="30" rx="12" fill="rgba(234, 179, 8, 0.2)" />
+    <text x="84" y="15" fill="#facc15" font-family="'Be Vietnam Pro', sans-serif" font-size="10" font-weight="900" text-anchor="middle" dominant-baseline="central">4. HÌNH THÁI TIỀN TỆ</text>
+
+    <text x="84" y="44" fill="#94a3b8" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5" text-anchor="middle">Cố định ở Kim loại quý</text>
+
+    <rect x="10" y="58" width="148" height="42" rx="6" fill="#1e293b" stroke="#eab308" stroke-width="1.2" />
+    <text x="84" y="74" fill="#facc15" font-family="'Be Vietnam Pro', sans-serif" font-size="9" font-weight="800" text-anchor="middle">Mọi hàng hóa = } 0,2g VÀNG</text>
+    <text x="84" y="90" fill="#facc15" font-family="'Be Vietnam Pro', sans-serif" font-size="8" text-anchor="middle">Thí dụ chuẩn Slide</text>
+
+    <text x="14" y="118" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5">• Chế độ song bản vị:</text>
+    <text x="14" y="132" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5">  Vàng &amp; Bạc cùng làm tiền</text>
+    <text x="14" y="148" fill="#facc15" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5" font-weight="700">• Ưu thế: Thuần nhất,</text>
+    <text x="14" y="162" fill="#facc15" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5" font-weight="700">  dễ chia nhỏ, không mòn gỉ</text>
+
+    <rect x="10" y="186" width="148" height="38" rx="6" fill="rgba(234, 179, 8, 0.15)" stroke="#eab308" stroke-width="1" />
+    <text x="84" y="200" fill="#facc15" font-family="'Be Vietnam Pro', sans-serif" font-size="8" font-weight="900" text-anchor="middle">TIỀN TỆ RA ĐỜI</text>
+    <text x="84" y="214" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="8" text-anchor="middle">Vật ngang giá độc quyền</text>
+  </g>
+
+  <!-- LOWER PANEL: TỔNG KẾT BẢN CHẤT TIỀN TỆ -->
+  <g transform="translate(36, 326)">
+    <rect width="726" height="84" rx="12" fill="#0b1329" stroke="#38bdf8" stroke-width="1.5" />
+    
+    <rect x="0" y="0" width="726" height="24" rx="12" fill="rgba(56, 189, 248, 0.15)" />
+    <text x="363" y="12" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="10" font-weight="800" text-anchor="middle" dominant-baseline="central">BẢN CHẤT KINH TẾ CỦA TIỀN TỆ: HÀNG HÓA ĐẶC BIỆT LÀM VẬT NGANG GIÁ CHUNG</text>
+
+    <g transform="translate(20, 32)">
+      <text x="0" y="14" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="9">• Tiền tệ không phải là do quy ước chủ quan mà là kết quả tất yếu của lịch sử phát triển sản xuất và các hình thái giá trị.</text>
+      <text x="0" y="30" fill="#facc15" font-family="'Be Vietnam Pro', sans-serif" font-size="9" font-weight="700">• 5 chức năng tiền tệ: (1) Thước đo giá trị; (2) Phương tiện lưu thông; (3) Phương tiện cất trữ; (4) Phương tiện thanh toán; (5) Tiền tệ thế giới.</text>
+    </g>
+  </g>
+
+  <!-- Bottom Metadata -->
+  <text x="40" y="428" fill="#475569" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="10" font-weight="700">KINH TẾ CHÍNH TRỊ TRONG ĐỜI SỐNG</text>
+  <text x="760" y="428" fill="#475569" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="end">MLN122 • KHOA HỌC KINH TẾ CHÍNH TRỊ MÁC – LÊNIN</text>
+</svg>

@@ -24,10 +24,11 @@ export const CHAPTERS = [
     desc: 'Bản chất hàng hóa, 2 thuộc tính (GTSD & Giá trị), tính 2 mặt của lao động sản xuất, tiền tệ và các quy luật kinh tế thị trường (Giá trị, Cung - Cầu, Cạnh tranh).',
     accentColor: '#10b981',
     icon: 'shopping-bag',
-    totalScenarios: 5,
+    totalScenarios: 6,
     modules: [
       { id: '2.1', title: '2.1. Lý luận của C. Mác về sản xuất hàng hóa và hàng hóa' },
-      { id: '2.2', title: '2.2. Thị trường và vai trò của các chủ thể tham gia thị trường' }
+      { id: '2.2', title: '2.2. Lịch sử các hình thái giá trị và sự ra đời của Tiền tệ' },
+      { id: '2.3', title: '2.3. Thị trường và vai trò của các chủ thể tham gia thị trường' }
     ]
   },
   {
@@ -112,6 +113,6 @@ export const SPECIAL_MODULES = [
     desc: 'Hóa thân thành Chuyên gia Điều tra Kinh tế: Phá giải các nghịch lý thị trường, bóc trần bản chất giá trị thặng dư, quy luật tích lũy tư bản, thể chế KTTT định hướng XHCN và chiến lược CNH 4.0 hội nhập quốc tế!',
     accentColor: '#dc2626',
     icon: 'search',
-    totalCases: 7
+    totalCases: 9
   }
 ];
