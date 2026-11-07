@@ -32,16 +32,17 @@ export const HANDBOOK_ENTRIES = [
       {
         code: '1.2',
         title: 'Đối tượng và mục đích nghiên cứu của Kinh tế chính trị Mác – Lênin',
-        summary: '• Định nghĩa kinh điển của Ph. Ăng-ghen: "Kinh tế chính trị là khoa học về những quy luật chi phối sự sản xuất vật chất và sự trao đổi những tư liệu sinh hoạt vật chất trong xã hội loài người".\n' +
-          '• Đối tượng nghiên cứu theo 2 nghĩa:\n' +
-          '  - Nghĩa hẹp: Nghiên cứu quan hệ sản xuất và trao đổi trong một phương thức sản xuất nhất định.\n' +
-          '  - Nghĩa rộng: Nghiên cứu các hệ thống quan hệ xã hội của sản xuất và trao đổi qua các giai đoạn lịch sử khác nhau (không có một môn kinh tế chính trị duy nhất cho mọi quốc gia và mọi thời đại).\n' +
+        summary: '• Định nghĩa kinh điển của Ph. Ăng-ghen (nghĩa rộng): "Kinh tế chính trị là khoa học về những quy luật chi phối sự sản xuất vật chất và sự trao đổi những tư liệu sinh hoạt vật chất trong xã hội loài người".\n' +
+          '• Đối tượng nghiên cứu theo 2 nghĩa chuẩn giáo trình:\n' +
+          '  - Theo nghĩa hẹp: Nghiên cứu quan hệ sản xuất và trao đổi trong một phương thức sản xuất nhất định.\n' +
+          '  - Theo nghĩa rộng: Nghiên cứu các hệ thống quan hệ xã hội của sản xuất và trao đổi qua các thời đại lịch sử.\n' +
+          '  ⇨ Luận điểm cốt lõi: "Không có một bộ môn kinh tế chính trị duy nhất cho tất cả mọi quốc gia, mọi thời đại kinh tế".\n' +
+          '• Mối liên hệ tổng thể biện chứng: Kiến trúc thượng tầng ➔ Cơ sở hạ tầng ➔ Trình độ phát triển của Lực lượng sản xuất.\n' +
           '• Nghiên cứu trọn vẹn 4 khâu của quá trình tái sản xuất xã hội:\n' +
-          '  1. Sản xuất: Giữ vai trò quyết định, sáng tạo ra của cải vật chất.\n' +
-          '  2. Phân phối: Xác định tỷ lệ của cải cho từng chủ thể và định hướng lợi ích.\n' +
-          '  3. Trao đổi: Là cầu nối lưu thông, đưa sản phẩm từ người sản xuất đến người dùng.\n' +
-          '  4. Tiêu dùng: Mục đích cuối cùng, thỏa mãn nhu cầu và kích thích chu kỳ sản xuất mới.\n' +
-          '• Mối liên hệ tổng thể: Nghiên cứu quan hệ sản xuất trong sự tác động biện chứng với Kiến trúc thượng tầng, Cơ sở hạ tầng và Trình độ phát triển của Lực lượng sản xuất.\n' +
+          '  1. Sản xuất: Giữ vai trò quyết định, sáng tạo ra toàn bộ của cải vật chất.\n' +
+          '  2. Phân phối: Xác định tỷ lệ của cải cho từng chủ thể và định hướng quan hệ lợi ích.\n' +
+          '  3. Trao đổi: Là cầu nối lưu thông, đưa sản phẩm từ người sản xuất đến người tiêu dùng.\n' +
+          '  4. Tiêu dùng: Mục đích cuối cùng và là động lực kích thích chu kỳ sản xuất mới.\n' +
           '• Mục đích nghiên cứu tối cao: Tìm ra những quy luật kinh tế chi phối sự vận động và phát triển của phương thức sản xuất ➔ Làm cơ sở hoạch định các chính sách kinh tế khoa học ➔ Giải quyết hài hòa các quan hệ về lợi ích ➔ Tạo động lực to lớn cho con người sáng tạo ➔ Thúc đẩy sự phát triển toàn diện của toàn xã hội.',
         lifeLesson: 'Mọi thất bại trong kinh doanh hay quản lý thường bắt nguồn từ sự đứt gãy giữa 4 khâu hoặc xung đột lợi ích bất công; giải quyết đúng quan hệ con người và chia sẻ lợi ích hài hòa là chìa khóa phát triển bền vững.'
       },
@@ -68,7 +69,7 @@ export const HANDBOOK_ENTRIES = [
         lifeLesson: 'Nắm vững 4 chức năng giúp bạn chuyển hóa tri thức sách vở thành bản lĩnh sống: Có nhận thức đúng thì hành động thực tiễn mới hiệu quả, có tư tưởng vững vàng thì không dao động trước biến động thị trường.'
       }
     ]
-  },,
+  },
 
   // =========================================================================
   // CHƯƠNG 2

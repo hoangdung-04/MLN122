@@ -394,6 +394,38 @@ export const QUIZ_QUESTIONS = [
     quote: 'Slide Chương 1 • Mục 1.3: Phương pháp nghiên cứu của KTCT'
   },
   {
+    id: 'q-c1-07',
+    chapter: 1,
+    chapterTitle: 'Chương 1: Đối tượng, phương pháp & chức năng',
+    category: '1.2. Đối tượng nghĩa rộng',
+    question: 'Theo quan điểm của Ph. Ăng-ghen về kinh tế chính trị theo nghĩa rộng, vì sao "không có một bộ môn kinh tế chính trị duy nhất cho tất cả mọi quốc gia, mọi thời đại kinh tế"?',
+    options: [
+      'Vì điều kiện sản xuất, trao đổi và trình độ phát triển của LLSX ở mỗi thời đại, mỗi quốc gia là khác nhau, quy định các quan hệ sản xuất đặc thù tương ứng',
+      'Vì mỗi quốc gia sử dụng một loại đồng tiền và ngôn ngữ khác nhau nên không thể chung một lý thuyết',
+      'Vì các nhà kinh tế học thời cổ đại từ chối hợp tác nghiên cứu với các nhà kinh tế học thời cận đại',
+      'Vì kinh tế chính trị chỉ áp dụng được duy nhất cho các nước công nghiệp phát triển phương Tây'
+    ],
+    correctIndex: 0,
+    explanation: 'Ph. Ăng-ghen khẳng định: Do điều kiện sản xuất vật chất và trình độ phát triển của LLSX biến đổi không ngừng qua các phương thức sản xuất trong lịch sử, nên không thể có một môn KTCT duy nhất cho mọi thời đại và mọi quốc gia.',
+    quote: 'Slide Chương 1 • Mục 2.1: Đối tượng nghiên cứu theo nghĩa rộng'
+  },
+  {
+    id: 'q-c1-08',
+    chapter: 1,
+    chapterTitle: 'Chương 1: Đối tượng, phương pháp & chức năng',
+    category: '1.2. Mối liên hệ tổng thể',
+    question: 'Đối tượng nghiên cứu của Kinh tế chính trị Mác – Lênin đặt hệ thống các quan hệ sản xuất trong sự tác động biện chứng nhiều tầng nấc nào?',
+    options: [
+      'Kiến trúc thượng tầng ➔ Cơ sở hạ tầng ➔ Trình độ phát triển của lực lượng sản xuất',
+      'Lợi nhuận ngắn hạn ➔ Giá cả thị trường ➔ Tâm lý người tiêu dùng',
+      'Chính sách tiền tệ ➔ Lãi suất ngân hàng ➔ Thị trường chứng khoán',
+      'Quảng cáo tiếp thị ➔ Khuyến mãi giảm giá ➔ Số lượng đơn hàng'
+    ],
+    correctIndex: 0,
+    explanation: 'KTCT Mác - Lênin nghiên cứu quan hệ sản xuất không cô lập mà đặt trong chỉnh thể biện chứng: Kiến trúc thượng tầng tác động trở lại Cơ sở hạ tầng, và Cơ sở hạ tầng phản ánh Trình độ phát triển của Lực lượng sản xuất.',
+    quote: 'Slide Chương 1 • Mục 2.1: Mối liên hệ biện chứng trong đối tượng nghiên cứu'
+  },
+  {
     id: 'q-c2-01',
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
