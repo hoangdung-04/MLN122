@@ -195,7 +195,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 3.5rem 0;
+  padding: 2.2rem 0 2.5rem 0;
 }
 
 .hero-ambient-bg {
@@ -304,7 +304,7 @@
   gap: 1.2rem;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 2.4rem;
+  margin-bottom: 0;
 }
 @media (max-width: 960px) {
   .hero-cta-buttons {
@@ -316,8 +316,8 @@
    HERO ROADMAP 6 CHAPTERS SECTION (CENTERED, 3-COLUMN GRID)
 ================================================================= */
 .hero-roadmap-section {
-  margin-top: 3.5rem;
-  padding-top: 2.2rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
   border-top: 1px dashed rgba(217, 119, 6, 0.25);
   width: 100%;
   display: flex;
@@ -331,7 +331,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.4rem;
+  margin-bottom: 0.85rem;
 }
 
 .roadmap-badge-title {
