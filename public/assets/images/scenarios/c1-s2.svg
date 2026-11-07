@@ -73,9 +73,9 @@
         <text x="0" y="40" fill="#ef4444" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="700" text-anchor="middle">[Gạt bỏ yếu tố ngẫu nhiên]</text>
       </g>
 
-      <!-- Scientific Funnel -->
-      <path d="M370 220 L430 220" stroke="#38bdf8" stroke-width="4"/>
-      <polygon points="430,212 445,220 430,228" fill="#38bdf8"/>
+      <!-- Scientific Funnel & Transition Arrow -->
+      <path d="M350 220 L440 220" stroke="#38bdf8" stroke-width="3" stroke-dasharray="5 3"/>
+      <polygon points="440,214 450,220 440,226" fill="#38bdf8"/>
       <circle cx="400" cy="180" r="18" fill="rgba(56, 189, 248, 0.2)"/>
       <text x="400" y="185" fill="#38bdf8" font-size="14" text-anchor="middle">🔬</text>
 

@@ -426,6 +426,38 @@ export const QUIZ_QUESTIONS = [
     quote: 'Slide Chương 1 • Mục 2.1: Mối liên hệ biện chứng trong đối tượng nghiên cứu'
   },
   {
+    id: 'q-c1-09',
+    chapter: 1,
+    chapterTitle: 'Chương 1: Đối tượng, phương pháp & chức năng',
+    category: '1.2. Mục đích nghiên cứu',
+    question: 'Theo slide bài giảng MLN122, chuỗi logic 5 bước thể hiện mục đích nghiên cứu của Kinh tế chính trị Mác – Lênin là gì?',
+    options: [
+      'Tìm quy luật kinh tế ➔ Hoạch định chính sách ➔ Giải quyết hài hòa quan hệ lợi ích ➔ Tạo động lực sáng tạo ➔ Thúc đẩy phát triển toàn diện xã hội',
+      'Tăng thuế nhập khẩu ➔ Tích lũy vàng bạc kim loại quý ➔ Độc quyền ngoại thương ➔ Mở rộng thị trường thuộc địa',
+      'Dự báo giá cổ phiếu ➔ Tối đa hóa lợi nhuận đầu cơ ➔ Giảm chi phí nhân công ➔ Thôn tính các doanh nghiệp nhỏ',
+      'Xóa bỏ hoàn toàn thị trường ➔ Triệt tiêu các quan hệ trao đổi tiền tệ ➔ Phân phối bình quân cào bằng'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide Mục 2.2 chỉ rõ chuỗi giá trị mục đích nghiên cứu: Tìm ra các quy luật kinh tế chi phối PTSX => Hoạch định chính sách kinh tế => Giải quyết hài hòa các quan hệ lợi ích => Tạo động lực cho con người sáng tạo => Thúc đẩy sự phát triển toàn diện của xã hội.',
+    quote: 'Slide Chương 1 • Mục 2.2: Mục đích nghiên cứu của KTCT Mác – Lênin'
+  },
+  {
+    id: 'q-c1-10',
+    chapter: 1,
+    chapterTitle: 'Chương 1: Đối tượng, phương pháp & chức năng',
+    category: '1.3. Các phương pháp nghiên cứu chính',
+    question: 'Theo slide bài giảng MLN122, hệ thống các phương pháp nghiên cứu chính của Kinh tế chính trị Mác – Lênin bao gồm những phương pháp nào?',
+    options: [
+      'Phương pháp trừu tượng hóa khoa học, phương pháp logic & lịch sử, phân tích thống kê và mô hình hóa...',
+      'Phương pháp thử nghiệm hóa học vi sinh, giải trình tự gen và đo phóng xạ',
+      'Phương pháp chiêm tinh học, trực giác tâm linh và bói toán chu kỳ kinh tế',
+      'Phương pháp khảo sát ngẫu nhiên cảm xúc người tiêu dùng trên mạng xã hội'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide Mục 2.3 chuẩn hóa các phương pháp nghiên cứu chính: Phương pháp trừu tượng hóa khoa học (chủ yếu nhất), phương pháp logic & lịch sử, cùng phân tích thống kê, mô hình hóa...',
+    quote: 'Slide Chương 1 • Mục 2.3: Các phương pháp nghiên cứu chính'
+  },
+  {
     id: 'q-c2-01',
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
