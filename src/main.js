@@ -132,6 +132,7 @@ function renderApp() {
       (scenarioId) => navigateTo('scenario', scenarioId),
       (caseId) => navigateTo('detective', caseId),
       handleResetProgress,
+      () => navigateTo('quiz'),
       () => navigateTo('tycoon')
     );
   } else if (currentView === 'scenario') {
@@ -153,8 +154,13 @@ function renderApp() {
       () => navigateTo('map'),
       (nextCaseId) => navigateTo('detective', nextCaseId)
     );
-  } else if (currentView === 'tycoon' || currentView === 'quiz' || currentView === 'game') {
+  } else if (currentView === 'quiz' || currentView === 'game') {
     renderQuizArena(
+      mainContainer,
+      () => navigateTo('map')
+    );
+  } else if (currentView === 'tycoon') {
+    renderCapitalTycoon(
       mainContainer,
       () => navigateTo('map')
     );

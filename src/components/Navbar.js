@@ -28,8 +28,12 @@ export function renderNavbar(container, onNavigate, onOpenModal, onResetProgress
             <span>🔍 Phá Án Kinh Tế</span>
           </button>
 
-          <button class="nav-btn" id="nav-tycoon-btn" style="border-color: rgba(139, 92, 246, 0.4); color: #8b5cf6;" title="Đấu Trường Quizizz MLN122">
+          <button class="nav-btn" id="nav-quiz-btn" style="border-color: rgba(139, 92, 246, 0.4); color: #8b5cf6;" title="Đấu Trường Quizizz MLN122">
             <span>🎮 Game Quizizz</span>
+          </button>
+
+          <button class="nav-btn" id="nav-tycoon-btn" style="border-color: rgba(245, 158, 11, 0.4); color: #f59e0b;" title="Mô phỏng tích lũy tư bản">
+            <span>🏭 Mô Phỏng Tư Bản</span>
           </button>
 
           <button class="nav-btn" id="nav-handbook-btn" title="Sổ tay lý luận MLN122">
@@ -73,6 +77,14 @@ export function renderNavbar(container, onNavigate, onOpenModal, onResetProgress
     sound.playClick();
     onNavigate('detective');
   });
+
+  const quizBtn = document.getElementById('nav-quiz-btn');
+  if (quizBtn) {
+    quizBtn.addEventListener('click', () => {
+      sound.playClick();
+      onNavigate('quiz');
+    });
+  }
 
   const tycoonBtn = document.getElementById('nav-tycoon-btn');
   if (tycoonBtn) {
