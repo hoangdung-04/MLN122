@@ -313,36 +313,74 @@
 }
 
 .hero-quick-roadmap {
-  display: flex;
-  gap: 0.65rem;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
 }
-@media (max-width: 960px) {
+@media (max-width: 900px) {
   .hero-quick-roadmap {
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 580px) {
+  .hero-quick-roadmap {
+    grid-template-columns: 1fr;
   }
 }
 
 .roadmap-pill-btn {
-  padding: 0.45rem 0.95rem;
+  padding: 0.7rem 0.85rem;
   background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-full);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-md);
   font-family: var(--font-heading);
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 800;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
   transition: all 0.25s var(--ease-spring);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .roadmap-pill-btn:hover {
-  background: var(--bg-secondary);
-  color: var(--accent-blue);
-  border-color: var(--accent-blue);
-  transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 6px 14px -3px rgba(37, 99, 235, 0.15);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 18px -4px rgba(15, 23, 42, 0.12);
+}
+
+.roadmap-pill-btn.roadmap-ch1 {
+  border-color: rgba(59, 130, 246, 0.35);
+  color: #1d4ed8;
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(59, 130, 246, 0.07) 100%);
+}
+.roadmap-pill-btn.roadmap-ch2 {
+  border-color: rgba(16, 185, 129, 0.35);
+  color: #047857;
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(16, 185, 129, 0.07) 100%);
+}
+.roadmap-pill-btn.roadmap-ch3 {
+  border-color: rgba(245, 158, 11, 0.35);
+  color: #b45309;
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(245, 158, 11, 0.07) 100%);
+}
+.roadmap-pill-btn.roadmap-ch4 {
+  border-color: rgba(139, 92, 246, 0.35);
+  color: #6d28d9;
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(139, 92, 246, 0.07) 100%);
+}
+.roadmap-pill-btn.roadmap-ch5 {
+  border-color: rgba(236, 72, 153, 0.35);
+  color: #be185d;
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(236, 72, 153, 0.07) 100%);
+}
+.roadmap-pill-btn.roadmap-ch6 {
+  border-color: rgba(6, 182, 212, 0.35);
+  color: #0e7490;
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(6, 182, 212, 0.07) 100%);
 }
 
 /* Portrait Frame (Right Column) */

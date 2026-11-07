@@ -18,7 +18,6 @@ export function renderLandingHero(container, onNavigate) {
           <div>
             <!-- Badge -->
             <div class="hero-badge-tag">
-              <span>🏛️</span>
               <span>MÔN HỌC MLN122 • KINH TẾ CHÍNH TRỊ MÁC – LÊNIN</span>
             </div>
 
@@ -45,7 +44,6 @@ export function renderLandingHero(container, onNavigate) {
             <div class="hero-cta-buttons">
               <button class="btn-primary" id="hero-start-btn" style="padding: 0.95rem 2.2rem; font-size: 1.05rem;">
                 <span>${hasProgress ? '🚀 TIẾP TỤC HỌC TẬP' : '🚀 BẮT ĐẦU HỌC TẬP MLN122'}</span>
-                <span style="font-size: 1.2rem;">→</span>
               </button>
               ${hasProgress ? `
                 <button class="btn-secondary" id="hero-reset-btn" style="padding: 0.95rem 1.8rem; font-size: 1rem; border-color: rgba(220, 38, 38, 0.35); color: var(--accent-crimson);">
@@ -61,31 +59,28 @@ export function renderLandingHero(container, onNavigate) {
             </div>
 
             <!-- Quick Chapter Roadmap Navigation -->
-            <div>
-              <div style="font-size: 0.78rem; font-weight: 800; color: var(--text-dim); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.7rem;">
+            <div style="margin-top: 1.8rem;">
+              <div style="font-size: 0.8rem; font-weight: 800; color: var(--text-dim); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.75rem; font-family: var(--font-heading);">
                 LỘ TRÌNH 6 CHƯƠNG MLN122:
               </div>
               <div class="hero-quick-roadmap">
-                <button class="roadmap-pill-btn" data-nav-chapter="1">
-                  Ch.1: Đối Tượng &amp; Phương Pháp
+                <button class="roadmap-pill-btn roadmap-ch1" data-nav-chapter="1">
+                  Chương 1: Đối Tượng &amp; Phương Pháp
                 </button>
-                <button class="roadmap-pill-btn" data-nav-chapter="2" style="border-color: rgba(5, 150, 105, 0.4); color: var(--accent-emerald);">
-                  Ch.2: Hàng Hóa &amp; Thị Trường
+                <button class="roadmap-pill-btn roadmap-ch2" data-nav-chapter="2">
+                  Chương 2: Hàng Hóa &amp; Thị Trường
                 </button>
-                <button class="roadmap-pill-btn" data-nav-chapter="3" style="border-color: rgba(217, 119, 6, 0.4); color: var(--accent-gold);">
-                  Ch.3: Giá Trị Thặng Dư (m)
+                <button class="roadmap-pill-btn roadmap-ch3" data-nav-chapter="3">
+                  Chương 3: Giá Trị Thặng Dư (m)
                 </button>
-                <button class="roadmap-pill-btn" data-nav-chapter="4" style="border-color: rgba(139, 92, 246, 0.4); color: var(--accent-purple);">
-                  Ch.4: Cạnh Tranh &amp; Độc Quyền
+                <button class="roadmap-pill-btn roadmap-ch4" data-nav-chapter="4">
+                  Chương 4: Cạnh Tranh &amp; Độc Quyền
                 </button>
-                <button class="roadmap-pill-btn" data-nav-chapter="5" style="border-color: rgba(236, 72, 153, 0.4); color: #db2777;">
-                  Ch.5: KTTT Định Hướng XHCN
+                <button class="roadmap-pill-btn roadmap-ch5" data-nav-chapter="5">
+                  Chương 5: KTTT Định Hướng XHCN
                 </button>
-                <button class="roadmap-pill-btn" data-nav-chapter="6" style="border-color: rgba(6, 182, 212, 0.4); color: #0891b2;">
-                  Ch.6: CNH 4.0 &amp; Hội Nhập
-                </button>
-                <button class="roadmap-pill-btn" data-nav-detective="true" style="border-color: rgba(220, 38, 38, 0.4); color: var(--accent-crimson);">
-                  🔍 Phá Án Kinh Tế
+                <button class="roadmap-pill-btn roadmap-ch6" data-nav-chapter="6">
+                  Chương 6: CNH 4.0 &amp; Hội Nhập
                 </button>
               </div>
             </div>
