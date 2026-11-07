@@ -200,15 +200,15 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
         <div class="investigation-board">
           <div class="board-title">
             <div>
-              <div class="board-badge">THAO TRƯỜNG PHÂN TÍCH</div>
-              <h3 class="board-main-heading">Bàn Phân Loại Manh Mối Kinh Tế Chính Trị</h3>
+              <div class="board-badge">ĐỐI CHIẾU NỘI DUNG SLIDE BÀI GIẢNG &amp; GIÁO TRÌNH</div>
+              <h3 class="board-main-heading">Bàn Phân Loại Luận Điểm Kinh Tế Chính Trị (${activeCase.chapterBadge})</h3>
               <p class="board-guide-text">
-                👉 Hướng dẫn: <strong>Bấm vào một manh mối</strong> ở khay bên dưới, sau đó <strong>bấm vào ô danh mục tương ứng</strong> để ghim chứng cứ khoa học.
+                👉 Hướng dẫn: Đọc kỹ từng luận điểm ở khay bên dưới; <strong>bấm chọn một luận điểm</strong> rồi <strong>bấm vào ô đề mục tương ứng</strong> để ghim phân loại chuẩn xác theo nội dung bài học.
               </p>
             </div>
             ${!isCaseSolved && !validationResult?.isAllCorrect ? `
               <button class="btn-primary btn-validate-clues" id="validate-clues-btn">
-                <span>🔍 KIỂM TRA PHÂN LOẠI</span>
+                <span>🔍 KIỂM TRA PHÂN LOẠI ĐỀ MỤC</span>
               </button>
             ` : ''}
           </div>
@@ -217,7 +217,7 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
           <div class="unassigned-clues-section">
             <div class="clues-tray-label">
               <span>📁</span>
-              <span>Khay Manh Mối Cần Phân Loại (${unassignedClues.length} manh mối còn lại):</span>
+              <span>Khay Luận Điểm Cần Phân Loại (${unassignedClues.length} luận điểm còn lại):</span>
             </div>
             <div class="clues-grid">
               ${unassignedHTML}

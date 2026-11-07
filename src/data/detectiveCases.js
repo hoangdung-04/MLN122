@@ -1,68 +1,105 @@
 /**
  * HỒ SƠ ĐIỀU TRA KỲ ÁN KINH TẾ (DETECTIVE BUREAU MLN122)
- * Hệ thống hóa 6 đại án kinh tế thực tiễn đối chiếu trực tiếp các chương cốt lõi:
- * - HỒ SƠ #001 (Chương 3 - Mục 3.1): Lý luận C. Mác về Giá trị thặng dư (Nguồn gốc c+v+m & Phương pháp sản xuất GTTD)
- * - HỒ SƠ #002 (Chương 3 - Mục 3.2 & 3.3): Tích lũy tư bản, Cấu tạo hữu cơ (c/v), M&A và Lợi nhuận siêu ngạch
- * - HỒ SƠ #003 (Chương 5 - Mục 5.1): Mô hình KTTT định hướng XHCN & 5 Đặc trưng cốt lõi tại Việt Nam
- * - HỒ SƠ #004 (Chương 5 - Mục 5.2): Hoàn thiện thể chế KTTT định hướng XHCN & Hài hòa các quan hệ lợi ích kinh tế
- * - HỒ SƠ #005 (Chương 6 - Mục 6.1): Công nghiệp hóa, hiện đại hóa thích ứng Cách mạng công nghiệp 4.0
- * - HỒ SƠ #006 (Chương 6 - Mục 6.2): Hội nhập kinh tế quốc tế của Việt Nam, Thời cơ - Thách thức & Độc lập tự chủ
+ * Bám sát 100% cấu trúc đề mục, nội dung bài giảng và slide chuẩn:
+ * 
+ * - HỒ SƠ #001: Chương 3 - Mục 3.1: Lý luận của C. Mác về giá trị thặng dư
+ *   (3.1.1. Nguồn gốc; 3.1.2. Bản chất c+v+m, m', M; 3.1.3. Các phương pháp sản xuất GTTD tuyệt đối, tương đối & siêu ngạch)
+ * 
+ * - HỒ SƠ #002: Chương 3 - Mục 3.2 & 3.3: Tích lũy tư bản & Các hình thức biểu hiện của giá trị thặng dư
+ *   (3.2. Tích lũy tư bản, c/v, đội quân thất nghiệp; 3.3. Chi phí sản xuất k, Lợi nhuận p, Tỷ suất lợi nhuận p', Lợi nhuận bình quân, Lợi tức, Địa tô)
+ * 
+ * - HỒ SƠ #003: Chương 5 - Mục 5.1: Kinh tế thị trường định hướng XHCN ở Việt Nam
+ *   (5.1.1. Khái niệm KTTT định hướng XHCN; 5.1.2. Tính tất yếu khách quan; 5.1.3. Các đặc trưng cốt lõi về mục tiêu, sở hữu, quản lý, phân phối, gắn tăng trưởng với công bằng xã hội)
+ * 
+ * - HỒ SƠ #004: Chương 5 - Mục 5.2: Hoàn thiện thể chế kinh tế thị trường định hướng XHCN ở Việt Nam
+ *   (5.2.1. Sự cần thiết phải hoàn thiện thể chế; 5.2.2. Hoàn thiện thể chế trên các khía cạnh chủ yếu: sở hữu, các thành phần kinh tế, đồng bộ các loại thị trường, gắn tăng trưởng với công bằng, nâng cao năng lực lãnh đạo của Đảng)
+ * 
+ * - HỒ SƠ #005: Chương 6 - Mục 6.1: Công nghiệp hóa, hiện đại hóa ở Việt Nam
+ *   (6.1.1. Khái quát về cách mạng công nghiệp và công nghiệp hóa; 6.1.2. Tính tất yếu khách quan và nội dung của công nghiệp hóa hiện đại hóa thích ứng CMCN 4.0, đi tắt đón đầu)
+ * 
+ * - HỒ SƠ #006: Chương 6 - Mục 6.2: Hội nhập kinh tế quốc tế của Việt Nam
+ *   (6.2.1. Khái niệm và các hình thức hội nhập; 6.2.2. Tác động của hội nhập đến quá trình phát triển; 6.2.3. Phương hướng nâng cao hiệu quả hội nhập và xây dựng nền kinh tế độc lập tự chủ)
  */
 
 export const DETECTIVE_CASES = [
   {
     id: 'CASE-001',
     code: 'HỒ SƠ #001',
-    chapterBadge: 'CHƯƠNG 3 • GIÁ TRỊ THẶNG DƯ',
-    title: 'Vụ Án Thuật Toán Nền Tảng Số: Máy Tính Hay Lao Động Sống Tạo Ra Giá Trị?',
-    subtitle: 'Bóc tách cấu trúc giá trị (W = c + v + m) và bóc trần ngụy biện bóc lột trong nền kinh tế số',
+    chapterBadge: 'CHƯƠNG 3 • MỤC 3.1',
+    title: 'Hồ Sơ Lý Luận C. Mác Về Giá Trị Thặng Dư',
+    subtitle: 'Chuẩn Mục 3.1: Nguồn gốc, bản chất và các phương pháp sản xuất giá trị thặng dư trong nền KTTT',
     image: './assets/images/cases/case-c3-surplus-value.svg',
     dossierLevel: 'CẤP ĐỘ: CƠ BẢN',
     accentColor: '#0284c7',
-    backgroundStory: 'Một tập đoàn siêu ứng dụng gọi xe công nghệ công bố mức lợi nhuận ròng hàng nghìn tỷ đồng mỗi năm. Trong khi đó, hàng vạn tài xế và lập trình viên làm việc cật lực 12-14 tiếng mỗi ngày nhưng thu nhập thực nhận ngày càng teo tóp do bị tăng chiết khấu lên 30%. Ban lãnh đạo công ty tuyên bố: "Khoản lợi nhuận khổng lồ này hoàn toàn do thuật toán trí tuệ nhân tạo (AI) tự động tối ưu sinh ra, không hề bóc lột bất kỳ ai!". Với tư cách là Chuyên gia Điều tra Kinh tế Chính trị MLN122, bạn hãy phân loại các manh mối vào đúng các ngăn phạm trù khoa học để bóc trần bản chất!',
+    backgroundStory: 'Một nghiên cứu thực tế tại một doanh nghiệp công nghệ lớn tuyên bố: "Doanh thu và lợi nhuận nghìn tỷ của công ty hoàn toàn do hệ thống máy chủ, bằng sáng chế thuật toán tự sinh ra, không hề có việc chiếm đoạt lao động của kỹ sư hay công nhân". Để làm sáng tỏ chân lý khoa học, điều tra viên cần căn cứ vào Lý luận của C. Mác về giá trị thặng dư (Mục 3.1 Slide bài giảng) để phân loại đúng đắn các luận điểm vào từng ngăn nội dung khoa học!',
     categories: [
-      { id: 'tu_ban_bat_bien', name: 'TƯ BẢN BẤT BIẾN (c)', desc: 'Tư liệu sản xuất, máy chủ đám mây, bản quyền - chỉ bảo tồn và chuyển dịch giá trị', color: '#38bdf8' },
-      { id: 'tu_ban_kha_bien', name: 'TƯ BẢN KHẢ BIẾN (v)', desc: 'Chi phí mua hàng hóa sức lao động lập trình viên & tài xế - nguồn gốc sinh giá trị mới', color: '#10b981' },
-      { id: 'gia_tri_thang_du', name: 'GIÁ TRỊ THẶNG DƯ (m)', desc: 'Phần giá trị mới dôi ra do sức lao động sống sáng tạo bị chủ nền tảng chiếm đoạt', color: '#f59e0b' },
-      { id: 'gttd_tuyet_doi', name: 'SẢN XUẤT GTTD TUYỆT ĐỐI', desc: 'Tăng m bằng cách kéo dài ngày lao động vượt quá thời gian tất yếu (chạy 12-14h/ngày)', color: '#ef4444' },
-      { id: 'gttd_tuong_doi', name: 'SẢN XUẤT GTTD TƯƠNG ĐỐI', desc: 'Rút ngắn thời gian lao động tất yếu nhờ ứng dụng thuật toán nâng cao năng suất xã hội', color: '#a855f7' }
+      { 
+        id: 'muc_3_1_1', 
+        name: 'MỤC 3.1.1: NGUỒN GỐC GIÁ TRỊ THẶNG DƯ', 
+        desc: 'Hàng hóa sức lao động, hai điều kiện ra đời, giá trị và giá trị sử dụng đặc biệt có khả năng tạo ra giá trị mới', 
+        color: '#0ea5e9' 
+      },
+      { 
+        id: 'muc_3_1_2_a', 
+        name: 'MỤC 3.1.2A: TƯ BẢN BẤT BIẾN & KHẢ BIẾN', 
+        desc: 'Tư bản bất biến (c) chỉ bảo tồn/chuyển dịch giá trị; Tư bản khả biến (v) là nguồn gốc duy nhất sinh ra giá trị thặng dư', 
+        color: '#10b981' 
+      },
+      { 
+        id: 'muc_3_1_2_b', 
+        name: 'MỤC 3.1.2B: BẢN CHẤT GTTD & TỶ SUẤT m\'', 
+        desc: 'Giá trị thặng dư m là bộ phận giá trị mới dôi ra ngoài giá trị sức lao động; m\' phản ánh chính xác trình độ bóc lột', 
+        color: '#f59e0b' 
+      },
+      { 
+        id: 'muc_3_1_3_a', 
+        name: 'MỤC 3.1.3A: SẢN XUẤT GTTD TUYỆT ĐỐI', 
+        desc: 'Phương pháp kéo dài độ dài tuyệt đối của ngày lao động vượt quá thời gian lao động tất yếu', 
+        color: '#ef4444' 
+      },
+      { 
+        id: 'muc_3_1_3_b', 
+        name: 'MỤC 3.1.3B: SẢN XUẤT GTTD TƯƠNG ĐỐI', 
+        desc: 'Rút ngắn thời gian lao động tất yếu bằng cách tăng năng suất lao động xã hội, hạ thấp giá trị sức lao động', 
+        color: '#a855f7' 
+      }
     ],
     clues: [
       {
         id: 'c1-clue-1',
-        text: 'Hệ thống cụm máy chủ đám mây, cáp quang và văn phòng trụ sở của tập đoàn',
-        correctCategory: 'tu_ban_bat_bien',
-        hint: 'Bộ phận tư bản tồn tại dưới hình thái tư liệu sản xuất, giá trị không đổi trong sản xuất.'
+        text: 'Sức lao động là hàng hóa đặc biệt, khi sử dụng có khả năng sáng tạo ra một lượng giá trị lớn hơn giá trị bản thân nó',
+        correctCategory: 'muc_3_1_1',
+        hint: 'Nội dung cốt lõi của Mục 3.1.1 giải thích nguồn gốc sinh ra giá trị thặng dư.'
       },
       {
         id: 'c1-clue-2',
-        text: 'Khoản tiền lương và thu nhập thực tế chi trả cho tài xế và kỹ sư sau khi trừ chiết khấu',
-        correctCategory: 'tu_ban_kha_bien',
-        hint: 'Khoản chi phí biến thành sức lao động sống, có khả năng tăng thêm về giá trị (v + m).'
+        text: 'Bộ phận tư bản biến thành tư liệu sản xuất (c) không thay đổi lượng giá trị, chỉ chuyển dịch nguyên vẹn vào sản phẩm mới',
+        correctCategory: 'muc_3_1_2_a',
+        hint: 'Định nghĩa khoa học về Tư bản bất biến (c) trong Mục 3.1.2.'
       },
       {
         id: 'c1-clue-3',
-        text: 'Phần giá trị hàng nghìn tỷ dôi ra vượt quá chi phí tái sản xuất sức lao động bị chia cho cổ đông',
-        correctCategory: 'gia_tri_thang_du',
-        hint: 'Kết tinh thời gian lao động thặng dư không công của người lao động sống.'
+        text: 'Tỷ suất giá trị thặng dư m\' = (m / v) × 100% phản ánh thực chất mức độ bóc lột sức lao động của nhà tư bản',
+        correctCategory: 'muc_3_1_2_b',
+        hint: 'Công thức và ý nghĩa bản chất của m\' trong Mục 3.1.2.'
       },
       {
         id: 'c1-clue-4',
-        text: 'Chính sách thưởng điểm ép tài xế chạy xe liên tục từ 6h sáng đến 23h đêm trên đường phố',
-        correctCategory: 'gttd_tuyet_doi',
-        hint: 'Kéo dài độ dài tuyệt đối của ngày làm việc khi thời gian tất yếu không đổi.'
+        text: 'Chủ doanh nghiệp ép người lao động tăng ca làm thêm từ 8 giờ lên 12-14 giờ mỗi ngày để tăng khối lượng thặng dư m',
+        correctCategory: 'muc_3_1_3_a',
+        hint: 'Biểu hiện thực tế của phương pháp sản xuất giá trị thặng dư tuyệt đối.'
       },
       {
         id: 'c1-clue-5',
-        text: 'Thuật toán điều phối tự động ghép cuốc xe thần tốc giúp rút ngắn thời gian hoàn vốn tiền lương',
-        correctCategory: 'gttd_tuong_doi',
-        hint: 'Tăng năng suất lao động xã hội để hạ thấp giá trị sức lao động, tăng tỷ lệ thời gian thặng dư.'
+        text: 'Cải tiến kỹ thuật công nghệ toàn diện trong các ngành sản xuất tư liệu sinh hoạt để hạ giá thành và rút ngắn thời gian tất yếu',
+        correctCategory: 'muc_3_1_3_b',
+        hint: 'Cơ chế vận hành của phương pháp sản xuất giá trị thặng dư tương đối.'
       }
     ],
     philosophicalVerdict: {
-      headline: 'Vụ án phá giải: Máy tính không tạo ra giá trị, chính lao động sống mới sinh ra m!',
-      concept: 'Bản chất Giá trị thặng dư (c + v + m) & Các phương pháp sản xuất GTTD',
-      analysis: 'Bằng phương pháp trừu tượng hóa khoa học của C. Mác, điều tra viên đã bóc trần ngụy biện của tập đoàn công nghệ: Máy móc, thuật toán và máy chủ chỉ là Tư bản bất biến (c) - chúng chỉ đóng vai trò phương tiện truyền dẫn giá trị cũ vào sản phẩm chứ không thể tự sinh ra một đồng giá trị mới nào. Toàn bộ khoản siêu lợi nhuận nghìn tỷ bắt nguồn duy nhất từ Tư bản khả biến (v), do sức lao động sống của hàng vạn tài xế và kỹ sư tạo ra thông qua việc kết hợp cả hai phương pháp sản xuất giá trị thặng dư tuyệt đối (vắt kiệt thời gian chạy xe ngoài đường) và giá trị thặng dư tương đối (tối ưu hóa quy trình thuật toán).',
+      headline: 'Phá án thành công: Máy tính không tạo ra m; chỉ có hàng hóa sức lao động sống mới sáng tạo ra m!',
+      concept: 'Mục 3.1: Nguồn gốc, bản chất và các phương pháp sản xuất giá trị thặng dư',
+      analysis: 'Căn cứ Mục 3.1 Giáo trình và Slide bài giảng MLN122: Tư liệu sản xuất (c) dù hiện đại đến đâu cũng chỉ là Tư bản bất biến, chỉ đóng vai trò phương tiện truyền dẫn giá trị. Nguồn gốc duy nhất sinh ra giá trị thặng dư (m) là việc tiêu dùng hàng hóa sức lao động sống (Tư bản khả biến v) trong thời gian lao động thặng dư. Các nhà tư bản luôn kết hợp tinh vi cả hai phương pháp sản xuất GTTD tuyệt đối (kéo dài ngày làm việc) và GTTD tương đối (tăng năng suất qua ứng dụng khoa học kỹ thuật).',
       xpAwarded: 160
     }
   },
@@ -70,56 +107,81 @@ export const DETECTIVE_CASES = [
   {
     id: 'CASE-002',
     code: 'HỒ SƠ #002',
-    chapterBadge: 'CHƯƠNG 3 • TÍCH LŨY TƯ BẢN',
-    title: 'Đại Án Thâu Tóm & Tích Lũy Tư Bản: Vòng Xoáy "Cá Lớn Nuốt Cá Bé" & Nạn Nhân Thất Nghiệp 4.0',
-    subtitle: 'Giải mã quy luật tích lũy tư bản, cấu tạo hữu cơ (c/v) và sự phân hóa giàu nghèo sâu sắc',
+    chapterBadge: 'CHƯƠNG 3 • MỤC 3.2 & 3.3',
+    title: 'Hồ Sơ Tích Lũy Tư Bản & Các Hình Thức Biểu Hiện Của Giá Trị Thặng Dư',
+    subtitle: 'Chuẩn Mục 3.2 (Tích lũy tư bản, c/v) & Mục 3.3 (Chi phí k, Lợi nhuận p, p\', Lợi tức, Địa tô)',
     image: './assets/images/cases/case-c3-accumulation.svg',
     dossierLevel: 'CẤP ĐỘ: TRUNG BÌNH',
     accentColor: '#f59e0b',
-    backgroundStory: 'Một tập đoàn bán lẻ thương mại điện tử khổng lồ vừa công bố thương vụ M&A thâu tóm 5 đối thủ cạnh tranh vừa và nhỏ, đồng thời nhập khẩu 5.000 cánh tay robot AI tự động hóa hoàn toàn chuỗi kho bãi thông minh. Ngay sau đó, tập đoàn thông báo cắt giảm 40% lực lượng nhân công bốc dỡ và đóng gói, đẩy hàng nghìn công nhân vào cảnh bấp bênh không việc làm. Tập đoàn tuyên bố: "Đây là quy luật thịnh vượng tất yếu của kinh tế số". Với tư cách là Điều tra viên MLN122, hãy làm sáng tỏ quy luật tích lũy tư bản và sự tăng vọt cấu tạo hữu cơ đằng sau tấn bi kịch này!',
+    backgroundStory: 'Một tập đoàn kinh tế tư nhân thực hiện chiến lược tái đầu tư mở rộng, nhập khẩu dây chuyền robot tự động hóa để tăng năng lực cạnh tranh, đồng thời thâu tóm hàng loạt công ty con. Báo cáo tài chính của tập đoàn chỉ ghi nhận "Chi phí k" và "Lợi nhuận p", tuyên bố lợi nhuận là thành quả kinh doanh của toàn bộ vốn đầu tư chứ không liên quan gì đến bóc lột. Hãy đối chiếu Mục 3.2 và Mục 3.3 Slide bài giảng để sắp xếp đúng các luận điểm lý luận!',
     categories: [
-      { id: 'ban_chat_tich_luy', name: 'BẢN CHẤT TÍCH LŨY TƯ BẢN', desc: 'Tái sản xuất mở rộng bằng cách tư bản hóa giá trị thặng dư (biến m thành tư bản phụ thêm)', color: '#f59e0b' },
-      { id: 'tich_tu_tap_trung', name: 'TÍCH TỤ & TẬP TRUNG TƯ BẢN', desc: 'Tăng quy mô tư bản qua sáp nhập M&A, thôn tính các đối thủ nhỏ ("cá lớn nuốt cá bé")', color: '#3b82f6' },
-      { id: 'cau_tao_huu_co', name: 'CẤU TẠO HỮU CƠ TƯ BẢN (c/v)', desc: 'Tỷ lệ giữa khối lượng tư liệu sản xuất (c) so với số lượng sức lao động (v) tăng vọt', color: '#a855f7' },
-      { id: 'that_nghiep_cong_nghiep', name: 'ĐỘI QUÂN THẤT NGHIỆP CÔNG NGHIỆP', desc: 'Dân số thừa tương đối sinh ra tất yếu do tốc độ tăng của v chậm hơn c trong quá trình tích lũy', color: '#ef4444' },
-      { id: 'chi_phi_loi_nhuan', name: 'HÌNH THỨC CHI PHÍ (k) & LỢI NHUẬN (p)', desc: 'Công thức W = k + p che giấu thực chất nguồn gốc bóc lột m thành khoản sinh lời của toàn bộ tư bản ứng trước', color: '#10b981' }
+      { 
+        id: 'muc_3_2_ban_chat', 
+        name: 'MỤC 3.2: BẢN CHẤT TÍCH LŨY TƯ BẢN', 
+        desc: 'Tái sản xuất mở rộng bằng cách tư bản hóa giá trị thặng dư; nguồn gốc duy nhất của tích lũy tư bản là m', 
+        color: '#f59e0b' 
+      },
+      { 
+        id: 'muc_3_2_cau_tao', 
+        name: 'MỤC 3.2: CẤU TẠO HỮU CƠ (c/v) & HỆ QUẢ', 
+        desc: 'Cấu tạo hữu cơ c/v tăng lên tất yếu dẫn tới sinh ra "Đội quân thất nghiệp công nghiệp" (dân số thừa tương đối)', 
+        color: '#a855f7' 
+      },
+      { 
+        id: 'muc_3_3_chi_phi_loi_nhuan', 
+        name: 'MỤC 3.3: CHI PHÍ (k) & LỢI NHUẬN (p)', 
+        desc: 'Chi phí sản xuất k = c + v; lợi nhuận p là hình thức biến tướng của m, che giấu quan hệ bóc lột', 
+        color: '#ef4444' 
+      },
+      { 
+        id: 'muc_3_3_loi_nhuan_binh_quan', 
+        name: 'MỤC 3.3: TỶ SUẤT p\' & LỢI NHUẬN BÌNH QUÂN', 
+        desc: 'Cạnh tranh giữa các ngành dẫn tới hình thành tỷ suất lợi nhuận bình quân và giá cả sản xuất', 
+        color: '#3b82f6' 
+      },
+      { 
+        id: 'muc_3_3_loi_tuc_dia_to', 
+        name: 'MỤC 3.3: LỢI TỨC (z) & ĐỊA TÔ TƯ BẢN (R)', 
+        desc: 'Các hình thức chuyển hóa khác của m chia cho tư bản cho vay (lợi tức) và chủ đất (địa tô chênh lệch, tuyệt đối)', 
+        color: '#10b981' 
+      }
     ],
     clues: [
       {
         id: 'c2-clue-1',
-        text: 'Trích 70% khoản giá trị thặng dư kiếm được năm ngoái để tiếp tục mua thêm nhà xưởng và công nghệ',
-        correctCategory: 'ban_chat_tich_luy',
-        hint: 'Biến một phần giá trị thặng dư trở lại thành tư bản để tái sản xuất mở rộng.'
+        text: 'Thực chất của tích lũy tư bản là sự chuyển hóa một phần giá trị thặng dư trở lại thành tư bản phụ thêm để tái sản xuất mở rộng',
+        correctCategory: 'muc_3_2_ban_chat',
+        hint: 'Khái niệm khoa học then chốt của Mục 3.2 Slide bài giảng.'
       },
       {
         id: 'c2-clue-2',
-        text: 'Chi tiền thôn tính toàn bộ cổ phần chi phối của 5 chuỗi bán lẻ nhỏ đang gặp khó khăn tài chính',
-        correctCategory: 'tich_tu_tap_trung',
-        hint: 'Tập trung các tư bản cá biệt sẵn có trong xã hội thành một khối tư bản khổng lồ duy nhất.'
+        text: 'Cấu tạo hữu cơ c/v tăng làm cầu về sức lao động giảm tương đối so với tư liệu sản xuất, tạo ra nạn nhân công thất nghiệp',
+        correctCategory: 'muc_3_2_cau_tao',
+        hint: 'Quy luật nhân khẩu thừa tương đối trong quá trình tích lũy tư bản.'
       },
       {
         id: 'c2-clue-3',
-        text: 'Tỷ lệ chi phí đầu tư máy móc tự động hóa tăng từ tỷ lệ 4:1 lên tới 10:1 so với quỹ lương nhân công',
-        correctCategory: 'cau_tao_huu_co',
-        hint: 'Cấu tạo giá trị phản ánh sự biến đổi của cấu tạo kỹ thuật tư bản (c/v tăng).'
+        text: 'Công thức W = k + p che đậy nguồn gốc bóc lột vì làm người ta tưởng lợi nhuận sinh ra từ toàn bộ vốn k ứng trước',
+        correctCategory: 'muc_3_3_chi_phi_loi_nhuan',
+        hint: 'Sự khác biệt bản chất giữa giá trị hàng hóa và chi phí sản xuất tư bản chủ nghĩa.'
       },
       {
         id: 'c2-clue-4',
-        text: 'Hàng ngàn công nhân đóng gói bị sa thải tạo thành nguồn lao động dự trữ sẵn sàng cạnh tranh hạ giá lương',
-        correctCategory: 'that_nghiep_cong_nghiep',
-        hint: 'Nạn nhân của quy luật nhân khẩu thừa tương đối trong chủ nghĩa tư bản.'
+        text: 'Sự tự do di chuyển tư bản giữa các ngành sản xuất khác nhau san bằng các mức p\' khác nhau thành tỷ suất lợi nhuận bình quân',
+        correctCategory: 'muc_3_3_loi_nhuan_binh_quan',
+        hint: 'Cơ chế cạnh tranh giữa các ngành dẫn tới hình thành lợi nhuận bình quân.'
       },
       {
         id: 'c2-clue-5',
-        text: 'Báo cáo tài chính chỉ ghi nhận chi phí sản xuất k = 1.000 tỷ và lợi nhuận p = 300 tỷ để che giấu bóc lột',
-        correctCategory: 'chi_phi_loi_nhuan',
-        hint: 'Sự chuyển hóa của m thành p xóa nhòa ranh giới giữa c và v, che đậy bản chất nguồn gốc thặng dư.'
+        text: 'Lợi tức trả cho ngân hàng và tiền thuê đất trả cho chủ đất thực chất đều là một phần giá trị thặng dư do công nhân tạo ra',
+        correctCategory: 'muc_3_3_loi_tuc_dia_to',
+        hint: 'Bản chất khoa học của lợi tức cho vay và địa tô tư bản chủ nghĩa.'
       }
     ],
     philosophicalVerdict: {
-      headline: 'Vụ án phá giải: Tích lũy tư bản tích tụ của cải ở một cực, tích lũy bần cùng và thất nghiệp ở cực đối lập!',
-      concept: 'Quy luật Tích lũy Tư bản & Cấu tạo Hữu cơ (c/v) trong nền kinh tế thị trường',
-      analysis: 'Bản kết luận điều tra đã làm sáng tỏ quy luật chung của tích lũy tư bản do C. Mác phát hiện: Khi quy mô tích lũy càng lớn và khoa học kỹ thuật càng phát triển, cấu tạo hữu cơ của tư bản (c/v) không ngừng tăng lên. Điều này đồng nghĩa với việc phần tư bản dùng để mua sắm thiết bị tự động (c) tăng vọt, trong khi phần chi trả cho sức lao động sống (v) giảm đi một cách tương đối. Hệ quả tất yếu là sinh ra "Đội quân thất nghiệp công nghiệp" (dân số thừa tương đối), dẫn đến sự phân hóa sâu sắc: của cải kếch xù tích tụ vào tay thiểu số tư bản độc quyền, còn người lao động lại chịu nguy cơ thất nghiệp và bấp bênh!',
+      headline: 'Phá án thành công: Tích lũy tư bản đào sâu bất bình đẳng; lợi nhuận, lợi tức và địa tô đều bắt nguồn từ m!',
+      concept: 'Mục 3.2 & Mục 3.3: Tích lũy tư bản và các hình thức chuyển hóa của giá trị thặng dư',
+      analysis: 'Căn cứ Mục 3.2 và 3.3: Tích lũy tư bản thực chất là dùng chính giá trị thặng dư bóc lột được để tiếp tục mở rộng quy mô bóc lột. Quá trình này đẩy cấu tạo hữu cơ (c/v) tăng cao, sinh ra đội quân thất nghiệp công nghiệp. Trên bề mặt thị trường, giá trị thặng dư m biến tướng thành lợi nhuận (p), lợi nhuận bình quân, lợi tức ngân hàng (z) và địa tô (R) nhằm che giấu nguồn gốc thực sự là sức lao động làm thuê.',
       xpAwarded: 170
     }
   },
@@ -127,56 +189,81 @@ export const DETECTIVE_CASES = [
   {
     id: 'CASE-003',
     code: 'HỒ SƠ #003',
-    chapterBadge: 'CHƯƠNG 5 • KTTT ĐỊNH HƯỚNG XHCN',
-    title: 'Kỳ Án Thị Trường Định Hướng XHCN: Phát Triển Kinh Tế Tư Nhân Đi Đôi Với Giữ Vững An Sinh Xã Hội',
-    subtitle: 'Giải mã tính tất yếu khách quan và 5 đặc trưng bản chất của nền KTTT định hướng XHCN ở Việt Nam',
+    chapterBadge: 'CHƯƠNG 5 • MỤC 5.1',
+    title: 'Hồ Sơ Bản Chất & Đặc Trưng Kinh Tế Thị Trường Định Hướng XHCN Ở Việt Nam',
+    subtitle: 'Chuẩn Mục 5.1: Khái niệm (5.1.1), Tính tất yếu khách quan (5.1.2) & Các đặc trưng của KTTT định hướng XHCN (5.1.3)',
     image: './assets/images/cases/case-c5-socialist-market.svg',
     dossierLevel: 'CẤP ĐỘ: CƠ BẢN',
     accentColor: '#10b981',
-    backgroundStory: 'Khi thảo luận về mô hình phát triển kinh tế của Việt Nam, một nhóm chuyên gia tranh luận gay gắt: Nhánh thứ nhất cho rằng "đã kinh tế thị trường thì phải tự do tư nhân hóa hoàn toàn như phương Tây, thả nổi y tế, giáo dục theo túi tiền người dân"; Nhánh thứ hai lại muốn "quay lại thời bao cấp nhà nước bao trọn gói để bảo đảm bình quân tuyệt đối"; Nhánh thứ ba khẳng định: Con đường KTTT định hướng XHCN của Việt Nam là sự kết hợp sáng tạo giữa tính năng động thị trường với mục tiêu nhân văn XHCN. Hãy phân loại các manh mối vào đúng 5 đặc trưng trụ cột của mô hình Việt Nam!',
+    backgroundStory: 'Nhiều quan điểm tranh luận về con đường phát triển kinh tế của nước ta: Có người cho rằng phát triển kinh tế thị trường tất yếu phải tư nhân hóa toàn bộ; có ý kiến lại muốn quay về mô hình chỉ huy tập trung bao cấp. Bằng tri thức Mục 5.1 trong Slide bài giảng Chương 5, hãy phân loại chính xác các luận điểm vào đúng các đề mục khoa học!',
     categories: [
-      { id: 'dac_trung_muc_tieu', name: '1. MỤC TIÊU KINH TẾ - XÃ HỘI', desc: 'Dân giàu, nước mạnh, dân chủ, công bằng, văn minh; giải phóng sức sản xuất vì con người', color: '#0ea5e9' },
-      { id: 'dac_trung_so_huu', name: '2. QUAN HỆ SỞ HỮU & THÀNH PHẦN KT', desc: 'Kinh tế nhà nước giữ vai trò chủ đạo, kinh tế tư nhân là động lực quan trọng của nền kinh tế', color: '#10b981' },
-      { id: 'dac_trung_quan_ly', name: '3. QUAN HỆ QUẢN LÝ CỦA NHÀ NƯỚC', desc: 'Nhà nước pháp quyền XHCN kiến tạo phát triển dưới sự lãnh đạo của Đảng Cộng sản Việt Nam', color: '#f59e0b' },
-      { id: 'dac_trung_phan_phoi', name: '4. QUAN HỆ PHÂN PHỐI THU NHẬP', desc: 'Phân phối chủ yếu theo kết quả lao động & hiệu quả kinh tế, kết hợp đóng góp vốn và an sinh', color: '#a855f7' },
-      { id: 'dac_trung_cong_bang', name: '5. GẮN TĂNG TRƯỞNG VỚI CÔNG BẰNG', desc: 'Không hy sinh công bằng xã hội và môi trường chạy theo tăng trưởng đơn thuần; tiến bộ trong từng bước', color: '#ef4444' }
+      { 
+        id: 'muc_5_1_1', 
+        name: 'MỤC 5.1.1: KHÁI NIỆM KTTT ĐỊNH HƯỚNG XHCN', 
+        desc: 'Nền kinh tế vận hành theo các quy luật của thị trường, hướng tới xác lập xã hội dân giàu, nước mạnh, dân chủ, công bằng, văn minh', 
+        color: '#0ea5e9' 
+      },
+      { 
+        id: 'muc_5_1_2', 
+        name: 'MỤC 5.1.2: TÍNH TẤT YẾU KHÁCH QUAN', 
+        desc: 'Phù hợp với quy luật phát triển khách quan thời kỳ quá độ; phát huy ưu việt của thị trường để giải phóng sức sản xuất', 
+        color: '#10b981' 
+      },
+      { 
+        id: 'muc_5_1_3_a', 
+        name: 'MỤC 5.1.3: ĐẶC TRƯNG VỀ MỤC TIÊU & SỞ HỮU', 
+        desc: 'Mục tiêu giải phóng LLSX vì con người; kinh tế nhà nước giữ vai trò chủ đạo, kinh tế tư nhân là động lực quan trọng', 
+        color: '#f59e0b' 
+      },
+      { 
+        id: 'muc_5_1_3_b', 
+        name: 'MỤC 5.1.3: ĐẶC TRƯNG VỀ QUẢN LÝ & PHÂN PHỐI', 
+        desc: 'Nhà nước pháp quyền XHCN quản lý dưới sự lãnh đạo của Đảng; phân phối chủ yếu theo lao động và hiệu quả kinh tế', 
+        color: '#a855f7' 
+      },
+      { 
+        id: 'muc_5_1_3_c', 
+        name: 'MỤC 5.1.3: GẮN TĂNG TRƯỞNG VỚI CÔNG BẰNG XH', 
+        desc: 'Không hy sinh công bằng xã hội và môi trường chạy theo tăng trưởng đơn thuần; thực hiện tiến bộ ngay trong từng bước đi', 
+        color: '#ef4444' 
+      }
     ],
     clues: [
       {
         id: 'c3-clue-1',
-        text: 'Nỗ lực nâng cao đời sống vật chất và tinh thần cho toàn thể nhân dân, hướng tới "dân giàu, nước mạnh"',
-        correctCategory: 'dac_trung_muc_tieu',
-        hint: 'Mục đích tối thượng của sự phát triển kinh tế thị trường tại Việt Nam.'
+        text: 'KTTT định hướng XHCN là nền kinh tế vừa tuân theo các quy luật thị trường, vừa được dẫn dắt bởi các nguyên tắc và bản chất của CNXH',
+        correctCategory: 'muc_5_1_1',
+        hint: 'Định nghĩa chính xác theo Mục 5.1.1 trong Slide bài giảng.'
       },
       {
         id: 'c3-clue-2',
-        text: 'Tập đoàn Điện lực, Viễn thông Quốc gia nắm giữ hạ tầng huyết mạch trong khi khuyến khích kinh tế tư nhân',
-        correctCategory: 'dac_trung_so_huu',
-        hint: 'Phối hợp nhiều hình thức sở hữu, kinh tế nhà nước giữ mạch máu dẫn dắt nền kinh tế.'
+        text: 'Phát triển KTTT là sự lựa chọn tất yếu khách quan, bỏ qua chế độ TBCN nhưng không thể bỏ qua các quy luật kinh tế thị trường',
+        correctCategory: 'muc_5_1_2',
+        hint: 'Luận giải tính tất yếu khách quan của Mục 5.1.2.'
       },
       {
         id: 'c3-clue-3',
-        text: 'Chiến lược phát triển KTXH 10 năm do Đại hội Đảng đề ra và Chính phủ điều hành bằng pháp luật minh bạch',
-        correctCategory: 'dac_trung_quan_ly',
-        hint: 'Bàn tay hữu hình của Nhà nước pháp quyền dưới sự dẫn đường lý luận của Đảng.'
+        text: 'Nền kinh tế gồm nhiều thành phần: Kinh tế nhà nước giữ vai trò chủ đạo, kinh tế tư nhân là một động lực quan trọng của nền kinh tế',
+        correctCategory: 'muc_5_1_3_a',
+        hint: 'Đặc trưng cốt lõi về quan hệ sở hữu và thành phần kinh tế trong Mục 5.1.3.'
       },
       {
         id: 'c3-clue-4',
-        text: 'Kỹ sư tay nghề cao nhận lương theo năng suất, nông dân nhận bảo tức cổ phần và hộ nghèo nhận trợ cấp BHYT',
-        correctCategory: 'dac_trung_phan_phoi',
-        hint: 'Cơ chế kết hợp hài hòa phân phối theo lao động và hệ thống an sinh xã hội rộng khắp.'
+        text: 'Thực hiện phân phối chủ yếu theo kết quả lao động, hiệu quả kinh tế, đồng thời phân phối theo mức đóng góp vốn và qua hệ thống an sinh xã hội',
+        correctCategory: 'muc_5_1_3_b',
+        hint: 'Đặc trưng về quan hệ phân phối thu nhập trong Mục 5.1.3.'
       },
       {
         id: 'c3-clue-5',
-        text: 'Chương trình mục tiêu quốc gia giảm nghèo bền vững và xây dựng nông thôn mới triển khai đồng thời tăng trưởng GDP',
-        correctCategory: 'dac_trung_cong_bang',
-        hint: 'Thực hiện tiến bộ và công bằng xã hội ngay trong từng bước đi chứ không chờ kinh tế giàu mới làm.'
+        text: 'Tiến bộ và công bằng xã hội phải được thể hiện trong từng chính sách, từng dự án phát triển chứ không đợi kinh tế phát triển cao mới thực hiện',
+        correctCategory: 'muc_5_1_3_c',
+        hint: 'Đặc trưng thể hiện bản chất nhân văn ưu việt sâu sắc của định hướng XHCN.'
       }
     ],
     philosophicalVerdict: {
-      headline: 'Vụ án phá giải: KTTT định hướng XHCN không phải sự chắp vá khiên cưỡng mà là tất yếu lịch sử!',
-      concept: 'Khái niệm, Tính tất yếu & 5 Đặc trưng của KTTT Định hướng XHCN (Chương 5)',
-      analysis: 'Bản kết luận điều tra khẳng định nguyên lý cơ bản của Kinh tế chính trị Mác – Lênin tại Việt Nam: KTTT định hướng XHCN là mô hình kinh tế tổng quát trong thời kỳ quá độ lên chủ nghĩa xã hội. Nó vừa kế thừa quy luật vận hành khách quan của kinh tế thị trường (cung cầu, cạnh tranh, giá trị), vừa phát huy bản chất ưu việt của chế độ XHCN (do nhân dân làm chủ, nhà nước dẫn dắt vì mục tiêu phụng sự con người, không để ai bị bỏ lại phía sau). Đây là bước đột phá lý luận của Đảng Cộng sản Việt Nam, vượt qua cả bẫy tự do hóa tư bản lẫn cạm bẫy quan liêu bao cấp.',
+      headline: 'Phá án thành công: KTTT định hướng XHCN là mô hình phát triển sáng tạo, tất yếu của Việt Nam!',
+      concept: 'Mục 5.1: Khái niệm, Tính tất yếu khách quan và Các đặc trưng của KTTT định hướng XHCN',
+      analysis: 'Theo Mục 5.1 Slide bài giảng: Nền kinh tế thị trường định hướng XHCN ở Việt Nam là mô hình kinh tế tổng quát trong thời kỳ quá độ lên chủ nghĩa xã hội. Nó vận hành đầy đủ theo các quy luật khách quan của thị trường (giá trị, cung cầu, cạnh tranh), đồng thời bảo đảm định hướng XHCN thông qua vai trò chủ đạo của kinh tế nhà nước, sự lãnh đạo của Đảng và nguyên tắc gắn tăng trưởng kinh tế với công bằng xã hội ngay trong từng bước đi.',
       xpAwarded: 180
     }
   },
@@ -184,56 +271,81 @@ export const DETECTIVE_CASES = [
   {
     id: 'CASE-004',
     code: 'HỒ SƠ #004',
-    chapterBadge: 'CHƯƠNG 5 • HOÀN THIỆN THỂ CHẾ',
-    title: 'Đại Án Thao Túng Thị Trường & Hoàn Thiện Thể Chế Kinh Tế Thị Trường Định Hướng XHCN',
-    subtitle: 'Giải mã sự cần thiết hoàn thiện thể chế kinh tế, minh bạch hóa các loại thị trường và điều hòa lợi ích',
+    chapterBadge: 'CHƯƠNG 5 • MỤC 5.2',
+    title: 'Hồ Sơ Hoàn Thiện Thể Chế Kinh Tế Thị Trường Định Hướng XHCN Ở Việt Nam',
+    subtitle: 'Chuẩn Mục 5.2: Sự cần thiết hoàn thiện thể chế (5.2.1) & Các nội dung hoàn thiện chủ yếu (5.2.2)',
     image: './assets/images/cases/case-c5-institutions.svg',
     dossierLevel: 'CẤP ĐỘ: NÂNG CAO',
     accentColor: '#ec4899',
-    backgroundStory: 'Một vụ thao túng thị trường chứng khoán và phát hành trái phiếu "ma" của một tập đoàn bất động sản lớn vừa bị phanh phui. Doanh nghiệp này lợi dụng kẽ hở pháp lý, dùng các công ty con "sân sau" thổi khống giá trị tài sản bảo đảm lên gấp 10 lần, chiếm dụng vốn của hàng chục nghìn nhà đầu tư nhỏ lẻ và gây nguy cơ đổ vỡ hệ thống tài chính tín dụng. Vụ án gióng lên hồi chuông cảnh báo về sự cấp thiết phải hoàn thiện thể chế KTTT định hướng XHCN. Hãy phân loại các manh mối vào đúng các khía cạnh chủ yếu của công tác hoàn thiện thể chế!',
+    backgroundStory: 'Thực tiễn phát triển kinh tế bộc lộ những bất cập: Hệ thống pháp luật về đất đai còn kẽ hở dẫn đến đầu cơ thổi giá; thị trường vốn và trái phiếu doanh nghiệp thiếu minh bạch; năng lực thực thi và giám sát của bộ máy quản lý nhà nước có lúc còn lúng túng. Những hạn chế này đòi hỏi phải đẩy mạnh hoàn thiện thể chế kinh tế. Căn cứ Mục 5.2 Slide bài giảng, bạn hãy phân loại các luận điểm vào đúng các khía cạnh thể chế!',
     categories: [
-      { id: 'the_che_so_huu', name: 'HOÀN THIỆN THỂ CHẾ SỞ HỮU', desc: 'Xác lập minh bạch quyền sở hữu tài sản, ngăn chặn hành vi thôn tính đất đai công và trục lợi "sân sau"', color: '#3b82f6' },
-      { id: 'the_che_thi_truong', name: 'ĐỒNG BỘ CÁC LOẠI THỊ TRƯỜNG', desc: 'Hoàn thiện khung pháp lý minh bạch cho thị trường tài chính, chứng khoán, bất động sản, lao động & KHCN', color: '#10b981' },
-      { id: 'hai_hoa_loi_ich', name: 'HÀI HÒA CÁC QUAN HỆ LỢI ÍCH', desc: 'Ngăn chặn xung đột giữa lợi ích nhóm vị kỷ với lợi ích chính đáng của người lao động và toàn xã hội', color: '#f59e0b' },
-      { id: 'nang_luc_quan_tri', name: 'NÂNG CAO NĂNG LỰC QUẢN TRỊ CÔNG', desc: 'Tăng cường hiệu lực thanh tra, giám sát thị trường của Nhà nước, đẩy lùi tiêu cực và tham nhũng chính sách', color: '#ef4444' },
-      { id: 'lanh_dao_cua_dang', name: 'TĂNG CƯỜNG SỰ LÃNH ĐẠO CỦA ĐẢNG', desc: 'Thể chế hóa kịp thời các Nghị quyết của Đảng về hoàn thiện thể chế kinh tế thành pháp luật đồng bộ', color: '#ec4899' }
+      { 
+        id: 'muc_5_2_1', 
+        name: 'MỤC 5.2.1: SỰ CẦN THIẾT HOÀN THIỆN THỂ CHẾ', 
+        desc: 'Thể chế KTTT định hướng XHCN còn chưa đồng bộ, hệ thống luật pháp chưa đầy đủ, hiệu lực hiệu quả quản lý còn hạn chế', 
+        color: '#ef4444' 
+      },
+      { 
+        id: 'muc_5_2_2_a', 
+        name: 'MỤC 5.2.2: THỂ CHẾ SỞ HỮU & THÀNH PHẦN KT', 
+        desc: 'Thể chế hóa quyền tài sản; đổi mới nâng cao hiệu quả DNNN; tạo môi trường thuận lợi phát triển kinh tế tư nhân bình đẳng', 
+        color: '#3b82f6' 
+      },
+      { 
+        id: 'muc_5_2_2_b', 
+        name: 'MỤC 5.2.2: ĐỒNG BỘ CÁC LOẠI THỊ TRƯỜNG', 
+        desc: 'Hoàn thiện thể chế phát triển thị trường hàng hóa, dịch vụ, tài chính, bất động sản, lao động và khoa học công nghệ', 
+        color: '#10b981' 
+      },
+      { 
+        id: 'muc_5_2_2_c', 
+        name: 'MỤC 5.2.2: THỂ CHẾ GẮN TĂNG TRƯỞNG & CÔNG BẰNG', 
+        desc: 'Thể chế hóa chính sách phân phối, an sinh xã hội, giảm nghèo bền vững và bảo vệ môi trường sinh thái', 
+        color: '#f59e0b' 
+      },
+      { 
+        id: 'muc_5_2_2_d', 
+        name: 'MỤC 5.2.2: NÂNG CAO NĂNG LỰC LÃNH ĐẠO CỦA ĐẢNG', 
+        desc: 'Xây dựng Nhà nước kiến tạo phát triển; tăng cường sự lãnh đạo của Đảng và hiệu lực kiểm tra, giám sát của cả hệ thống', 
+        color: '#ec4899' 
+      }
     ],
     clues: [
       {
         id: 'c4-clue-1',
-        text: 'Quy định định giá đất đai sát giá thị trường, bắt buộc đấu giá công khai quyền sử dụng đất công sản',
-        correctCategory: 'the_che_so_huu',
-        hint: 'Thể chế hóa quyền sở hữu toàn dân về đất đai do Nhà nước đại diện chủ sở hữu.'
+        text: 'Do thể chế KTTT định hướng XHCN còn chưa đồng bộ, hệ thống luật pháp còn chồng chéo và hiệu lực thực thi chưa cao',
+        correctCategory: 'muc_5_2_1',
+        hint: 'Lý do cốt lõi khẳng định sự cần thiết phải hoàn thiện thể chế trong Mục 5.2.1.'
       },
       {
         id: 'c4-clue-2',
-        text: 'Nâng chuẩn phát hành trái phiếu doanh nghiệp riêng lẻ và chế tài kiểm toán độc lập trên sàn giao dịch',
-        correctCategory: 'the_che_thi_truong',
-        hint: 'Bảo đảm thị trường vốn và chứng khoán vận hành công khai, minh bạch, an toàn.'
+        text: 'Hoàn thiện luật pháp về đất đai, bảo vệ quyền sở hữu trí tuệ và bảo đảm quyền tự do kinh doanh bình đẳng của mọi thành phần kinh tế',
+        correctCategory: 'muc_5_2_2_a',
+        hint: 'Nội dung hoàn thiện thể chế về sở hữu và phát triển các thành phần kinh tế.'
       },
       {
         id: 'c4-clue-3',
-        text: 'Bảo vệ quyền lợi nhà đầu tư nhỏ và buộc tập đoàn đền bù thiệt hại cho khách hàng bị lừa đảo tài chính',
-        correctCategory: 'hai_hoa_loi_ich',
-        hint: 'Điều hòa lợi ích kinh tế, không để lợi ích tập đoàn chà đạp lên đời sống người dân.'
+        text: 'Xây dựng khung pháp lý minh bạch cho thị trường chứng khoán, thị trường trái phiếu, thị trường bất động sản và thị trường lao động',
+        correctCategory: 'muc_5_2_2_b',
+        hint: 'Nội dung hoàn thiện thể chế phát triển đồng bộ các yếu tố thị trường.'
       },
       {
         id: 'c4-clue-4',
-        text: 'Kiểm toán Nhà nước và Thanh tra Chính phủ chủ động phát hiện các kẽ hở gian lận tín dụng ngân hàng',
-        correctCategory: 'nang_luc_quan_tri',
-        hint: 'Năng lực điều hành vĩ mô và công cụ pháp quyền giám sát thị trường của cơ quan công quyền.'
+        text: 'Hoàn thiện luật pháp bảo hiểm xã hội, chính sách trợ cấp xã hội và quy chuẩn xả thải môi trường đạt chuẩn bền vững',
+        correctCategory: 'muc_5_2_2_c',
+        hint: 'Thể chế gắn kết tăng trưởng kinh tế với bảo đảm an sinh và tiến bộ xã hội.'
       },
       {
         id: 'c4-clue-5',
-        text: 'Nghị quyết Trung ương 5 Khóa XII về hoàn thiện thể chế KTTT định hướng XHCN được Quốc hội luật hóa',
-        correctCategory: 'lanh_dao_cua_dang',
-        hint: 'Vai trò hạt nhân lãnh đạo của Đảng Cộng sản trong định hướng phát triển thể chế kinh tế.'
+        text: 'Đẩy mạnh cải cách hành chính công, xây dựng Chính phủ liêm chính kiến tạo và thể chế hóa kịp thời các Nghị quyết của Đảng vào pháp luật',
+        correctCategory: 'muc_5_2_2_d',
+        hint: 'Nâng cao vai trò lãnh đạo của Đảng và năng lực quản trị của Nhà nước pháp quyền.'
       }
     ],
     philosophicalVerdict: {
-      headline: 'Vụ án phá giải: Thể chế là điểm nghẽn của điểm nghẽn, hoàn thiện thể chế mở đường cho thị trường lành mạnh!',
-      concept: 'Nội dung và Sự cần thiết Hoàn thiện Thể chế KTTT Định hướng XHCN (Mục 5.2)',
-      analysis: 'Bản kết luận điều tra đúc kết sâu sắc kiến thức Mục 5.2 Giáo trình MLN122: Thể chế kinh tế không chỉ là những văn bản luật pháp khô cứng, mà là hệ thống quy tắc, luật lệ, cơ chế vận hành và chuẩn mực xã hội điều chỉnh hành vi của các chủ thể kinh tế. Việc hoàn thiện thể chế sở hữu, phát triển đồng bộ các loại thị trường và nâng cao vai trò giám sát của Nhà nước là yêu cầu khách quan cấp bách nhằm bịt kín các lỗ hổng trục lợi, chống "chủ nghĩa tư bản thân hữu" (crony capitalism), bảo vệ lợi ích hợp pháp của nhân dân và giữ vững bản chất định hướng XHCN của nền kinh tế.',
+      headline: 'Phá án thành công: Hoàn thiện thể chế là chìa khóa mở đường giải phóng sức sản xuất!',
+      concept: 'Mục 5.2: Sự cần thiết và Nội dung hoàn thiện thể chế KTTT định hướng XHCN ở Việt Nam',
+      analysis: 'Căn cứ Mục 5.2 Slide bài giảng: Thể chế kinh tế là "luật chơi" quyết định hiệu quả vận hành của nền kinh tế. Sự cần thiết phải hoàn thiện thể chế bắt nguồn từ thực trạng hệ thống thể chế hiện hành chưa đồng bộ và kém hiệu lực. Nội dung hoàn thiện tập trung vào 4 trụ cột: hoàn thiện thể chế sở hữu và thành phần kinh tế; đồng bộ các loại thị trường; gắn tăng trưởng với công bằng xã hội; và nâng cao năng lực lãnh đạo của Đảng, năng lực quản lý của Nhà nước pháp quyền.',
       xpAwarded: 190
     }
   },
@@ -241,56 +353,81 @@ export const DETECTIVE_CASES = [
   {
     id: 'CASE-005',
     code: 'HỒ SƠ #005',
-    chapterBadge: 'CHƯƠNG 6 • CÔNG NGHIỆP HÓA 4.0',
-    title: 'Thách Thức Công Nghiệp Hóa 4.0: Bẫy Gia Công Hay Thời Cơ Đột Phá Đi Tắt Đón Đầu?',
-    subtitle: 'Khám phá tính tất yếu khách quan, nội dung CNH - HĐH và chiến lược chuyển đổi số quốc gia',
+    chapterBadge: 'CHƯƠNG 6 • MỤC 6.1',
+    title: 'Hồ Sơ Công Nghiệp Hóa, Hiện Đại Hóa Ở Việt Nam',
+    subtitle: 'Chuẩn Mục 6.1: Khái quát CMCN (6.1.1) & Tính tất yếu, Nội dung CNH - HĐH thích ứng CMCN 4.0 (6.1.2)',
     image: './assets/images/cases/case-c6-industry40.svg',
     dossierLevel: 'CẤP ĐỘ: NÂNG CAO',
     accentColor: '#06b6d4',
-    backgroundStory: 'Một tổ hợp nhà máy may mặc và gia công điện tử với 20.000 công nhân bất ngờ bị đối tác quốc tế hủy hợp đồng chuyển đơn hàng sang các nước có giá nhân công thấp hơn và các nhà máy ứng dụng cánh tay robot AI. Lãnh đạo hiệp hội doanh nghiệp đứng trước ngã rẽ sống còn: Hoặc tiếp tục hạ giá nhân công để níu kéo gia công giá rẻ và đối mặt nguy cơ "bẫy thu nhập trung bình", hoặc quyết liệt chuyển đổi số, đầu tư công nghệ cao và tự chủ chuỗi cung ứng. Hãy phân loại các manh mối vào các nội dung CNH, HĐH thích ứng với Cách mạng công nghiệp 4.0!',
+    backgroundStory: 'Trong bối cảnh cuộc Cách mạng công nghiệp lần thứ tư (CMCN 4.0) bùng nổ, nhiều doanh nghiệp sản xuất gia công của Việt Nam đứng trước nguy cơ mất đơn hàng vào tay robot và công nghệ tự động hóa. Đứng trước câu hỏi: Việt Nam có cần công nghiệp hóa nữa không và CNH thời kỳ này có gì khác trước? Hãy đối chiếu Mục 6.1 trong Slide bài giảng Chương 6 để sắp xếp đúng các luận điểm lý luận!',
     categories: [
-      { id: 'dac_trung_cmcn40', name: 'ĐẶC TRƯNG CỦA CMCN 4.0', desc: 'Đột phá về Trí tuệ nhân tạo (AI), Internet vạn vật (IoT), Dữ liệu lớn (Big Data) và điện toán đám mây', color: '#06b6d4' },
-      { id: 'tat_yeu_cnh_hdh', name: 'TÍNH TẤT YẾU KHÁCH QUAN', desc: 'Xây dựng cơ sở vật chất - kỹ thuật, nâng cao năng suất xã hội, chống nguy cơ tụt hậu xa hơn về kinh tế', color: '#0284c7' },
-      { id: 'chuyen_dich_co_cau', name: 'CHUYỂN DỊCH CƠ CẤU KINH TẾ', desc: 'Tăng nhanh tỷ trọng công nghiệp chế biến chế tạo và dịch vụ số, giảm dần tỷ trọng nông nghiệp truyền thống', color: '#10b981' },
-      { id: 'di_tat_don_dau', name: 'CHIẾN LƯỢC ĐI TẮT ĐÓN ĐẦU', desc: 'Phát triển kinh tế số, xã hội số, đào tạo nhân lực CNTT chất lượng cao, tận dụng lợi thế nước đi sau', color: '#f59e0b' },
-      { id: 'phat_trien_ben_vung', name: 'GẮN VỚI KINH TẾ TRI THỨC & XANH', desc: 'CNH, HĐH phải gắn liền với bảo vệ môi trường, tiết kiệm tài nguyên và hướng tới phát thải ròng bằng 0 (Net Zero)', color: '#ec4899' }
+      { 
+        id: 'muc_6_1_1', 
+        name: 'MỤC 6.1.1: KHÁI QUÁT VỀ CMCN & CNH', 
+        desc: 'Bản chất CMCN là bước nhảy vọt về tư liệu lao động; CNH là quá trình chuyển đổi căn bản từ lao động thủ công sang lao động bằng máy móc', 
+        color: '#06b6d4' 
+      },
+      { 
+        id: 'muc_6_1_2_a', 
+        name: 'MỤC 6.1.2: TÍNH TẤT YẾU CỦA CNH, HĐH', 
+        desc: 'Yêu cầu khách quan xây dựng CSVC-KT cho CNXH, rút ngắn khoảng cách tụt hậu, nâng cao năng suất và bảo vệ độc lập tự chủ', 
+        color: '#0284c7' 
+      },
+      { 
+        id: 'muc_6_1_2_b', 
+        name: 'MỤC 6.1.2: CHUYỂN DỊCH CƠ CẤU KINH TẾ', 
+        desc: 'Tăng nhanh tỷ trọng công nghiệp chế biến chế tạo và dịch vụ công nghệ cao, giảm dần tỷ trọng nông nghiệp truyền thống', 
+        color: '#10b981' 
+      },
+      { 
+        id: 'muc_6_1_2_c', 
+        name: 'MỤC 6.1.2: NỘI DUNG THÍCH ỨNG CMCN 4.0', 
+        desc: 'Đẩy mạnh chuyển đổi số quốc gia, phát triển kinh tế số, xã hội số, ứng dụng trí tuệ nhân tạo (AI), IoT và dữ liệu lớn', 
+        color: '#f59e0b' 
+      },
+      { 
+        id: 'muc_6_1_2_d', 
+        name: 'MỤC 6.1.2: CHIẾN LƯỢC ĐI TẮT ĐÓN ĐẦU & BỀN VỮNG', 
+        desc: 'Tận dụng lợi thế nước đi sau, phát triển nguồn nhân lực chất lượng cao, gắn CNH với kinh tế tri thức và tăng trưởng xanh', 
+        color: '#ec4899' 
+      }
     ],
     clues: [
       {
         id: 'c5-clue-1',
-        text: 'Dây chuyền tự động hóa kết nối cảm biến IoT kiểm soát lỗi vi mạch với độ chính xác tuyệt đối 99.9%',
-        correctCategory: 'dac_trung_cmcn40',
-        hint: 'Biểu hiện công nghệ cốt lõi của làn sóng Cách mạng công nghiệp lần thứ tư.'
+        text: 'Cách mạng công nghiệp là những bước nhảy vọt về chất trình độ của tư liệu lao động, thúc đẩy phân công lao động xã hội và năng suất bứt phá',
+        correctCategory: 'muc_6_1_1',
+        hint: 'Định nghĩa khái quát về CMCN theo Mục 6.1.1 Slide bài giảng.'
       },
       {
         id: 'c5-clue-2',
-        text: 'Nhu cầu xây dựng nền tảng công nghiệp tự chủ để Việt Nam không bị kẹt mãi ở vị thế làm thuê gia công',
-        correctCategory: 'tat_yeu_cnh_hdh',
-        hint: 'Đòi hỏi sống còn để xây dựng cơ sở vật chất kỹ thuật cho chủ nghĩa xã hội.'
+        text: 'CNH, HĐH là con đường tất yếu khách quan để thoát khỏi bẫy thu nhập trung bình và xây dựng cơ sở vật chất kỹ thuật cho CNXH',
+        correctCategory: 'muc_6_1_2_a',
+        hint: 'Luận giải tính tất yếu khách quan trong Mục 6.1.2.'
       },
       {
         id: 'c5-clue-3',
-        text: 'Chuyển đổi nhà máy từ gia công dệt may sang sản xuất chip bán dẫn và thiết bị viễn thông công nghệ cao',
-        correctCategory: 'chuyen_dich_co_cau',
-        hint: 'Tái cấu trúc tỷ trọng các ngành theo hướng công nghiệp hiện đại hóa giá trị gia tăng cao.'
+        text: 'Cơ cấu kinh tế chuyển dịch mạnh mẽ theo hướng tăng tỷ trọng ngành công nghiệp chế biến, chế tạo và dịch vụ tri thức hiện đại',
+        correctCategory: 'muc_6_1_2_b',
+        hint: 'Nội dung cốt lõi về chuyển dịch cơ cấu kinh tế của công nghiệp hóa hiện đại hóa.'
       },
       {
         id: 'c5-clue-4',
-        text: 'Chính sách đào tạo 50.000 kỹ sư vi mạch bán dẫn và phổ cập thanh toán số không dùng tiền mặt toàn quốc',
-        correctCategory: 'di_tat_don_dau',
-        hint: 'Bước nhảy vọt vào các ngành công nghệ mũi nhọn đón đầu làn sóng 4.0.'
+        text: 'Thực hiện đồng thời chuyển đổi số toàn diện, phát triển Chính phủ số, kinh tế số và ứng dụng công nghệ thông minh trong sản xuất',
+        correctCategory: 'muc_6_1_2_c',
+        hint: 'Đặc thù công nghiệp hóa hiện đại hóa ở Việt Nam trong bối cảnh thích ứng CMCN 4.0.'
       },
       {
         id: 'c5-clue-5',
-        text: 'Lắp đặt hệ thống điện mặt trời mái nhà và quy chuẩn tuần hoàn nước thải công nghiệp đạt chuẩn ESG xanh',
-        correctCategory: 'phat_trien_ben_vung',
-        hint: 'Nội dung công nghiệp hóa hiện đại hóa hiện đại gắn với phát triển sinh thái bền vững.'
+        text: 'Kết hợp tuần tự với đi tắt đón đầu, phát triển nguồn nhân lực công nghệ cao và gắn công nghiệp hóa với bảo vệ môi trường sinh thái bền vững',
+        correctCategory: 'muc_6_1_2_d',
+        hint: 'Con đường và phương thức thực hiện CNH, HĐH hiệu quả ở nước ta.'
       }
     ],
     philosophicalVerdict: {
-      headline: 'Vụ án phá giải: CNH, HĐH trong kỷ nguyên 4.0 là mệnh lệnh sống còn để vượt qua bẫy thu nhập trung bình!',
-      concept: 'Cách mạng Công nghiệp & Nội dung CNH, HĐH ở Việt Nam (Mục 6.1)',
-      analysis: 'Bản kết luận điều tra khẳng định luận điểm trung tâm của Chương 6: Công nghiệp hóa, hiện đại hóa ở Việt Nam thời kỳ mới không đơn thuần là lặp lại con đường cơ khí hóa cổ điển của các nước đi trước. Dưới tác động mạnh mẽ của CMCN 4.0, Việt Nam phải thực hiện đồng thời hai nhiệm vụ: vừa tiếp tục hoàn thành các nhiệm vụ công nghiệp hóa truyền thống, vừa tranh thủ thời cơ "đi tắt đón đầu" phát triển kinh tế số, kinh tế tri thức và công nghệ cao. Con đường duy nhất để giải phóng người lao động khỏi cái bẫy gia công giá rẻ là làm chủ tri thức và công nghệ sản xuất hiện đại.',
+      headline: 'Phá án thành công: CNH, HĐH thích ứng 4.0 là con đường duy nhất để Việt Nam phát triển bứt phá!',
+      concept: 'Mục 6.1: Khái quát CMCN và Tính tất yếu, Nội dung CNH, HĐH ở Việt Nam',
+      analysis: 'Theo Mục 6.1 Slide bài giảng Chương 6: Công nghiệp hóa, hiện đại hóa ở Việt Nam là quá trình chuyển đổi căn bản, toàn diện các hoạt động sản xuất kinh doanh từ sử dụng lao động thủ công là chính sang lao động sử dụng phổ biến công nghệ tiên tiến, hiện đại. Trong thời đại CMCN 4.0, Việt Nam không đi theo lộ trình tuần tự cũ mà kết hợp "đi tắt đón đầu", lấy chuyển đổi số, kinh tế tri thức và phát triển bền vững làm động lực then chốt.',
       xpAwarded: 200
     }
   },
@@ -298,56 +435,81 @@ export const DETECTIVE_CASES = [
   {
     id: 'CASE-006',
     code: 'HỒ SƠ #006',
-    chapterBadge: 'CHƯƠNG 6 • HỘI NHẬP QUỐC TẾ',
-    title: 'Đại Án "Đội Lốt" Xuất Xứ & Bản Lĩnh Hội Nhập Kinh Tế Quốc Tế Độc Lập Tự Chủ',
-    subtitle: 'Giải mã thời cơ, thách thức và phương hướng xây dựng nền kinh tế tự chủ trong thế giới phẳng',
+    chapterBadge: 'CHƯƠNG 6 • MỤC 6.2',
+    title: 'Hồ Sơ Hội Nhập Kinh Tế Quốc Tế Của Việt Nam',
+    subtitle: 'Chuẩn Mục 6.2: Khái niệm & Hình thức (6.2.1), Tác động (6.2.2) & Phương hướng nâng cao hiệu quả, Độc lập tự chủ (6.2.3)',
     image: './assets/images/cases/case-c6-integration.svg',
     dossierLevel: 'CẤP ĐỘ: NÂNG CAO',
     accentColor: '#818cf8',
-    backgroundStory: 'Một doanh nghiệp có vốn đầu tư nước ngoài (FDI) bị lực lượng Hải quan phát hiện nhập khẩu linh kiện pin năng lượng mặt trời hoàn chỉnh từ nước ngoài, sau đó dán nhãn "Made in Vietnam" để gian lận xuất xứ hòng lẩn tránh mức thuế chống bán phá giá 35% khi xuất sang thị trường Mỹ và Liên minh Châu Âu (EU). Vụ gian lận thương mại quy mô hàng trăm triệu USD này không chỉ đe dọa các doanh nghiệp chân chính của Việt Nam bị vạ lây trừng phạt thương mại, mà còn bộc lộ những thách thức khốc liệt của quá trình hội nhập quốc tế. Hãy phân loại các manh mối vào đúng các khía cạnh của hội nhập kinh tế quốc tế!',
+    backgroundStory: 'Hội nhập kinh tế quốc tế mang lại cho nước ta cơ hội mở rộng thị trường xuất khẩu kỷ lục và thu hút hàng trăm tỷ USD vốn đầu tư FDI. Tuy nhiên, đi kèm với đó là sức ép cạnh tranh gay gắt, nguy cơ gian lận xuất xứ hàng hóa và rủi ro bị phụ thuộc vào chuỗi cung ứng bên ngoài. Làm thế nào để vừa hội nhập sâu rộng, vừa giữ vững độc lập tự chủ kinh tế? Hãy phân loại các luận điểm khoa học theo Mục 6.2 Slide bài giảng!',
     categories: [
-      { id: 'hinh_thuc_hoi_nhap', name: 'CÁC HÌNH THỨC HỘI NHẬP QUỐC TẾ', desc: 'Tham gia các định chế thương mại đa phương WTO, các FTA thế hệ mới như CPTPP, EVFTA, RCEP', color: '#818cf8' },
-      { id: 'tac_dong_tich_cuc', name: 'TÁC ĐỘNG TÍCH CỰC CỦA HỘI NHẬP', desc: 'Mở rộng thị trường xuất khẩu, thu hút vốn FDI công nghệ cao, tiếp thu tri thức quản trị hiện đại', color: '#10b981' },
-      { id: 'thach_thuc_rui_ro', name: 'THÁCH THỨC & NGUY CƠ RỦI RO', desc: 'Cạnh tranh khốc liệt, nguy cơ trở thành bãi thải công nghệ cũ, gian lận xuất xứ và phụ thuộc bên ngoài', color: '#ef4444' },
-      { id: 'doc_lap_tu_chu', name: 'XÂY DỰNG NỀN KT ĐỘC LẬP TỰ CHỦ', desc: 'Giữ vững tự chủ về đường lối, đa dạng hóa thị trường đối tác, không để lệ thuộc vào một nền kinh tế duy nhất', color: '#f59e0b' },
-      { id: 'phuong_huong_nang_cao', name: 'PHƯƠNG HƯỚNG NÂNG CAO HIỆU QUẢ', desc: 'Nâng cao năng lực cạnh tranh quốc gia, hoàn thiện công cụ phòng vệ thương mại và năng lực nội sinh', color: '#ec4899' }
+      { 
+        id: 'muc_6_2_1', 
+        name: 'MỤC 6.2.1: KHÁI NIỆM & HÌNH THỨC HỘI NHẬP', 
+        desc: 'Quá trình chủ động gắn kết kinh tế quốc gia với kinh tế thế giới qua các hình thức song phương, khu vực và đa phương toàn cầu (WTO, FTA)', 
+        color: '#818cf8' 
+      },
+      { 
+        id: 'muc_6_2_2_a', 
+        name: 'MỤC 6.2.2: TÁC ĐỘNG TÍCH CỰC CỦA HỘI NHẬP', 
+        desc: 'Mở rộng thị trường xuất khẩu, thu hút vốn FDI, tiếp thu công nghệ và kỹ năng quản lý, thúc đẩy cải cách thể chế trong nước', 
+        color: '#10b981' 
+      },
+      { 
+        id: 'muc_6_2_2_b', 
+        name: 'MỤC 6.2.2: THÁCH THỨC & NGUY CƠ RỦI RO', 
+        desc: 'Gia tăng cạnh tranh khốc liệt, nguy cơ phụ thuộc chuỗi cung ứng, gian lận thương mại xuất xứ và dễ tổn thương trước khủng hoảng toàn cầu', 
+        color: '#ef4444' 
+      },
+      { 
+        id: 'muc_6_2_3_a', 
+        name: 'MỤC 6.2.3: XÂY DỰNG NỀN KT ĐỘC LẬP TỰ CHỦ', 
+        desc: 'Tự chủ về đường lối phát triển, nâng cao năng lực nội sinh, đa dạng hóa thị trường đối tác để bảo đảm an ninh kinh tế', 
+        color: '#f59e0b' 
+      },
+      { 
+        id: 'muc_6_2_3_b', 
+        name: 'MỤC 6.2.3: PHƯƠNG HƯỚNG NÂNG CAO HIỆU QUẢ', 
+        desc: 'Nâng cao năng lực cạnh tranh quốc gia, hoàn thiện hệ thống phòng vệ thương mại, chủ động hội nhập có chọn lọc và bền vững', 
+        color: '#ec4899' 
+      }
     ],
     clues: [
       {
         id: 'c6-clue-1',
-        text: 'Ký kết và tận dụng ưu đãi thuế quan 0% từ Hiệp định thương mại tự do Việt Nam - EU (EVFTA)',
-        correctCategory: 'hinh_thuc_hoi_nhap',
-        hint: 'Biểu hiện hội nhập kinh tế khu vực và thế giới thông qua các hiệp định thương mại song phương/đa phương.'
+        text: 'Hội nhập kinh tế quốc tế là quá trình gắn kết nền kinh tế của một quốc gia với kinh tế khu vực và thế giới thông qua các nỗ lực tự do hóa thương mại',
+        correctCategory: 'muc_6_2_1',
+        hint: 'Khái niệm chuẩn xác được định nghĩa trong Mục 6.2.1 Slide bài giảng.'
       },
       {
         id: 'c6-clue-2',
-        text: 'Kim ngạch xuất khẩu của Việt Nam tăng trưởng vượt mốc 370 tỷ USD nhờ mở cửa thị trường toàn cầu',
-        correctCategory: 'tac_dong_tich_cuc',
-        hint: 'Cơ hội vàng mở rộng quy mô tiêu thụ hàng hóa và tích lũy ngoại tệ cho đất nước.'
+        text: 'Mở rộng thị trường tiêu thụ hàng hóa cho nông sản, dệt may, điện tử và tạo hàng triệu việc làm nhờ dòng vốn đầu tư trực tiếp nước ngoài (FDI)',
+        correctCategory: 'muc_6_2_2_a',
+        hint: 'Biểu hiện thực tiễn của tác động tích cực trong Mục 6.2.2.'
       },
       {
         id: 'c6-clue-3',
-        text: 'Thủ đoạn gian lận xuất xứ hàng hóa khiến toàn ngành sản xuất trong nước đối mặt nguy cơ bị áp thuế trừng phạt',
-        correctCategory: 'thach_thuc_rui_ro',
-        hint: 'Mặt trái và cạm bẫy thương mại quốc tế đe dọa chuỗi cung ứng xuất khẩu.'
+        text: 'Nhiều doanh nghiệp nhỏ và vừa trong nước có nguy cơ giải thể do không chịu nổi sức ép cạnh tranh từ các tập đoàn đa quốc gia và hàng nhập khẩu giá rẻ',
+        correctCategory: 'muc_6_2_2_b',
+        hint: 'Tác động tiêu cực và thách thức của hội nhập trong Mục 6.2.2.'
       },
       {
         id: 'c6-clue-4',
-        text: 'Tự chủ công nghệ sản xuất phôi thép và linh kiện cốt lõi trong nước, không phụ thuộc duy nhất vào một thị trường cung ứng',
-        correctCategory: 'doc_lap_tu_chu',
-        hint: 'Năng lực nội sinh và sự kiên cường tự chủ bảo đảm an ninh kinh tế quốc gia.'
+        text: 'Xây dựng nền kinh tế độc lập tự chủ là điểm tựa vững chắc để hội nhập hiệu quả, không để nền kinh tế bị lệ thuộc vào bất kỳ một thị trường đơn lẻ nào',
+        correctCategory: 'muc_6_2_3_a',
+        hint: 'Mối quan hệ biện chứng giữa độc lập tự chủ và hội nhập quốc tế trong Mục 6.2.3.'
       },
       {
         id: 'c6-clue-5',
-        text: 'Bộ Công Thương chủ động thiết lập hệ thống cảnh báo sớm điều tra chống lẩn tránh phòng vệ thương mại',
-        correctCategory: 'phuong_huong_nang_cao',
-        hint: 'Công cụ pháp lý và thể chế chủ động nâng cao hiệu quả bảo vệ lợi ích quốc gia khi hội nhập.'
+        text: 'Chủ động hoàn thiện công cụ phòng vệ thương mại, xử lý nghiêm gian lận xuất xứ và đào tạo nguồn nhân lực tinh thông luật thương mại quốc tế',
+        correctCategory: 'muc_6_2_3_b',
+        hint: 'Phương hướng then chốt nhằm nâng cao hiệu quả hội nhập quốc tế theo Mục 6.2.3.'
       }
     ],
     philosophicalVerdict: {
-      headline: 'Vụ án phá giải: Hội nhập sâu rộng phải luôn đi đôi với giữ vững độc lập, tự chủ kinh tế!',
-      concept: 'Hội nhập Kinh tế Quốc tế & Xây dựng Nền kinh tế Độc lập Tự chủ (Mục 6.2)',
-      analysis: 'Bản kết luận điều tra đúc kết bài học đắt giá của Mục 6.2 Chương 6: Hội nhập kinh tế quốc tế là xu thế khách quan của thời đại, mở ra chân trời phát triển to lớn nhưng cũng tiềm ẩn vô vàn cạm bẫy và rủi ro khôn lường. Trong thế giới toàn cầu hóa biến động, Việt Nam phải thực hiện nhất quán đường lối: "Hội nhập quốc tế toàn diện, sâu rộng nhưng phải giữ vững độc lập, tự chủ và định hướng XHCN". Độc lập tự chủ là điểm tựa, là nền tảng để hội nhập thành công; ngược lại, hội nhập hiệu quả sẽ tạo thêm nguồn lực để củng cố nền độc lập tự chủ của đất nước.',
+      headline: 'Phá án thành công: Hội nhập toàn diện phải luôn gắn liền với xây dựng nền kinh tế độc lập tự chủ!',
+      concept: 'Mục 6.2: Khái niệm, Hình thức, Tác động và Phương hướng nâng cao hiệu quả Hội nhập KT quốc tế',
+      analysis: 'Theo Mục 6.2 Slide bài giảng Chương 6: Hội nhập kinh tế quốc tế là xu thế khách quan của thời đại. Việt Nam chủ động, tích cực hội nhập theo phương châm: đa phương hóa, đa dạng hóa các quan hệ kinh tế quốc tế. Quá trình này đem lại cơ hội phát triển to lớn nhưng cũng đặt ra những thách thức gay gắt. Để hội nhập thành công, Việt Nam phải không ngừng củng cố nội lực, nâng cao năng lực cạnh tranh và kiên quyết giữ vững độc lập tự chủ kinh tế.',
       xpAwarded: 200
     }
   }
