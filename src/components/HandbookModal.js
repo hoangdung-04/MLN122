@@ -58,27 +58,35 @@ export function renderHandbookModal(container, onClose) {
           // Format bullet points nicely
           const formattedSummary = t.summary.split('\n').map(line => {
             const trimmed = line.trim();
+            if (!trimmed) return '';
             if (trimmed.startsWith('•') || trimmed.startsWith('-')) {
-              return `<div style="padding-left: 1.2rem; text-indent: -1.2rem; margin-bottom: 0.35rem; line-height: 1.62;">${trimmed}</div>`;
+              const cleanText = trimmed.replace(/^[•\-]\s*/, '');
+              return `
+                <div class="handbook-bullet-point">
+                  <span class="bullet-dot" style="background: ${ch.accentColor};"></span>
+                  <span class="bullet-text">${cleanText}</span>
+                </div>
+              `;
             }
-            return `<p style="margin-bottom: 0.5rem; line-height: 1.65;">${trimmed}</p>`;
+            return `<p class="handbook-paragraph">${trimmed}</p>`;
           }).join('');
 
           topicsHTML += `
-            <article class="handbook-topic-card" style="border-left: 4px solid ${ch.accentColor};">
+            <article class="handbook-topic-card" style="--card-accent: ${ch.accentColor};">
               <div class="handbook-topic-head">
-                <span class="handbook-code-badge" style="background: ${ch.accentBg}; color: ${ch.accentColor}; border: 1px solid ${ch.accentBorder};">
+                <span class="handbook-code-badge" style="background: ${ch.accentBg}; color: ${ch.accentColor}; border: 1.5px solid ${ch.accentBorder};">
                   MỤC ${t.code}
                 </span>
-                <h4 class="handbook-topic-title" style="color: var(--text-heading);">
+                <h4 class="handbook-topic-title">
                   ${t.title}
                 </h4>
               </div>
 
               <div class="handbook-theory-body">
-                <strong style="color: ${ch.accentColor}; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.04em; display: block; margin-bottom: 0.4rem; font-family: var(--font-heading);">
-                  📖 Lý luận &amp; Trọng tâm Slide:
-                </strong>
+                <div class="theory-section-label" style="color: ${ch.accentColor};">
+                  <span>📖</span>
+                  <span>LÝ LUẬN &amp; TRỌNG TÂM BÀI GIẢNG:</span>
+                </div>
                 <div class="handbook-summary-text">
                   ${formattedSummary}
                 </div>
@@ -101,14 +109,14 @@ export function renderHandbookModal(container, onClose) {
           <div class="handbook-chapter-block">
             <div class="handbook-chapter-header" style="border-bottom: 2px solid ${ch.accentBorder};">
               <div>
-                <span class="badge-pill" style="background: ${ch.accentBg}; color: ${ch.accentColor}; border: 1px solid ${ch.accentBorder}; font-size: 0.78rem; font-weight: 800; font-family: var(--font-heading); margin-bottom: 0.35rem; display: inline-block;">
-                  ${ch.chapterCode} • ${ch.badge}
+                <span class="badge-pill ch-head-pill" style="background: ${ch.accentBg}; color: ${ch.accentColor}; border: 1.5px solid ${ch.accentBorder};">
+                  ✦ ${ch.chapterCode} • ${ch.badge}
                 </span>
-                <h3 style="font-size: 1.28rem; font-weight: 800; color: var(--text-heading); font-family: var(--font-heading); margin: 0; line-height: 1.35;">
+                <h3 class="handbook-chapter-title">
                   ${ch.chapterTitle}
                 </h3>
               </div>
-              <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); font-family: var(--font-heading); white-space: nowrap;">
+              <span class="badge-pill ch-count-pill">
                 ${ch.topics.length} chuyên đề
               </span>
             </div>
