@@ -1,0 +1,12 @@
+node_modules
+dist
+docs
+.git
+.github
+.gitignore
+.env
+*.log
+npm-debug.log*
+.gemini
+*.bat
+README.md

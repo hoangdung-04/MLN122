@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="pinkGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#db2777" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" rx="20" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Grid lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Header Badge -->
+  <g transform="translate(40, 36)">
+    <rect width="180" height="28" rx="14" fill="#1e293b" stroke="#84cc16" stroke-width="1.5" />
+    <circle cx="16" cy="14" r="5" fill="#84cc16" />
+    <text x="32" y="19" fill="#e2e8f0" font-size="11" font-weight="bold" letter-spacing="1">MLN122 • CASE SCENARIO</text>
+  </g>
+
+  <!-- Title &amp; Subtitle inside SVG for standalone view -->
+  <text x="760" y="44" fill="#84cc16" font-size="13" font-weight="bold" text-anchor="end" letter-spacing="0.5">KHẢ NĂNG VÀ HIỆN THỰC</text>
+  <text x="760" y="62" fill="#94a3b8" font-size="11" text-anchor="end">Khả năng chuyển hóa thành hiện thực khi hội tụ đủ điều kiện</text>
+
+  <!-- Main Illustration Graphics -->
+  
+      <!-- Sprout (Possibility) -->
+      <g transform="translate(250, 240)">
+        <ellipse cx="0" cy="50" rx="60" ry="16" fill="#3f3f46"/>
+        <path d="M0 50 Q-15 20 -25 0 Q-5 10 0 50" fill="#84cc16"/>
+        <path d="M0 50 Q15 15 30 5 Q10 20 0 50" fill="#65a30d"/>
+        <text x="0" y="90" fill="#bef264" font-size="14" font-weight="bold" text-anchor="middle">KHẢ NĂNG</text>
+        <text x="0" y="110" fill="#a1a1aa" font-size="11" text-anchor="middle">(Ý tưởng khởi nghiệp)</text>
+      </g>
+
+      <!-- Conditions Arrow -->
+      <path d="M350 250 L450 250" stroke="#facc15" stroke-width="4" stroke-dasharray="6 3"/>
+      <polygon points="450,242 465,250 450,258" fill="#facc15"/>
+      <text x="405" y="235" fill="#fef08a" font-size="12" text-anchor="middle">Hội tụ điều kiện</text>
+
+      <!-- Mighty Tree (Reality) -->
+      <g transform="translate(560, 230)">
+        <ellipse cx="0" cy="60" rx="70" ry="18" fill="#3f3f46"/>
+        <rect x="-14" y="0" width="28" height="60" fill="#78350f"/>
+        <circle cx="0" cy="-20" r="45" fill="#15803d"/>
+        <circle cx="-25" cy="-10" r="30" fill="#16a34a"/>
+        <circle cx="25" cy="-10" r="30" fill="#16a34a"/>
+        <text x="0" y="100" fill="#86efac" font-size="14" font-weight="bold" text-anchor="middle">HIỆN THỰC</text>
+        <text x="0" y="120" fill="#a1a1aa" font-size="11" text-anchor="middle">(Dự án thành công)</text>
+      </g>
+    
+
+  <!-- Bottom Brand Watermark -->
+  <text x="40" y="420" fill="#475569" font-size="11" font-weight="500">PHILOSOPHY IN LIFE — TRIẾT HỌC TRONG ĐỜI SỐNG</text>
+  <text x="760" y="420" fill="#475569" font-size="11" text-anchor="end">FPT UNIVERSITY • MLN122</text>
+</svg>

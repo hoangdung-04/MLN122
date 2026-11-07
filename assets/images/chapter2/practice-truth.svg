@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="pinkGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#db2777" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" rx="20" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Grid lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Header Badge -->
+  <g transform="translate(40, 36)">
+    <rect width="180" height="28" rx="14" fill="#1e293b" stroke="#0ea5e9" stroke-width="1.5" />
+    <circle cx="16" cy="14" r="5" fill="#0ea5e9" />
+    <text x="32" y="19" fill="#e2e8f0" font-size="11" font-weight="bold" letter-spacing="1">MLN122 • CASE SCENARIO</text>
+  </g>
+
+  <!-- Title &amp; Subtitle inside SVG for standalone view -->
+  <text x="760" y="44" fill="#0ea5e9" font-size="13" font-weight="bold" text-anchor="end" letter-spacing="0.5">THỰC TIỄN – TIÊU CHUẨN CHÂN LÝ</text>
+  <text x="760" y="62" fill="#94a3b8" font-size="11" text-anchor="end">Học bơi trên bờ vs Nhảy xuống dòng nước kiểm chứng</text>
+
+  <!-- Main Illustration Graphics -->
+  
+      <!-- Left side: Theory book on dry shore -->
+      <rect x="160" y="160" width="180" height="130" rx="12" fill="#1e293b" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="250" y="195" fill="#94a3b8" font-size="14" font-weight="bold" text-anchor="middle">LÝ THUYẾT TRÊN GIẤY</text>
+      <text x="250" y="230" fill="#cbd5e1" font-size="12" text-anchor="middle">100 cuốn sách bơi lội</text>
+      <text x="250" y="255" fill="#f59e0b" font-size="11" text-anchor="middle">Chưa thể khẳng định chân lý</text>
+
+      <!-- Right side: Water Waves &amp; Real Swimming -->
+      <rect x="420" y="160" width="220" height="130" rx="12" fill="#0369a1" stroke="#38bdf8" stroke-width="3"/>
+      <!-- Waves -->
+      <path d="M440 230 Q465 215 490 230 T540 230 T590 230 T640 230" fill="none" stroke="#bae6fd" stroke-width="3"/>
+      <circle cx="510" cy="205" r="14" fill="#fbbf24"/>
+      <text x="530" y="270" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">HOẠT ĐỘNG THỰC TIỄN</text>
+      <text x="530" y="285" fill="#e0f2fe" font-size="11" text-anchor="middle">Kiểm nghiệm chân lý tối thượng</text>
+    
+
+  <!-- Bottom Brand Watermark -->
+  <text x="40" y="420" fill="#475569" font-size="11" font-weight="500">PHILOSOPHY IN LIFE — TRIẾT HỌC TRONG ĐỜI SỐNG</text>
+  <text x="760" y="420" fill="#475569" font-size="11" text-anchor="end">FPT UNIVERSITY • MLN122</text>
+</svg>

@@ -1,0 +1,121 @@
+import fs from 'fs';
+
+const bannerSVG = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360">
+  <defs>
+    <linearGradient id="bgDuo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a13" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0a0f1d" />
+    </linearGradient>
+    <linearGradient id="goldDuo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="silverDuo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="900" height="360" rx="20" fill="url(#bgDuo)" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <!-- Elegant background geometry -->
+  <circle cx="280" cy="180" r="140" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="4 6" opacity="0.3"/>
+  <circle cx="620" cy="180" r="140" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4 6" opacity="0.3"/>
+
+  <!-- Left: KARL MARX (1818 - 1883) -->
+  <g transform="translate(280, 160)">
+    <!-- Medallion Frame -->
+    <circle cx="0" cy="0" r="105" fill="#111827" stroke="url(#goldDuo)" stroke-width="3"/>
+    <circle cx="0" cy="0" r="96" fill="#090d16" stroke="#475569" stroke-width="1"/>
+
+    <!-- Marx Portrait Silhouette & Engraved Features -->
+    <!-- Head outline & Iconic Thick Hair -->
+    <path d="M-55 -25 C-65 -70 -20 -85 0 -85 C20 -85 65 -70 55 -25 C65 -15 65 15 55 45 C45 75 25 85 0 85 C-25 85 -45 75 -55 45 C-65 15 -65 -15 -55 -25 Z" fill="#1e293b"/>
+    <!-- Wild Hair waves -->
+    <path d="M-58 -20 C-75 -65 -25 -95 0 -95 C25 -95 75 -65 58 -20 C70 -10 65 25 50 40 C60 55 45 75 25 85 C0 95 -30 92 -45 75 C-65 55 -65 20 -50 0 Z" fill="#334155"/>
+    
+    <!-- Face -->
+    <ellipse cx="0" cy="-20" rx="30" ry="36" fill="#fde68a" opacity="0.95"/>
+    
+    <!-- Eyes, Brow & Nose -->
+    <path d="M-22 -32 Q-12 -38 -2 -34" stroke="#78350f" stroke-width="3" fill="none"/>
+    <path d="M22 -32 Q12 -38 2 -34" stroke="#78350f" stroke-width="3" fill="none"/>
+    <circle cx="-12" cy="-26" r="3.5" fill="#451a03"/>
+    <circle cx="12" cy="-26" r="3.5" fill="#451a03"/>
+    <path d="M0 -30 L0 -10 L6 -8" stroke="#b45309" stroke-width="2.5" fill="none"/>
+
+    <!-- Magnificent Full Beard (Bộ râu quai nón trứ danh của Mác) -->
+    <path d="M-36 -12 C-45 20 -40 65 -20 82 C-5 92 5 92 20 82 C40 65 45 20 36 -12 C25 -2 15 0 0 2 C-15 0 -25 -2 -36 -12 Z" fill="#e2e8f0"/>
+    <path d="M-28 5 C-35 35 -25 70 -10 80 C0 86 10 84 20 75 C30 60 32 30 26 5 C15 12 0 14 -12 12 Z" fill="#f8fafc"/>
+    <!-- Mustache -->
+    <path d="M-24 -8 Q0 4 24 -8 Q12 10 0 8 Q-12 10 -24 -8 Z" fill="#cbd5e1"/>
+
+    <!-- Coat Collar -->
+    <path d="M-60 85 L-20 65 L0 80 L20 65 L60 85 Z" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+
+    <!-- Name Ribbon -->
+    <rect x="-85" y="115" width="170" height="28" rx="14" fill="#1e293b" stroke="url(#goldDuo)" stroke-width="1.5"/>
+    <text x="0" y="133" fill="#fbbf24" font-size="12" font-weight="900" text-anchor="middle" letter-spacing="1">C. MÁC (1818–1883)</text>
+  </g>
+
+  <!-- Center Philosophical Emblem / Divider -->
+  <g transform="translate(450, 160)">
+    <circle cx="0" cy="0" r="32" fill="#0f172a" stroke="url(#goldDuo)" stroke-width="2"/>
+    <text x="0" y="9" fill="#f59e0b" font-size="26" font-weight="900" font-family="system-ui, sans-serif" text-anchor="middle">Φ</text>
+    <line x1="0" y1="-85" x2="0" y2="-40" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <line x1="0" y1="40" x2="0" y2="85" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Right: V.I. LENIN (1870 - 1924) -->
+  <g transform="translate(620, 160)">
+    <!-- Medallion Frame -->
+    <circle cx="0" cy="0" r="105" fill="#111827" stroke="#38bdf8" stroke-width="3"/>
+    <circle cx="0" cy="0" r="96" fill="#090d16" stroke="#475569" stroke-width="1"/>
+
+    <!-- Lenin Portrait Silhouette & Distinctive Features -->
+    <!-- High Forehead & Bald Dome -->
+    <path d="M-40 -15 C-45 -70 -25 -88 0 -88 C25 -88 45 -70 40 -15 C45 10 40 45 28 65 C15 82 0 85 -15 82 C-32 75 -42 45 -40 -15 Z" fill="#1e293b"/>
+    
+    <!-- Face -->
+    <ellipse cx="0" cy="-22" rx="30" ry="38" fill="#fde68a" opacity="0.95"/>
+    <ellipse cx="0" cy="-42" rx="26" ry="24" fill="#fde68a"/> <!-- Prominent Forehead -->
+
+    <!-- Piercing Eyes & High Brow -->
+    <path d="M-22 -30 Q-10 -35 -2 -32" stroke="#78350f" stroke-width="3" fill="none"/>
+    <path d="M22 -30 Q10 -35 2 -32" stroke="#78350f" stroke-width="3" fill="none"/>
+    <ellipse cx="-12" cy="-24" rx="4" ry="2.5" fill="#451a03"/>
+    <ellipse cx="12" cy="-24" rx="4" ry="2.5" fill="#451a03"/>
+    <path d="M0 -28 L0 -8 L7 -6" stroke="#b45309" stroke-width="2.5" fill="none"/>
+
+    <!-- Characteristic Mustache & Pointed Goatee (Chòm râu dê đặc trưng của Lênin) -->
+    <path d="M-20 -5 Q0 2 20 -5 Q10 5 0 4 Q-10 5 -20 -5 Z" fill="#b45309"/> <!-- Mustache -->
+    <path d="M-10 6 Q0 8 10 6 L5 30 L0 38 L-5 30 Z" fill="#b45309"/> <!-- Goatee -->
+
+    <!-- Suit & Tie Collar -->
+    <path d="M-48 70 L-18 55 L0 72 L18 55 L48 70 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+    <polygon points="0,58 -6,85 6,85" fill="#ef4444"/> <!-- Red Tie -->
+
+    <!-- Name Ribbon -->
+    <rect x="-85" y="115" width="170" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="0" y="133" fill="#38bdf8" font-size="12" font-weight="900" text-anchor="middle" letter-spacing="1">V.I. LÊNIN (1870–1924)</text>
+  </g>
+
+  <!-- Top Decorative Header -->
+  <text x="450" y="45" fill="#f8fafc" font-size="16" font-weight="800" text-anchor="middle" letter-spacing="2">
+    NHỮNG NGƯỜI SÁNG LẬP &amp; PHÁT TRIỂN TRIẾT HỌC MÁC – LÊNIN
+  </text>
+  <text x="450" y="68" fill="#94a3b8" font-size="12" text-anchor="middle">
+    "Các nhà triết học chỉ giải thích thế giới bằng nhiều cách khác nhau, song vấn đề là cải tạo thế giới"
+  </text>
+</svg>`;
+
+fs.writeFileSync('assets/images/portraits/marx-lenin-banner.svg', bannerSVG, 'utf8');
+fs.writeFileSync('public/assets/images/portraits/marx-lenin-banner.svg', bannerSVG, 'utf8');
+console.log('Marx-Lenin dual portrait banner generated!');

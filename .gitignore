@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Local env & IDE
+.DS_Store
+*.local
+.gemini/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dist
+dist/
+dist-ssr/

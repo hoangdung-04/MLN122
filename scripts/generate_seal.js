@@ -1,0 +1,33 @@
+import fs from 'fs';
+
+const sealSVG = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="goldSealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+  <!-- Outer Star Seal -->
+  <polygon points="100,10 119,48 160,25 155,71 198,82 170,118 194,155 151,162 142,204 103,184 66,205 60,161 17,152 42,117 14,80 57,70 53,24 93,48" fill="url(#goldSealGrad)"/>
+  <!-- Inner Circle -->
+  <circle cx="100" cy="100" r="70" fill="#0f172a" stroke="#facc15" stroke-width="4"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#fde68a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <!-- Magnifying Glass Icon -->
+  <circle cx="92" cy="92" r="28" fill="none" stroke="#38bdf8" stroke-width="6"/>
+  <line x1="112" y1="112" x2="135" y2="135" stroke="#facc15" stroke-width="10" stroke-linecap="round"/>
+  <!-- Phi symbol in lens -->
+  <text x="92" y="100" fill="#facc15" font-size="24" font-weight="900" font-family="system-ui, sans-serif" text-anchor="middle">Φ</text>
+  <!-- Ribbon Text -->
+  <path id="curve" d="M 45,150 A 65,65 0 0,0 155,150" fill="none"/>
+  <text font-size="10" font-weight="bold" fill="#34d399" letter-spacing="2">
+    <textPath href="#curve" startOffset="50%" text-anchor="middle">
+      ĐÃ PHÁ ÁN
+    </textPath>
+  </text>
+</svg>`;
+
+fs.writeFileSync('assets/images/cases/seal-verdict-solved.svg', sealSVG, 'utf8');
+fs.writeFileSync('public/assets/images/cases/seal-verdict-solved.svg', sealSVG, 'utf8');
+console.log('Seal generated!');
