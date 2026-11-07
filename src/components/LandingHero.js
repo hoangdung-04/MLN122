@@ -12,15 +12,17 @@ export function renderLandingHero(container, onNavigate) {
       <div class="hero-ambient-bg"></div>
 
       <div class="container" style="position: relative; z-index: 2;">
+        <!-- Top Centered Badge -->
+        <div class="hero-top-badge-wrapper">
+          <div class="hero-badge-tag">
+            <span>MÔN HỌC MLN122 • KINH TẾ CHÍNH TRỊ MÁC – LÊNIN</span>
+          </div>
+        </div>
+
         <div class="hero-grid-main">
           
           <!-- LEFT COLUMN: Content, Headline, Quote & Actions -->
           <div>
-            <!-- Badge -->
-            <div class="hero-badge-tag">
-              <span>MÔN HỌC MLN122 • KINH TẾ CHÍNH TRỊ MÁC – LÊNIN</span>
-            </div>
-
             <!-- Main Headline -->
             <h1 class="hero-headline-h1">
               KINH TẾ CHÍNH TRỊ <br />
