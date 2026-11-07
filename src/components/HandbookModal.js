@@ -141,51 +141,77 @@ export function renderHandbookModal(container, onClose) {
   });
 
   container.innerHTML = `
-    <div class="modal-overlay open" id="handbook-modal-overlay">
-      <div class="modal-content handbook-modal-card animate-slide-up">
-        <button class="modal-close-btn" id="handbook-close-btn" title="Đóng sổ tay (Esc)">✕</button>
-
-        <!-- Header -->
-        <div class="handbook-hero-head">
-          <div class="handbook-header-badge">
-            <span class="badge-pill" style="background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(139, 92, 246, 0.15)); color: var(--accent-blue); border: 1.5px solid rgba(37, 99, 235, 0.35); font-weight: 800; font-family: var(--font-heading);">
-              📚 MLN122 • KHO TRI THỨC TOÀN DIỆN
-            </span>
-            <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); font-family: var(--font-heading);">
-              Cập nhật chuẩn Slide bài giảng &amp; Giáo trình BGD&amp;ĐT
-            </span>
+    <div class="handbook-fullscreen-overlay open" id="handbook-modal-overlay">
+      <div class="handbook-fullscreen-page" id="handbook-print-area">
+        <!-- Sticky Top Navigation Bar -->
+        <header class="handbook-top-navbar">
+          <div class="handbook-header-left">
+            <button class="handbook-back-pill" id="handbook-back-btn" title="Quay lại bản đồ (Esc)">
+              <span>← Đóng &amp; Quay lại bản đồ</span>
+            </button>
           </div>
-          <h2 class="handbook-modal-title">Sổ Tay Kinh Tế Chính Trị Bỏ Túi</h2>
-          <p class="handbook-modal-subtitle">
-            Hệ thống hóa toàn bộ ${totalTopics} chuyên đề cốt lõi của 6 chương MLN122. Từ bản chất quy luật giá trị thặng dư đến thể chế KTTT định hướng XHCN và chiến lược độc lập tự chủ 4.0.
-          </p>
-        </div>
+          <div class="handbook-top-title">
+            <span>SỔ TAY KINH TẾ CHÍNH TRỊ MÁC – LÊNIN • MLN122</span>
+          </div>
+          <div class="handbook-top-actions">
+            <button class="handbook-action-btn" id="handbook-print-btn" title="In / Lưu PDF">
+              <span>🖨️ In / Lưu PDF</span>
+            </button>
+            <button class="handbook-close-x-btn" id="handbook-close-btn" title="Đóng sổ tay (Esc)">✕</button>
+          </div>
+        </header>
 
-        <!-- Search & Filter Controls -->
-        <div class="handbook-controls-wrap">
-          <div class="handbook-search-bar">
-            <span class="search-icon">🔍</span>
-            <input 
-              type="text" 
-              id="handbook-search-input" 
-              class="handbook-input" 
-              placeholder="Tìm kiếm chuyên đề, khái niệm, công thức (ví dụ: 5.1.3, thặng dư, thể chế, độc quyền, ESG)..." 
-              value="${searchQuery}"
-              autocomplete="off"
-            />
-            <button id="handbook-clear-search" class="search-clear-btn" style="display: none;" title="Xóa tìm kiếm">✕</button>
+        <!-- Main Scrollable Fullscreen Container -->
+        <main class="handbook-main-content">
+          <!-- Header Hero Banner -->
+          <div class="handbook-hero-head">
+            <div class="handbook-header-badge">
+              <span class="badge-pill" style="background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(139, 92, 246, 0.15)); color: var(--accent-blue); border: 1.5px solid rgba(37, 99, 235, 0.35); font-weight: 800; font-family: var(--font-heading);">
+                📚 MLN122 • KHO TRI THỨC TOÀN DIỆN
+              </span>
+              <span class="cert-sub-tag">
+                Cập nhật chuẩn Slide bài giảng &amp; Giáo trình BGD&amp;ĐT
+              </span>
+            </div>
+            <h1 class="handbook-modal-title">Sổ Tay Kinh Tế Chính Trị Bỏ Túi</h1>
+            <p class="handbook-modal-subtitle">
+              Hệ thống hóa toàn bộ ${totalTopics} chuyên đề cốt lõi của 6 chương MLN122. Từ bản chất quy luật giá trị thặng dư đến thể chế KTTT định hướng XHCN và chiến lược độc lập tự chủ 4.0.
+            </p>
           </div>
 
-          <!-- Chapter Navigation Pills -->
-          <div class="handbook-tabs-scroller" id="handbook-tabs-row">
-            ${tabsHTML}
-          </div>
-        </div>
+          <!-- Sticky Search & Filter Controls -->
+          <div class="handbook-controls-wrap">
+            <div class="handbook-search-bar">
+              <span class="search-icon">🔍</span>
+              <input 
+                type="text" 
+                id="handbook-search-input" 
+                class="handbook-input" 
+                placeholder="Tìm kiếm chuyên đề, khái niệm, công thức (ví dụ: 5.1.3, thặng dư, thể chế, độc quyền, ESG)..." 
+                value="${searchQuery}"
+                autocomplete="off"
+              />
+              <button id="handbook-clear-search" class="search-clear-btn" style="display: none;" title="Xóa tìm kiếm">✕</button>
+            </div>
 
-        <!-- Main Dynamic Content List -->
-        <div class="handbook-scroll-area" id="handbook-content-container">
-          <!-- Injected via renderContent() -->
-        </div>
+            <!-- Chapter Navigation Tabs -->
+            <div class="handbook-tabs-scroller" id="handbook-tabs-row">
+              ${tabsHTML}
+            </div>
+          </div>
+
+          <!-- Main Dynamic Topics Container (1 Single Native Page Scrollbar) -->
+          <div class="handbook-topics-container" id="handbook-content-container">
+            <!-- Injected via renderContent() -->
+          </div>
+
+          <!-- Bottom Action Bar -->
+          <footer class="handbook-bottom-bar">
+            <button class="btn-primary" id="handbook-done-btn">
+              <span>✕ ĐÓNG SỔ TAY TRI THỨC</span>
+            </button>
+          </footer>
+        </main>
       </div>
     </div>
   `;
@@ -195,6 +221,9 @@ export function renderHandbookModal(container, onClose) {
   // Event Listeners
   const modalOverlay = document.getElementById('handbook-modal-overlay');
   const closeBtn = document.getElementById('handbook-close-btn');
+  const backBtn = document.getElementById('handbook-back-btn');
+  const doneBtn = document.getElementById('handbook-done-btn');
+  const printBtn = document.getElementById('handbook-print-btn');
   const searchInput = document.getElementById('handbook-search-input');
   const clearSearchBtn = document.getElementById('handbook-clear-search');
   const tabsRow = document.getElementById('handbook-tabs-row');
@@ -228,6 +257,7 @@ export function renderHandbookModal(container, onClose) {
   // Close handlers
   function handleClose() {
     sound.playClick();
+    document.body.style.overflow = '';
     window.removeEventListener('keydown', handleKeyDown);
     onClose();
   }
@@ -239,10 +269,14 @@ export function renderHandbookModal(container, onClose) {
   }
 
   window.addEventListener('keydown', handleKeyDown);
-  closeBtn.addEventListener('click', handleClose);
-  modalOverlay.addEventListener('click', (e) => {
-    if (e.target.id === 'handbook-modal-overlay') {
-      handleClose();
-    }
-  });
+  if (closeBtn) closeBtn.addEventListener('click', handleClose);
+  if (backBtn) backBtn.addEventListener('click', handleClose);
+  if (doneBtn) doneBtn.addEventListener('click', handleClose);
+
+  if (printBtn) {
+    printBtn.addEventListener('click', () => {
+      sound.playClick();
+      window.print();
+    });
+  }
 }
