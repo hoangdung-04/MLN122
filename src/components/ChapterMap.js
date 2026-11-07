@@ -49,9 +49,9 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
               ${sc.situation}
             </p>
           </div>
-          <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 0.75rem; margin-top: 0.5rem;">
-            <span style="font-size: 0.76rem; color: var(--text-dim); font-weight: 700;">${sc.philosophyConcept}</span>
-            <span style="font-size: 0.86rem; color: var(--accent-blue); font-weight: 800; font-family: var(--font-heading);">Khám phá →</span>
+          <div class="scenario-card-footer">
+            <span class="scenario-concept-label" title="${sc.philosophyConcept}">${sc.philosophyConcept}</span>
+            <span class="scenario-cta-btn">Khám phá →</span>
           </div>
         </div>
       `;
@@ -108,9 +108,9 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
             ${cs.backgroundStory}
           </p>
         </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 0.75rem; margin-top: 0.5rem;">
-          <span style="font-size: 0.76rem; color: var(--accent-crimson); font-weight: 700;">Phân loại manh mối</span>
-          <span style="font-size: 0.86rem; color: var(--accent-crimson); font-weight: 800; font-family: var(--font-heading);">Vào phá án →</span>
+        <div class="scenario-card-footer">
+          <span class="scenario-concept-label" style="color: var(--accent-crimson);">Phân loại manh mối</span>
+          <span class="scenario-cta-btn" style="color: var(--accent-crimson);">Vào phá án →</span>
         </div>
       </div>
     `;

@@ -50,10 +50,6 @@ export function renderNavbar(container, onNavigate, onOpenModal, onResetProgress
             <span id="theme-icon-symbol">${currentTheme === 'dark' ? '☀️ Sáng' : '🌙 Tối'}</span>
           </button>
 
-          <button class="nav-btn" id="nav-reset-btn" title="Làm lại từ đầu (Đặt lại điểm và bài làm về 0)" style="border-color: rgba(220, 38, 38, 0.3); color: var(--accent-crimson);">
-            <span>↺ Làm Lại</span>
-          </button>
-
           <button class="nav-btn" id="nav-sound-toggle-btn" title="${isMuted ? 'Bật âm thanh' : 'Tắt âm thanh'}">
             <span id="sound-icon-symbol">${isMuted ? '🔇' : '🔊'}</span>
           </button>
@@ -95,14 +91,6 @@ export function renderNavbar(container, onNavigate, onOpenModal, onResetProgress
     sound.playClick();
     onOpenModal('profile');
   });
-
-  const resetBtn = document.getElementById('nav-reset-btn');
-  if (resetBtn && onResetProgress) {
-    resetBtn.addEventListener('click', () => {
-      sound.playClick();
-      onResetProgress();
-    });
-  }
 
   // Theme toggle listener
   const themeBtn = document.getElementById('nav-theme-toggle-btn');

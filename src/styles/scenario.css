@@ -28,6 +28,8 @@
   border: 1px solid var(--border-subtle);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
   transition: all 0.25s var(--ease-out);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .back-to-map-btn:hover {
   color: var(--accent-blue);
