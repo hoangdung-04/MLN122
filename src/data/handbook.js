@@ -1,6 +1,6 @@
 /**
  * SỔ TAY KINH TẾ CHÍNH TRỊ MÁC – LÊNIN (MLN122)
- * Cập nhật toàn diện theo Slide bài giảng SP24 & Giáo trình chuẩn Bộ Giáo dục & Đào tạo
+ * Cập nhật toàn diện theo Slide bài giảng & Giáo trình chuẩn Bộ Giáo dục & Đào tạo
  * Bao gồm đầy đủ 6 chương với chi tiết các tiểu mục 3.1, 3.2, 3.3, 5.1, 5.2, 5.3, 6.1, 6.2
  */
 

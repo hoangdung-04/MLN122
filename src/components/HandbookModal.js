@@ -77,7 +77,7 @@ export function renderHandbookModal(container, onClose) {
 
               <div class="handbook-theory-body">
                 <strong style="color: ${ch.accentColor}; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.04em; display: block; margin-bottom: 0.4rem; font-family: var(--font-heading);">
-                  📖 Lý luận &amp; Trọng tâm Slide SP24:
+                  📖 Lý luận &amp; Trọng tâm Slide:
                 </strong>
                 <div class="handbook-summary-text">
                   ${formattedSummary}
@@ -152,7 +152,7 @@ export function renderHandbookModal(container, onClose) {
               📚 MLN122 • KHO TRI THỨC TOÀN DIỆN
             </span>
             <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); font-family: var(--font-heading);">
-              Cập nhật chuẩn Slide SP24 &amp; Giáo trình BGD&amp;ĐT
+              Cập nhật chuẩn Slide bài giảng &amp; Giáo trình BGD&amp;ĐT
             </span>
           </div>
           <h2 class="handbook-modal-title">Sổ Tay Kinh Tế Chính Trị Bỏ Túi</h2>

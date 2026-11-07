@@ -1,5 +1,5 @@
 // Ngân hàng câu hỏi trắc nghiệm Đấu trường Quizizz MLN122
-// Biên soạn chuẩn chỉnh theo Đề cương chi tiết & Giáo trình Slide SP24
+// Biên soạn chuẩn chỉnh theo Đề cương chi tiết & Giáo trình Slide
 
 export const QUIZ_QUESTIONS = [
   // --- CHƯƠNG 3: GIÁ TRỊ THẶNG DƯ (TRỌNG TÂM) ---
@@ -17,7 +17,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Tiền chỉ biến thành tư bản khi tìm thấy trên thị trường hàng hóa sức lao động – loại hàng hóa có khả năng sáng tạo ra giá trị mới lớn hơn giá trị của chính nó (nguồn gốc của GTTD m).',
-    quote: 'Slide SP24 Chương 3 • Mục 3.1.1: Hàng hóa sức lao động'
+    quote: 'Slide Chương 3 • Mục 3.1.1: Hàng hóa sức lao động'
   },
   {
     id: 'q-c3-02',
@@ -33,7 +33,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Hai điều kiện tất yếu: (1) Người lao động tự do về thân thể (có quyền bán sức lao động); (2) Người lao động không có tư liệu sản xuất (buộc phải bán sức lao động để sinh tồn).',
-    quote: 'Slide SP24 Chương 3 • Mục 3.1.1: Điều kiện để sức lao động thành hàng hóa'
+    quote: 'Slide Chương 3 • Mục 3.1.1: Điều kiện để sức lao động thành hàng hóa'
   },
   {
     id: 'q-c3-03',
@@ -49,7 +49,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Tư bản bất biến (c) tồn tại dưới dạng tư liệu sản xuất (máy móc, nhà xưởng, nguyên liệu), giá trị của nó không biến đổi về lượng trong sản xuất, chỉ được chuyển dịch nguyên vẹn vào sản phẩm mới nhờ lao động cụ thể.',
-    quote: 'Slide SP24 Chương 3 • Mục 3.1.2: Tư bản bất biến (c) và Tư bản khả biến (v)'
+    quote: 'Slide Chương 3 • Mục 3.1.2: Tư bản bất biến (c) và Tư bản khả biến (v)'
   },
   {
     id: 'q-c3-04',
@@ -65,7 +65,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Sản xuất GTTD tuyệt đối là phương pháp thu được bằng cách kéo dài ngày lao động hoặc tăng cường độ lao động vượt quá thời gian lao động tất yếu, trong điều kiện thời gian lao động tất yếu không đổi.',
-    quote: 'Slide SP24 Chương 3 • Mục 3.1.3: Sản xuất GTTD tuyệt đối'
+    quote: 'Slide Chương 3 • Mục 3.1.3: Sản xuất GTTD tuyệt đối'
   },
   {
     id: 'q-c3-05',
@@ -81,7 +81,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'GTTD siêu ngạch thu được do doanh nghiệp cá biệt có năng suất cao hơn mặt bằng xã hội (nhờ cải tiến kỹ thuật, quản lý), làm giá trị cá biệt của sản phẩm thấp hơn giá trị xã hội nhưng vẫn bán theo giá xã hội.',
-    quote: 'Slide SP24 Chương 3 • Mục 3.1.3: Giá trị thặng dư siêu ngạch'
+    quote: 'Slide Chương 3 • Mục 3.1.3: Giá trị thặng dư siêu ngạch'
   },
   {
     id: 'q-c3-06',
@@ -97,7 +97,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Bản chất của tích lũy tư bản là biến một phần giá trị thặng dư thành tư bản phụ thêm (tư bản hóa giá trị thặng dư) nhằm tái sản xuất mở rộng quy mô kinh doanh.',
-    quote: 'Slide SP24 Chương 3 • Mục 3.2: Tích lũy tư bản và các nhân tố ảnh hưởng'
+    quote: 'Slide Chương 3 • Mục 3.2: Tích lũy tư bản và các nhân tố ảnh hưởng'
   },
   {
     id: 'q-c3-07',
@@ -113,7 +113,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Chi phí sản xuất k = c + v (bù đắp hao phí tư bản ứng trước). Lợi nhuận p chính là GTTD m khi được quan niệm là con đẻ của toàn bộ tư bản ứng trước (k).',
-    quote: 'Slide SP24 Chương 3 • Mục 3.3: Lợi nhuận và tỷ suất lợi nhuận'
+    quote: 'Slide Chương 3 • Mục 3.3: Lợi nhuận và tỷ suất lợi nhuận'
   },
 
   // --- CHƯƠNG 5: KTTT ĐỊNH HƯỚNG XÃ HỘI CHỦ NGHĨA Ở VIỆT NAM ---
@@ -131,7 +131,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'KTTT định hướng XHCN ở VN là nền kinh tế vận hành đầy đủ, đồng bộ theo các quy luật của KTTT, đồng thời bảo đảm định hướng XHCN phù hợp với từng chặng đường phát triển của đất nước.',
-    quote: 'Slide SP24 Chương 5 • Mục 5.1.1: Khái niệm KTTT định hướng XHCN'
+    quote: 'Slide Chương 5 • Mục 5.1.1: Khái niệm KTTT định hướng XHCN'
   },
   {
     id: 'q-c5-02',
@@ -147,7 +147,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Tính tất yếu bắt nguồn từ 3 lý do: (1) Phù hợp quy luật phát triển khách quan; (2) Do tính ưu việt của KTTT trong thúc đẩy LLSX; (3) Phù hợp nguyện vọng của nhân dân mong muốn dân giàu nước mạnh.',
-    quote: 'Slide SP24 Chương 5 • Mục 5.1.2: Tính tất yếu khách quan'
+    quote: 'Slide Chương 5 • Mục 5.1.2: Tính tất yếu khách quan'
   },
   {
     id: 'q-c5-03',
@@ -163,7 +163,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 2,
     explanation: 'Kinh tế nhà nước giữ vai trò chủ đạo, là công cụ định hướng và điều tiết vĩ mô; Kinh tế tư nhân là một động lực quan trọng của nền kinh tế.',
-    quote: 'Slide SP24 Chương 5 • Mục 5.1.3: Đặc trưng về quan hệ sở hữu và thành phần kinh tế'
+    quote: 'Slide Chương 5 • Mục 5.1.3: Đặc trưng về quan hệ sở hữu và thành phần kinh tế'
   },
   {
     id: 'q-c5-04',
@@ -179,7 +179,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Đặc trưng phân phối: Phân phối theo kết quả lao động và hiệu quả kinh tế là chủ yếu, kết hợp phân phối theo mức đóng góp vốn cùng các nguồn lực khác và thông qua hệ thống an sinh xã hội.',
-    quote: 'Slide SP24 Chương 5 • Mục 5.1.3: Đặc trưng về quan hệ phân phối'
+    quote: 'Slide Chương 5 • Mục 5.1.3: Đặc trưng về quan hệ phân phối'
   },
   {
     id: 'q-c5-05',
@@ -195,7 +195,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 2,
     explanation: 'Đảng ta khẳng định kinh tế tư nhân là một động lực quan trọng của nền kinh tế. Xóa bỏ kinh tế tư nhân là quan điểm sai lầm tả khuynh thời bao cấp.',
-    quote: 'Slide SP24 Chương 5 • Mục 5.2: Hoàn thiện thể chế KTTT định hướng XHCN'
+    quote: 'Slide Chương 5 • Mục 5.2: Hoàn thiện thể chế KTTT định hướng XHCN'
   },
   {
     id: 'q-c5-06',
@@ -211,7 +211,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Lợi ích kinh tế cá nhân là động lực trực tiếp và mạnh mẽ nhất thúc đẩy con người lao động sáng tạo. Tôn trọng lợi ích cá nhân chính đáng là nền tảng kết hợp hài hòa lợi ích tập thể và xã hội.',
-    quote: 'Slide SP24 Chương 5 • Mục 5.3: Quan hệ lợi ích kinh tế ở Việt Nam'
+    quote: 'Slide Chương 5 • Mục 5.3: Quan hệ lợi ích kinh tế ở Việt Nam'
   },
 
   // --- CHƯƠNG 6: CÔNG NGHIỆP HÓA, HIỆN ĐẠI HÓA & HỘI NHẬP KINH TẾ QUỐC TẾ ---
@@ -229,7 +229,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 2,
     explanation: 'CMCN 4.0 đặc trưng bởi sự hợp nhất của các công nghệ làm mờ ranh giới giữa vật lý, kỹ thuật số và sinh học, với tâm điểm là AI, IoT, Big Data, Robot thông minh và Điện toán đám mây.',
-    quote: 'Slide SP24 Chương 6 • Mục 6.1.1: Khái quát về cách mạng công nghiệp'
+    quote: 'Slide Chương 6 • Mục 6.1.1: Khái quát về cách mạng công nghiệp'
   },
   {
     id: 'q-c6-02',
@@ -245,7 +245,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Đặc điểm CNH, HĐH ở VN: Rút ngắn thời gian, kết hợp CNH với HĐH, lấy kinh tế tri thức làm nền tảng, phát triển kinh tế xanh, kinh tế tuần hoàn và chủ động nắm bắt thời cơ của CMCN 4.0.',
-    quote: 'Slide SP24 Chương 6 • Mục 6.1.2: Tính tất yếu khách quan và nội dung CNH, HĐH'
+    quote: 'Slide Chương 6 • Mục 6.1.2: Tính tất yếu khách quan và nội dung CNH, HĐH'
   },
   {
     id: 'q-c6-03',
@@ -261,7 +261,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Các nấc thang hội nhập: Bắt đầu từ PTA (ưu đãi thuế quan) → FTA (mậu dịch tự do) → Customs Union (biểu thuế đối ngoại chung) → Common Market (tự do dòng vốn và lao động) → Economic & Monetary Union.',
-    quote: 'Slide SP24 Chương 6 • Mục 6.2.1: Các hình thức hội nhập kinh tế quốc tế'
+    quote: 'Slide Chương 6 • Mục 6.2.1: Các hình thức hội nhập kinh tế quốc tế'
   },
   {
     id: 'q-c6-04',
@@ -277,7 +277,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 2,
     explanation: 'Mặt trái của hội nhập: Gia tăng áp lực cạnh tranh cho doanh nghiệp nội địa, nguy cơ tổn thương trước khủng hoảng kinh tế toàn cầu, cạn kiệt tài nguyên và nguy cơ trở thành bãi thải công nghệ lạc hậu.',
-    quote: 'Slide SP24 Chương 6 • Mục 6.2.2: Tác động của hội nhập kinh tế quốc tế'
+    quote: 'Slide Chương 6 • Mục 6.2.2: Tác động của hội nhập kinh tế quốc tế'
   },
   {
     id: 'q-c6-05',
@@ -293,7 +293,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Quan điểm chỉ đạo nhất quán của Đảng: Hội nhập kinh tế quốc tế là sự nghiệp của toàn dân; giữ vững độc lập, tự chủ đi đôi với đa phương hóa, đa dạng hóa quan hệ kinh tế quốc tế.',
-    quote: 'Slide SP24 Chương 6 • Mục 6.2.3: Phương hướng nâng cao hiệu quả hội nhập'
+    quote: 'Slide Chương 6 • Mục 6.2.3: Phương hướng nâng cao hiệu quả hội nhập'
   },
 
   // --- CÂU HỎI TỔNG HỢP CHƯƠNG 1, 2 & 4 ---
@@ -311,7 +311,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 2,
     explanation: 'Thuật ngữ "Kinh tế chính trị" xuất hiện lần đầu năm 1615 bởi nhà kinh tế học người Pháp A. Montchrestien thuộc trường phái Chủ nghĩa trọng thương.',
-    quote: 'Slide SP24 Chương 1 • Mục 1.1: Khái quát sự ra đời của KTCT'
+    quote: 'Slide Chương 1 • Mục 1.1: Khái quát sự ra đời của KTCT'
   },
   {
     id: 'q-c2-01',
@@ -327,7 +327,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Giá trị của hàng hóa là lao động xã hội của người sản xuất kết tinh trong hàng hóa. Giá trị là nội dung, cơ sở của giá trị trao đổi.',
-    quote: 'Slide SP24 Chương 2 • Mục 2.1: Thuộc tính của hàng hóa'
+    quote: 'Slide Chương 2 • Mục 2.1: Thuộc tính của hàng hóa'
   },
   {
     id: 'q-c2-02',
@@ -343,7 +343,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Lao động cụ thể tạo ra giá trị sử dụng, đồng thời bảo tồn và chuyển dịch giá trị tư liệu sản xuất (c) vào sản phẩm mới; còn Lao động trừu tượng tạo ra giá trị mới (v + m).',
-    quote: 'Slide SP24 Chương 2 • Mục 2.1: Tính hai mặt của lao động sản xuất hàng hóa'
+    quote: 'Slide Chương 2 • Mục 2.1: Tính hai mặt của lao động sản xuất hàng hóa'
   },
   {
     id: 'q-c4-01',
@@ -359,7 +359,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'V.I. Lênin đã chỉ ra: Tự do cạnh tranh đẻ ra tập trung sản xuất và sự tập trung sản xuất này, khi phát triển đến một mức độ nhất định, tất yếu dẫn tới độc quyền.',
-    quote: 'Slide SP24 Chương 4 • Mục 4.1: Nguyên nhân hình thành độc quyền'
+    quote: 'Slide Chương 4 • Mục 4.1: Nguyên nhân hình thành độc quyền'
   }
 ];
 
