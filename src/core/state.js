@@ -148,10 +148,12 @@ class StateManager {
     this.saveState();
   }
 
-  // Record Tycoon completed
-  recordTycoonVictory() {
-    this.state.tycoonCompleted = true;
-    this.state.xp += 200;
+  // Record Quiz completed
+  recordQuizCompleted(accuracyPercent = 100) {
+    this.state.quizCompleted = true;
+    if (accuracyPercent >= 80) {
+      this.state.quizMaster = true;
+    }
     this.checkBadges();
     this.saveState();
   }
@@ -203,9 +205,9 @@ class StateManager {
       unlock('dialectical-thinker');
     }
 
-    // 8. Capital Tycoon Master
-    if (this.state.tycoonCompleted) {
-      unlock('capital-tycoon-master');
+    // 8. Quiz Arena Champion
+    if (this.state.quizMaster || this.state.quizCompleted) {
+      unlock('quiz-arena-champion');
     }
 
     if (newlyUnlocked.length > 0) {

@@ -5,7 +5,7 @@ import { stateManager } from '../core/state.js';
 import { sound } from '../core/audio.js';
 import { resolveAssetUrl } from '../utils/assetUrl.js';
 
-export function renderChapterMap(container, onSelectScenario, onSelectDetective, onResetProgress, onSelectQuiz, onSelectTycoon) {
+export function renderChapterMap(container, onSelectScenario, onSelectDetective, onResetProgress, onSelectQuiz) {
   const state = stateManager.state;
   const completedScenarios = state.completedScenarios;
   const detectiveSolved = state.detectiveSolved;
@@ -167,22 +167,6 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
           </div>
         </section>
 
-        <!-- Special Module: Capital Tycoon Simulator -->
-        <section class="glass-panel chapter-card animate-slide-up" style="border: 2px solid rgba(245, 158, 11, 0.4); background: linear-gradient(180deg, var(--bg-card) 0%, rgba(254, 243, 199, 0.4) 100%);">
-          <div class="chapter-top">
-            <div class="chapter-heading">
-              <div class="ch-code" style="color: #d97706;">🏭 MÔ PHỎNG CHIẾN LƯỢC KINH DOANH</div>
-              <h3>Mô Phỏng Tích Lũy Tư Bản (Capital Tycoon)</h3>
-              <p>Vào vai Giám đốc Điều hành: Cân đối chi phí tư bản bất biến (c), tư bản khả biến (v), nâng cao tỷ suất giá trị thặng dư (m'), ứng phó bão táp độc quyền và phát triển bền vững theo định hướng XHCN!</p>
-            </div>
-            <div style="text-align: right;">
-              <button class="btn-primary" id="map-enter-tycoon-btn" style="background: linear-gradient(135deg, #f59e0b, #d97706); padding: 0.75rem 1.6rem;">
-                <span>⚙️ VÀO MÔ PHỎNG TƯ BẢN →</span>
-              </button>
-            </div>
-          </div>
-        </section>
-
         <!-- Special Module: Detective Bureau -->
         <section class="glass-panel chapter-card animate-slide-up" style="border: 2px solid rgba(220, 38, 38, 0.35); background: linear-gradient(180deg, var(--bg-card) 0%, rgba(254, 242, 242, 0.6) 100%);">
           <div class="chapter-top">
@@ -232,14 +216,6 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
     mapQuizBtn.addEventListener('click', () => {
       sound.playClick();
       onSelectQuiz();
-    });
-  }
-
-  const mapTycoonBtn = document.getElementById('map-enter-tycoon-btn');
-  if (mapTycoonBtn && onSelectTycoon) {
-    mapTycoonBtn.addEventListener('click', () => {
-      sound.playClick();
-      onSelectTycoon();
     });
   }
 }

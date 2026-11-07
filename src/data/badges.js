@@ -63,12 +63,12 @@ export const BADGES = [
     unlockedAt: null
   },
   {
-    id: 'capital-tycoon-master',
-    name: 'Capital Tycoon Champion',
-    nameVi: 'Nhà Quản Trị Doanh Nghiệp 4.0',
-    icon: '🏭',
-    desc: 'Vượt qua 3 giai đoạn của Thao trường Tycoon: Khởi nghiệp GTTD, Cạnh tranh độc quyền và KTTT 4.0.',
-    requirement: 'Xây dựng thành công doanh nghiệp thịnh vượng trong game Capital Tycoon.',
+    id: 'quiz-arena-champion',
+    name: 'Quiz Arena Champion',
+    nameVi: 'Quán Quân Đấu Trường Quizizz',
+    icon: '🎯',
+    desc: 'Chinh phục đấu trường trắc nghiệm MLN122 với kết quả xuất sắc và điểm số ấn tượng.',
+    requirement: 'Hoàn thành lượt thi trong Đấu Trường Quizizz đạt từ 80% độ chính xác trở lên.',
     unlockedAt: null
   }
 ];

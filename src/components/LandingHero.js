@@ -60,7 +60,7 @@ export function renderLandingHero(container, onNavigate) {
               <button class="btn-secondary" id="hero-detective-btn" style="padding: 0.95rem 1.8rem; font-size: 1rem;">
                 <span>🔍 PHÒNG PHÁ ÁN KINH TẾ</span>
               </button>
-              <button class="btn-secondary" id="hero-tycoon-btn" style="padding: 0.95rem 1.8rem; font-size: 1rem; border-color: rgba(139, 92, 246, 0.4); color: #8b5cf6;">
+              <button class="btn-secondary" id="hero-quiz-btn" style="padding: 0.95rem 1.8rem; font-size: 1rem; border-color: rgba(139, 92, 246, 0.4); color: #8b5cf6;">
                 <span>🎮 ĐẤU TRƯỜNG QUIZIZZ</span>
               </button>
             </div>
@@ -141,11 +141,11 @@ export function renderLandingHero(container, onNavigate) {
     onNavigate('detective');
   });
 
-  const tycoonBtn = document.getElementById('hero-tycoon-btn');
-  if (tycoonBtn) {
-    tycoonBtn.addEventListener('click', () => {
+  const quizBtn = document.getElementById('hero-quiz-btn');
+  if (quizBtn) {
+    quizBtn.addEventListener('click', () => {
       sound.playClick();
-      onNavigate('tycoon');
+      onNavigate('quiz');
     });
   }
 

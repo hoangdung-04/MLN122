@@ -175,6 +175,8 @@ export function renderQuizArena(container, onBackToMap) {
       gameState = 'summary';
       sound.playFanfare();
       stateManager.state.xp += Math.round(score / 50);
+      const accuracy = Math.round((correctCount / activeQuestions.length) * 100);
+      stateManager.recordQuizCompleted(accuracy);
       renderView();
     }
   }
