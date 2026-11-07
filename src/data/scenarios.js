@@ -470,6 +470,80 @@ export const SCENARIOS = [
     explanation: 'Lợi nhuận là giá trị thặng dư khi được so với toàn bộ tư bản ứng trước (k = c + v), phản ánh hiệu quả sinh lời bề mặt nhưng che giấu nguồn gốc sáng tạo từ lao động sống.',
     coreLesson: 'Nhà quản trị hiện đại cần hiểu rõ bản chất của lợi nhuận để xây dựng chính sách phân phối hài hòa, tôn trọng giá trị cống hiến của người lao động.'
   },
+  {
+    id: 'C3-S6',
+    chapter: 3,
+    topic: '3.3. Lợi nhuận bình quân & Dịch chuyển dòng vốn',
+    title: 'Dòng Vốn Chảy Về Đâu: Quy Luật Hình Thành Lợi Nhuận Bình Quân',
+    difficulty: 'Nâng cao',
+    philosophyConcept: 'Cạnh tranh giữa các ngành & Tỷ suất lợi nhuận bình quân',
+    image: './assets/images/chapter2/universal-connection.svg',
+    situation: 'Nhà đầu tư Quang nhận thấy ngành sản xuất cơ khí có cấu tạo hữu cơ cao (tỷ suất lợi nhuận chỉ 15%), trong khi ngành dịch vụ thương mại số có tỷ suất lợi nhuận lên đến 40%. Rất nhiều nhà đầu tư ồ ạt rút vốn khỏi cơ khí đổ dồn vào dịch vụ số. Sau một thời gian, nguồn cung dịch vụ số dư thừa khiến giá cả giảm xuống, còn cơ khí thiếu hụt nguồn cung khiến giá cả tăng lên, tỷ suất lợi nhuận hai ngành dần kéo về mức ngang nhau (khoảng 25%).',
+    question: 'Quy luật kinh tế nào của C. Mác đang chi phối hiện tượng san bằng lợi nhuận này?',
+    dimensionScores: { connection: 30, contradiction: 25, depth: 25, objective: 15, practice: 15 },
+    options: [
+      {
+        id: 'A',
+        text: 'Cạnh tranh giữa các ngành làm cho tư bản tự do di chuyển từ ngành có tỷ suất lợi nhuận thấp sang ngành có tỷ suất lợi nhuận cao, dẫn tới hình thành tỷ suất lợi nhuận bình quân và chuyển hóa giá trị thành giá cả sản xuất.',
+        isDialectical: true,
+        consequence: 'Quang hiểu rõ quy luật dòng vốn thị trường, không đu đỉnh theo tâm lý đám đông mà đón đầu tái cơ cấu vốn hiệu quả, bảo toàn và gia tăng giá trị tài sản bền vững.',
+        philosophicalLens: 'Vận dụng chuẩn xác lý luận của C. Mác: Cạnh tranh giữa các ngành dẫn tới hình thành tỷ suất lợi nhuận bình quân (p̄), giá trị hàng hóa chuyển hóa thành giá cả sản xuất (k + p̄).'
+      },
+      {
+        id: 'B',
+        text: 'Tỷ suất lợi nhuận 40% ở ngành dịch vụ số là vĩnh viễn và không bao giờ giảm vì công nghệ số đứng ngoài quy luật kinh tế.',
+        isDialectical: false,
+        consequence: 'Dồn hết vốn vào đu đỉnh khi thị trường đã bão hòa, chịu thua lỗ nặng nề do giá cả dịch vụ lao dốc khi nguồn cung thừa mứa.',
+        philosophicalLens: 'Tư duy siêu hình tách rời công nghệ khỏi quy luật cung cầu và cạnh tranh kinh tế khách quan.'
+      },
+      {
+        id: 'C',
+        text: 'Nhà nước nên cấm tư bản di chuyển giữa các ngành để giữ cố định tỷ suất lợi nhuận của từng ngành theo ý muốn.',
+        isDialectical: false,
+        consequence: 'Triệt tiêu động lực cạnh tranh, dẫn đến nền kinh tế đình đốn và phân bổ sai lệch nguồn lực xã hội.',
+        philosophicalLens: 'Chủ quan duy ý chí, vi phạm quy luật lưu thông tự do của tư bản trong kinh tế thị trường.'
+      }
+    ],
+    explanation: 'Cạnh tranh giữa các ngành là cơ chế hình thành tỷ suất lợi nhuận bình quân (p̄), biến giá trị hàng hóa thành giá cả sản xuất (K + p̄).',
+    coreLesson: 'Không có ngành nào siêu lợi nhuận mãi mãi; dòng vốn thị trường luôn tự điều tiết theo quy luật bình quân hóa, doanh nghiệp phải liên tục nâng cao năng lực cạnh tranh cốt lõi.'
+  },
+  {
+    id: 'C3-S7',
+    chapter: 3,
+    topic: '3.2. Tích lũy tư bản & Tái sản xuất mở rộng',
+    title: 'Chiến Lược Tái Đầu Tư: Tiêu Dùng Cá Nhân Hay Tích Lũy Tăng Trưởng?',
+    difficulty: 'Trung bình',
+    philosophyConcept: 'Thực chất của tích lũy tư bản & Các nhân tố ảnh hưởng',
+    image: './assets/images/chapter2/content-form.svg',
+    situation: 'Sau năm đầu tiên kinh doanh có lãi 10 tỷ đồng, hai nhà đồng sáng lập một công ty phần mềm tranh luận: Giám đốc A muốn rút toàn bộ 10 tỷ chia cổ tức để mua siêu xe và biệt thự hưởng thụ (tái sản xuất giản đơn). Giám đốc B kiên quyết giữ lại 7 tỷ đưa vào Quỹ tích lũy để nâng cấp cụm máy chủ AI, tuyển thêm kỹ sư giỏi và mở rộng quy mô phục vụ khách hàng (tái sản xuất mở rộng).',
+    question: 'Theo lý luận của C. Mác về Tích lũy tư bản, quyết định của Giám đốc B có ý nghĩa gì đối với sự tồn tại của doanh nghiệp?',
+    dimensionScores: { connection: 25, contradiction: 20, depth: 25, objective: 20, practice: 20 },
+    options: [
+      {
+        id: 'A',
+        text: 'Tích lũy tư bản là tái sản xuất ra tư bản với quy mô mở rộng: Chuyển hóa giá trị thặng dư thành tư bản phụ thêm là điều kiện sống còn để doanh nghiệp đứng vững trước quy luật cạnh tranh khốc liệt.',
+        isDialectical: true,
+        consequence: 'Công ty liên tục nâng cấp công nghệ và mở rộng thị phần, vượt qua các đợt khủng hoảng thị trường và tăng trưởng giá trị doanh nghiệp lên gấp 10 lần sau 3 năm.',
+        philosophicalLens: 'Vận dụng chuẩn xác lý luận của C. Mác: Thực chất của tích lũy tư bản là sự chuyển hóa một phần giá trị thặng dư thành tư bản mới để tái sản xuất mở rộng.'
+      },
+      {
+        id: 'B',
+        text: 'Nên rút hết 100% lợi nhuận tiêu xài cá nhân vì tái đầu tư công nghệ chỉ tốn kém chi phí vô ích.',
+        isDialectical: false,
+        consequence: 'Năm sau công nghệ lạc hậu, máy chủ sập nguồn, khách hàng bỏ sang đối thủ và công ty phá sản nhanh chóng.',
+        philosophicalLens: 'Tư duy hưởng thụ ngắn hạn của tái sản xuất giản đơn, hoàn toàn đi ngược lại quy luật cạnh tranh tư bản chủ nghĩa.'
+      },
+      {
+        id: 'C',
+        text: 'Để nguyên 10 tỷ trong két sắt công ty làm tiền mặt dự trữ không mua sắm tư liệu sản xuất hay thuê mướn thêm ai.',
+        isDialectical: false,
+        consequence: 'Tiền mặt bị lạm phát bào mòn giá trị, đồng vốn "chết" không tạo ra thêm bất kỳ giá trị mới nào.',
+        philosophicalLens: 'Đồng nhất tư bản với tiền tệ tĩnh, quên rằng tư bản chỉ thực sự là tư bản khi nó vận động sinh lời (T - H - T\').'
+      }
+    ],
+    explanation: 'Tích lũy tư bản là biến một phần giá trị thặng dư thành tư bản mới để thực hiện tái sản xuất mở rộng, là động lực nâng cao năng lực sản xuất và quy mô thị phần.',
+    coreLesson: 'Tái đầu tư khôn ngoan từ lợi nhuận thặng dư là chìa khóa vàng đưa doanh nghiệp và cá nhân từ tích lũy nhỏ đến vị thế trường tồn.'
+  },
 
   // =================================================================
   // CHƯƠNG 4: CẠNH TRANH & ĐỘC QUYỀN TRONG NỀN KINH TẾ THỊ TRƯỜNG
@@ -700,6 +774,80 @@ export const SCENARIOS = [
     explanation: 'Hoàn thiện thể chế kinh tế thị trường định hướng XHCN là khâu đột phá chiến lược nhằm tạo lập môi trường kinh doanh minh bạch, giải phóng triệt để sức sản xuất.',
     coreLesson: 'Thể chế tiến bộ là bệ phóng cho đổi mới sáng tạo; hoàn thiện thể chế chính là khơi thông dòng chảy phát triển của đất nước.'
   },
+  {
+    id: 'C5-S4',
+    chapter: 5,
+    topic: '5.1.2. Tính tất yếu khách quan của KTTT định hướng XHCN',
+    title: 'Vì Sao Không Thể "Đốt Cháy Giai Đoạn"? Tính Tất Yếu Của Kinh Tế Thị Trường',
+    difficulty: 'Nâng cao',
+    philosophyConcept: 'Tính tất yếu khách quan của KTTT định hướng XHCN ở Việt Nam',
+    image: './assets/images/chapter1/intro-philosophy.svg',
+    situation: 'Trong một buổi tọa đàm lịch sử kinh tế, một sinh viên đặt câu hỏi: "Tại sao Việt Nam sau năm 1975 áp dụng mô hình kinh tế kế hoạch hóa tập trung, bao cấp thì kinh tế lại rơi vào khủng hoảng thiếu hụt hàng hóa trầm trọng; và từ Đại hội VI (1986) chuyển sang Kinh tế thị trường thì của cải lại dồi dào, đất nước bứt phá ngoạn mục?".',
+    question: 'Dưới góc nhìn KTCT Mác – Lênin, tính tất yếu khách quan của việc phát triển KTTT định hướng XHCN ở Việt Nam được giải thích như thế nào?',
+    dimensionScores: { connection: 25, contradiction: 25, depth: 30, objective: 20, practice: 20 },
+    options: [
+      {
+        id: 'A',
+        text: 'Việt Nam đi lên CNXH từ điểm xuất phát thấp, lực lượng sản xuất còn nhiều tầng nấc; do đó phát triển kinh tế thị trường là tất yếu khách quan để khai phóng sức sản xuất, kích thích sáng tạo và phân bổ hiệu quả nguồn lực xã hội theo quy luật giá trị.',
+        isDialectical: true,
+        consequence: 'Hiểu sâu sắc đường lối Đổi mới của Đảng, nhận thức rõ KTTT là phương tiện hữu hiệu để xây dựng cơ sở vật chất cho CNXH chứ không đối lập với mục tiêu XHCN.',
+        philosophicalLens: 'Vận dụng chuẩn xác quy luật QHSX phải phù hợp với trình độ phát triển của LLSX: Không thể dùng ý chí chủ quan xóa bỏ quan hệ hàng hóa - tiền tệ khi LLSX chưa cho phép.'
+      },
+      {
+        id: 'B',
+        text: 'Khủng hoảng thời bao cấp chỉ do thời tiết và thiên tai, không liên quan gì đến quy luật kinh tế thị trường.',
+        isDialectical: false,
+        consequence: 'Không rút ra được bài học lịch sử, dễ rơi vào ảo tưởng duy tâm chủ quan khi hoạch định chính sách kinh tế.',
+        philosophicalLens: 'Chủ nghĩa duy tâm chủ quan né tránh thừa nhận quy luật kinh tế khách quan.'
+      },
+      {
+        id: 'C',
+        text: 'Kinh tế thị trường là bản chất riêng của CNTB, việc Việt Nam phát triển KTTT đồng nghĩa với việc từ bỏ hoàn toàn mục tiêu định hướng xã hội chủ nghĩa.',
+        isDialectical: false,
+        consequence: 'Mất phương hướng tư tưởng chính trị, hoang mang hoài nghi về con đường phát triển của đất nước.',
+        philosophicalLens: 'Tư duy siêu hình nhầm lẫn giữa bản chất của KTTT (phương tiện phân bổ nguồn lực) với bản chất chế độ chính trị xã hội.'
+      }
+    ],
+    explanation: 'Phát triển KTTT định hướng XHCN là bước đi tất yếu phù hợp với quy luật phát triển khách quan để xây dựng cơ sở vật chất - kỹ thuật cho CNXH.',
+    coreLesson: 'Không thể dùng ý chí chủ quan áp đặt quy luật kinh tế; phát triển kinh tế thị trường là con đường văn minh tất yếu để đưa dân tộc đến ấm no và phồn vinh.'
+  },
+  {
+    id: 'C5-S5',
+    chapter: 5,
+    topic: '5.2.2. Hoàn thiện thể chế KTTT trên các khía cạnh chủ yếu',
+    title: 'Minh Bạch Thị Trường Yếu Tố Sản Xuất: Vốn, Đất Đai & Công Nghệ',
+    difficulty: 'Nâng cao',
+    philosophyConcept: 'Hoàn thiện đồng bộ các loại thị trường và yếu tố thị trường',
+    image: './assets/images/chapter3/production-relations.svg',
+    situation: 'Tại một tỉnh công nghiệp, một doanh nghiệp tư nhân sáng tạo công nghệ xử lý rác thải thành năng lượng sạch muốn tiếp cận quỹ đất và nguồn vốn vay ưu đãi nhưng bị vướng bởi cơ chế "xin - cho", trong khi một số dự án bất động sản đầu cơ lại dễ dàng tiếp cận đất đai và vốn vay rồi bỏ hoang lãng phí. Lãnh đạo tỉnh quyết định đưa toàn bộ việc đấu giá đất đai, cấp tín dụng và chuyển giao công nghệ lên sàn giao dịch thị trường công khai, minh bạch.',
+    question: 'Giải pháp của lãnh đạo tỉnh thể hiện khía cạnh nào trong nội dung "Hoàn thiện thể chế KTTT định hướng XHCN"?',
+    dimensionScores: { connection: 30, contradiction: 20, depth: 25, objective: 20, practice: 25 },
+    options: [
+      {
+        id: 'A',
+        text: 'Phát triển đồng bộ các yếu tố thị trường và các loại thị trường (vốn, đất đai, công nghệ); xóa bỏ cơ chế xin - cho và bảo đảm các thành phần kinh tế bình đẳng tiếp cận nguồn lực theo nguyên tắc thị trường minh bạch.',
+        isDialectical: true,
+        consequence: 'Dự án công nghệ xanh nhận được mặt bằng và vốn sạch, đi vào vận hành xử lý 100% rác thải của tỉnh, đồng thời ngân sách nhà nước thu về hàng nghìn tỷ đồng từ đấu giá đất công khai minh bạch.',
+        philosophicalLens: 'Vận dụng chuẩn xác nội dung hoàn thiện thể chế: Phát triển đồng bộ các loại thị trường và các yếu tố thị trường nhằm khắc phục khiếm khuyết phân bổ nguồn lực của cơ chế bao cấp.'
+      },
+      {
+        id: 'B',
+        text: 'Tiếp tục duy trì cơ chế đặc quyền xin - cho ngầm để ưu ái riêng cho các doanh nghiệp thân hữu.',
+        isDialectical: false,
+        consequence: 'Tạo mảnh đất màu mỡ cho tham nhũng, lãng phí tài nguyên đất đai và bóp nghẹt các doanh nghiệp sáng tạo chân chính.',
+        philosophicalLens: 'Bảo thủ thể chế duy trì lợi ích nhóm tiêu cực kìm hãm sự phát triển của nền kinh tế.'
+      },
+      {
+        id: 'C',
+        text: 'Đóng cửa thị trường đất đai và tài chính, cấm hoàn toàn doanh nghiệp tư nhân tham gia đầu tư công nghệ xanh.',
+        isDialectical: false,
+        consequence: 'Triệt tiêu nguồn lực xã hội hóa của tư nhân, nhà nước phải gánh toàn bộ chi phí khổng lồ không kham nổi.',
+        philosophicalLens: 'Kỳ thị thành phần kinh tế tư nhân, đi ngược lại quan điểm coi kinh tế tư nhân là một động lực quan trọng của KTTT định hướng XHCN.'
+      }
+    ],
+    explanation: 'Hoàn thiện thể chế KTTT định hướng XHCN đòi hỏi phát triển đồng bộ các loại thị trường yếu tố sản xuất để nguồn lực xã hội chảy vào nơi tạo ra giá trị cao nhất.',
+    coreLesson: 'Một thể chế thị trường minh bạch và bình đẳng là chiếc đòn bẩy vĩ đại nhất để thu hút nhân tài và khơi thông mọi nguồn lực phát triển quốc gia.'
+  },
 
   // =================================================================
   // CHƯƠNG 6: CÔNG NGHIỆP HÓA 4.0 & HỘI NHẬP KINH TẾ QUỐC TẾ
@@ -814,5 +962,79 @@ export const SCENARIOS = [
     ],
     explanation: 'Xây dựng nền kinh tế độc lập tự chủ đi đôi với chủ động, tích cực hội nhập kinh tế quốc tế sâu rộng là đường lối nhất quán, bảo đảm chủ quyền và phát triển bền vững của đất nước.',
     coreLesson: 'Nội lực vững chắc là bệ phóng cho hội nhập thành công; hội nhập sâu rộng là đòn bẩy làm giàu thêm sức mạnh nội lực quốc gia.'
+  },
+  {
+    id: 'C6-S4',
+    chapter: 6,
+    topic: '6.1.1. Khái quát 4 cuộc cách mạng công nghiệp',
+    title: 'Bốn Làn Sóng Cách Mạng Công Nghiệp: Bài Học Chuyển Mình Thời Đại AI',
+    difficulty: 'Cơ bản',
+    philosophyConcept: 'Lịch sử 4 cuộc CMCN & Bước nhảy vọt về chất trong tư liệu lao động',
+    image: './assets/images/chapter1/basic-question.svg',
+    situation: 'Trong một buổi chia sẻ định hướng nghề nghiệp, một diễn giả trình bày lịch sử: Từ thế kỷ XVIII đến nay nhân loại đã trải qua 4 cuộc CMCN (1.0 Hơi nước → 2.0 Điện khí hóa → 3.0 Công nghệ thông tin → 4.0 Trí tuệ nhân tạo & Big Data). Một nhóm sinh viên lo lắng tự hỏi: "Nếu AI và robot đang dần thay thế các công việc lập trình thô và dịch thuật cơ bản, chúng ta phải làm gì để không bị đào thải?".',
+    question: 'Theo quy luật phát triển của các cuộc CMCN trong KTCT Mác – Lênin, sinh viên cần định hướng tư duy như thế nào?',
+    dimensionScores: { connection: 25, contradiction: 25, depth: 20, objective: 15, practice: 25 },
+    options: [
+      {
+        id: 'A',
+        text: 'Mỗi cuộc CMCN là bước nhảy vọt về chất của tư liệu lao động, tất yếu thay đổi căn bản phân công lao động xã hội: Người lao động phải chủ động học tập suốt đời, làm chủ công cụ AI mới và nâng cao năng lực tư duy phản biện, sáng tạo phức hợp để giữ vai trò chủ đạo.',
+        isDialectical: true,
+        consequence: 'Sinh viên thành thạo sử dụng AI để tăng gấp 5 lần hiệu suất học tập và làm việc, trở thành nhân sự chất lượng cao được các tập đoàn săn đón.',
+        philosophicalLens: 'Vận dụng chuẩn xác quy luật: CMCN thúc đẩy lực lượng sản xuất nhảy vọt về chất, đòi hỏi con người - yếu tố hàng đầu của LLSX - phải nâng cao trình độ để làm chủ kỹ thuật mới.'
+      },
+      {
+        id: 'B',
+        text: 'Đập phá máy tính và biểu tình yêu cầu chính phủ cấm hoàn toàn trí tuệ nhân tạo để bảo vệ các công việc thủ công cũ.',
+        isDialectical: false,
+        consequence: 'Lặp lại sai lầm của phong trào đập phá máy móc (Luddite) thế kỷ XIX tại Anh, hoàn toàn bất lực trước quy luật tiến bộ công nghệ.',
+        philosophicalLens: 'Tư duy hoài cổ chống lại sự phát triển tất yếu của tư liệu sản xuất văn minh nhân loại.'
+      },
+      {
+        id: 'C',
+        text: 'Buông xuôi bỏ học vì tin rằng sớm muộn con người cũng sẽ bị robot thay thế hoàn toàn và không thể cạnh tranh nổi.',
+        isDialectical: false,
+        consequence: 'Tự đánh mất tương lai và rơi vào tình trạng thất nghiệp công nghệ do thiếu kỹ năng thích ứng.',
+        philosophicalLens: 'Chủ nghĩa bi quan siêu hình tuyệt đối hóa vai trò của máy móc, quên rằng con người mới là chủ thể sáng tạo ra công nghệ.'
+      }
+    ],
+    explanation: 'Các cuộc CMCN tạo ra bước phát triển nhảy vọt của lực lượng sản xuất, đòi hỏi người lao động phải liên tục nâng cao trình độ thích ứng với kỹ thuật mới.',
+    coreLesson: 'Công nghệ không lấy đi việc làm của con người; chỉ những ai không chịu học cách làm chủ công nghệ mới bị người sử dụng công nghệ thay thế!'
+  },
+  {
+    id: 'C6-S5',
+    chapter: 6,
+    topic: '6.2.1 & 6.2.3. Đa dạng hóa đối tác & Hội nhập hiệu quả',
+    title: 'Chiến Lược Đa Phương Hóa: Tránh "Bỏ Trứng Vào Một Giỏ" Trong Hội Nhập Toàn Cầu',
+    difficulty: 'Nâng cao',
+    philosophyConcept: 'Phương hướng nâng cao hiệu quả hội nhập & Xây dựng nền kinh tế độc lập tự chủ',
+    image: './assets/images/chapter2/individual-general.svg',
+    situation: 'Một tập đoàn thủy sản Việt Nam từng xuất khẩu 90% sản lượng vào duy nhất một thị trường nước ngoài. Khi quốc gia đó bất ngờ áp thuế chống bán phá giá 45% vì lý do bảo hộ nội địa, tập đoàn suýt phá sản. Rút kinh nghiệm sâu sắc, tập đoàn đã tận dụng các hiệp định thương mại tự do thế hệ mới (CPTPP, EVFTA, UKVFTA) để cơ cấu lại thị trường: xuất khẩu đều sang 15 quốc gia khác nhau và nâng cao tỷ lệ giá trị gia tăng nội địa.',
+    question: 'Bài học của tập đoàn phản ánh phương hướng chiến lược nào trong hội nhập kinh tế quốc tế của Việt Nam?',
+    dimensionScores: { connection: 30, contradiction: 20, depth: 25, objective: 15, practice: 25 },
+    options: [
+      {
+        id: 'A',
+        text: 'Chủ động, tích cực tham gia các liên kết kinh tế quốc tế đa phương; đa dạng hóa thị trường đối tác để phân tán rủi ro, kết hợp nâng cao năng lực nội tại để xây dựng vị thế độc lập tự chủ bền vững.',
+        isDialectical: true,
+        consequence: 'Tập đoàn phân tán rủi ro thành công, doanh thu tăng trưởng ổn định bất chấp mọi biến động thuế quan đơn phương, đưa thương hiệu thủy sản Việt Nam vươn xa toàn cầu.',
+        philosophicalLens: 'Vận dụng chuẩn xác phương hướng hội nhập: Đa phương hóa, đa dạng hóa quan hệ kinh tế quốc tế nhằm tối đa hóa cơ hội và giảm thiểu tối đa rủi ro lệ thuộc bên ngoài.'
+      },
+      {
+        id: 'B',
+        text: 'Chỉ nên bán hàng cho một đối tác duy nhất vì chăm sóc một khách hàng tiện hơn mở rộng thị trường.',
+        isDialectical: false,
+        consequence: 'Doanh nghiệp luôn bị ép giá và đứng trước bờ vực phá sản bất cứ lúc nào khi đối tác đơn phương thay đổi chính sách.',
+        philosophicalLens: 'Thiển cận trong kinh doanh quốc tế, tự trói mình vào vị thế phụ thuộc một chiều đầy rủi ro.'
+      },
+      {
+        id: 'C',
+        text: 'Từ bỏ hoàn toàn việc xuất khẩu, chỉ thu hẹp kinh doanh quanh thị trường xóm làng nội địa.',
+        isDialectical: false,
+        consequence: 'Đánh mất năng lực cạnh tranh, quy mô teo tóp và không thể phát triển lớn mạnh.',
+        philosophicalLens: 'Tư duy bế quan tự thủ đi ngược lại xu thế phân công lao động và liên kết kinh tế quốc tế.'
+      }
+    ],
+    explanation: 'Hội nhập kinh tế quốc tế hiệu quả đòi hỏi phải đa phương hóa, đa dạng hóa đối tác để giảm thiểu rủi ro phụ thuộc, gắn liền với tăng cường nội lực cạnh tranh quốc gia.',
+    coreLesson: 'Đa dạng hóa thị trường là tấm khiên vững chắc nhất bảo vệ doanh nghiệp và nền kinh tế trước mọi cơn sóng gió biến động của thị trường thế giới.'
   }
 ];

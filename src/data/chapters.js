@@ -39,16 +39,14 @@ export const CHAPTERS = [
     titleEn: 'Surplus Value in the Market Economy',
     code: 'CHƯƠNG 3 (TRỌNG TÂM)',
     badge: 'HẠT NHÂN KINH TẾ CHÍNH TRỊ',
-    desc: 'Bí mật bóc lột giá trị thặng dư (m), hàng hóa sức lao động, tư bản bất biến (c) vs khả biến (v), GTTD tuyệt đối vs tương đối, tích lũy tư bản và chi phí sản xuất.',
+    desc: 'Lý luận C. Mác về giá trị thặng dư (nguồn gốc, bản chất c/v, m\', M, các phương pháp sản xuất GTTD), tích lũy tư bản và các hình thức biểu hiện (chi phí K, lợi nhuận, lợi tức, địa tô).',
     accentColor: '#f59e0b',
     icon: 'trending-up',
-    totalScenarios: 5,
+    totalScenarios: 7,
     modules: [
-      { id: '3.1', title: 'Công thức chung T-H-T\' & Hàng hóa sức lao động' },
-      { id: '3.2', title: 'Bản chất giá trị thặng dư & Phân chia c, v' },
-      { id: '3.3', title: 'Phòng Thí Nghiệm Ngày Lao Động & Tỷ suất m\'' },
-      { id: '3.4', title: 'Hai phương pháp sản xuất GTTD & Tích lũy tư bản' },
-      { id: '3.5', title: 'Chi phí sản xuất, Lợi nhuận & Lợi nhuận bình quân' }
+      { id: '3.1', title: '3.1. Lý luận của C. Mác về giá trị thặng dư (Nguồn gốc, bản chất c/v & các phương pháp sản xuất GTTD)' },
+      { id: '3.2', title: '3.2. Tích lũy tư bản (Tái sản xuất mở rộng, nhân tố ảnh hưởng & hệ quả cấu tạo hữu cơ)' },
+      { id: '3.3', title: '3.3. Các hình thức biểu hiện của GTTD (Chi phí K, Lợi nhuận, Tỷ suất p\', Lợi nhuận bình quân, Lợi tức, Địa tô)' }
     ]
   },
   {
@@ -73,14 +71,14 @@ export const CHAPTERS = [
     titleEn: 'Socialist-Oriented Market Economy & Economic Interests in Vietnam',
     code: 'CHƯƠNG 5',
     badge: 'MÔ HÌNH VIỆT NAM',
-    desc: 'Mô hình kinh tế thị trường đặc thù của Việt Nam: Nhiều thành phần kinh tế (kinh tế nhà nước chủ đạo), phân phối công bằng và hài hòa các quan hệ lợi ích.',
+    desc: 'Khái niệm, tính tất yếu và 5 đặc trưng của KTTT định hướng XHCN; sự cần thiết và nội dung hoàn thiện thể chế; các quan hệ lợi ích kinh tế ở Việt Nam.',
     accentColor: '#ec4899',
     icon: 'award',
-    totalScenarios: 3,
+    totalScenarios: 5,
     modules: [
-      { id: '5.1', title: 'Tính tất yếu & Đặc trưng KTTT định hướng XHCN' },
-      { id: '5.2', title: 'Hoàn thiện thể chế kinh tế thị trường ở Việt Nam' },
-      { id: '5.3', title: 'Quan hệ lợi ích kinh tế & Vai trò điều tiết của Nhà nước' }
+      { id: '5.1', title: '5.1. KTTT định hướng XHCN ở Việt Nam (Khái niệm, Tính tất yếu khách quan & 5 Đặc trưng)' },
+      { id: '5.2', title: '5.2. Hoàn thiện thể chế KTTT định hướng XHCN (Sự cần thiết & Các khía cạnh chủ yếu)' },
+      { id: '5.3', title: '5.3. Các quan hệ lợi ích kinh tế ở Việt Nam & Vai trò điều tiết của Nhà nước' }
     ]
   },
   {
@@ -89,14 +87,13 @@ export const CHAPTERS = [
     titleEn: 'Industrialization, Modernization & International Economic Integration',
     code: 'CHƯƠNG 6',
     badge: 'PHÁT TRIỂN & HỘI NHẬP',
-    desc: 'Cách mạng công nghiệp 4.0, chuyển đổi số, kinh tế số, hội nhập kinh tế quốc tế và chiến lược xây dựng nền kinh tế độc lập tự chủ.',
+    desc: 'Lịch sử 4 cuộc CMCN, tính tất yếu & nội dung CNH-HĐH ở VN; khái niệm, tác động hai mặt và phương hướng nâng cao hiệu quả hội nhập gắn với xây dựng nền kinh tế độc lập tự chủ.',
     accentColor: '#06b6d4',
     icon: 'globe',
-    totalScenarios: 3,
+    totalScenarios: 5,
     modules: [
-      { id: '6.1', title: 'Các cuộc CMCN & CNH, HĐH thích ứng CMCN 4.0' },
-      { id: '6.2', title: 'Hội nhập kinh tế quốc tế: Cơ hội & Thách thức' },
-      { id: '6.3', title: 'Xây dựng nền kinh tế độc lập tự chủ thời hội nhập' }
+      { id: '6.1', title: '6.1. Công nghiệp hóa, hiện đại hóa ở Việt Nam (Khái quát 4 cuộc CMCN, Tính tất yếu & Nội dung)' },
+      { id: '6.2', title: '6.2. Hội nhập kinh tế quốc tế của Việt Nam (Khái niệm, Tác động & Phương hướng nâng cao hiệu quả)' }
     ]
   }
 ];

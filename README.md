@@ -8,7 +8,7 @@ Dự án web sáng tạo đổi mới phương pháp học tập môn **MLN122 �
 ## 🌟 ĐẶC ĐIỂM NỔI BẬT
 
 1. **100% TÌNH HUỐNG CÓ HÌNH ẢNH MINH HỌA TRỰC QUAN**:
-   - Tất cả 22 tình huống của 6 chương đều đi kèm hình ảnh vector chất lượng cao (SVG), mô tả chân thực bối cảnh và ẩn dụ kinh tế chính trị.
+   - Tất cả 28 tình huống của 6 chương đều đi kèm hình ảnh vector chất lượng cao (SVG), mô tả chân thực bối cảnh và ẩn dụ kinh tế chính trị.
    - Tránh hoàn toàn việc học lý thuyết khô khan qua câu hỏi văn bản thuần túy.
 
 2. **LUỒNG TRẢI NGHIỆM ĐỘC ĐÁO 4 GIAI ĐOẠN (SCENARIO FLOW)**:
@@ -94,7 +94,7 @@ MLN122/
     │   └── scoring.js           # Bộ tính điểm 5 chiều tư duy và tạo SVG Radar Chart
     ├── data/
     │   ├── chapters.js          # Dữ liệu 6 chương môn KTCT MLN122
-    │   ├── scenarios.js         # Ngân hàng 22 tình huống thực tế đầy đủ schema
+    │   ├── scenarios.js         # Ngân hàng 28 tình huống thực tế đầy đủ schema
     │   ├── detectiveCases.js    # 3 vụ án điều tra phá án thực tế
     │   ├── badges.js            # Danh sách 7 huy hiệu thành tích
     │   ├── archetypes.js        # Hình mẫu tư duy và thang đo 5 chiều
