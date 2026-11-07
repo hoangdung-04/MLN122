@@ -1,6 +1,7 @@
 import { SCENARIOS } from '../data/scenarios.js';
 import { stateManager } from '../core/state.js';
 import { sound } from '../core/audio.js';
+import { resolveAssetUrl } from '../utils/assetUrl.js';
 
 export function renderScenarioPlayer(container, scenarioId, onBackToMap, onNextScenario) {
   const scenario = SCENARIOS.find(s => s.id === scenarioId);
@@ -36,9 +37,10 @@ export function renderScenarioPlayer(container, scenarioId, onBackToMap, onNextS
 
     let feedbackStepperHTML = '';
     if (selectedOption) {
-      const outcomeImg = selectedOption.isDialectical 
+      const outcomeImgPath = selectedOption.isDialectical 
         ? './assets/images/outcomes/outcome-dialectical-success.svg' 
         : './assets/images/outcomes/outcome-subjective-failure.svg';
+      const outcomeImg = resolveAssetUrl(outcomeImgPath);
 
       feedbackStepperHTML = `
         <div class="feedback-stepper animate-slide-up">
@@ -59,7 +61,7 @@ export function renderScenarioPlayer(container, scenarioId, onBackToMap, onNextS
               <span>⚡</span>
               <span>2. HỆ QUẢ ĐỜI THỰC (CONSEQUENCE)</span>
             </div>
-            <img class="outcome-image-banner" src="${outcomeImg}" alt="Hình ảnh kết quả tương ứng" />
+            <img class="outcome-image-banner" src="${outcomeImg}" alt="Hình ảnh kết quả tương ứng" onerror="this.onerror=null; this.src='${outcomeImgPath}';" />
             <div class="consequence-narrative-box">
               <span class="narrative-tag">DIỄN BIẾN &amp; HỆ QUẢ THỰC TẾ:</span>
               <p style="font-size: 1.05rem; color: var(--text-main); line-height: 1.75; margin-top: 0.4rem; font-weight: 500;">
@@ -125,7 +127,7 @@ export function renderScenarioPlayer(container, scenarioId, onBackToMap, onNextS
         <div class="scenario-card-main">
           <!-- Mandatory Large Visual -->
           <div class="scenario-visual-box">
-            <img class="scenario-large-image" src="${scenario.image}" alt="${scenario.title}" />
+            <img class="scenario-large-image" src="${resolveAssetUrl(scenario.image)}" alt="${scenario.title}" onerror="this.onerror=null; this.src='${scenario.image}';" />
           </div>
 
           <!-- Meta Bar -->

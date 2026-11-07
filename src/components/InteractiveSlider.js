@@ -1,5 +1,6 @@
 import { stateManager } from '../core/state.js';
 import { sound } from '../core/audio.js';
+import { resolveAssetUrl } from '../utils/assetUrl.js';
 
 export function renderInteractiveSlider(container, onBackToMap) {
   let hours = 8;
@@ -85,7 +86,7 @@ export function renderInteractiveSlider(container, onBackToMap) {
             ` : ''}
 
             <div class="lab-state-avatar" style="width: 100%; max-width: 580px;">
-              <img src="${stageInfo.img}" alt="${stageInfo.title}" style="width: 100%; max-height: 160px; object-fit: contain; margin-bottom: 1.2rem; filter: drop-shadow(0 6px 16px rgba(0,0,0,0.1));" />
+              <img src="${resolveAssetUrl(stageInfo.img)}" alt="${stageInfo.title}" style="width: 100%; max-height: 160px; object-fit: contain; margin-bottom: 1.2rem; filter: drop-shadow(0 6px 16px rgba(0,0,0,0.1));" onerror="this.onerror=null; this.src='${stageInfo.img}';" />
               <div class="lab-state-title" style="color: ${stageInfo.color};">
                 ${stageInfo.title}
               </div>

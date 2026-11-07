@@ -1,6 +1,7 @@
-﻿import { DETECTIVE_CASES } from '../data/detectiveCases.js';
+import { DETECTIVE_CASES } from '../data/detectiveCases.js';
 import { stateManager } from '../core/state.js';
 import { sound } from '../core/audio.js';
+import { resolveAssetUrl } from '../utils/assetUrl.js';
 
 export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOtherCase) {
   // If no caseId specified, pick first or solved state
@@ -95,7 +96,7 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
       const v = activeCase.philosophicalVerdict;
       verdictHTML = `
         <div class="verdict-box animate-slide-up">
-          <img src="./assets/images/cases/seal-verdict-solved.svg" alt="Huy hiệu phá án" style="width: 115px; height: 115px; float: right; margin: 0 0 1rem 1.5rem; filter: drop-shadow(0 6px 18px rgba(217, 119, 6, 0.4));" />
+          <img src="${resolveAssetUrl('./assets/images/cases/seal-verdict-solved.svg')}" alt="Huy hiệu phá án" style="width: 115px; height: 115px; float: right; margin: 0 0 1rem 1.5rem; filter: drop-shadow(0 6px 18px rgba(217, 119, 6, 0.4));" onerror="this.onerror=null; this.src='./assets/images/cases/seal-verdict-solved.svg';" />
           <div class="verdict-badge">🏆 VỤ ÁN ĐÃ ĐƯỢC PHÁ GIẢI HOÀN TOÀN!</div>
           <h3 style="font-size: 1.6rem; color: var(--text-heading); margin-bottom: 0.5rem; font-family: var(--font-heading);">
             ${v.headline}
@@ -140,7 +141,7 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
           <div class="detective-intro-body">
             <!-- Mandatory Case Image -->
             <div class="detective-image-box">
-              <img src="${activeCase.image}" alt="${activeCase.title}" style="width: 100%; max-height: 320px; object-fit: cover;" />
+              <img src="${resolveAssetUrl(activeCase.image)}" alt="${activeCase.title}" style="width: 100%; max-height: 320px; object-fit: cover;" onerror="this.onerror=null; this.src='${activeCase.image}';" />
             </div>
 
             <!-- Case Story context -->

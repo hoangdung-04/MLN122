@@ -3,6 +3,7 @@ import { SCENARIOS } from '../data/scenarios.js';
 import { DETECTIVE_CASES } from '../data/detectiveCases.js';
 import { stateManager } from '../core/state.js';
 import { sound } from '../core/audio.js';
+import { resolveAssetUrl } from '../utils/assetUrl.js';
 
 export function renderChapterMap(container, onSelectScenario, onSelectDetective, onResetProgress, onSelectTycoon) {
   const state = stateManager.state;
@@ -30,7 +31,7 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
       scenariosCardsHTML += `
         <div class="scenario-item-card ${isCompleted ? 'completed' : ''}" data-id="${sc.id}" style="--card-accent: ${ch.accentColor};">
           <div class="scenario-thumb-wrapper">
-            <img class="scenario-item-img" src="${sc.image}" alt="${sc.title}" loading="lazy" onerror="this.style.opacity='0.4'" />
+            <img class="scenario-item-img" src="${resolveAssetUrl(sc.image)}" alt="${sc.title}" loading="lazy" onerror="this.onerror=null; this.src='${sc.image}'; this.style.opacity='0.4'" />
             <div class="scenario-status-badge">
               ${isCompleted 
                 ? (isDialectical 
@@ -93,7 +94,7 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
     detectiveCasesHTML += `
       <div class="scenario-item-card ${isSolved ? 'completed' : ''}" data-case-id="${cs.id}" style="border-left: 4px solid var(--accent-crimson);">
         <div class="scenario-thumb-wrapper">
-          <img class="scenario-item-img" src="${cs.image}" alt="${cs.title}" loading="lazy" onerror="this.style.opacity='0.4'" />
+          <img class="scenario-item-img" src="${resolveAssetUrl(cs.image)}" alt="${cs.title}" loading="lazy" onerror="this.onerror=null; this.src='${cs.image}'; this.style.opacity='0.4'" />
           <div class="scenario-status-badge">
             ${isSolved 
               ? '<span class="badge-pill" style="background: var(--accent-emerald); color: #ffffff;">✓ ĐÃ PHÁ ÁN</span>'
@@ -120,7 +121,7 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
     <div class="container animate-fade-in" style="padding-bottom: 5.5rem;">
       <div class="journey-header" style="padding: 2rem 0 1.5rem; text-align: center;">
         <div style="display: inline-flex; align-items: center; justify-content: center; gap: 1.2rem; margin-bottom: 0.6rem; flex-wrap: wrap;">
-          <img src="./assets/images/portraits/marx-lenin-banner.svg" alt="C. Mác & V.I. Lênin" style="height: 54px; max-width: 140px; object-fit: contain; border-radius: 10px; border: 1.5px solid rgba(217, 119, 6, 0.4); box-shadow: 0 4px 12px rgba(217, 119, 6, 0.15);" />
+          <img src="${resolveAssetUrl('./assets/images/portraits/marx-lenin-banner.svg')}" alt="C. Mác & V.I. Lênin" style="height: 54px; max-width: 140px; object-fit: contain; border-radius: 10px; border: 1.5px solid rgba(217, 119, 6, 0.4); box-shadow: 0 4px 12px rgba(217, 119, 6, 0.15);" onerror="this.onerror=null; this.src='./assets/images/portraits/marx-lenin-banner.svg';" />
           <div style="text-align: left;">
             <h2 style="font-size: 1.85rem; margin: 0; color: var(--text-heading);">Bản Đồ Hành Trình MLN122</h2>
             <p style="margin: 0; color: var(--text-muted); font-size: 0.95rem;">Lý luận Kinh tế chính trị Mác – Lênin qua các tình huống đời sống và thị trường</p>

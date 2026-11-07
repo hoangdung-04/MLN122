@@ -51,23 +51,27 @@
 /* Large Illustration Container */
 .scenario-visual-box {
   width: 100%;
+  min-height: 220px;
   position: relative;
-  background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%);
+  background: #0b0f19;
   border-bottom: 1px solid var(--border-subtle);
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 [data-theme="dark"] .scenario-visual-box {
-  background: #090d16;
+  background: #070a12;
 }
 
 .scenario-large-image {
   width: 100%;
-  max-height: 480px;
+  max-height: 440px;
   object-fit: contain;
   display: block;
   margin: 0 auto;
-  transition: transform 0.5s var(--ease-spring);
+  transition: transform 0.45s var(--ease-spring);
 }
 .scenario-visual-box:hover .scenario-large-image {
   transform: scale(1.02);

@@ -1,5 +1,6 @@
 import { sound } from '../core/audio.js';
 import { stateManager } from '../core/state.js';
+import { resolveAssetUrl } from '../utils/assetUrl.js';
 
 export function renderLandingHero(container, onNavigate) {
   const hasProgress = stateManager.state.xp > 0 || 
@@ -76,9 +77,10 @@ export function renderLandingHero(container, onNavigate) {
               <div class="hero-portrait-glow"></div>
               <div class="hero-portrait-frame">
                 <img 
-                  src="./assets/images/portraits/marx-engels-lenin.png" 
+                  src="${resolveAssetUrl('./assets/images/portraits/marx-engels-lenin.png')}" 
                   alt="Chân dung V.I. Lênin, Ph. Ăng-ghen và C. Mác" 
                   class="hero-portrait-img" 
+                  onerror="this.onerror=null; this.src='./assets/images/portraits/marx-engels-lenin.png';"
                 />
                 <div class="hero-portrait-caption">
                   <div class="cap-names">C. MÁC • PH. ĂNG-GHEN • V.I. LÊNIN</div>
