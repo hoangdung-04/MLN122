@@ -119,20 +119,20 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
 
   container.innerHTML = `
     <div class="container animate-fade-in" style="padding-bottom: 5.5rem;">
-      <div class="journey-header" style="padding: 2rem 0 1.5rem; text-align: center;">
-        <div style="display: inline-flex; align-items: center; justify-content: center; gap: 1.2rem; margin-bottom: 0.6rem; flex-wrap: wrap;">
-          <img src="${resolveAssetUrl('./assets/images/portraits/marx-lenin-banner.svg')}" alt="C. Mác & V.I. Lênin" style="height: 54px; max-width: 140px; object-fit: contain; border-radius: 10px; border: 1.5px solid rgba(217, 119, 6, 0.4); box-shadow: 0 4px 12px rgba(217, 119, 6, 0.15);" onerror="this.onerror=null; this.src='./assets/images/portraits/marx-lenin-banner.svg';" />
+      <div class="journey-header" style="padding: 2.2rem 0 1.6rem; text-align: center;">
+        <div style="display: inline-flex; align-items: center; justify-content: center; gap: 1.3rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
+          <img src="${resolveAssetUrl('./assets/images/portraits/marx-lenin-banner.svg')}" alt="C. Mác & V.I. Lênin" style="height: 58px; max-width: 145px; object-fit: contain; border-radius: 12px; border: 1.5px solid rgba(217, 119, 6, 0.45); box-shadow: 0 4px 14px rgba(217, 119, 6, 0.18);" onerror="this.onerror=null; this.src='./assets/images/portraits/marx-lenin-banner.svg';" />
           <div style="text-align: left;">
-            <h2 style="font-size: 1.85rem; margin: 0; color: var(--text-heading);">Bản Đồ Hành Trình MLN122</h2>
-            <p style="margin: 0; color: var(--text-muted); font-size: 0.95rem;">Lý luận Kinh tế chính trị Mác – Lênin qua các tình huống đời sống và thị trường</p>
+            <h2 style="font-size: 2.05rem; font-weight: 900; margin: 0; color: var(--text-heading); font-family: var(--font-heading); letter-spacing: -0.02em;">Bản Đồ Hành Trình MLN122</h2>
+            <p style="margin: 0.2rem 0 0; color: var(--text-muted); font-size: 0.98rem; font-weight: 500;">Lý luận Kinh tế chính trị Mác – Lênin qua các tình huống đời sống và thị trường</p>
           </div>
         </div>
         ${totalCompleted > 0 ? `
-          <div style="margin-top: 1rem; display: flex; align-items: center; justify-content: center; gap: 0.85rem; flex-wrap: wrap;">
-            <span class="badge-pill" style="background: var(--accent-emerald-light); color: var(--accent-emerald-dark); border: 1px solid rgba(5, 150, 105, 0.35);">
-              Tiến trình: ${totalCompleted}/${totalItems} (${progressPercent}%)
+          <div style="margin-top: 1.1rem; display: flex; align-items: center; justify-content: center; gap: 0.85rem; flex-wrap: wrap;">
+            <span class="badge-pill" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(5, 150, 105, 0.18)); color: #059669; border: 1.5px solid rgba(5, 150, 105, 0.35); font-weight: 850; font-family: var(--font-heading); font-size: 0.85rem; padding: 0.45rem 1.15rem; border-radius: 9999px; box-shadow: 0 2px 8px rgba(5, 150, 105, 0.12);">
+              🎯 TIẾN TRÌNH: ${totalCompleted}/${totalItems} (${progressPercent}%)
             </span>
-            <button class="nav-btn" id="map-reset-btn" style="border-color: rgba(220, 38, 38, 0.35); color: var(--accent-crimson); font-size: 0.82rem; padding: 0.35rem 0.85rem;">
+            <button class="nav-btn" id="map-reset-btn" style="border-radius: 9999px; border: 1.5px solid rgba(220, 38, 38, 0.35); background: linear-gradient(135deg, rgba(220, 38, 38, 0.06), rgba(239, 68, 68, 0.1)); color: var(--accent-crimson); font-family: var(--font-heading); font-weight: 800; font-size: 0.84rem; padding: 0.45rem 1.15rem;">
               <span>↺ Làm lại từ đầu</span>
             </button>
           </div>
