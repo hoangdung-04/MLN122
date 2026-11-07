@@ -1,13 +1,14 @@
-﻿{
-  "name": "philosophy-in-life",
+{
+  "name": "mln122-political-economy",
   "version": "1.0.0",
-  "description": "MLN122 - Triet hoc trong doi song (Philosophy in Life)",
+  "description": "MLN122 - Kinh te chinh tri Mac - Lenin trong doi song (Political Economy in Life)",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "node server.js"
+    "start": "node server.js",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
