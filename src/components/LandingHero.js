@@ -57,11 +57,6 @@ export function renderLandingHero(container, onNavigate) {
               <button class="btn-primary" id="hero-start-btn" style="padding: 0.95rem 2.2rem; font-size: 1.05rem;">
                 <span>${hasProgress ? '🚀 TIẾP TỤC HỌC TẬP' : '🚀 BẮT ĐẦU HỌC TẬP MLN122'}</span>
               </button>
-              ${hasProgress ? `
-                <button class="btn-secondary" id="hero-reset-btn" style="padding: 0.95rem 1.8rem; font-size: 1rem; border-color: rgba(220, 38, 38, 0.35); color: var(--accent-crimson);">
-                  <span>↺ LÀM LẠI TỪ ĐẦU</span>
-                </button>
-              ` : ''}
               <button class="btn-secondary" id="hero-detective-btn" style="padding: 0.95rem 1.8rem; font-size: 1rem;">
                 <span>🔍 PHÒNG PHÁ ÁN KINH TẾ</span>
               </button>
@@ -140,18 +135,6 @@ export function renderLandingHero(container, onNavigate) {
     sound.playClick();
     onNavigate('map');
   });
-
-  const resetBtn = document.getElementById('hero-reset-btn');
-  if (resetBtn) {
-    resetBtn.addEventListener('click', () => {
-      sound.playClick();
-      if (confirm('Bạn có chắc chắn muốn làm lại từ đầu không? Toàn bộ điểm kinh nghiệm và tiến trình làm bài sẽ được đặt lại về 0.')) {
-        stateManager.resetAllProgress();
-        sound.playComplete();
-        renderLandingHero(container, onNavigate);
-      }
-    });
-  }
 
   document.getElementById('hero-detective-btn').addEventListener('click', () => {
     sound.playClick();

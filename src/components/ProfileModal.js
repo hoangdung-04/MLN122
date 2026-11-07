@@ -233,9 +233,6 @@ export function renderProfileModal(container, onClose) {
               * Kết quả hồ sơ được tính toán độc lập từ thuật toán đánh giá đa chiều MLN122 dựa trên lựa chọn tình huống và phá án kinh tế.
             </div>
             <div class="footer-btn-group">
-              <button class="nav-btn" id="profile-bottom-reset-btn" style="border-color: rgba(220, 38, 38, 0.35); color: var(--accent-crimson);">
-                <span>↺ Làm Lại Từ Đầu</span>
-              </button>
               <button class="nav-btn" id="print-certificate-bottom-btn" style="border-color: rgba(37, 99, 235, 0.35); color: var(--accent-blue);">
                 <span>🖨️ In / Lưu Chứng Nhận</span>
               </button>

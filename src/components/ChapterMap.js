@@ -132,9 +132,6 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
             <span class="badge-pill" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(5, 150, 105, 0.18)); color: #059669; border: 1.5px solid rgba(5, 150, 105, 0.35); font-weight: 850; font-family: var(--font-heading); font-size: 0.85rem; padding: 0.45rem 1.15rem; border-radius: 9999px; box-shadow: 0 2px 8px rgba(5, 150, 105, 0.12);">
               🎯 TIẾN TRÌNH: ${totalCompleted}/${totalItems} (${progressPercent}%)
             </span>
-            <button class="nav-btn" id="map-reset-btn" style="border-radius: 9999px; border: 1.5px solid rgba(220, 38, 38, 0.35); background: linear-gradient(135deg, rgba(220, 38, 38, 0.06), rgba(239, 68, 68, 0.1)); color: var(--accent-crimson); font-family: var(--font-heading); font-weight: 800; font-size: 0.84rem; padding: 0.45rem 1.15rem;">
-              <span>↺ Làm lại từ đầu</span>
-            </button>
           </div>
         ` : ''}
       </div>
@@ -201,14 +198,6 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
       onSelectDetective(caseId);
     });
   });
-
-  const mapResetBtn = document.getElementById('map-reset-btn');
-  if (mapResetBtn && onResetProgress) {
-    mapResetBtn.addEventListener('click', () => {
-      sound.playClick();
-      onResetProgress();
-    });
-  }
 
   const mapTycoonBtn = document.getElementById('map-enter-tycoon-btn');
   if (mapTycoonBtn && onSelectTycoon) {
