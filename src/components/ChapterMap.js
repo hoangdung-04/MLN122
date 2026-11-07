@@ -58,6 +58,23 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
       `;
     });
 
+    const modulesStripHTML = (ch.modules && ch.modules.length > 0) ? `
+      <div class="chapter-curriculum-strip">
+        <div class="curriculum-strip-title">
+          <span class="strip-icon">📚</span>
+          <span class="strip-label">KHUNG NỘI DUNG CHUẨN SLIDE SP24:</span>
+        </div>
+        <div class="curriculum-strip-tags">
+          ${ch.modules.map(m => `
+            <div class="curriculum-pill" style="--ch-accent: ${ch.accentColor};" title="${m.title}">
+              <span class="curriculum-pill-id" style="color: ${ch.accentColor};">${m.id}</span>
+              <span class="curriculum-pill-name">${m.title.replace(/^[0-9.]+\s*/, '')}</span>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    ` : '';
+
     chaptersHTML += `
       <section class="glass-panel chapter-card chapter-card-${ch.id} animate-slide-up" id="chapter-sec-${ch.id}">
         <div class="chapter-top">
@@ -75,6 +92,9 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
             </div>
           </div>
         </div>
+
+        <!-- Curriculum Syllabus Strip (Chuẩn Slide SP24) -->
+        ${modulesStripHTML}
 
         <!-- Scenarios Grid -->
         <div class="scenario-grid">

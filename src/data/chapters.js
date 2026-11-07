@@ -10,9 +10,9 @@ export const CHAPTERS = [
     icon: 'compass',
     totalScenarios: 3,
     modules: [
-      { id: '1.1', title: 'Sự ra đời & Các giai đoạn phát triển' },
-      { id: '1.2', title: 'Đối tượng & Mục đích nghiên cứu' },
-      { id: '1.3', title: 'Phương pháp trừu tượng hóa & 4 Chức năng' }
+      { id: '1.1', title: '1.1. Sự ra đời và các giai đoạn phát triển của Kinh tế chính trị Mác – Lênin' },
+      { id: '1.2', title: '1.2. Đối tượng và mục đích nghiên cứu của Kinh tế chính trị Mác – Lênin' },
+      { id: '1.3', title: '1.3. Phương pháp nghiên cứu và 4 chức năng của Kinh tế chính trị Mác – Lênin' }
     ]
   },
   {
@@ -26,11 +26,8 @@ export const CHAPTERS = [
     icon: 'shopping-bag',
     totalScenarios: 5,
     modules: [
-      { id: '2.1', title: 'Sản xuất hàng hóa & Hai thuộc tính' },
-      { id: '2.2', title: 'Tính hai mặt của lao động sản xuất hàng hóa' },
-      { id: '2.3', title: 'Năng suất lao động vs Cường độ lao động' },
-      { id: '2.4', title: 'Bản chất tiền tệ & Các quy luật thị trường' },
-      { id: '2.5', title: 'Vai trò của các chủ thể tham gia thị trường' }
+      { id: '2.1', title: '2.1. Lý luận của C. Mác về sản xuất hàng hóa và hàng hóa' },
+      { id: '2.2', title: '2.2. Thị trường và vai trò của các chủ thể tham gia thị trường' }
     ]
   },
   {
@@ -44,9 +41,11 @@ export const CHAPTERS = [
     icon: 'trending-up',
     totalScenarios: 7,
     modules: [
-      { id: '3.1', title: '3.1. Lý luận của C. Mác về giá trị thặng dư (Nguồn gốc, bản chất c/v & các phương pháp sản xuất GTTD)' },
-      { id: '3.2', title: '3.2. Tích lũy tư bản (Tái sản xuất mở rộng, nhân tố ảnh hưởng & hệ quả cấu tạo hữu cơ)' },
-      { id: '3.3', title: '3.3. Các hình thức biểu hiện của GTTD (Chi phí K, Lợi nhuận, Tỷ suất p\', Lợi nhuận bình quân, Lợi tức, Địa tô)' }
+      { id: '3.1.1', title: '3.1.1. Nguồn gốc của giá trị thặng dư' },
+      { id: '3.1.2', title: '3.1.2. Bản chất của giá trị thặng dư' },
+      { id: '3.1.3', title: '3.1.3. Các phương pháp sản xuất giá trị thặng dư trong nền kinh tế thị trường tư bản chủ nghĩa' },
+      { id: '3.2', title: '3.2. Tích lũy tư bản' },
+      { id: '3.3', title: '3.3. Các hình thức biểu hiện của giá trị thặng dư trong nền kinh tế thị trường' }
     ]
   },
   {
@@ -60,40 +59,46 @@ export const CHAPTERS = [
     icon: 'shield',
     totalScenarios: 3,
     modules: [
-      { id: '4.1', title: 'Nguyên nhân & Bản chất của độc quyền' },
-      { id: '4.2', title: 'Độc quyền nhà nước trong CNTB' },
-      { id: '4.3', title: 'Biểu hiện mới của độc quyền thời đại công nghệ' }
+      { id: '4.1', title: '4.1. Quan hệ giữa cạnh tranh và độc quyền trong nền kinh tế thị trường' },
+      { id: '4.2', title: '4.2. Độc quyền và độc quyền nhà nước trong chủ nghĩa tư bản' },
+      { id: '4.3', title: '4.3. Các biểu hiện mới của độc quyền và độc quyền nhà nước thời đại số' }
     ]
   },
   {
     id: 5,
-    title: 'KTTT Định Hướng XHCN & Quan Hệ Lợi Ích Kinh Tế Ở Việt Nam',
+    title: 'Kinh Tế Thị Trường Định Hướng XHCN & Các Quan Hệ Lợi Ích Kinh Tế Ở Việt Nam',
     titleEn: 'Socialist-Oriented Market Economy & Economic Interests in Vietnam',
     code: 'CHƯƠNG 5',
     badge: 'MÔ HÌNH VIỆT NAM',
-    desc: 'Khái niệm, tính tất yếu và 5 đặc trưng của KTTT định hướng XHCN; sự cần thiết và nội dung hoàn thiện thể chế; các quan hệ lợi ích kinh tế ở Việt Nam.',
+    desc: 'Khái niệm, tính tất yếu khách quan và 5 đặc trưng của KTTT định hướng XHCN; sự cần thiết và nội dung hoàn thiện thể chế; các quan hệ lợi ích kinh tế ở Việt Nam.',
     accentColor: '#ec4899',
     icon: 'award',
     totalScenarios: 5,
     modules: [
-      { id: '5.1', title: '5.1. KTTT định hướng XHCN ở Việt Nam (Khái niệm, Tính tất yếu khách quan & 5 Đặc trưng)' },
-      { id: '5.2', title: '5.2. Hoàn thiện thể chế KTTT định hướng XHCN (Sự cần thiết & Các khía cạnh chủ yếu)' },
-      { id: '5.3', title: '5.3. Các quan hệ lợi ích kinh tế ở Việt Nam & Vai trò điều tiết của Nhà nước' }
+      { id: '5.1.1', title: '5.1.1. Khái niệm kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam' },
+      { id: '5.1.2', title: '5.1.2. Tính tất yếu khách quan của việc phát triển kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam' },
+      { id: '5.1.3', title: '5.1.3. Đặc trưng của kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam' },
+      { id: '5.2.1', title: '5.2.1. Sự cần thiết phải hoàn thiện thể chế kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam' },
+      { id: '5.2.2', title: '5.2.2. Hoàn thiện thể chế kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam trên một số khía cạnh chủ yếu' },
+      { id: '5.3', title: '5.3. Các quan hệ lợi ích kinh tế ở Việt Nam' }
     ]
   },
   {
     id: 6,
-    title: 'Công Nghiệp Hóa, Hiện Đại Hóa & Hội Nhập Kinh Tế Quốc Tế',
-    titleEn: 'Industrialization, Modernization & International Economic Integration',
+    title: 'Công Nghiệp Hóa, Hiện Đại Hóa & Hội Nhập Kinh Tế Quốc Tế Của Việt Nam',
+    titleEn: 'Industrialization, Modernization & International Economic Integration of Vietnam',
     code: 'CHƯƠNG 6',
     badge: 'PHÁT TRIỂN & HỘI NHẬP',
-    desc: 'Lịch sử 4 cuộc CMCN, tính tất yếu & nội dung CNH-HĐH ở VN; khái niệm, tác động hai mặt và phương hướng nâng cao hiệu quả hội nhập gắn với xây dựng nền kinh tế độc lập tự chủ.',
+    desc: 'Khái quát cách mạng công nghiệp và CNH; tính tất yếu và nội dung CNH-HĐH ở VN; khái niệm, tác động hai mặt và phương hướng nâng cao hiệu quả hội nhập kinh tế quốc tế gắn với độc lập tự chủ.',
     accentColor: '#06b6d4',
     icon: 'globe',
     totalScenarios: 5,
     modules: [
-      { id: '6.1', title: '6.1. Công nghiệp hóa, hiện đại hóa ở Việt Nam (Khái quát 4 cuộc CMCN, Tính tất yếu & Nội dung)' },
-      { id: '6.2', title: '6.2. Hội nhập kinh tế quốc tế của Việt Nam (Khái niệm, Tác động & Phương hướng nâng cao hiệu quả)' }
+      { id: '6.1.1', title: '6.1.1. Khái quát về cách mạng công nghiệp và công nghiệp hóa' },
+      { id: '6.1.2', title: '6.1.2. Tính tất yếu khách quan và nội dung của công nghiệp hóa hiện đại hóa ở Việt Nam' },
+      { id: '6.2.1', title: '6.2.1. Khái niệm và các hình thức hội nhập kinh tế quốc tế' },
+      { id: '6.2.2', title: '6.2.2. Tác động của hội nhập kinh tế quốc tế đến quá trình phát triển của Việt Nam' },
+      { id: '6.2.3', title: '6.2.3. Phương hướng nâng cao hiệu quả hội nhập kinh tế quốc tế trong phát triển của Việt Nam' }
     ]
   }
 ];
