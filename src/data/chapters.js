@@ -104,9 +104,9 @@ export const SPECIAL_MODULES = [
     title: 'Economic Detective',
     titleVi: 'Phòng Phá Án Kinh Tế Chính Trị',
     badge: 'SPECIAL INTERACTIVE LAB',
-    desc: 'Hóa thân thành Chuyên gia Điều tra Kinh tế: Phá giải các nghịch lý thị trường, bóc trần bản chất giá trị thặng dư, độc quyền và mâu thuẫn lợi ích!',
+    desc: 'Hóa thân thành Chuyên gia Điều tra Kinh tế: Phá giải các nghịch lý thị trường, bóc trần bản chất giá trị thặng dư, quy luật tích lũy tư bản, thể chế KTTT định hướng XHCN và chiến lược CNH 4.0 hội nhập quốc tế!',
     accentColor: '#dc2626',
     icon: 'search',
-    totalCases: 3
+    totalCases: 6
   }
 ];

@@ -6,6 +6,7 @@ import { resolveAssetUrl } from '../utils/assetUrl.js';
 export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOtherCase) {
   // If no caseId specified, pick first or solved state
   const activeCase = DETECTIVE_CASES.find(c => c.id === caseId) || DETECTIVE_CASES[0];
+  const activeIndex = DETECTIVE_CASES.findIndex(c => c.id === activeCase.id);
   
   // Track assignments: clueId -> categoryId
   const assignments = {};
@@ -30,14 +31,19 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
       const isSelected = selectedClueId === clue.id;
       unassignedHTML += `
         <div class="clue-chip ${isSelected ? 'active-selection' : ''}" data-clue-id="${clue.id}">
-          <span>📌</span>
-          <span>${clue.text}</span>
+          <span class="clue-pin-icon">📌</span>
+          <span class="clue-text">${clue.text}</span>
         </div>
       `;
     });
 
     if (unassignedClues.length === 0 && !isCaseSolved && !validationResult?.isAllCorrect) {
-      unassignedHTML = `<div style="color: var(--text-muted); font-style: italic; font-size: 0.92rem;">Đã xếp tất cả manh mối vào bảng. Hãy bấm nút Kiểm tra bên dưới!</div>`;
+      unassignedHTML = `
+        <div class="clues-all-placed-note">
+          <span>✨</span>
+          <span>Đã xếp toàn bộ manh mối vào các ngăn danh mục. Hãy bấm nút <strong>Kiểm tra phân loại</strong> bên dưới!</span>
+        </div>
+      `;
     }
 
     // Category Buckets
@@ -48,44 +54,50 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
 
       let chipsInBucketHTML = '';
       cluesInBucket.forEach(clue => {
-        let errorHighlight = '';
+        let errorClass = '';
         if (validationResult && !validationResult.isAllCorrect) {
           if (clue.correctCategory !== cat.id) {
-            errorHighlight = 'style="border-color: var(--accent-crimson); background: var(--accent-crimson-light); color: var(--accent-crimson-dark);"';
+            errorClass = 'clue-error-highlight';
           }
         }
 
         chipsInBucketHTML += `
-          <div class="clue-chip" data-clue-id="${clue.id}" ${errorHighlight}>
-            <span>🔍</span>
-            <span style="flex-grow: 1;">${clue.text}</span>
-            <button class="remove-clue-btn" data-remove-id="${clue.id}" style="color: var(--text-dim); padding: 2px 6px; font-weight: bold;" title="Bỏ ra">✕</button>
+          <div class="clue-chip in-bucket ${errorClass}" data-clue-id="${clue.id}">
+            <span class="clue-pin-icon">🔍</span>
+            <span class="clue-text">${clue.text}</span>
+            <button class="remove-clue-btn" data-remove-id="${clue.id}" title="Gỡ manh mối ra khay">✕</button>
           </div>
         `;
       });
 
       bucketsHTML += `
-        <div class="category-bucket ${selectedClueId ? 'ready-to-assign' : ''}" data-bucket-id="${cat.id}" style="border-top: 4px solid ${cat.color};">
+        <div class="category-bucket ${selectedClueId ? 'ready-to-assign' : ''}" data-bucket-id="${cat.id}" style="--cat-accent: ${cat.color};">
           <div class="bucket-header">
-            <div class="bucket-name" style="color: ${cat.color};">${cat.name}</div>
-            <div class="bucket-desc">${cat.desc}</div>
+            <div class="bucket-color-tag" style="background: ${cat.color};"></div>
+            <div>
+              <div class="bucket-name" style="color: ${cat.color};">${cat.name}</div>
+              <div class="bucket-desc">${cat.desc}</div>
+            </div>
           </div>
           <div class="bucket-clues-list">
-            ${chipsInBucketHTML.length > 0 ? chipsInBucketHTML : '<div style="color: var(--text-dim); font-size: 0.82rem; text-align: center; margin: auto;">Thả hoặc bấm chọn manh mối vào đây</div>'}
+            ${chipsInBucketHTML.length > 0 ? chipsInBucketHTML : '<div class="bucket-empty-hint">Bấm manh mối ở khay rồi bấm vào ô này để ghim</div>'}
           </div>
         </div>
       `;
     });
 
-    // Case Selector Tabs
+    // Case Selector Tabs (All 6 Cases)
     let caseTabsHTML = '';
-    DETECTIVE_CASES.forEach(c => {
+    DETECTIVE_CASES.forEach((c, idx) => {
       const isCur = c.id === activeCase.id;
       const solved = !!stateManager.state.detectiveSolved[c.id];
       caseTabsHTML += `
-        <button class="nav-btn ${isCur ? 'active' : ''}" data-switch-case="${c.id}" style="${isCur ? 'border-color: var(--accent-crimson); color: var(--accent-crimson);' : ''}">
-          <span>${c.code}</span>
-          ${solved ? '<span style="color: var(--accent-emerald);">✓</span>' : ''}
+        <button class="case-nav-tab ${isCur ? 'active' : ''} ${solved ? 'is-solved' : ''}" data-switch-case="${c.id}">
+          <div class="case-tab-main">
+            <span class="case-tab-code">${c.code}</span>
+            <span class="case-tab-chapter">${c.chapterBadge ? c.chapterBadge.split('•')[0].trim() : `Chương ${idx + 1}`}</span>
+          </div>
+          ${solved ? '<span class="case-tab-check">✓ Đã phá</span>' : ''}
         </button>
       `;
     });
@@ -96,19 +108,23 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
       const v = activeCase.philosophicalVerdict;
       verdictHTML = `
         <div class="verdict-box animate-slide-up">
-          <img src="${resolveAssetUrl('./assets/images/cases/seal-verdict-solved.svg')}" alt="Huy hiệu phá án" style="width: 115px; height: 115px; float: right; margin: 0 0 1rem 1.5rem; filter: drop-shadow(0 6px 18px rgba(217, 119, 6, 0.4));" onerror="this.onerror=null; this.src='./assets/images/cases/seal-verdict-solved.svg';" />
-          <div class="verdict-badge">🏆 VỤ ÁN ĐÃ ĐƯỢC PHÁ GIẢI HOÀN TOÀN!</div>
-          <h3 style="font-size: 1.6rem; color: var(--text-heading); margin-bottom: 0.5rem; font-family: var(--font-heading);">
+          <img src="${resolveAssetUrl('./assets/images/cases/seal-verdict-solved.svg')}" alt="Huy hiệu phá án" class="verdict-seal-img" onerror="this.onerror=null; this.src='./assets/images/cases/seal-verdict-solved.svg';" />
+          <div class="verdict-badge">🏆 ĐẠI ÁN ĐÃ ĐƯỢC PHÁ GIẢI HOÀN TOÀN!</div>
+          <h3 class="verdict-headline">
             ${v.headline}
           </h3>
-          <div style="font-size: 0.95rem; color: var(--accent-gold); font-weight: 800; margin-bottom: 1rem; font-family: var(--font-heading);">
-            Khái niệm triết học cốt lõi: ${v.concept}
+          <div class="verdict-concept-pill">
+            <span>💡 Khái niệm Kinh tế chính trị cốt lõi:</span>
+            <strong>${v.concept}</strong>
           </div>
           <div class="verdict-analysis-text">
             ${v.analysis}
           </div>
-          <div style="display: flex; gap: 1rem; align-items: center; justify-content: flex-end; flex-wrap: wrap;">
-            <span style="color: var(--accent-emerald-dark); font-weight: 800; font-family: var(--font-heading);">+${v.xpAwarded} XP Đã cộng vào hồ sơ!</span>
+          <div class="verdict-footer-actions">
+            <div class="verdict-xp-awarded">
+              <span>🌟</span>
+              <span>+${v.xpAwarded} XP đã ghi nhận vào Hồ Sơ Tư Duy!</span>
+            </div>
             <button class="btn-primary" id="detective-continue-btn">
               <span>TIẾP TỤC KHÁM PHÁ →</span>
             </button>
@@ -119,42 +135,62 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
 
     container.innerHTML = `
       <div class="container detective-wrap animate-fade-in">
-        <!-- Top Nav -->
-        <div class="scenario-header-nav">
+        <!-- Top Nav & Case Selector Bar -->
+        <div class="detective-top-bar">
           <button class="back-to-map-btn" id="detective-back-btn">
             <span>← Quay lại bản đồ hành trình</span>
           </button>
-          <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
-            ${caseTabsHTML}
+          
+          <div class="case-selector-scroll-wrap">
+            <div class="case-selector-tabs">
+              ${caseTabsHTML}
+            </div>
           </div>
         </div>
 
         <!-- Case Dossier Header -->
         <div class="dossier-card">
           <div class="dossier-header-bar">
-            <span class="stamp-confidential">HỒ SƠ ĐIỀU TRA MẬT</span>
-            <span style="font-family: var(--font-heading); font-weight: 800; color: #ffffff; font-size: 0.88rem; letter-spacing: 0.04em;">
-              BỘ MÔN MLN122 • PHILOSOPHY DETECTIVE BUREAU
-            </span>
+            <div class="dossier-header-left">
+              <span class="stamp-confidential">📁 HỒ SƠ ĐIỀU TRA MẬT</span>
+              <span class="dossier-sub-badge">${activeCase.code} • ${activeCase.chapterBadge || 'MLN122'}</span>
+            </div>
+            <div class="dossier-header-right">
+              <span>BỘ MÔN MLN122 • ECONOMIC DETECTIVE BUREAU: GIẢI MÃ KỲ ÁN THỊ TRƯỜNG</span>
+            </div>
           </div>
 
           <div class="detective-intro-body">
-            <!-- Mandatory Case Image -->
+            <!-- Mandatory Case Image with Evidence Frame -->
             <div class="detective-image-box">
-              <img src="${resolveAssetUrl(activeCase.image)}" alt="${activeCase.title}" style="width: 100%; max-height: 320px; object-fit: cover;" onerror="this.onerror=null; this.src='${activeCase.image}';" />
+              <div class="evidence-tag">
+                <span>🔍 SƠ ĐỒ CHỨNG CỨ #${activeCase.code.replace(/\D/g, '')}</span>
+              </div>
+              <img src="${resolveAssetUrl(activeCase.image)}" alt="${activeCase.title}" class="detective-hero-img" onerror="this.onerror=null; this.src='${activeCase.image}';" />
             </div>
 
             <!-- Case Story context -->
-            <div>
-              <div style="color: var(--accent-crimson); font-size: 0.88rem; font-weight: 800; letter-spacing: 0.06em; margin-bottom: 0.4rem; font-family: var(--font-heading);">
-                ${activeCase.code} • ${activeCase.dossierLevel}
+            <div class="detective-info-box">
+              <div class="detective-meta-pills">
+                <span class="dossier-level-pill" style="color: ${activeCase.accentColor}; background: rgba(2, 132, 199, 0.08); border: 1.5px solid ${activeCase.accentColor};">
+                  ${activeCase.dossierLevel}
+                </span>
+                <span class="dossier-chapter-pill">
+                  ${activeCase.chapterBadge}
+                </span>
               </div>
-              <h2 style="font-size: 1.75rem; margin-bottom: 0.6rem; color: var(--text-heading);">${activeCase.title}</h2>
-              <p style="color: var(--accent-gold); font-size: 1rem; margin-bottom: 1.4rem; font-weight: 600;">${activeCase.subtitle}</p>
+
+              <h2 class="detective-case-title">${activeCase.title}</h2>
+              <p class="detective-case-subtitle">${activeCase.subtitle}</p>
               
               <div class="detective-story-box">
-                <strong style="color: var(--accent-crimson); display: block; margin-bottom: 0.4rem; font-family: var(--font-heading); font-size: 0.92rem; text-transform: uppercase;">Bối cảnh điều tra:</strong>
-                ${activeCase.backgroundStory}
+                <div class="story-label">
+                  <span class="story-icon">📌</span>
+                  <span>BỐI CẢNH ĐIỀU TRA:</span>
+                </div>
+                <div class="story-content">
+                  ${activeCase.backgroundStory}
+                </div>
               </div>
             </div>
           </div>
@@ -164,13 +200,14 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
         <div class="investigation-board">
           <div class="board-title">
             <div>
-              <h3 style="font-size: 1.35rem; color: var(--text-heading); font-family: var(--font-heading); margin-bottom: 0.3rem;">Bàn Phân Loại Manh Mối Triết Học</h3>
-              <p style="font-size: 0.9rem; color: var(--text-muted);">
-                Hướng dẫn: <strong>Bấm vào một manh mối</strong> ở khay bên dưới, sau đó <strong>bấm vào ô danh mục tương ứng</strong> để ghim manh mối.
+              <div class="board-badge">THAO TRƯỜNG PHÂN TÍCH</div>
+              <h3 class="board-main-heading">Bàn Phân Loại Manh Mối Kinh Tế Chính Trị</h3>
+              <p class="board-guide-text">
+                👉 Hướng dẫn: <strong>Bấm vào một manh mối</strong> ở khay bên dưới, sau đó <strong>bấm vào ô danh mục tương ứng</strong> để ghim chứng cứ khoa học.
               </p>
             </div>
             ${!isCaseSolved && !validationResult?.isAllCorrect ? `
-              <button class="btn-primary" id="validate-clues-btn" style="background: linear-gradient(135deg, #dc2626, #ef4444); box-shadow: 0 4px 18px rgba(220, 38, 38, 0.35);">
+              <button class="btn-primary btn-validate-clues" id="validate-clues-btn">
                 <span>🔍 KIỂM TRA PHÂN LOẠI</span>
               </button>
             ` : ''}
@@ -178,24 +215,28 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
 
           <!-- Unassigned Clues Tray -->
           <div class="unassigned-clues-section">
-            <div style="font-size: 0.88rem; font-weight: 800; color: var(--accent-gold); display: flex; align-items: center; gap: 0.45rem; font-family: var(--font-heading);">
+            <div class="clues-tray-label">
               <span>📁</span>
-              <span>Khay Manh Mối Cần Phân Loại (${unassignedClues.length}):</span>
+              <span>Khay Manh Mối Cần Phân Loại (${unassignedClues.length} manh mối còn lại):</span>
             </div>
             <div class="clues-grid">
               ${unassignedHTML}
             </div>
           </div>
 
-          <!-- Target Buckets -->
+          <!-- Target Buckets Grid -->
           <div class="categories-bucket-grid">
             ${bucketsHTML}
           </div>
 
           <!-- Error Alert if validation failed -->
           ${validationResult && !validationResult.isAllCorrect ? `
-            <div style="margin-top: 1.6rem; padding: 1.1rem 1.6rem; background: var(--accent-crimson-light); border: 1.5px solid rgba(220, 38, 38, 0.3); border-radius: var(--radius-md); color: var(--accent-crimson); font-size: 0.98rem; font-weight: 600;">
-              ⚠️ Vẫn còn manh mối bị xếp sai danh mục hoặc chưa xếp hết! Hãy đọc kỹ định nghĩa các phạm trù và thử lại.
+            <div class="detective-validation-error animate-shake">
+              <div class="error-icon">⚠️</div>
+              <div class="error-text">
+                <strong>Vẫn còn manh mối bị xếp sai danh mục hoặc chưa xếp hết!</strong>
+                <p>Hãy đọc kỹ định nghĩa và đặc trưng của từng phạm trù kinh tế chính trị, quan sát các gợi ý và thử lại nhé.</p>
+              </div>
             </div>
           ` : ''}
 
@@ -206,10 +247,13 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
     `;
 
     // Event listeners
-    document.getElementById('detective-back-btn').addEventListener('click', () => {
-      sound.playClick();
-      onBackToMap();
-    });
+    const backBtn = document.getElementById('detective-back-btn');
+    if (backBtn) {
+      backBtn.addEventListener('click', () => {
+        sound.playClick();
+        onBackToMap();
+      });
+    }
 
     // Switch case buttons
     container.querySelectorAll('[data-switch-case]').forEach(btn => {
@@ -264,7 +308,7 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
         // Check if all clues assigned
         const allAssigned = activeCase.clues.every(c => assignments[c.id]);
         if (!allAssigned) {
-          alert('Vui lòng xếp toàn bộ manh mối vào các danh mục trước khi kiểm tra!');
+          alert('Vui lòng xếp toàn bộ 5 manh mối vào các ngăn danh mục trước khi kiểm tra!');
           return;
         }
 
@@ -281,6 +325,11 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
           isCaseSolved = true;
           stateManager.recordDetectiveSolved(activeCase.id);
           renderView();
+          // Scroll smoothly to verdict
+          setTimeout(() => {
+            const verdictBox = container.querySelector('.verdict-box');
+            if (verdictBox) verdictBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 100);
         } else {
           sound.playWarning();
           validationResult = { isAllCorrect: false, errors };
@@ -298,5 +347,6 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
     }
   }
 
+  // Initial render
   renderView();
 }

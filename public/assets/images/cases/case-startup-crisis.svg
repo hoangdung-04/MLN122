@@ -1,80 +1,80 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b0f19" />
-      <stop offset="50%" stop-color="#111827" />
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="50%" stop-color="#1f2937" />
       <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
-    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#0284c7" />
-    </linearGradient>
-    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbbf24" />
-      <stop offset="100%" stop-color="#d97706" />
-    </linearGradient>
-    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#34d399" />
-      <stop offset="100%" stop-color="#059669" />
-    </linearGradient>
-    <linearGradient id="pinkGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f472b6" />
-      <stop offset="100%" stop-color="#db2777" />
-    </linearGradient>
-    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
   </defs>
 
-  <!-- Background Canvas -->
-  <rect width="800" height="450" rx="20" fill="url(#bgGrad)" />
-  
-  <!-- Subtle Grid lines -->
-  <g stroke="#1e293b" stroke-width="1" opacity="0.4">
-    <line x1="0" y1="75" x2="800" y2="75"/>
-    <line x1="0" y1="150" x2="800" y2="150"/>
-    <line x1="0" y1="225" x2="800" y2="225"/>
-    <line x1="0" y1="300" x2="800" y2="300"/>
-    <line x1="0" y1="375" x2="800" y2="375"/>
-    <line x1="160" y1="0" x2="160" y2="450"/>
-    <line x1="320" y1="0" x2="320" y2="450"/>
-    <line x1="480" y1="0" x2="480" y2="450"/>
-    <line x1="640" y1="0" x2="640" y2="450"/>
+  <rect width="800" height="450" rx="16" fill="url(#bgGrad2)" />
+
+  <g stroke="#374151" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="75" x2="800" y2="75" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="225" x2="800" y2="225" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="375" x2="800" y2="375" />
+    <line x1="200" y1="0" x2="200" y2="450" />
+    <line x1="400" y1="0" x2="400" y2="450" />
+    <line x1="600" y1="0" x2="600" y2="450" />
   </g>
 
-  <!-- Header Badge -->
-  <g transform="translate(40, 36)">
-    <rect width="180" height="28" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
-    <circle cx="16" cy="14" r="5" fill="#f59e0b" />
-    <text x="32" y="19" fill="#e2e8f0" font-size="11" font-weight="bold" letter-spacing="1">MLN122 • CASE SCENARIO</text>
+  <g transform="translate(35, 30)">
+    <rect width="210" height="30" rx="15" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+    <circle cx="16" cy="15" r="5" fill="#f59e0b" />
+    <text x="32" y="20" fill="#f8fafc" font-size="11" font-weight="bold" font-family="'Be Vietnam Pro', sans-serif" letter-spacing="1">HỒ SƠ #002 • CHƯƠNG 3</text>
   </g>
+  <text x="765" y="48" fill="#f59e0b" font-size="12" font-weight="bold" text-anchor="end" font-family="'Be Vietnam Pro', sans-serif">TÍCH LŨY TƯ BẢN &amp; CẤU TẠO HỮU CƠ (c/v)</text>
 
-  <!-- Title andamp; Subtitle inside SVG for standalone view -->
-  <text x="760" y="44" fill="#f59e0b" font-size="13" font-weight="bold" text-anchor="end" letter-spacing="0.5">HỒ SƠ ĐIỀU TRA #002</text>
-  <text x="760" y="62" fill="#94a3b8" font-size="11" text-anchor="end">Khủng hoảng Startup X: Đốt 50 triệu và cái bẫy chủ quan duy ý chí</text>
+  <g transform="translate(50, 90)">
+    <g transform="translate(0, 0)">
+      <rect width="190" height="120" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+      <text x="95" y="32" fill="#fbbf24" font-size="13" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">GIÁ TRỊ THẶNG DƯ (m)</text>
+      <text x="95" y="60" fill="#cbd5e1" font-size="11" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">Tách thành 2 phần:</text>
+      <text x="95" y="82" fill="#94a3b8" font-size="11" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">• Tiêu dùng cá nhân</text>
+      <text x="95" y="102" fill="#f59e0b" font-size="11" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">• Tái đầu tư (Tích lũy)</text>
+    </g>
 
-  <!-- Main Illustration Graphics -->
-  
-      <!-- Dossier Board with downward graph -->
-      <rect x="180" y="100" width="440" height="260" rx="16" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
-      <rect x="210" y="125" width="160" height="36" rx="6" fill="#b45309" stroke="#fde68a" stroke-width="2"/>
-      <text x="290" y="148" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">HỒ SƠ KHẨN #002</text>
-      
-      <!-- Downward chart -->
-      <polyline points="230,220 300,200 370,250 450,230 540,320" fill="none" stroke="#ef4444" stroke-width="4"/>
-      <circle cx="540" cy="320" r="8" fill="#ef4444"/>
-      <text x="540" y="345" fill="#fca5a5" font-size="12" font-weight="bold" text-anchor="middle">Cạn vốn sau 2 tháng</text>
+    <polygon points="250,60 240,55 240,65" fill="#f59e0b" />
 
-      <!-- Stamp: CHỦ QUAN DUY Ý CHÍ -->
-      <g transform="translate(360, 200) rotate(-15)">
-        <rect x="-100" y="-20" width="200" height="40" rx="6" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
-        <text x="0" y="5" fill="#fca5a5" font-size="12" font-weight="bold" text-anchor="middle">CHỦ QUAN DUY Ý CHÍ</text>
+    <g transform="translate(260, 0)">
+      <rect width="210" height="120" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" />
+      <text x="105" y="32" fill="#60a5fa" font-size="13" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">TÍCH TỤ &amp; TẬP TRUNG</text>
+      <text x="105" y="60" fill="#cbd5e1" font-size="11" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">• Tái sản xuất mở rộng</text>
+      <text x="105" y="82" fill="#cbd5e1" font-size="11" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">• M&amp;A thâu tóm đối thủ</text>
+      <text x="105" y="102" fill="#60a5fa" font-size="11" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">→ Quy mô tư bản tăng vọt</text>
+    </g>
+
+    <polygon points="530,60 520,55 520,65" fill="#3b82f6" />
+
+    <g transform="translate(540, 0)">
+      <rect width="160" height="120" rx="10" fill="#1e293b" stroke="#ec4899" stroke-width="1.5" />
+      <text x="80" y="32" fill="#f472b6" font-size="13" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">TĂNG c / v</text>
+      <text x="80" y="60" fill="#cbd5e1" font-size="11" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">Mua robot, AI (c ↑)</text>
+      <text x="80" y="82" fill="#cbd5e1" font-size="11" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">Giảm tỷ lệ công nhân (v ↓)</text>
+      <text x="80" y="102" fill="#f472b6" font-size="11" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">c/v tăng từ 4/1 lên 10/1</text>
+    </g>
+
+    <g transform="translate(0, 150)">
+      <rect width="700" height="130" rx="12" fill="#0f172a" stroke="#ef4444" stroke-width="2" />
+      <text x="350" y="28" fill="#f87171" font-size="14" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">HỆ QUẢ TẤT YẾU: QUY LUẬT TÍCH LŨY TƯ BẢN VÀ BẤT BÌNH ĐẲNG</text>
+
+      <g transform="translate(30, 45)">
+        <rect width="300" height="65" rx="8" fill="#1e293b" stroke="#e11d48" stroke-width="1" />
+        <text x="150" y="25" fill="#fb7185" font-size="12" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">MỘT CỰC: TÍCH LŨY CỦA CẢI</text>
+        <text x="150" y="48" fill="#cbd5e1" font-size="11" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">Tập trung vào tay giới chủ tập đoàn độc quyền</text>
       </g>
-    
 
-  <!-- Bottom Brand Watermark -->
-  <text x="40" y="420" fill="#475569" font-size="11" font-weight="500">PHILOSOPHY IN LIFE — TRIẾT HỌC TRONG ĐỜI SỐNG</text>
-  <text x="760" y="420" fill="#475569" font-size="11" text-anchor="end">FPT UNIVERSITY • MLN122</text>
+      <g transform="translate(370, 45)">
+        <rect width="300" height="65" rx="8" fill="#1e293b" stroke="#e11d48" stroke-width="1" />
+        <text x="150" y="25" fill="#fb7185" font-size="12" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">CỰC ĐỐI LẬP: BẦN CÙNG HÓA</text>
+        <text x="150" y="48" fill="#cbd5e1" font-size="11" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">Sinh ra "Đội quân thất nghiệp công nghiệp" (dân số thừa)</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="50" y="388" width="700" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="400" y="410" fill="#fbbf24" font-size="12" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">KẾT LUẬN: Tích lũy tư bản gắn liền với bần cùng hóa tương đối và đội quân thất nghiệp công nghệ!</text>
 </svg>

@@ -1,190 +1,595 @@
 /* =================================================================
-   PHILOSOPHY DETECTIVE BUREAU (BRIGHT & STYLISH INVESTIGATION)
+   ECONOMIC DETECTIVE BUREAU (GIẢI MÃ KỲ ÁN THỊ TRƯỜNG MLN122)
+   Modern, balanced, responsive and engaging investigation theme
 ================================================================= */
+
 .detective-wrap {
-  padding: 2.5rem 0 5.5rem;
+  padding: 2rem 0 6rem;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
-.dossier-card {
-  background: var(--bg-card);
-  border: 2px solid var(--accent-crimson);
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  box-shadow: 0 20px 50px -10px rgba(220, 38, 38, 0.15), var(--card-shadow);
-  margin-bottom: 2.8rem;
-}
-
-.dossier-header-bar {
-  background: linear-gradient(90deg, #dc2626 0%, #991b1b 100%);
-  padding: 0.9rem 2.2rem;
+/* -------------------------------------------------------------
+   TOP BAR & CASE SELECTOR TABS
+------------------------------------------------------------- */
+.detective-top-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(220, 38, 38, 0.3);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.case-selector-scroll-wrap {
+  flex: 1;
+  min-width: 280px;
+  overflow-x: auto;
+  padding: 4px 2px;
+}
+
+.case-selector-tabs {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.case-nav-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.6rem 1.15rem;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-medium);
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+  font-family: var(--font-heading);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.case-nav-tab:hover {
+  border-color: var(--accent-crimson);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(220, 38, 38, 0.12);
+}
+
+.case-nav-tab.active {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.12), rgba(239, 68, 68, 0.04));
+  border-color: #dc2626;
+  color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15), 0 6px 18px rgba(220, 38, 38, 0.2);
+}
+
+.case-tab-main {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.case-tab-code {
+  font-weight: 900;
+  font-size: 0.84rem;
+  letter-spacing: 0.04em;
+  color: var(--text-heading);
+}
+
+.case-nav-tab.active .case-tab-code {
+  color: #dc2626;
+}
+
+.case-tab-chapter {
+  font-size: 0.76rem;
+  font-weight: 750;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  padding: 0.18rem 0.55rem;
+  border-radius: 9999px;
+  border: 1px solid var(--border-subtle);
+}
+
+.case-tab-check {
+  font-size: 0.74rem;
+  font-weight: 850;
+  color: #059669;
+  background: rgba(16, 185, 129, 0.14);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 0.15rem 0.55rem;
+  border-radius: 9999px;
+}
+
+/* -------------------------------------------------------------
+   DOSSIER CARD (HỒ SƠ ĐIỀU TRA MẬT)
+------------------------------------------------------------- */
+.dossier-card {
+  background: var(--bg-card);
+  border: 2px solid #dc2626;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px -10px rgba(220, 38, 38, 0.14), var(--card-shadow);
+  margin-bottom: 2.8rem;
+  animation: dossierFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes dossierFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dossier-header-bar {
+  background: linear-gradient(90deg, #991b1b 0%, #dc2626 50%, #b91c1c 100%);
+  padding: 0.95rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.15);
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.dossier-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
 }
 
 .stamp-confidential {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.3rem 0.85rem;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
   background: #ffffff;
-  color: #dc2626;
+  color: #b91c1c;
   font-family: var(--font-heading);
   font-weight: 900;
   font-size: 0.78rem;
-  letter-spacing: 0.1em;
-  border-radius: var(--radius-xs);
+  letter-spacing: 0.08em;
+  border-radius: 6px;
   text-transform: uppercase;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-.detective-intro-body {
-  padding: 2.4rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.4rem;
-  align-items: center;
+.dossier-sub-badge {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.84rem;
+  letter-spacing: 0.04em;
 }
-@media (max-width: 850px) {
+
+.dossier-header-right {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 0.84rem;
+  letter-spacing: 0.04em;
+  opacity: 0.95;
+}
+
+/* -------------------------------------------------------------
+   DOSSIER INTRO BODY (FIXED BALANCED LAYOUT)
+------------------------------------------------------------- */
+.detective-intro-body {
+  padding: 2.2rem 2.4rem;
+  display: grid;
+  grid-template-columns: minmax(380px, 460px) 1fr;
+  gap: 2.4rem;
+  align-items: stretch;
+}
+
+@media (max-width: 1024px) {
   .detective-intro-body {
     grid-template-columns: 1fr;
+    gap: 1.8rem;
+    padding: 1.6rem;
   }
 }
 
 .detective-image-box {
-  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  background: #090d16;
+  border: 1.5px solid var(--border-medium);
+  border-radius: 18px;
   overflow: hidden;
-  border: 1px solid var(--border-subtle);
+  box-shadow: 0 10px 25px -4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  min-height: 320px;
+}
+
+.evidence-tag {
+  background: rgba(15, 23, 42, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.55rem 1rem;
+  font-family: var(--font-heading);
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.detective-hero-img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: contain;
+  display: block;
+  background: #090d16;
+}
+
+.detective-info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detective-meta-pills {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.dossier-level-pill {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  padding: 0.28rem 0.8rem;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.dossier-chapter-pill {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--text-muted);
   background: var(--bg-secondary);
-  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+  border: 1px solid var(--border-subtle);
+  padding: 0.28rem 0.8rem;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.detective-case-title {
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 900;
+  line-height: 1.32;
+  color: var(--text-heading);
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.015em;
+}
+
+.detective-case-subtitle {
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  font-weight: 650;
+  color: #d97706;
+  margin: 0 0 1.25rem 0;
+  line-height: 1.5;
+}
+
+[data-theme="dark"] .detective-case-subtitle {
+  color: #fbbf24;
 }
 
 .detective-story-box {
-  background: var(--bg-alt);
-  border-left: 4px solid var(--accent-crimson);
-  padding: 1.8rem 2rem;
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  font-size: 1.05rem;
-  line-height: 1.75;
-  color: var(--text-main);
-  border-top: 1px solid var(--border-subtle);
-  border-right: 1px solid var(--border-subtle);
-  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+  border: 1.5px solid var(--border-medium);
+  border-left: 5px solid #dc2626;
+  border-radius: 14px;
+  padding: 1.35rem 1.6rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
 }
 
-/* =================================================================
-   INTERACTIVE INVESTIGATION BOARD
-================================================================= */
+.story-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.84rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  color: #dc2626;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.story-content {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  line-height: 1.72;
+  color: var(--text-main);
+  margin: 0;
+}
+
+/* -------------------------------------------------------------
+   INVESTIGATION BOARD (BÀN PHÂN LOẠI MANH MỐI)
+------------------------------------------------------------- */
 .investigation-board {
-  margin-top: 2.2rem;
-  padding: 2.4rem;
+  margin-top: 2rem;
+  padding: 2.2rem 2.4rem;
   background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-xl);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 24px;
   box-shadow: var(--card-shadow);
+}
+
+@media (max-width: 768px) {
+  .investigation-board {
+    padding: 1.5rem;
+  }
 }
 
 .board-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.8rem;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
   gap: 1.2rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1.4rem;
 }
 
-/* Clues holding area */
-.unassigned-clues-section {
-  margin-bottom: 2.8rem;
+.board-badge {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: #dc2626;
+  background: rgba(220, 38, 38, 0.08);
+  border: 1px solid rgba(220, 38, 38, 0.25);
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
 }
+
+.board-main-heading {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: var(--text-heading);
+  margin: 0 0 0.35rem 0;
+}
+
+.board-guide-text {
+  font-family: var(--font-body);
+  font-size: 0.94rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.btn-validate-clues {
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%) !important;
+  box-shadow: 0 6px 20px rgba(220, 38, 38, 0.35) !important;
+  padding: 0.85rem 1.6rem !important;
+  border-radius: 9999px !important;
+  font-weight: 850 !important;
+  letter-spacing: 0.04em !important;
+}
+
+.btn-validate-clues:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(220, 38, 38, 0.45) !important;
+}
+
+/* -------------------------------------------------------------
+   UNASSIGNED CLUES TRAY (KHAY MANH MỐI)
+------------------------------------------------------------- */
+.unassigned-clues-section {
+  margin-bottom: 2.4rem;
+}
+
+.clues-tray-label {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 850;
+  color: #d97706;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.75rem;
+}
+
+[data-theme="dark"] .clues-tray-label {
+  color: #fbbf24;
+}
+
 .clues-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.9rem;
-  margin-top: 1.2rem;
-  min-height: 75px;
-  padding: 1.2rem;
+  gap: 0.85rem;
+  min-height: 80px;
+  padding: 1.25rem;
   background: var(--bg-secondary);
-  border-radius: var(--radius-lg);
+  border-radius: 18px;
   border: 2px dashed var(--border-medium);
 }
 
+.clues-all-placed-note {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-size: 0.94rem;
+  font-weight: 600;
+  margin: auto;
+  padding: 0.5rem;
+}
+
+/* Clue chip */
 .clue-chip {
   background: var(--bg-card);
   border: 1.5px solid var(--border-medium);
-  border-radius: var(--radius-md);
+  border-radius: 14px;
   padding: 0.75rem 1.2rem;
-  font-family: var(--font-sans);
-  font-size: 0.92rem;
-  font-weight: 600;
+  font-family: var(--font-body);
+  font-size: 0.94rem;
+  font-weight: 650;
+  line-height: 1.5;
   color: var(--text-heading);
-  cursor: grab;
+  cursor: pointer;
   user-select: none;
-  transition: all 0.25s var(--ease-spring);
-  display: flex;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
   align-items: center;
   gap: 0.65rem;
-  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.05);
-}
-.clue-chip:hover {
-  background: var(--bg-secondary);
-  border-color: var(--accent-gold);
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 8px 18px rgba(217, 119, 6, 0.2);
-}
-.clue-chip.active-selection {
-  border-color: var(--accent-blue);
-  box-shadow: 0 0 16px rgba(37, 99, 235, 0.35);
-  background: var(--accent-blue-light);
-  color: var(--accent-blue);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
-/* Category slots / buckets */
+.clue-chip:hover {
+  border-color: #d97706;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(217, 119, 6, 0.18);
+}
+
+.clue-chip.active-selection {
+  border-color: #2563eb;
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2), 0 8px 20px rgba(37, 99, 235, 0.25);
+  animation: cluePulse 1.5s infinite;
+}
+
+@keyframes cluePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+.clue-chip.in-bucket {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.65rem 0.95rem;
+  font-size: 0.88rem;
+  border-radius: 10px;
+}
+
+.clue-chip.clue-error-highlight {
+  border-color: #dc2626 !important;
+  background: rgba(220, 38, 38, 0.08) !important;
+  color: #dc2626 !important;
+}
+
+.clue-pin-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.clue-text {
+  flex: 1;
+}
+
+.remove-clue-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 800;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.remove-clue-btn:hover {
+  background: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+}
+
+/* -------------------------------------------------------------
+   CATEGORY BUCKETS (NGĂN DANH MỤC PHẠM TRÙ)
+------------------------------------------------------------- */
 .categories-bucket-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.4rem;
-  margin-top: 1.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.35rem;
+  margin-top: 1.5rem;
 }
 
 .category-bucket {
   background: var(--bg-secondary);
   border: 2px dashed var(--border-medium);
-  border-radius: var(--radius-lg);
-  padding: 1.4rem;
-  min-height: 220px;
+  border-top: 4px solid var(--cat-accent, #2563eb);
+  border-radius: 16px;
+  padding: 1.3rem;
+  min-height: 240px;
   display: flex;
   flex-direction: column;
-  transition: all 0.25s var(--ease-out);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
 }
-.category-bucket.drag-over {
-  border-color: var(--accent-blue);
-  background: var(--accent-blue-light);
-}
+
 .category-bucket.ready-to-assign {
-  border-color: var(--accent-gold);
+  border-color: #f59e0b;
+  border-style: solid;
+  background: rgba(245, 158, 11, 0.05);
   cursor: pointer;
-  background: var(--accent-gold-light);
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.2);
+}
+
+.category-bucket.ready-to-assign:hover {
+  transform: translateY(-3px);
+  background: rgba(245, 158, 11, 0.1);
 }
 
 .bucket-header {
   border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 0.75rem;
-  margin-bottom: 1rem;
+  padding-bottom: 0.85rem;
+  margin-bottom: 0.95rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
 }
+
+.bucket-color-tag {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-top: 0.35rem;
+  flex-shrink: 0;
+}
+
 .bucket-name {
   font-family: var(--font-heading);
-  font-size: 0.96rem;
-  font-weight: 800;
+  font-size: 0.92rem;
+  font-weight: 850;
   letter-spacing: 0.04em;
-  color: var(--text-heading);
+  line-height: 1.35;
 }
+
 .bucket-desc {
   font-size: 0.78rem;
   color: var(--text-muted);
-  margin-top: 0.3rem;
-  line-height: 1.4;
+  margin-top: 0.35rem;
+  line-height: 1.45;
+  font-family: var(--font-body);
 }
 
 .bucket-clues-list {
@@ -194,40 +599,158 @@
   flex-grow: 1;
 }
 
-/* Case Solved Verdict */
+.bucket-empty-hint {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-style: italic;
+  text-align: center;
+  margin: auto;
+  padding: 0.8rem;
+}
+
+/* -------------------------------------------------------------
+   VALIDATION ERROR ALERT
+------------------------------------------------------------- */
+.detective-validation-error {
+  margin-top: 1.8rem;
+  padding: 1.25rem 1.6rem;
+  background: rgba(220, 38, 38, 0.08);
+  border: 1.5px solid rgba(220, 38, 38, 0.3);
+  border-left: 5px solid #dc2626;
+  border-radius: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.detective-validation-error .error-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.detective-validation-error .error-text strong {
+  display: block;
+  color: #dc2626;
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  margin-bottom: 0.25rem;
+}
+
+.detective-validation-error .error-text p {
+  color: var(--text-main);
+  font-size: 0.92rem;
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* -------------------------------------------------------------
+   VERDICT BOX (PHÁN QUYẾT PHÁ ÁN HOÀN TOÀN)
+------------------------------------------------------------- */
 .verdict-box {
   margin-top: 2.8rem;
-  background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%);
-  border: 2px solid var(--accent-emerald);
-  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.09) 0%, rgba(5, 150, 105, 0.03) 100%);
+  border: 2px solid #10b981;
+  border-radius: 24px;
   padding: 2.5rem;
-  box-shadow: 0 14px 40px -10px rgba(5, 150, 105, 0.25);
-  animation: fadeIn 0.5s ease-out forwards;
+  box-shadow: 0 16px 40px -8px rgba(5, 150, 105, 0.22);
+  position: relative;
+  overflow: hidden;
 }
 
 [data-theme="dark"] .verdict-box {
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(6, 78, 59, 0.6));
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(6, 78, 59, 0.45) 100%);
+}
+
+.verdict-seal-img {
+  width: 120px;
+  height: 120px;
+  float: right;
+  margin: 0 0 1rem 1.5rem;
+  filter: drop-shadow(0 8px 20px rgba(217, 119, 6, 0.4));
+}
+
+@media (max-width: 640px) {
+  .verdict-seal-img {
+    float: none;
+    display: block;
+    margin: 0 auto 1.2rem;
+  }
 }
 
 .verdict-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  padding: 0.35rem 0.95rem;
-  border-radius: var(--radius-full);
-  background: var(--accent-emerald);
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  background: #059669;
   color: #ffffff;
   font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 0.78rem;
+  font-weight: 900;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
-  margin-bottom: 1.2rem;
-  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+}
+
+.verdict-headline {
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  font-weight: 900;
+  color: var(--text-heading);
+  line-height: 1.35;
+  margin: 0 0 0.75rem 0;
+  letter-spacing: -0.015em;
+}
+
+.verdict-concept-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-subtle);
+  border-left: 4px solid #f59e0b;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.35rem;
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  color: var(--text-heading);
+  flex-wrap: wrap;
+}
+
+.verdict-concept-pill strong {
+  color: #d97706;
+}
+
+[data-theme="dark"] .verdict-concept-pill strong {
+  color: #fbbf24;
 }
 
 .verdict-analysis-text {
-  font-size: 1.05rem;
-  line-height: 1.8;
+  font-family: var(--font-body);
+  font-size: 1.02rem;
+  line-height: 1.82;
   color: var(--text-main);
-  margin: 1.4rem 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.verdict-footer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  border-top: 1px solid rgba(16, 185, 129, 0.25);
+  padding-top: 1.4rem;
+  flex-wrap: wrap;
+}
+
+.verdict-xp-awarded {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--font-heading);
+  font-size: 0.96rem;
+  font-weight: 850;
+  color: #059669;
 }

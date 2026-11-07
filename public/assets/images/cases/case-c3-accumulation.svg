@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="50%" stop-color="#1f2937" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgGrad2)" />
+
+  <!-- Lưới tọa độ -->
+  <g stroke="#374151" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="75" x2="800" y2="75" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="225" x2="800" y2="225" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="375" x2="800" y2="375" />
+    <line x1="200" y1="0" x2="200" y2="450" />
+    <line x1="400" y1="0" x2="400" y2="450" />
+    <line x1="600" y1="0" x2="600" y2="450" />
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(35, 30)">
+    <rect width="210" height="30" rx="15" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+    <circle cx="16" cy="15" r="5" fill="#f59e0b" />
+    <text x="32" y="20" fill="#f8fafc" font-size="11" font-weight="bold" font-family="'Be Vietnam Pro', sans-serif" letter-spacing="1">HỒ SƠ #002 • CHƯƠNG 3</text>
+  </g>
+  <text x="765" y="48" fill="#f59e0b" font-size="12" font-weight="bold" text-anchor="end" font-family="'Be Vietnam Pro', sans-serif">TÍCH LŨY TƯ BẢN &amp; CẤU TẠO HỮU CƠ (c/v)</text>
+
+  <!-- Sơ đồ chu kỳ tích lũy tư bản -->
+  <g transform="translate(50, 90)">
+    <!-- Bước 1: Giá trị thặng dư m -->
+    <g transform="translate(0, 0)">
+      <rect width="190" height="120" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+      <text x="95" y="32" fill="#fbbf24" font-size="13" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">GIÁ TRỊ THẶNG DƯ (m)</text>
+      <text x="95" y="60" fill="#cbd5e1" font-size="11" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">Tách thành 2 phần:</text>
+      <text x="95" y="82" fill="#94a3b8" font-size="11" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">• Tiêu dùng cá nhân</text>
+      <text x="95" y="102" fill="#f59e0b" font-size="11" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">• Tái đầu tư (Tích lũy)</text>
+    </g>
+
+    <!-- Mũi tên 1 -->
+    <path d="M 205 60 L 245 60" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arrow)" fill="none" />
+    <polygon points="250,60 240,55 240,65" fill="#f59e0b" />
+
+    <!-- Bước 2: Tích tụ & Tập trung -->
+    <g transform="translate(260, 0)">
+      <rect width="210" height="120" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" />
+      <text x="105" y="32" fill="#60a5fa" font-size="13" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">TÍCH TỤ &amp; TẬP TRUNG</text>
+      <text x="105" y="60" fill="#cbd5e1" font-size="11" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">• Tái sản xuất mở rộng</text>
+      <text x="105" y="82" fill="#cbd5e1" font-size="11" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">• M&amp;A thâu tóm đối thủ</text>
+      <text x="105" y="102" fill="#60a5fa" font-size="11" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">→ Quy mô tư bản tăng vọt</text>
+    </g>
+
+    <!-- Mũi tên 2 -->
+    <path d="M 485 60 L 525 60" stroke="#3b82f6" stroke-width="2.5" fill="none" />
+    <polygon points="530,60 520,55 520,65" fill="#3b82f6" />
+
+    <!-- Bước 3: Tăng cấu tạo hữu cơ c/v -->
+    <g transform="translate(540, 0)">
+      <rect width="160" height="120" rx="10" fill="#1e293b" stroke="#ec4899" stroke-width="1.5" />
+      <text x="80" y="32" fill="#f472b6" font-size="13" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">TĂNG c / v</text>
+      <text x="80" y="60" fill="#cbd5e1" font-size="11" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">Mua robot, AI (c ↑)</text>
+      <text x="80" y="82" fill="#cbd5e1" font-size="11" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">Giảm tỷ lệ công nhân (v ↓)</text>
+      <text x="80" y="102" fill="#f472b6" font-size="11" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">c/v tăng từ 4/1 lên 10/1</text>
+    </g>
+
+    <!-- Hậu quả của tích lũy tư bản -->
+    <g transform="translate(0, 150)">
+      <rect width="700" height="130" rx="12" fill="#0f172a" stroke="#ef4444" stroke-width="2" />
+      <text x="350" y="28" fill="#f87171" font-size="14" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">HỆ QUẢ TẤT YẾU: QUY LUẬT TÍCH LŨY TƯ BẢN VÀ BẤT BÌNH ĐẲNG</text>
+
+      <g transform="translate(30, 45)">
+        <rect width="300" height="65" rx="8" fill="#1e293b" stroke="#e11d48" stroke-width="1" />
+        <text x="150" y="25" fill="#fb7185" font-size="12" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">MỘT CỰC: TÍCH LŨY CỦA CẢI</text>
+        <text x="150" y="48" fill="#cbd5e1" font-size="11" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">Tập trung vào tay giới chủ tập đoàn độc quyền</text>
+      </g>
+
+      <g transform="translate(370, 45)">
+        <rect width="300" height="65" rx="8" fill="#1e293b" stroke="#e11d48" stroke-width="1" />
+        <text x="150" y="25" fill="#fb7185" font-size="12" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">CỰC ĐỐI LẬP: BẦN CÙNG HÓA</text>
+        <text x="150" y="48" fill="#cbd5e1" font-size="11" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">Sinh ra "Đội quân thất nghiệp công nghiệp" (dân số thừa)</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Chân trang -->
+  <rect x="50" y="388" width="700" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="400" y="410" fill="#fbbf24" font-size="12" font-weight="bold" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif">KẾT LUẬN: Tích lũy tư bản gắn liền với bần cùng hóa tương đối và đội quân thất nghiệp công nghệ!</text>
+</svg>
