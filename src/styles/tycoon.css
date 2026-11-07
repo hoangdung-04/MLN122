@@ -265,6 +265,38 @@
   color: var(--text-muted);
 }
 
+/* Strike Warning Banner */
+.strike-warning-banner {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.12) 0%, rgba(245, 158, 11, 0.12) 100%);
+  border: 1.5px solid var(--accent-crimson);
+  border-radius: var(--radius-lg);
+  padding: 0.85rem 1.2rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-emergency-relief {
+  background: var(--accent-crimson);
+  color: #ffffff;
+  border: none;
+  font-weight: 800;
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.25);
+}
+
+.btn-emergency-relief:hover {
+  background: #b91c1c;
+  transform: translateY(-1px);
+}
+
 /* Prominent Gameplay Call-to-action */
 .gameplay-action-header {
   display: flex;

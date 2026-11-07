@@ -13,7 +13,8 @@ export function renderCapitalTycoon(container, onBackToMap) {
   let turnCount = 1;
   let historyLogs = [];
   let lastEventResult = null;
-  let stageClearedPending = false; // When true, prompt user to advance to next stage
+  let stageClearedPending = false;
+  let gameOverReason = '';
 
   // Stages Configuration
   const STAGES = [
@@ -57,13 +58,13 @@ export function renderCapitalTycoon(container, onBackToMap) {
       isDialectical: false,
       impact: {
         capitalDelta: +90,
-        moraleDelta: -45,
-        surplusDelta: +150,
+        moraleDelta: -20,
+        surplusDelta: +100,
         cDelta: 0,
         vDelta: 0
       },
-      outcomeTitle: '⚠️ Lợi nhuận bùng nổ ngắn hạn nhưng công nhân kiệt sức!',
-      outcomeDesc: 'Bạn thu được lượng GTTD tuyệt đối khổng lồ trong những tuần đầu (+90M). Nhưng sau đó, công nhân suy nhược thể lực, tỉ lệ sản phẩm lỗi tăng vọt và nổ ra nguy cơ đình công gay gắt!',
+      outcomeTitle: '⚠️ Lợi nhuận bùng nổ ngắn hạn nhưng công nhân suy kiệt!',
+      outcomeDesc: 'Bạn thu được lượng GTTD tuyệt đối trong những tuần đầu (+90M). Nhưng sau đó, công nhân suy nhược thể lực, tỉ lệ phế phẩm tăng vọt (-20% tinh thần)!',
       philosophicalLens: 'Lý luận C. Mác chỉ rõ: Sản xuất GTTD tuyệt đối bị giới hạn bởi ranh giới sinh lý tự nhiên của con người và sự phản kháng tất yếu của giai cấp công nhân. Không thể làm giàu bền vững bằng bóc lột thể xác thô bạo.'
     },
     {
@@ -75,13 +76,13 @@ export function renderCapitalTycoon(container, onBackToMap) {
       isDialectical: false,
       impact: {
         capitalDelta: +70,
-        moraleDelta: -30,
-        surplusDelta: +80,
+        moraleDelta: -15,
+        surplusDelta: +60,
         cDelta: +10,
         vDelta: 0
       },
       outcomeTitle: '⚠️ Năng suất bề nổi tăng nhưng thợ giỏi xin nghỉ việc!',
-      outcomeDesc: 'Sản lượng tăng ngắn hạn (+70M) nhưng áp lực tâm lý đè nặng khiến tỷ lệ tai nạn lao động tăng và các thợ lành nghề bậc cao đồng loạt xin thôi việc.',
+      outcomeDesc: 'Sản lượng tăng ngắn hạn (+70M) nhưng áp lực thần kinh đè nặng khiến thợ bậc cao đồng loạt xin thôi việc (-15% tinh thần).',
       philosophicalLens: 'Tăng cường độ lao động thực chất là tăng sự hao phí thể lực và thần kinh trong cùng đơn vị thời gian, sớm muộn cũng dẫn tới sự kiệt quệ của sức lao động.'
     },
     {
@@ -129,17 +130,17 @@ export function renderCapitalTycoon(container, onBackToMap) {
       tag: 'PHÁ GIÁ CẠNH TRANH',
       icon: '📉',
       title: '"Đốt tiền" bán dưới giá thành để bóp nghẹt đối thủ',
-      desc: 'Chấp nhận chịu lỗ 150 triệu để độc chiếm thị phần, ép các cơ sở kinh doanh vừa và nhỏ phá sản rút lui.',
+      desc: 'Chấp nhận chịu lỗ để độc chiếm thị phần, ép các cơ sở kinh doanh vừa và nhỏ phá sản rút lui.',
       isDialectical: false,
       impact: {
-        capitalDelta: -120,
-        moraleDelta: -15,
-        surplusDelta: +50,
-        cDelta: +80,
+        capitalDelta: -80,
+        moraleDelta: -10,
+        surplusDelta: +40,
+        cDelta: +50,
         vDelta: 0
       },
       outcomeTitle: '⚠️ Độc chiếm thị phần nhưng tổn thất tài chính và bị tẩy chay!',
-      outcomeDesc: 'Các đối thủ nhỏ giải thể nhưng bạn bị điều tra hành vi bán phá giá phản cạnh tranh (-120M), quỹ tiền mặt bị bào mòn nặng nề.',
+      outcomeDesc: 'Các đối thủ nhỏ giải thể nhưng bạn bị điều tra hành vi bán phá giá phản cạnh tranh (-80M), quỹ tiền mặt bị bào mòn nặng nề.',
       philosophicalLens: 'Biểu hiện tiêu cực của cạnh tranh dẫn đến độc quyền: Lạm dụng sức mạnh tư bản để bóp nghẹt cạnh tranh tự do, triệt tiêu động lực đổi mới sáng tạo xã hội.'
     },
     {
@@ -169,7 +170,7 @@ export function renderCapitalTycoon(container, onBackToMap) {
       isDialectical: true,
       impact: {
         capitalDelta: +550,
-        moraleDelta: +25,
+        moraleDelta: +20,
         surplusDelta: +90,
         cDelta: +120,
         vDelta: +50
@@ -186,14 +187,14 @@ export function renderCapitalTycoon(container, onBackToMap) {
       desc: 'Lợi dụng vị thế thống lĩnh để bắt tay đối thủ tăng giá 40%, ép khách hàng không có lựa chọn nào khác.',
       isDialectical: false,
       impact: {
-        capitalDelta: -180,
-        moraleDelta: -40,
-        surplusDelta: +120,
+        capitalDelta: -100,
+        moraleDelta: -20,
+        surplusDelta: +100,
         cDelta: 0,
         vDelta: 0
       },
-      outcomeTitle: '💥 CƠ QUAN QUẢN LÝ PHẠT NẶNG: Bị phạt nặng vì lũng đoạn!',
-      outcomeDesc: 'Nhà nước can thiệp theo Luật Cạnh tranh, xử phạt hành vi liên minh thao túng giá cả độc quyền (-180M); khách hàng quay lưng tẩy chay.',
+      outcomeTitle: '💥 CƠ QUAN QUẢN LÝ PHẠT NẶNG: Bị phạt vì lũng đoạn!',
+      outcomeDesc: 'Nhà nước can thiệp theo Luật Cạnh tranh, xử phạt hành vi liên minh thao túng giá cả độc quyền (-100M); khách hàng quay lưng tẩy chay.',
       philosophicalLens: 'Chủ nghĩa tư bản độc quyền sinh ra giá cả độc quyền để chiếm đoạt lợi nhuận độc quyền cao, tất yếu đòi hỏi sự can thiệp điều tiết của Nhà nước để bảo vệ lợi ích nhân dân.'
     }
   ];
@@ -262,14 +263,14 @@ export function renderCapitalTycoon(container, onBackToMap) {
       desc: 'Không chịu chuyển đổi xanh, tiếp tục dùng máy cũ gây ô nhiễm và chỉ nhận đơn hàng gia công chi phí thấp.',
       isDialectical: false,
       impact: {
-        capitalDelta: -300,
-        moraleDelta: -25,
-        socialDelta: -30,
+        capitalDelta: -200,
+        moraleDelta: -20,
+        socialDelta: -25,
         cDelta: 0,
         vDelta: 0
       },
       outcomeTitle: '💥 RƠI VÀO BẪY THU NHẬP TRUNG BÌNH: Đơn hàng bị hủy hàng loạt!',
-      outcomeDesc: 'Thị trường quốc tế áp thuế carbon nặng nề (-300M), đối thủ ứng dụng tự động hóa làm rẻ và nhanh gấp 10 lần khiến doanh nghiệp mất thị phần.',
+      outcomeDesc: 'Thị trường quốc tế áp thuế carbon nặng nề (-200M), đối thủ ứng dụng tự động hóa làm rẻ và nhanh gấp 10 lần khiến doanh nghiệp mất thị phần.',
       philosophicalLens: 'Bài học sống còn: Trong thời đại CMCN 4.0 và hội nhập sâu rộng, dừng lại ở gia công giá rẻ đồng nghĩa với tụt hậu và tự đào thải khỏi chuỗi giá trị toàn cầu.'
     }
   ];
@@ -311,8 +312,17 @@ export function renderCapitalTycoon(container, onBackToMap) {
     });
 
     // Check Game Over Condition
-    if (capital <= 0 || workerMorale <= 10) {
+    if (capital <= 0) {
       currentStage = 'gameover';
+      gameOverReason = 'Quỹ vốn tiền mặt đã cạn kiệt (dưới 0 VNĐ) do bán phá giá sai lầm hoặc bị cơ quan quản lý xử phạt!';
+      sound.playWarning();
+      renderView();
+      return;
+    }
+
+    if (workerMorale <= 0) {
+      currentStage = 'gameover';
+      gameOverReason = 'Mức độ hài lòng của công nhân đã rơi về 0%! Làn sóng bãi công toàn diện nổ ra làm nhà máy tê liệt hoàn toàn.';
       sound.playWarning();
       renderView();
       return;
@@ -334,6 +344,23 @@ export function renderCapitalTycoon(container, onBackToMap) {
         feedbackEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
     }, 100);
+  }
+
+  // Emergency rescue if worker morale is low
+  function handleEmergencyRelief() {
+    if (capital >= 25) {
+      capital -= 25;
+      workerMorale = Math.min(100, workerMorale + 30);
+      turnCount++;
+      sound.playDialecticalSuccess();
+      lastEventResult = {
+        outcomeTitle: '🚑 ĐÃ THỰC HIỆN CỨU NGUY: Công nhân ổn định tâm lý!',
+        outcomeDesc: 'Bạn đã trích 25 triệu quỹ vốn để tăng phụ cấp ca đêm và nâng cấp bữa ăn dinh dưỡng. Tinh thần thợ hồi phục ngoạn mục (+30%)!',
+        philosophicalLens: 'Tái sản xuất sức lao động: Người lao động cần được bù đắp hao phí thể lực và tinh thần để tiếp tục tham gia chu kỳ sản xuất mới.',
+        isDialectical: true
+      };
+      renderView();
+    }
   }
 
   function advanceToNextStage() {
@@ -365,6 +392,7 @@ export function renderCapitalTycoon(container, onBackToMap) {
     turnCount = 1;
     lastEventResult = null;
     stageClearedPending = false;
+    gameOverReason = '';
     historyLogs = [];
     sound.playClick();
     renderView();
@@ -377,12 +405,18 @@ export function renderCapitalTycoon(container, onBackToMap) {
     if (currentStage === 'victory') {
       container.innerHTML = `
         <div class="tycoon-container animate-fade-in">
+          <div class="tycoon-top-bar" style="margin-bottom: 1.5rem;">
+            <button class="back-to-map-btn" id="tycoon-win-back-btn">
+              <span>← Quay lại bản đồ hành trình</span>
+            </button>
+          </div>
+
           <div class="tycoon-endgame-modal">
             <div class="endgame-trophy">🏆✨</div>
             <span class="badge-pill" style="background: var(--accent-gold-light); color: var(--accent-amber); font-size: 0.95rem; padding: 0.5rem 1.4rem; border: 1.5px solid var(--accent-gold);">
               VINH DANH ĐỈNH CAO: BẬC THẦY KINH TẾ CHÍNH TRỊ MLN122
             </span>
-            <h2 style="font-size: 2.3rem; margin: 1.2rem 0 0.6rem; color: var(--text-heading); font-family: var(--font-heading);">
+            <h2 style="font-size: 2.2rem; margin: 1.2rem 0 0.6rem; color: var(--text-heading); font-family: var(--font-heading);">
               CHÚC MỪNG BẠN ĐÃ XÂY DỰNG THÀNH CÔNG DOANH NGHIỆP KTTT 4.0!
             </h2>
             <p style="font-size: 1.05rem; color: var(--text-main); max-width: 680px; margin: 0 auto 1.8rem; line-height: 1.8;">
@@ -400,6 +434,10 @@ export function renderCapitalTycoon(container, onBackToMap) {
           </div>
         </div>
       `;
+      document.getElementById('tycoon-win-back-btn').addEventListener('click', () => {
+        sound.playClick();
+        onBackToMap();
+      });
       document.getElementById('tycoon-replay-btn').addEventListener('click', restartGame);
       document.getElementById('tycoon-exit-btn').addEventListener('click', () => {
         sound.playClick();
@@ -408,35 +446,59 @@ export function renderCapitalTycoon(container, onBackToMap) {
       return;
     }
 
-    // 2. GAME OVER SCREEN
+    // 2. GAME OVER SCREEN (Clarity: arcade game-over, not software error)
     if (currentStage === 'gameover') {
       container.innerHTML = `
         <div class="tycoon-container animate-fade-in">
-          <div class="tycoon-endgame-modal" style="border-color: var(--accent-crimson);">
+          <!-- Clear Top Exit Button -->
+          <div class="tycoon-top-bar" style="margin-bottom: 1.5rem;">
+            <button class="back-to-map-btn" id="tycoon-fail-top-back-btn">
+              <span>← Quay lại bản đồ hành trình</span>
+            </button>
+            <span class="badge-pill" style="background: var(--accent-crimson-light); color: var(--accent-crimson); font-weight: 800;">
+              🎮 KẾT QUẢ MÔ PHỎNG GAME
+            </span>
+          </div>
+
+          <div class="tycoon-endgame-modal" style="border: 2.5px solid var(--accent-crimson); background: var(--bg-card);">
             <div class="endgame-trophy">⚠️📉</div>
-            <span class="badge-pill" style="background: var(--accent-crimson-light); color: var(--accent-crimson); font-size: 0.95rem; padding: 0.5rem 1.4rem;">
-              BÁO ĐỘNG KHỦNG HOẢNG KINH TẾ
+            <span class="badge-pill" style="background: var(--accent-crimson-light); color: var(--accent-crimson); font-size: 0.95rem; padding: 0.5rem 1.4rem; font-weight: 800;">
+              KẾT THÚC VÒNG CHƠI (GAME OVER)
             </span>
             <h2 style="font-size: 2.1rem; margin: 1.2rem 0 0.6rem; color: var(--accent-crimson); font-family: var(--font-heading);">
-              DOANH NGHIỆP CỦA BẠN ĐÃ RƠI VÀO BẾ TẮC!
+              DOANH NGHIỆP CỦA BẠN ĐÃ RƠI VÀO KHỦNG HOẢNG!
             </h2>
-            <p style="font-size: 1.05rem; color: var(--text-main); max-width: 640px; margin: 0 auto 1.8rem; line-height: 1.8;">
-              ${capital <= 0 
-                ? 'Quỹ tiền mặt bị cạn kiệt (dưới 0 VNĐ) do bán phá giá sai lầm hoặc bị xử phạt hành vi lũng đoạn thị trường!' 
-                : 'Mức độ hài lòng của công nhân chạm đáy (< 10%) dẫn tới cuộc bãi công toàn diện, xưởng sản xuất tê liệt! Bài học của C. Mác: Lòng tham bóc lột sức lao động không giới hạn tất yếu sinh ra sự kháng cự của giai cấp công nhân!'}
-            </p>
+            
+            <div style="background: var(--bg-alt); padding: 1.2rem; border-radius: var(--radius-lg); max-width: 650px; margin: 1.2rem auto; border-left: 4px solid var(--accent-crimson); text-align: left;">
+              <strong style="color: var(--accent-crimson); display: block; margin-bottom: 0.4rem; font-size: 0.95rem;">
+                📌 Nguyên nhân dẫn tới thất bại:
+              </strong>
+              <p style="font-size: 0.95rem; color: var(--text-main); margin: 0 0 0.8rem; line-height: 1.6;">
+                ${gameOverReason || 'Mức độ bóc lột quá cao hoặc kinh doanh thua lỗ khiến doanh nghiệp không thể duy trì chu kỳ sản xuất.'}
+              </p>
+              <strong style="color: var(--accent-purple); display: block; margin-bottom: 0.4rem; font-size: 0.95rem;">
+                💡 Bài học KTCT MLN122 cốt lõi:
+              </strong>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0; line-height: 1.6;">
+                Theo C. Mác, sự bóc lột thể xác thô bạo (GTTD tuyệt đối) có ranh giới sinh lý tự nhiên. Muốn phát triển bền vững và tích lũy tư bản lớn, doanh nghiệp bắt buộc phải đổi mới công nghệ (GTTD tương đối) và tôn trọng quyền lợi của người lao động!
+              </p>
+            </div>
 
-            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-              <button class="btn-primary" id="tycoon-retry-btn" style="background: var(--accent-crimson); padding: 0.85rem 2rem; font-size: 1.05rem;">
-                <span>↺ THỬ LẠI CHIẾN LƯỢC MỚI</span>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+              <button class="btn-primary" id="tycoon-retry-btn" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%); padding: 0.85rem 2.2rem; font-size: 1.05rem; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);">
+                <span>↺ BẮT ĐẦU VÒNG CHƠI MỚI (VỐN 100M)</span>
               </button>
-              <button class="btn-secondary" id="tycoon-exit-fail-btn">
-                <span>🗺️ QUAY LẠI HÀNH TRÌNH CHÍNH</span>
+              <button class="btn-secondary" id="tycoon-exit-fail-btn" style="padding: 0.85rem 2rem; font-size: 1.05rem;">
+                <span>🗺️ VỀ BẢN ĐỒ BÀI HỌC</span>
               </button>
             </div>
           </div>
         </div>
       `;
+      document.getElementById('tycoon-fail-top-back-btn').addEventListener('click', () => {
+        sound.playClick();
+        onBackToMap();
+      });
       document.getElementById('tycoon-retry-btn').addEventListener('click', restartGame);
       document.getElementById('tycoon-exit-fail-btn').addEventListener('click', () => {
         sound.playClick();
@@ -514,6 +576,27 @@ export function renderCapitalTycoon(container, onBackToMap) {
       `;
     });
 
+    // Low Morale Strike Warning & Emergency Action
+    let strikeWarningHTML = '';
+    if (workerMorale <= 35) {
+      strikeWarningHTML = `
+        <div class="strike-warning-banner animate-fade-in">
+          <div style="font-size: 1.8rem;">🚨</div>
+          <div style="flex-grow: 1;">
+            <div style="font-weight: 800; color: var(--accent-crimson); font-family: var(--font-heading); font-size: 0.98rem;">
+              CẢNH BÁO NGUY CƠ BÃI CÔNG: Tinh thần công nhân đang rất thấp (${workerMorale}%)!
+            </div>
+            <div style="font-size: 0.84rem; color: var(--text-muted); margin-top: 0.2rem;">
+              Nếu tinh thần giảm về 0%, toàn bộ nhà máy sẽ đình công và vòng chơi sẽ kết thúc. Bạn có thể sử dụng hành động cứu trợ khẩn cấp dưới đây:
+            </div>
+          </div>
+          <button class="btn-emergency-relief" id="tycoon-emergency-btn">
+            <span>🚑 CỨU TRỢ: TĂNG LƯƠNG (+30% THỢ, -25M)</span>
+          </button>
+        </div>
+      `;
+    }
+
     // Last Decision Event Feedback Box
     let eventFeedbackHTML = '';
     if (lastEventResult) {
@@ -567,7 +650,7 @@ export function renderCapitalTycoon(container, onBackToMap) {
       <div class="tycoon-container animate-fade-in">
         <!-- Compact Top Nav Bar -->
         <div class="tycoon-top-bar">
-          <button class="back-to-map-btn" id="tycoon-back-btn">
+          <button class="back-to-map-btn" id="tycoon-back-btn" title="Quay về Bản đồ bài học">
             <span>← Bản đồ hành trình</span>
           </button>
           <div class="tycoon-title-center">
@@ -650,10 +733,13 @@ export function renderCapitalTycoon(container, onBackToMap) {
                 <span>❤️ TINH THẦN THỢ</span>
               </div>
               <div class="hud-m-val" style="color: ${workerMorale >= 50 ? 'var(--accent-emerald)' : 'var(--accent-crimson)'};">${workerMorale}%</div>
-              <div class="hud-m-note">${workerMorale <= 20 ? '⚠️ Nguy cơ bãi công!' : 'Ổn định'}</div>
+              <div class="hud-m-note">${workerMorale <= 35 ? '⚠️ Nguy cơ bãi công!' : 'Ổn định'}</div>
             </div>
           </div>
         </div>
+
+        <!-- Strike Warning Banner if low morale -->
+        ${strikeWarningHTML}
 
         <!-- INSTRUCTION BANNER (Prominent call-to-action) -->
         <div class="gameplay-action-header">
@@ -685,6 +771,9 @@ export function renderCapitalTycoon(container, onBackToMap) {
 
     const advanceBtn = document.getElementById('tycoon-advance-btn');
     if (advanceBtn) advanceBtn.addEventListener('click', advanceToNextStage);
+
+    const emergencyBtn = document.getElementById('tycoon-emergency-btn');
+    if (emergencyBtn) emergencyBtn.addEventListener('click', handleEmergencyRelief);
 
     container.querySelectorAll('.btn-execute-strategy[data-choice-id]').forEach(btn => {
       btn.addEventListener('click', () => {

@@ -24,12 +24,22 @@ const savedTheme = localStorage.getItem('mln122_theme') || 'light';
 document.documentElement.setAttribute('data-theme', savedTheme);
 
 // Current App State
-let currentView = 'landing'; // 'landing' | 'map' | 'scenario' | 'detective' | 'slider'
+let currentView = 'landing'; // 'landing' | 'map' | 'scenario' | 'detective' | 'slider' | 'tycoon'
 let currentScenarioId = null;
 let currentCaseId = null;
 
+// Parse hash for browser back/forward support
+function parseHashRoute() {
+  const rawHash = window.location.hash.replace(/^#\/?/, '').trim();
+  if (!rawHash || rawHash === 'landing') {
+    return { view: 'landing', param: null };
+  }
+  const parts = rawHash.split('/');
+  return { view: parts[0], param: parts[1] || null };
+}
+
 // Route handler
-function navigateTo(view, param = null) {
+function navigateTo(view, param = null, syncHash = true) {
   currentView = view;
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -42,8 +52,26 @@ function navigateTo(view, param = null) {
     currentCaseId = param || DETECTIVE_CASES[0].id;
   }
 
+  // Update browser hash so Browser Back (←) and Forward (→) buttons work perfectly!
+  if (syncHash) {
+    let targetHash = `#${currentView}`;
+    if (param && currentView === 'scenario') targetHash += `/${param}`;
+    else if (param && currentView === 'detective') targetHash += `/${param}`;
+    if (window.location.hash !== targetHash) {
+      window.location.hash = targetHash;
+    }
+  }
+
   renderApp();
 }
+
+// Listen to browser Back / Forward buttons (← / →)
+window.addEventListener('hashchange', () => {
+  const { view, param } = parseHashRoute();
+  if (view !== currentView || param !== (currentView === 'scenario' ? currentScenarioId : currentCaseId)) {
+    navigateTo(view, param, false);
+  }
+});
 
 function handleNextScenario(currentId) {
   const currentIndex = SCENARIOS.findIndex(s => s.id === currentId);
@@ -168,7 +196,8 @@ stateManager.subscribe(() => {
   }
 });
 
-// Bootstrap
+// Bootstrap with initial hash route support
 document.addEventListener('DOMContentLoaded', () => {
-  renderApp();
+  const { view, param } = parseHashRoute();
+  navigateTo(view, param, false);
 });
