@@ -522,6 +522,38 @@ export const QUIZ_QUESTIONS = [
     quote: 'Slide Chương 2 • Mục 1.1: Khái niệm sản xuất hàng hóa'
   },
   {
+    id: 'q-c2-05',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.1. Các dạng biểu hiện hàng hóa',
+    question: 'Theo slide bài giảng MLN122, hàng hóa tồn tại dưới những dạng biểu hiện cơ bản nào?',
+    options: [
+      'Dạng hữu hình (sắt, thép, lương thực, thực phẩm...) và Dạng vô hình (dịch vụ thương mại, vận tải, giáo viên, bác sĩ, nghệ sĩ...)',
+      'Chỉ tồn tại duy nhất dưới dạng vật thể cầm nắm được; các loại hình dịch vụ không được coi là hàng hóa',
+      'Chỉ tồn tại dưới dạng tiền mặt và tiền gửi tiết kiệm ngân hàng',
+      'Dạng sở hữu nhà nước và dạng tài sản thế chấp tư nhân'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide Mục 1.2 nêu rõ: Hàng hóa biểu hiện dưới 2 dạng: Dạng hữu hình (vật thể như sắt, thép, lúa gạo, ô tô...) và Dạng vô hình (phi vật thể như dịch vụ vận tải, thương mại, y tế, giáo dục...).',
+    quote: 'Slide Chương 2 • Mục 1.2: Các dạng biểu hiện của hàng hóa'
+  },
+  {
+    id: 'q-c2-06',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.1. Điều kiện tách biệt kinh tế',
+    question: 'Sự tách biệt tương đối về mặt kinh tế giữa các chủ thể sản xuất - điều kiện thứ hai để sản xuất hàng hóa ra đời - bắt nguồn từ yếu tố cốt lõi nào?',
+    options: [
+      'Do sự khác nhau về quan hệ sở hữu đối với tư liệu sản xuất và sản phẩm lao động quy định (quyền tài sản riêng)',
+      'Do khoảng cách địa lý ngăn cách giữa các vùng miền nông thôn và thành thị',
+      'Do sự khác biệt về phong tục tập quán và tín ngưỡng tôn giáo giữa các cộng đồng dân cư',
+      'Do quy định bắt buộc phải thanh toán bằng ngoại tệ của ngân hàng trung ương'
+    ],
+    correctIndex: 0,
+    explanation: 'Sự tách biệt kinh tế do chế độ sở hữu khác nhau về TLSX và sản phẩm quy định. Người này muốn tiêu dùng sản phẩm của người khác phải thông qua trao đổi mua bán ngang giá, không thể chiếm đoạt.',
+    quote: 'Slide Chương 2 • Mục 1.1: Sự tách biệt tương đối về kinh tế'
+  },
+  {
     id: 'q-c4-01',
     chapter: 4,
     chapterTitle: 'Chương 4: Cạnh tranh & Độc quyền',
