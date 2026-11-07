@@ -8,8 +8,17 @@ export function renderLandingHero(container, onNavigate) {
 
   container.innerHTML = `
     <section class="hero-fullscreen animate-fade-in">
-      <!-- Ambient Background Glow -->
-      <div class="hero-ambient-bg"></div>
+      <!-- Ambient Background Glow & Floating Mathematical Symbols -->
+      <div class="hero-ambient-bg">
+        <div class="ambient-orb ambient-orb-1"></div>
+        <div class="ambient-orb ambient-orb-2"></div>
+        <div class="ambient-orb ambient-orb-3"></div>
+        <div class="floating-econ-symbol econ-sym-1" title="Giá trị thặng dư">m</div>
+        <div class="econ-sym-pill econ-sym-2" title="Công thức chung tư bản">T – H – T'</div>
+        <div class="econ-sym-pill econ-sym-3" title="Cấu thành giá trị">c + v + m</div>
+        <div class="floating-econ-symbol econ-sym-4">📈</div>
+        <div class="floating-econ-symbol econ-sym-5">⚙️</div>
+      </div>
 
       <div class="container" style="position: relative; z-index: 2;">
         <!-- Top Centered Badge -->
@@ -63,15 +72,18 @@ export function renderLandingHero(container, onNavigate) {
 
           <!-- RIGHT COLUMN: Full-Height Classic Portrait of Lenin, Engels & Marx -->
           <div>
-            <div class="hero-portrait-frame">
-              <img 
-                src="./assets/images/portraits/marx-engels-lenin.png" 
-                alt="Chân dung V.I. Lênin, Ph. Ăng-ghen và C. Mác" 
-                class="hero-portrait-img" 
-              />
-              <div class="hero-portrait-caption">
-                <div class="cap-names">C. MÁC • PH. ĂNG-GHEN • V.I. LÊNIN</div>
-                <div class="cap-sub">NHỮNG BẬC THẦY ĐẶT NỀN MÓNG KINH TẾ CHÍNH TRỊ KHOA HỌC</div>
+            <div class="hero-portrait-wrapper">
+              <div class="hero-portrait-glow"></div>
+              <div class="hero-portrait-frame">
+                <img 
+                  src="./assets/images/portraits/marx-engels-lenin.png" 
+                  alt="Chân dung V.I. Lênin, Ph. Ăng-ghen và C. Mác" 
+                  class="hero-portrait-img" 
+                />
+                <div class="hero-portrait-caption">
+                  <div class="cap-names">C. MÁC • PH. ĂNG-GHEN • V.I. LÊNIN</div>
+                  <div class="cap-sub">NHỮNG BẬC THẦY ĐẶT NỀN MÓNG KINH TẾ CHÍNH TRỊ KHOA HỌC</div>
+                </div>
               </div>
             </div>
           </div>
@@ -87,26 +99,32 @@ export function renderLandingHero(container, onNavigate) {
             <button class="roadmap-pill-btn roadmap-ch1" data-nav-chapter="1">
               <span class="ch-badge">Chương 1</span>
               <span class="ch-name">Đối Tượng &amp; Phương Pháp</span>
+              <span class="ch-arrow">→</span>
             </button>
             <button class="roadmap-pill-btn roadmap-ch2" data-nav-chapter="2">
               <span class="ch-badge">Chương 2</span>
               <span class="ch-name">Hàng Hóa &amp; Thị Trường</span>
+              <span class="ch-arrow">→</span>
             </button>
             <button class="roadmap-pill-btn roadmap-ch3" data-nav-chapter="3">
               <span class="ch-badge">Chương 3</span>
               <span class="ch-name">Giá Trị Thặng Dư (m)</span>
+              <span class="ch-arrow">→</span>
             </button>
             <button class="roadmap-pill-btn roadmap-ch4" data-nav-chapter="4">
               <span class="ch-badge">Chương 4</span>
               <span class="ch-name">Cạnh Tranh &amp; Độc Quyền</span>
+              <span class="ch-arrow">→</span>
             </button>
             <button class="roadmap-pill-btn roadmap-ch5" data-nav-chapter="5">
               <span class="ch-badge">Chương 5</span>
               <span class="ch-name">KTTT Định Hướng XHCN</span>
+              <span class="ch-arrow">→</span>
             </button>
             <button class="roadmap-pill-btn roadmap-ch6" data-nav-chapter="6">
               <span class="ch-badge">Chương 6</span>
               <span class="ch-name">CNH 4.0 &amp; Hội Nhập</span>
+              <span class="ch-arrow">→</span>
             </button>
           </div>
         </div>

@@ -166,15 +166,19 @@ img, svg {
 
 /* Slogan & Tagline typography */
 .text-gold-gradient {
-  background: linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #b45309 100%);
+  background: linear-gradient(135deg, #d97706 0%, #f59e0b 25%, #fbbf24 50%, #f59e0b 75%, #b45309 100%);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: goldShimmerText 6s ease-in-out infinite;
 }
 
 [data-theme="dark"] .text-gold-gradient {
-  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 25%, #fef08a 50%, #f59e0b 75%, #d97706 100%);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: goldShimmerText 6s ease-in-out infinite;
 }
 
 .text-blue-gradient {
