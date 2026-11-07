@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="roseGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#0891b2" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" rx="20" fill="url(#bgGrad)" />
+
+  <!-- Subtle Blueprint Grid Lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.45">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Top Left Badge -->
+  <g transform="translate(40, 32)">
+    <rect width="210" height="28" rx="14" fill="#1e293b" stroke="#ec4899" stroke-width="1.5" />
+    <circle cx="16" cy="14" r="5" fill="#ec4899" />
+    <text x="30" y="18" fill="#e2e8f0" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="1">MLN122 • CHƯƠNG 5 • TÍNH TẤT YẾU</text>
+  </g>
+
+  <!-- Top Right Title & Subtitle -->
+  <text x="760" y="44" fill="#ec4899" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">TÍNH TẤT YẾU CỦA KTTT ĐỊNH HƯỚNG XHCN</text>
+  <text x="760" y="64" fill="#94a3b8" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="end">Phù hợp trình độ phát triển của Lực lượng sản xuất trong thời kỳ quá độ</text>
+
+  <!-- Main Illustration Graphics -->
+  
+      <g transform="translate(400, 220)">
+        <rect x="-240" y="-60" width="220" height="120" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+        <text x="-130" y="-20" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="13" font-weight="800" text-anchor="middle">LỰC LƯỢNG SẢN XUẤT</text>
+        <text x="-130" y="5" fill="#ffffff" font-size="11" text-anchor="middle">Nhiều tầng nấc, nhiều trình độ</text>
+        <text x="-130" y="30" fill="#facc15" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Không thể duy ý chí</text>
+
+        <path d="M-10 0 L30 0" stroke="#fb7185" stroke-width="4"/>
+        <polygon points="30,-8 45,0 30,8" fill="#fb7185"/>
+
+        <rect x="50" y="-60" width="220" height="120" rx="14" fill="#881337" stroke="#fb7185" stroke-width="2.5"/>
+        <text x="160" y="-20" fill="#fecdd3" font-family="'Be Vietnam Pro', sans-serif" font-size="13" font-weight="900" text-anchor="middle">KTTT ĐỊNH HƯỚNG XHCN</text>
+        <text x="160" y="5" fill="#ffffff" font-size="11" text-anchor="middle">Giải phóng sức sản xuất</text>
+        <text x="160" y="30" fill="#facc15" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="800" text-anchor="middle">Tất yếu khách quan</text>
+      </g>
+    
+
+  <!-- Bottom Metadata -->
+  <text x="40" y="422" fill="#475569" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="700">KINH TẾ CHÍNH TRỊ TRONG ĐỜI SỐNG</text>
+  <text x="760" y="422" fill="#475569" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="end">MLN122 • KHOA HỌC KINH TẾ CHÍNH TRỊ MÁC – LÊNIN</text>
+</svg>

@@ -28,7 +28,7 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
       const isSlider = sc.type === 'slider';
 
       scenariosCardsHTML += `
-        <div class="scenario-item-card ${isCompleted ? 'completed' : ''}" data-id="${sc.id}">
+        <div class="scenario-item-card ${isCompleted ? 'completed' : ''}" data-id="${sc.id}" style="--card-accent: ${ch.accentColor};">
           <div class="scenario-thumb-wrapper">
             <img class="scenario-item-img" src="${sc.image}" alt="${sc.title}" loading="lazy" onerror="this.style.opacity='0.4'" />
             <div class="scenario-status-badge">
@@ -43,7 +43,7 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
             </div>
           </div>
           <div>
-            <div class="topic-tag">${sc.topic}</div>
+            <div class="topic-tag" style="color: ${ch.accentColor};">${sc.topic}</div>
             <h4>${sc.title}</h4>
             <p style="font-size: 0.86rem; color: var(--text-muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.55;">
               ${sc.situation}
@@ -51,14 +51,14 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
           </div>
           <div class="scenario-card-footer">
             <span class="scenario-concept-label" title="${sc.philosophyConcept}">${sc.philosophyConcept}</span>
-            <span class="scenario-cta-btn">Khám phá →</span>
+            <span class="scenario-cta-btn" style="color: ${ch.accentColor};">Khám phá →</span>
           </div>
         </div>
       `;
     });
 
     chaptersHTML += `
-      <section class="glass-panel chapter-card animate-slide-up">
+      <section class="glass-panel chapter-card chapter-card-${ch.id} animate-slide-up" id="chapter-sec-${ch.id}">
         <div class="chapter-top">
           <div class="chapter-heading">
             <div class="ch-code">${ch.code}</div>
@@ -66,10 +66,10 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
             <p>${ch.desc}</p>
           </div>
           <div style="text-align: right;">
-            <span class="badge-pill" style="background: var(--accent-blue-light); color: var(--accent-blue); border: 1px solid rgba(37, 99, 235, 0.3);">
+            <span class="badge-pill ch-theme-badge">
               ${ch.badge}
             </span>
-            <div style="margin-top: 0.5rem; font-size: 0.88rem; font-weight: 800; font-family: var(--font-heading); color: ${isFinished ? 'var(--accent-emerald)' : 'var(--text-muted)'};">
+            <div class="ch-completion-counter" style="color: ${isFinished ? 'var(--accent-emerald)' : 'var(--text-muted)'};">
               ${completedInChapter} / ${chScenarios.length} Hoàn thành
             </div>
           </div>

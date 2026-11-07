@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="roseGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#0891b2" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" rx="20" fill="url(#bgGrad)" />
+
+  <!-- Subtle Blueprint Grid Lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.45">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Top Left Badge -->
+  <g transform="translate(40, 32)">
+    <rect width="210" height="28" rx="14" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5" />
+    <circle cx="16" cy="14" r="5" fill="#06b6d4" />
+    <text x="30" y="18" fill="#e2e8f0" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="1">MLN122 • CHƯƠNG 6 • CNH 4.0</text>
+  </g>
+
+  <!-- Top Right Title & Subtitle -->
+  <text x="760" y="44" fill="#06b6d4" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">CNH, HĐH THÍCH ỨNG CMCN 4.0</text>
+  <text x="760" y="64" fill="#94a3b8" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="end">Chuyển từ gia công giá rẻ lên nấc thang kinh tế số & chế tạo thông minh</text>
+
+  <!-- Main Illustration Graphics -->
+  
+      <!-- Staircase of Industrial Upgrade -->
+      <g transform="translate(180, 260)">
+        <rect x="0" y="0" width="120" height="60" rx="8" fill="#334155"/>
+        <text x="60" y="35" fill="#94a3b8" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Gia công dệt may</text>
+
+        <rect x="135" y="-40" width="130" height="100" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+        <text x="200" y="10" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Lắp ráp điện tử</text>
+
+        <rect x="280" y="-90" width="160" height="150" rx="12" fill="#083344" stroke="#06b6d4" stroke-width="3"/>
+        <text x="360" y="-45" fill="#22d3ee" font-family="'Be Vietnam Pro', sans-serif" font-size="13" font-weight="900" text-anchor="middle">KINH TẾ SỐ &amp; AI</text>
+        <text x="360" y="-15" fill="#e0f2fe" font-size="11" text-anchor="middle">Thiết kế bán dẫn</text>
+        <text x="360" y="10" fill="#e0f2fe" font-size="11" text-anchor="middle">Chế tạo thông minh</text>
+        <text x="360" y="40" fill="#facc15" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="800" text-anchor="middle">GIÁ TRỊ GIA TĂNG CAO 🚀</text>
+      </g>
+    
+
+  <!-- Bottom Metadata -->
+  <text x="40" y="422" fill="#475569" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="700">KINH TẾ CHÍNH TRỊ TRONG ĐỜI SỐNG</text>
+  <text x="760" y="422" fill="#475569" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="end">MLN122 • KHOA HỌC KINH TẾ CHÍNH TRỊ MÁC – LÊNIN</text>
+</svg>
