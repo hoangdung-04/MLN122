@@ -157,7 +157,7 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
             <div class="chapter-heading">
               <div class="ch-code" style="color: #8b5cf6;">🎮 ĐẤU TRƯỜNG TRẮC NGHIỆM QUIZIZZ</div>
               <h3>Đấu Trường Tri Thức MLN122 (Quiz Arena)</h3>
-              <p>Tranh tài 60 câu hỏi trắc nghiệm chuẩn Slide bài giảng: Hỏi nhanh đáp chuẩn, tranh đoạt Streak Combo, làm chủ trọn vẹn kiến thức 6 chương (đặc biệt Chương 3 GTTD, Chương 5 KTTT XHCN, Chương 6 CNH-HĐH)!</p>
+              <p>Tranh tài 50 câu hỏi trắc nghiệm chuyên đề bao quát toàn diện từ Chương 1 đến Chương 6 chuẩn Slide bài giảng: Hỏi nhanh đáp chuẩn, tranh đoạt Streak Combo, làm chủ trọn vẹn kiến thức 6 chương!</p>
             </div>
             <div style="text-align: right;">
               <button class="btn-primary" id="map-enter-quiz-btn" style="background: linear-gradient(135deg, #8b5cf6, #ec4899); padding: 0.75rem 1.6rem;">

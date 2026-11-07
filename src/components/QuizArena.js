@@ -5,7 +5,7 @@ import { sound } from '../core/audio.js';
 export function renderQuizArena(container, onBackToMap) {
   // Game States: 'lobby' | 'playing' | 'summary'
   let gameState = 'lobby';
-  let selectedMode = 'quick'; // 'quick' (10) | 'all' (20) | 'focus' (15)
+  let selectedMode = 'focus'; // 'focus' (50 câu Ch1-6) | 'all' (25 câu) | 'quick' (10 câu)
   let activeQuestions = [];
   let currentIndex = 0;
   let score = 0;
@@ -42,14 +42,23 @@ export function renderQuizArena(container, onBackToMap) {
   }
 
   function startQuiz() {
-    let pool = [...QUIZ_QUESTIONS];
+    let pool = [];
     if (selectedMode === 'focus') {
-      pool = QUIZ_QUESTIONS.filter(q => q.chapter === 3 || q.chapter === 5 || q.chapter === 6);
+      // Trọng tâm chuyên đề: 50 câu bao quát toàn diện từ Chương 1 đến Chương 6
+      const ch1 = shuffleArray(QUIZ_QUESTIONS.filter(q => q.chapter === 1)).slice(0, 8);
+      const ch2 = shuffleArray(QUIZ_QUESTIONS.filter(q => q.chapter === 2)).slice(0, 15);
+      const ch3 = shuffleArray(QUIZ_QUESTIONS.filter(q => q.chapter === 3)).slice(0, 9);
+      const ch4 = shuffleArray(QUIZ_QUESTIONS.filter(q => q.chapter === 4)).slice(0, 5);
+      const ch5 = shuffleArray(QUIZ_QUESTIONS.filter(q => q.chapter === 5)).slice(0, 7);
+      const ch6 = shuffleArray(QUIZ_QUESTIONS.filter(q => q.chapter === 6)).slice(0, 6);
+      pool = shuffleArray([...ch1, ...ch2, ...ch3, ...ch4, ...ch5, ...ch6]);
+    } else if (selectedMode === 'all') {
+      pool = shuffleArray(QUIZ_QUESTIONS).slice(0, 25);
+    } else {
+      pool = shuffleArray(QUIZ_QUESTIONS).slice(0, 10);
     }
-    pool = shuffleArray(pool);
 
-    const count = selectedMode === 'quick' ? 10 : selectedMode === 'focus' ? 15 : 20;
-    activeQuestions = pool.slice(0, Math.min(count, pool.length));
+    activeQuestions = pool;
 
     currentIndex = 0;
     score = 0;
@@ -259,11 +268,11 @@ export function renderQuizArena(container, onBackToMap) {
 
             <!-- Mode Selector -->
             <div class="quiz-mode-grid">
-              <div class="quiz-mode-pill ${selectedMode === 'quick' ? 'selected' : ''}" data-mode="quick">
-                <div class="mode-icon">⚡</div>
+              <div class="quiz-mode-pill ${selectedMode === 'focus' ? 'selected' : ''}" data-mode="focus">
+                <div class="mode-icon">🎯</div>
                 <div class="mode-info">
-                  <strong>Vượt Ải Cấp Tốc</strong>
-                  <span>10 câu ngẫu nhiên • 3 phút</span>
+                  <strong>Trọng Tâm Chuyên Đề</strong>
+                  <span>50 câu từ Chương 1 đến Chương 6</span>
                 </div>
               </div>
 
@@ -271,15 +280,15 @@ export function renderQuizArena(container, onBackToMap) {
                 <div class="mode-icon">🏆</div>
                 <div class="mode-info">
                   <strong>Đấu Trường Toàn Diện</strong>
-                  <span>20 câu bao quát 6 chương</span>
+                  <span>25 câu bao quát 6 chương</span>
                 </div>
               </div>
 
-              <div class="quiz-mode-pill ${selectedMode === 'focus' ? 'selected' : ''}" data-mode="focus">
-                <div class="mode-icon">🎯</div>
+              <div class="quiz-mode-pill ${selectedMode === 'quick' ? 'selected' : ''}" data-mode="quick">
+                <div class="mode-icon">⚡</div>
                 <div class="mode-info">
-                  <strong>Trọng Tâm Chuyên Đề</strong>
-                  <span>15 câu Chương 3, 5 & 6</span>
+                  <strong>Vượt Ải Cấp Tốc</strong>
+                  <span>10 câu ngẫu nhiên • 3 phút</span>
                 </div>
               </div>
             </div>
