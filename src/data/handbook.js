@@ -85,12 +85,16 @@ export const HANDBOOK_ENTRIES = [
     topics: [
       {
         code: '2.1',
-        title: 'Điều kiện ra đời của sản xuất hàng hóa & Hai thuộc tính của hàng hóa',
-        summary: '• 2 điều kiện lịch sử tất yếu để sản xuất hàng hóa ra đời: (1) Phân công lao động xã hội (chuyên môn hóa sản xuất); (2) Sự tách biệt tương đối về mặt kinh tế giữa các chủ thể sản xuất (do chế độ sở hữu khác nhau quy định).\n' +
-          '• Hàng hóa là sản phẩm của lao động, thỏa mãn nhu cầu con người thông qua trao đổi mua bán.\n' +
-          '• Thuộc tính 1 - Giá trị sử dụng: Công dụng của vật phẩm có thể thỏa mãn nhu cầu nào đó của con người (tiêu dùng cá nhân hoặc sản xuất). Là phạm trù vĩnh viễn, do thuộc tính tự nhiên của vật quyết định.\n' +
-          '• Thuộc tính 2 - Giá trị: Lao động xã hội của người sản xuất kết tinh trong hàng hóa. Là phạm trù lịch sử, biểu hiện mối quan hệ xã hội giữa những người sản xuất hàng hóa. Giá cả là hình thức biểu hiện bằng tiền của giá trị.',
-        lifeLesson: 'Một sản phẩm muốn bán chạy trên thị trường phải có giá trị sử dụng xuất sắc (giải quyết nỗi đau khách hàng) và được thị trường công nhận giá trị thông qua mức giá phù hợp.'
+        title: 'Lý luận của C. Mác về sản xuất hàng hóa & Hai thuộc tính của hàng hóa',
+        summary: '• Tiền đề thực tiễn & Cơ sở duy vật lịch sử: Đời sống xã hội loài người có nhiều mặt hoạt động khác nhau (chính trị, văn hoá, nghệ thuật, khoa học, kỹ thuật, tôn giáo…). Nhưng trước khi tiến hành các hoạt động đó, con người phải có thức ăn, quần áo mặc, nhà ở… Do đó, sản xuất của cải vật chất là cơ sở sinh tồn và phát triển của xã hội.\n' +
+          '• Khái niệm Sản xuất hàng hóa chuẩn slide: Là kiểu tổ chức hoạt động kinh tế mà ở đó, những người sản xuất ra sản phẩm nhằm mục đích trao đổi, mua bán (khác với sản xuất tự cung tự cấp).\n' +
+          '• 2 điều kiện lịch sử tất yếu để sản xuất hàng hóa ra đời và tồn tại:\n' +
+          '  1. Phân công lao động xã hội: Sự chuyên môn hóa sản xuất, mỗi người làm một nghề, tạo nên sự phụ thuộc lẫn nhau về sản phẩm.\n' +
+          '  2. Sự tách biệt tương đối về mặt kinh tế giữa các chủ thể sản xuất: Do chế độ sở hữu khác nhau về tư liệu sản xuất quy định, người này muốn tiêu dùng sản phẩm của người khác phải thông qua trao đổi, mua bán.\n' +
+          '• Khái niệm Hàng hóa: Là sản phẩm của lao động, có thể thỏa mãn nhu cầu nào đó của con người thông qua trao đổi, mua bán.\n' +
+          '• Thuộc tính 1 - Giá trị sử dụng: Công dụng của vật phẩm có thể thỏa mãn nhu cầu nào đó của con người (tiêu dùng cá nhân hoặc sản xuất). Là thuộc tính tự nhiên, phạm trù vĩnh viễn.\n' +
+          '• Thuộc tính 2 - Giá trị: Lao động xã hội của người sản xuất kết tinh trong hàng hóa. Là thuộc tính xã hội, phạm trù lịch sử biểu hiện mối quan hệ giữa những người sản xuất hàng hóa. Giá cả là hình thức biểu hiện bằng tiền của giá trị.',
+        lifeLesson: 'Một sản phẩm muốn thành công trên thị trường phải có giá trị sử dụng xuất sắc (giải quyết nỗi đau khách hàng) và được thị trường thừa nhận giá trị xã hội thông qua mức giá phù hợp.'
       },
       {
         code: '2.2',

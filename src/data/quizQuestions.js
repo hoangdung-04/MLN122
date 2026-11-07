@@ -490,6 +490,38 @@ export const QUIZ_QUESTIONS = [
     quote: 'Slide Chương 2 • Mục 2.1: Tính hai mặt của lao động sản xuất hàng hóa'
   },
   {
+    id: 'q-c2-03',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.1. Cơ sở sản xuất hàng hóa',
+    question: 'Theo C. Mác, trước khi có thể tham gia vào các hoạt động chính trị, văn hoá, nghệ thuật, khoa học, tôn giáo..., con người trước hết phải làm gì?',
+    options: [
+      'Phải có thức ăn, thức uống, quần áo mặc, chỗ ở... tức là phải tiến hành sản xuất của cải vật chất',
+      'Phải hoàn thành việc xây dựng thể chế chính trị và ban hành hiến pháp',
+      'Phải đạt được chứng chỉ học vấn chuyên môn cao cấp trong xã hội',
+      'Phải tích lũy một lượng lớn kim loại quý vàng bạc trong ngân khố'
+    ],
+    correctIndex: 0,
+    explanation: 'Tiền đề duy vật lịch sử: Sản xuất vật chất là nền tảng sinh tồn của nhân loại. Con người trước hết phải có các tư liệu sinh hoạt thiết yếu để duy trì sự sống trước khi sáng tạo các giá trị tinh thần khác.',
+    quote: 'Slide Chương 2 • Mục 1.1: Sản xuất hàng hóa'
+  },
+  {
+    id: 'q-c2-04',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.1. Khái niệm sản xuất hàng hóa',
+    question: 'Khái niệm "Sản xuất hàng hóa" theo lý luận của C. Mác trong slide bài giảng MLN122 được định nghĩa chính xác là gì?',
+    options: [
+      'Là kiểu tổ chức hoạt động kinh tế mà ở đó, những người sản xuất ra sản phẩm nhằm mục đích trao đổi, mua bán',
+      'Là mô hình kinh tế tự nhiên tự cấp tự túc, sản phẩm làm ra chỉ phục vụ tiêu dùng nội bộ gia đình',
+      'Là hoạt động phân phối hàng hóa cứu trợ miễn phí của các tổ chức thiện nguyện',
+      'Là hoạt động mua bán trái phiếu chính phủ trên thị trường tài chính quốc tế'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide Chương 2 Mục 1.1 định nghĩa chuẩn: Sản xuất hàng hóa là kiểu tổ chức hoạt động kinh tế mà ở đó, những người sản xuất ra sản phẩm nhằm mục đích trao đổi, mua bán.',
+    quote: 'Slide Chương 2 • Mục 1.1: Khái niệm sản xuất hàng hóa'
+  },
+  {
     id: 'q-c4-01',
     chapter: 4,
     chapterTitle: 'Chương 4: Cạnh tranh & Độc quyền',
