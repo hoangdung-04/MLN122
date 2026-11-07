@@ -59,7 +59,7 @@
     <text x="30" y="18" fill="#e2e8f0" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="1">MLN122 • CHƯƠNG 2 • CHỦ THỂ THỊ TRƯỜNG</text>
   </g>
 
-  <!-- Top Right Title & Subtitle -->
+  <!-- Top Right Title and Subtitle -->
   <text x="760" y="44" fill="#10b981" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">CÁC CHỦ THỂ THAM GIA THỊ TRƯỜNG</text>
   <text x="760" y="64" fill="#94a3b8" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="end">Người sản xuất • Người tiêu dùng • Trung gian • Nhà nước</text>
 
@@ -81,7 +81,7 @@
 
         <rect x="20" y="40" width="160" height="60" rx="12" fill="#1e293b" stroke="#ec4899" stroke-width="2"/>
         <text x="100" y="65" fill="#f472b6" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="800" text-anchor="middle">🏛️ NHÀ NƯỚC</text>
-        <text x="100" y="85" fill="#94a3b8" font-family="'Be Vietnam Pro', sans-serif" font-size="10" text-anchor="middle">Kiến tạo & Điều tiết</text>
+        <text x="100" y="85" fill="#94a3b8" font-family="'Be Vietnam Pro', sans-serif" font-size="10" text-anchor="middle">Kiến tạo &amp; Điều tiết</text>
 
         <circle cx="0" cy="-10" r="28" fill="#0f172a" stroke="#ffffff" stroke-width="2"/>
         <text x="0" y="-5" fill="#ffffff" font-size="14" text-anchor="middle">🔄</text>

@@ -22,3 +22,4 @@ export function resolveAssetUrl(path) {
   const prefix = base.endsWith('/') ? base : `${base}/`;
   return `${prefix}${cleanPath}`;
 }
+

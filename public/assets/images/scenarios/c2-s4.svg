@@ -59,8 +59,8 @@
     <text x="30" y="18" fill="#e2e8f0" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="1">MLN122 • CHƯƠNG 2 • QUY LUẬT GIÁ TRỊ</text>
   </g>
 
-  <!-- Top Right Title & Subtitle -->
-  <text x="760" y="44" fill="#10b981" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">QUY LUẬT GIÁ TRỊ & CƠ CHẾ THỊ TRƯỜNG</text>
+  <!-- Top Right Title and Subtitle -->
+  <text x="760" y="44" fill="#10b981" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">QUY LUẬT GIÁ TRỊ &amp; CƠ CHẾ THỊ TRƯỜNG</text>
   <text x="760" y="64" fill="#94a3b8" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="end">Giá cả thị trường vận động xoay quanh trục Giá trị</text>
 
   <!-- Main Illustration Graphics -->

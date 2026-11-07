@@ -59,13 +59,13 @@
     <text x="30" y="18" fill="#e2e8f0" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="1">MLN122 • CHƯƠNG 6 • ĐỘC LẬP TỰ CHỦ</text>
   </g>
 
-  <!-- Top Right Title & Subtitle -->
+  <!-- Top Right Title and Subtitle -->
   <text x="760" y="44" fill="#06b6d4" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">NỀN KINH TẾ ĐỘC LẬP TỰ CHỦ</text>
   <text x="760" y="64" fill="#94a3b8" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="end">Hội nhập sâu rộng gắn liền với giữ vững độc lập tự chủ về kinh tế</text>
 
   <!-- Main Illustration Graphics -->
   
-      <!-- Anchor & Shield of Autonomy -->
+      <!-- Anchor and Shield of Autonomy -->
       <g transform="translate(400, 220)">
         <polygon points="0,-90 -90,-40 -90,40 0,90 90,40 90,-40" fill="#083344" stroke="#06b6d4" stroke-width="3"/>
         <circle cx="0" cy="0" r="45" fill="#0f172a" stroke="#facc15" stroke-width="2.5"/>

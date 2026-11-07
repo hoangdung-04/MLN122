@@ -59,8 +59,8 @@
     <text x="30" y="18" fill="#e2e8f0" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="1">MLN122 • CHƯƠNG 3 • TÍCH LŨY TƯ BẢN</text>
   </g>
 
-  <!-- Top Right Title & Subtitle -->
-  <text x="760" y="44" fill="#f59e0b" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">TÍCH LŨY TƯ BẢN & CẤU TẠO HỮU CƠ (c/v)</text>
+  <!-- Top Right Title and Subtitle -->
+  <text x="760" y="44" fill="#f59e0b" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">TÍCH LŨY TƯ BẢN &amp; CẤU TẠO HỮU CƠ (c/v)</text>
   <text x="760" y="64" fill="#94a3b8" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="end">Tư bản hóa GTTD ➔ Tự động hóa tăng ➔ Đội quân thất nghiệp công nghiệp</text>
 
   <!-- Main Illustration Graphics -->

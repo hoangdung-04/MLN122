@@ -59,7 +59,7 @@
     <text x="30" y="18" fill="#e2e8f0" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="1">MLN122 • CHƯƠNG 5 • HỆ THỐNG THỊ TRƯỜNG</text>
   </g>
 
-  <!-- Top Right Title & Subtitle -->
+  <!-- Top Right Title and Subtitle -->
   <text x="760" y="44" fill="#ec4899" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">ĐỒNG BỘ CÁC LOẠI THỊ TRƯỜNG</text>
   <text x="760" y="64" fill="#94a3b8" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="end">Thị trường hàng hóa, vốn, lao động, đất đai, khoa học công nghệ</text>
 

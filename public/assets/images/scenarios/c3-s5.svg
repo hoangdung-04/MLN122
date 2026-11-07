@@ -56,11 +56,11 @@
   <g transform="translate(40, 32)">
     <rect width="210" height="28" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
     <circle cx="16" cy="14" r="5" fill="#f59e0b" />
-    <text x="30" y="18" fill="#e2e8f0" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="1">MLN122 • CHƯƠNG 3 • CHI PHÍ & LỢI NHUẬN</text>
+    <text x="30" y="18" fill="#e2e8f0" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="1">MLN122 • CHƯƠNG 3 • CHI PHÍ &amp; LỢI NHUẬN</text>
   </g>
 
-  <!-- Top Right Title & Subtitle -->
-  <text x="760" y="44" fill="#f59e0b" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">CHI PHÍ SẢN XUẤT (K) & LỢI NHUẬN (p)</text>
+  <!-- Top Right Title and Subtitle -->
+  <text x="760" y="44" fill="#f59e0b" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">CHI PHÍ SẢN XUẤT (K) &amp; LỢI NHUẬN (p)</text>
   <text x="760" y="64" fill="#94a3b8" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="end">Chi phí thực tế (c+v+m) vs Chi phí tư bản K = c + v</text>
 
   <!-- Main Illustration Graphics -->

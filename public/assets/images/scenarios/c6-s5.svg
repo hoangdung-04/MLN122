@@ -59,7 +59,7 @@
     <text x="30" y="18" fill="#e2e8f0" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="1">MLN122 • CHƯƠNG 6 • ĐA PHƯƠNG HÓA</text>
   </g>
 
-  <!-- Top Right Title & Subtitle -->
+  <!-- Top Right Title and Subtitle -->
   <text x="760" y="44" fill="#06b6d4" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">ĐA DẠNG HÓA ĐỐI TÁC TRONG HỘI NHẬP</text>
   <text x="760" y="64" fill="#94a3b8" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="end">Tránh bỏ trứng vào một giỏ, phòng chống rủi ro chuỗi cung ứng</text>
 
