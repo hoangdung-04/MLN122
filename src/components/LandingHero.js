@@ -57,33 +57,6 @@ export function renderLandingHero(container, onNavigate) {
                 <span>🎮 ĐẤU TRƯỜNG QUIZIZZ</span>
               </button>
             </div>
-
-            <!-- Quick Chapter Roadmap Navigation -->
-            <div style="margin-top: 1.8rem;">
-              <div style="font-size: 0.8rem; font-weight: 800; color: var(--text-dim); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.75rem; font-family: var(--font-heading);">
-                LỘ TRÌNH 6 CHƯƠNG MLN122:
-              </div>
-              <div class="hero-quick-roadmap">
-                <button class="roadmap-pill-btn roadmap-ch1" data-nav-chapter="1">
-                  Chương 1: Đối Tượng &amp; Phương Pháp
-                </button>
-                <button class="roadmap-pill-btn roadmap-ch2" data-nav-chapter="2">
-                  Chương 2: Hàng Hóa &amp; Thị Trường
-                </button>
-                <button class="roadmap-pill-btn roadmap-ch3" data-nav-chapter="3">
-                  Chương 3: Giá Trị Thặng Dư (m)
-                </button>
-                <button class="roadmap-pill-btn roadmap-ch4" data-nav-chapter="4">
-                  Chương 4: Cạnh Tranh &amp; Độc Quyền
-                </button>
-                <button class="roadmap-pill-btn roadmap-ch5" data-nav-chapter="5">
-                  Chương 5: KTTT Định Hướng XHCN
-                </button>
-                <button class="roadmap-pill-btn roadmap-ch6" data-nav-chapter="6">
-                  Chương 6: CNH 4.0 &amp; Hội Nhập
-                </button>
-              </div>
-            </div>
           </div>
 
           <!-- RIGHT COLUMN: Full-Height Classic Portrait of Lenin, Engels & Marx -->
@@ -102,6 +75,40 @@ export function renderLandingHero(container, onNavigate) {
           </div>
 
         </div>
+
+        <!-- FULL-WIDTH CENTERED ROADMAP: 6 CHƯƠNG MLN122 (3 CỘT X 2 HÀNG) -->
+        <div class="hero-roadmap-section">
+          <div class="roadmap-header-center">
+            <span class="roadmap-badge-title">LỘ TRÌNH 6 CHƯƠNG MLN122</span>
+          </div>
+          <div class="hero-quick-roadmap">
+            <button class="roadmap-pill-btn roadmap-ch1" data-nav-chapter="1">
+              <span class="ch-badge">Chương 1</span>
+              <span class="ch-name">Đối Tượng &amp; Phương Pháp</span>
+            </button>
+            <button class="roadmap-pill-btn roadmap-ch2" data-nav-chapter="2">
+              <span class="ch-badge">Chương 2</span>
+              <span class="ch-name">Hàng Hóa &amp; Thị Trường</span>
+            </button>
+            <button class="roadmap-pill-btn roadmap-ch3" data-nav-chapter="3">
+              <span class="ch-badge">Chương 3</span>
+              <span class="ch-name">Giá Trị Thặng Dư (m)</span>
+            </button>
+            <button class="roadmap-pill-btn roadmap-ch4" data-nav-chapter="4">
+              <span class="ch-badge">Chương 4</span>
+              <span class="ch-name">Cạnh Tranh &amp; Độc Quyền</span>
+            </button>
+            <button class="roadmap-pill-btn roadmap-ch5" data-nav-chapter="5">
+              <span class="ch-badge">Chương 5</span>
+              <span class="ch-name">KTTT Định Hướng XHCN</span>
+            </button>
+            <button class="roadmap-pill-btn roadmap-ch6" data-nav-chapter="6">
+              <span class="ch-badge">Chương 6</span>
+              <span class="ch-name">CNH 4.0 &amp; Hội Nhập</span>
+            </button>
+          </div>
+        </div>
+
       </div>
     </section>
   `;

@@ -312,76 +312,179 @@
   }
 }
 
+/* =================================================================
+   HERO ROADMAP 6 CHAPTERS SECTION (CENTERED, 3-COLUMN GRID)
+================================================================= */
+.hero-roadmap-section {
+  margin-top: 3.5rem;
+  padding-top: 2.2rem;
+  border-top: 1px dashed rgba(217, 119, 6, 0.25);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.roadmap-header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+}
+
+.roadmap-badge-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--text-dim);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--font-heading);
+  padding: 0.45rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
 .hero-quick-roadmap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.75rem;
+  gap: 1.25rem 1.4rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-@media (max-width: 900px) {
+
+@media (max-width: 960px) {
   .hero-quick-roadmap {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
+
 @media (max-width: 580px) {
   .hero-quick-roadmap {
     grid-template-columns: 1fr;
+    gap: 0.85rem;
   }
 }
 
 .roadmap-pill-btn {
-  padding: 0.7rem 0.85rem;
+  padding: 0.85rem 1.15rem;
   background: var(--bg-card);
   border: 1.5px solid var(--border-subtle);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   font-family: var(--font-heading);
-  font-size: 0.82rem;
-  font-weight: 800;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   transition: all 0.25s var(--ease-spring);
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 0.85rem;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 .roadmap-pill-btn:hover {
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 8px 18px -4px rgba(15, 23, 42, 0.12);
+  transform: translateY(-3px) scale(1.015);
+  box-shadow: 0 10px 22px -4px rgba(15, 23, 42, 0.12);
+}
+
+.roadmap-pill-btn .ch-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+
+.roadmap-pill-btn .ch-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+  white-space: normal;
+  word-break: normal;
 }
 
 .roadmap-pill-btn.roadmap-ch1 {
-  border-color: rgba(59, 130, 246, 0.35);
+  border-color: rgba(59, 130, 246, 0.4);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(59, 130, 246, 0.06) 100%);
+}
+.roadmap-pill-btn.roadmap-ch1 .ch-badge {
+  background: rgba(59, 130, 246, 0.12);
   color: #1d4ed8;
-  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(59, 130, 246, 0.07) 100%);
+  border: 1px solid rgba(59, 130, 246, 0.3);
 }
+
 .roadmap-pill-btn.roadmap-ch2 {
-  border-color: rgba(16, 185, 129, 0.35);
+  border-color: rgba(16, 185, 129, 0.4);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(16, 185, 129, 0.06) 100%);
+}
+.roadmap-pill-btn.roadmap-ch2 .ch-badge {
+  background: rgba(16, 185, 129, 0.12);
   color: #047857;
-  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(16, 185, 129, 0.07) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.3);
 }
+
 .roadmap-pill-btn.roadmap-ch3 {
-  border-color: rgba(245, 158, 11, 0.35);
+  border-color: rgba(245, 158, 11, 0.4);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(245, 158, 11, 0.06) 100%);
+}
+.roadmap-pill-btn.roadmap-ch3 .ch-badge {
+  background: rgba(245, 158, 11, 0.12);
   color: #b45309;
-  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(245, 158, 11, 0.07) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.3);
 }
+
 .roadmap-pill-btn.roadmap-ch4 {
-  border-color: rgba(139, 92, 246, 0.35);
+  border-color: rgba(139, 92, 246, 0.4);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(139, 92, 246, 0.06) 100%);
+}
+.roadmap-pill-btn.roadmap-ch4 .ch-badge {
+  background: rgba(139, 92, 246, 0.12);
   color: #6d28d9;
-  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(139, 92, 246, 0.07) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.3);
 }
+
 .roadmap-pill-btn.roadmap-ch5 {
-  border-color: rgba(236, 72, 153, 0.35);
+  border-color: rgba(236, 72, 153, 0.4);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(236, 72, 153, 0.06) 100%);
+}
+.roadmap-pill-btn.roadmap-ch5 .ch-badge {
+  background: rgba(236, 72, 153, 0.12);
   color: #be185d;
-  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(236, 72, 153, 0.07) 100%);
+  border: 1px solid rgba(236, 72, 153, 0.3);
 }
+
 .roadmap-pill-btn.roadmap-ch6 {
-  border-color: rgba(6, 182, 212, 0.35);
-  color: #0e7490;
-  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(6, 182, 212, 0.07) 100%);
+  border-color: rgba(6, 182, 212, 0.4);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(6, 182, 212, 0.06) 100%);
 }
+.roadmap-pill-btn.roadmap-ch6 .ch-badge {
+  background: rgba(6, 182, 212, 0.12);
+  color: #0e7490;
+  border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+[data-theme="dark"] .roadmap-pill-btn.roadmap-ch1 .ch-badge { color: #60a5fa; }
+[data-theme="dark"] .roadmap-pill-btn.roadmap-ch2 .ch-badge { color: #34d399; }
+[data-theme="dark"] .roadmap-pill-btn.roadmap-ch3 .ch-badge { color: #fbbf24; }
+[data-theme="dark"] .roadmap-pill-btn.roadmap-ch4 .ch-badge { color: #a78bfa; }
+[data-theme="dark"] .roadmap-pill-btn.roadmap-ch5 .ch-badge { color: #f472b6; }
+[data-theme="dark"] .roadmap-pill-btn.roadmap-ch6 .ch-badge { color: #22d3ee; }
 
 /* Portrait Frame (Right Column) */
 .hero-portrait-frame {
