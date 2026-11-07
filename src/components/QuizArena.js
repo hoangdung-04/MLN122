@@ -12,7 +12,8 @@ export function renderQuizArena(container, onBackToMap) {
   let streak = 0;
   let maxStreak = 0;
   let correctCount = 0;
-  let userAnswers = []; // { question, selectedIndex, isCorrect, timeSpent }
+  let userAnswers = []; // { question, selectedIndex, isCorrect, timeSpent, pointsGained }
+  let lastPointsGained = 0;
 
   // Timer & Power-ups
   const TIME_PER_QUESTION = 20; // seconds
@@ -56,6 +57,7 @@ export function renderQuizArena(container, onBackToMap) {
     maxStreak = 0;
     correctCount = 0;
     userAnswers = [];
+    lastPointsGained = 0;
     lifelines = { fiftyFifty: true, freezeTime: true, hint: true };
     activeHint = null;
     hiddenOptionIndices = [];
@@ -72,6 +74,7 @@ export function renderQuizArena(container, onBackToMap) {
     activeHint = null;
     hiddenOptionIndices = [];
     timeLeft = TIME_PER_QUESTION;
+    lastPointsGained = 0;
 
     clearInterval(timerInterval);
     timerInterval = setInterval(() => {
@@ -102,6 +105,8 @@ export function renderQuizArena(container, onBackToMap) {
 
   function handleAnswer(selectedIndex) {
     if (isAnswerSubmitted) return;
+    if (hiddenOptionIndices.includes(selectedIndex)) return;
+
     isAnswerSubmitted = true;
     clearInterval(timerInterval);
 
@@ -120,11 +125,13 @@ export function renderQuizArena(container, onBackToMap) {
       const streakMultiplier = streak >= 5 ? 2.0 : streak >= 3 ? 1.5 : streak >= 2 ? 1.2 : 1.0;
       pointsGained = Math.round((1000 + speedBonus) * streakMultiplier);
       score += pointsGained;
+      lastPointsGained = pointsGained;
 
       sound.playDialecticalSuccess();
       stateManager.state.xp += 25;
     } else {
       streak = 0;
+      lastPointsGained = 0;
       sound.playWarning();
       stateManager.state.xp += 5;
     }
@@ -144,6 +151,7 @@ export function renderQuizArena(container, onBackToMap) {
     if (isAnswerSubmitted) return;
     isAnswerSubmitted = true;
     streak = 0;
+    lastPointsGained = 0;
     sound.playWarning();
 
     const q = activeQuestions[currentIndex];
@@ -201,6 +209,29 @@ export function renderQuizArena(container, onBackToMap) {
     renderView();
   }
 
+  // Keyboard shortcut handler
+  function handleKeyDown(e) {
+    if (gameState !== 'playing') return;
+
+    if (!isAnswerSubmitted) {
+      const key = e.key.toUpperCase();
+      if (key === 'A' || key === '1') handleAnswer(0);
+      else if (key === 'B' || key === '2') handleAnswer(1);
+      else if (key === 'C' || key === '3') handleAnswer(2);
+      else if (key === 'D' || key === '4') handleAnswer(3);
+    } else {
+      if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowRight') {
+        e.preventDefault();
+        sound.playClick();
+        nextQuestion();
+      }
+    }
+  }
+
+  // Register global keydown listener
+  window.removeEventListener('keydown', handleKeyDown);
+  window.addEventListener('keydown', handleKeyDown);
+
   function renderView() {
     // 1. LOBBY VIEW
     if (gameState === 'lobby') {
@@ -221,7 +252,7 @@ export function renderQuizArena(container, onBackToMap) {
             <div class="lobby-badge">ĐẤU TRƯỜNG TRI THỨC 4.0</div>
             <h2 class="lobby-title">ĐẤU TRƯỜNG QUIZ MLN122</h2>
             <p class="lobby-desc">
-              Trải nghiệm phong cách đấu trường trắc nghiệm Quizizz sôi động! Trả lời thần tốc, duy trì chuỗi thắng (Streak Combo) và làm chủ toàn diện các quy luật Kinh tế chính trị Mác – Lênin (Chương 1 đến 6).
+              Trải nghiệm đấu trường trắc nghiệm 4 đáp án A – B – C – D chuẩn phong cách Quizizz sôi động! Trả lời thần tốc, duy trì chuỗi thắng (Streak Combo) và làm chủ toàn diện các quy luật Kinh tế chính trị Mác – Lênin.
             </p>
 
             <!-- Mode Selector -->
@@ -263,8 +294,13 @@ export function renderQuizArena(container, onBackToMap) {
               </div>
             </div>
 
+            <!-- Keyboard shortcut hint -->
+            <div style="margin-top: 1.2rem; font-size: 0.82rem; color: var(--text-dim);">
+              ⌨️ <em>Mẹo: Bạn có thể dùng bàn phím bấm A, B, C, D (hoặc 1, 2, 3, 4) và phím Enter để thao tác siêu tốc!</em>
+            </div>
+
             <!-- Start Button -->
-            <div style="margin-top: 2rem;">
+            <div style="margin-top: 1.5rem;">
               <button class="btn-quiz-start" id="quiz-start-btn">
                 <span>🚀 BẮT ĐẦU VÀO ĐẤU TRƯỜNG →</span>
               </button>
@@ -274,6 +310,7 @@ export function renderQuizArena(container, onBackToMap) {
       `;
 
       document.getElementById('quiz-lobby-back-btn').addEventListener('click', () => {
+        window.removeEventListener('keydown', handleKeyDown);
         sound.playClick();
         onBackToMap();
       });
@@ -296,12 +333,12 @@ export function renderQuizArena(container, onBackToMap) {
       const percentTime = (timeLeft / TIME_PER_QUESTION) * 100;
       const lastAnswer = userAnswers[userAnswers.length - 1];
 
-      // Option styles & letters (Quizizz style)
+      // Standard A, B, C, D Option Styles
       const OPTION_STYLES = [
-        { letter: '▲', colorClass: 'opt-red' },
-        { letter: '◆', colorClass: 'opt-blue' },
-        { letter: '●', colorClass: 'opt-yellow' },
-        { letter: '■', colorClass: 'opt-green' }
+        { letter: 'A', colorClass: 'opt-red', label: 'Đáp án A' },
+        { letter: 'B', colorClass: 'opt-blue', label: 'Đáp án B' },
+        { letter: 'C', colorClass: 'opt-yellow', label: 'Đáp án C' },
+        { letter: 'D', colorClass: 'opt-green', label: 'Đáp án D' }
       ];
 
       let optionsHTML = '';
@@ -310,11 +347,18 @@ export function renderQuizArena(container, onBackToMap) {
         const style = OPTION_STYLES[idx] || OPTION_STYLES[0];
 
         let stateClass = '';
+        let badgeIcon = style.letter;
+        let badgeLabel = '';
+
         if (isAnswerSubmitted) {
           if (idx === q.correctIndex) {
             stateClass = 'opt-correct';
+            badgeIcon = '✓';
+            badgeLabel = '<span class="opt-result-tag correct">ĐÁP ÁN ĐÚNG</span>';
           } else if (lastAnswer && lastAnswer.selectedIndex === idx) {
             stateClass = 'opt-wrong';
+            badgeIcon = '✕';
+            badgeLabel = '<span class="opt-result-tag wrong">BẠN ĐÃ CHỌN</span>';
           } else {
             stateClass = 'opt-dimmed';
           }
@@ -323,14 +367,19 @@ export function renderQuizArena(container, onBackToMap) {
         if (isHidden) {
           optionsHTML += `
             <div class="quiz-option-card opt-hidden">
-              <span style="opacity: 0.3;">Đã loại bỏ 50:50</span>
+              <div class="opt-letter-badge" style="opacity: 0.3;">${style.letter}</div>
+              <span style="opacity: 0.4; font-size: 0.88rem;">Đã loại trừ 50:50</span>
             </div>
           `;
         } else {
           optionsHTML += `
             <button class="quiz-option-card ${style.colorClass} ${stateClass}" data-option-idx="${idx}" ${isAnswerSubmitted ? 'disabled' : ''}>
-              <div class="opt-letter-badge">${style.letter}</div>
-              <div class="opt-text-label">${optText}</div>
+              <div class="opt-letter-badge">${badgeIcon}</div>
+              <div class="opt-content-wrap">
+                <div class="opt-text-label">${optText}</div>
+                ${badgeLabel}
+              </div>
+              <span class="opt-key-hint">Phím [${style.letter}]</span>
             </button>
           `;
         }
@@ -344,10 +393,10 @@ export function renderQuizArena(container, onBackToMap) {
           <div class="quiz-feedback-box ${isCorrect ? 'correct' : 'wrong'} animate-fade-in">
             <div class="feedback-head-row">
               <div class="feedback-title">
-                ${isCorrect ? `🎉 CHÍNH XÁC! +${lastAnswer.pointsGained} Điểm!` : (lastAnswer.selectedIndex === -1 ? '⏰ HẾT THỜI GIAN!' : '❌ CHƯA CHÍNH XÁC!')}
+                ${isCorrect ? `🎉 CHÍNH XÁC! +${lastAnswer.pointsGained.toLocaleString()} PTS!` : (lastAnswer.selectedIndex === -1 ? '⏰ HẾT THỜI GIAN!' : '❌ CHƯA CHÍNH XÁC!')}
               </div>
-              <button class="btn-quiz-next" id="quiz-next-btn">
-                <span>CÂU TIẾP THEO →</span>
+              <button class="btn-quiz-next animate-bounce-subtle" id="quiz-next-btn">
+                <span>CÂU TIẾP THEO (Enter) →</span>
               </button>
             </div>
             <p class="feedback-explanation">
@@ -372,6 +421,7 @@ export function renderQuizArena(container, onBackToMap) {
             <div class="hud-center-score">
               <span class="quiz-score-val">⭐ ${score.toLocaleString()} PTS</span>
               ${streak >= 2 ? `<span class="quiz-streak-pill">🔥 STREAK x${streak}!</span>` : ''}
+              ${lastPointsGained > 0 ? `<span class="floating-score-badge animate-float-fade">+${lastPointsGained.toLocaleString()}!</span>` : ''}
             </div>
 
             <!-- Lifeline Buttons -->
@@ -405,12 +455,12 @@ export function renderQuizArena(container, onBackToMap) {
           ` : ''}
 
           <!-- Question Prompt Card -->
-          <div class="quiz-question-card">
+          <div class="quiz-question-card animate-slide-up">
             <div class="quiz-category-tag">${q.chapterTitle} • ${q.category}</div>
             <h3 class="quiz-question-text">${q.question}</h3>
           </div>
 
-          <!-- 4 Quizizz Color Options -->
+          <!-- 4 Quizizz Option Cards: A, B, C, D -->
           <div class="quiz-options-grid">
             ${optionsHTML}
           </div>
@@ -424,6 +474,7 @@ export function renderQuizArena(container, onBackToMap) {
       document.getElementById('quiz-exit-btn').addEventListener('click', () => {
         if (confirm('Bạn có muốn tạm dừng và quay lại bản đồ không?')) {
           clearInterval(timerInterval);
+          window.removeEventListener('keydown', handleKeyDown);
           onBackToMap();
         }
       });
@@ -457,6 +508,8 @@ export function renderQuizArena(container, onBackToMap) {
 
     // 3. SUMMARY VIEW (Podium & Review)
     if (gameState === 'summary') {
+      window.removeEventListener('keydown', handleKeyDown);
+
       const accuracy = Math.round((correctCount / activeQuestions.length) * 100);
       let rankTitle = 'BẬC THẦY KINH TẾ CHÍNH TRỊ MLN122';
       let rankBadge = '🥇 ĐẠI KIỆN TƯỚNG MLN122';
@@ -476,23 +529,28 @@ export function renderQuizArena(container, onBackToMap) {
         rankClass = 'rank-silver';
       }
 
+      const LETTERS = ['A', 'B', 'C', 'D'];
+
       let reviewHTML = '';
       userAnswers.forEach((ans, i) => {
         const q = ans.question;
+        const correctLetter = LETTERS[q.correctIndex] || 'A';
+        const userLetter = ans.selectedIndex >= 0 ? (LETTERS[ans.selectedIndex] || '?') : 'Hết giờ';
+
         reviewHTML += `
           <div class="review-item-card ${ans.isCorrect ? 'correct' : 'wrong'}">
             <div class="review-item-head">
-              <span class="review-num">Câu #${i + 1}</span>
-              <span class="review-status">${ans.isCorrect ? '✓ Đúng (+ ' + ans.pointsGained + ' PTS)' : '✕ Sai'}</span>
+              <span class="review-num">Câu #${i + 1} • ${q.category}</span>
+              <span class="review-status">${ans.isCorrect ? '✓ Đúng (+ ' + ans.pointsGained.toLocaleString() + ' PTS)' : '✕ Sai'}</span>
             </div>
             <div class="review-question">${q.question}</div>
             <div class="review-answer-row">
               <div>
-                <strong>Đáp án đúng:</strong> <span style="color: var(--accent-emerald-dark);">${q.options[q.correctIndex]}</span>
+                <strong>Đáp án đúng [${correctLetter}]:</strong> <span style="color: var(--accent-emerald-dark);">${q.options[q.correctIndex]}</span>
               </div>
               ${!ans.isCorrect ? `
-                <div style="margin-top: 0.3rem;">
-                  <strong>Bạn đã chọn:</strong> <span style="color: var(--accent-crimson);">${ans.selectedIndex >= 0 ? q.options[ans.selectedIndex] : 'Hết thời gian'}</span>
+                <div style="margin-top: 0.35rem;">
+                  <strong>Bạn đã chọn [${userLetter}]:</strong> <span style="color: var(--accent-crimson);">${ans.selectedIndex >= 0 ? q.options[ans.selectedIndex] : 'Hết thời gian'}</span>
                 </div>
               ` : ''}
             </div>
@@ -527,7 +585,7 @@ export function renderQuizArena(container, onBackToMap) {
               <div class="sum-stat-card">
                 <span class="stat-icon">🔥</span>
                 <div class="stat-val" style="color: var(--accent-amber);">${maxStreak}</div>
-                <div class="stat-label">Chuỗi Đúng Liên Tiếp (Max Streak)</div>
+                <div class="stat-label">Chuỗi Đúng Dài Nhất (Max Streak)</div>
               </div>
             </div>
 
@@ -571,4 +629,3 @@ export function renderQuizArena(container, onBackToMap) {
 
   renderView();
 }
-
