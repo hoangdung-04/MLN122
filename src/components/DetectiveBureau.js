@@ -340,7 +340,7 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
         <div class="investigation-board">
           <div class="board-title">
             <div>
-              <div class="board-badge">ĐỐI CHIẾU NỘI DUNG SLIDE BÀI GIẢNG &amp; GIÁO TRÌNH</div>
+              <div class="board-badge">ĐỐI CHIẾU NỘI DUNG GIÁO TRÌNH CHUẨN &amp; GIÁO TRÌNH</div>
               <h3 class="board-main-heading">Bàn Phân Loại Luận Điểm Kinh Tế Chính Trị (${activeCase.chapterBadge})</h3>
               <p class="board-guide-text">
                 👉 Hướng dẫn: Đọc kỹ từng luận điểm ở khay; <strong>bấm vào luận điểm</strong> rồi <strong>bấm vào đề mục bên dưới</strong> (hoặc bấm nút ghim nhanh) để phân loại.

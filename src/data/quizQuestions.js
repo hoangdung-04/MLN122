@@ -1,6 +1,5 @@
 // Ngân hàng câu hỏi trắc nghiệm Đấu trường Quizizz MLN122
-// Biên soạn chuẩn chỉnh theo Đề cương chi tiết & Giáo trình Slide
-
+// Biên soạn chuẩn chỉnh theo Đề cương chi tiết & Giáo trình môn học
 export const QUIZ_QUESTIONS = [
   // --- CHƯƠNG 3: GIÁ TRỊ THẶNG DƯ (TRỌNG TÂM) ---
   {
@@ -17,7 +16,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Tiền chỉ biến thành tư bản khi tìm thấy trên thị trường hàng hóa sức lao động – loại hàng hóa có khả năng sáng tạo ra giá trị mới lớn hơn giá trị của chính nó (nguồn gốc của GTTD m).',
-    quote: 'Slide Chương 3 • Mục 3.1.1: Hàng hóa sức lao động'
+    quote: 'Giáo trình Chương 3 • Mục 3.1.1: Hàng hóa sức lao động'
   },
   {
     id: 'q-c3-02',
@@ -33,7 +32,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Hai điều kiện tất yếu: (1) Người lao động tự do về thân thể (có quyền bán sức lao động); (2) Người lao động không có tư liệu sản xuất (buộc phải bán sức lao động để sinh tồn).',
-    quote: 'Slide Chương 3 • Mục 3.1.1: Điều kiện để sức lao động thành hàng hóa'
+    quote: 'Giáo trình Chương 3 • Mục 3.1.1: Điều kiện để sức lao động thành hàng hóa'
   },
   {
     id: 'q-c3-03',
@@ -49,7 +48,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Tư bản bất biến (c) tồn tại dưới dạng tư liệu sản xuất (máy móc, nhà xưởng, nguyên liệu), giá trị của nó không biến đổi về lượng trong sản xuất, chỉ được chuyển dịch nguyên vẹn vào sản phẩm mới nhờ lao động cụ thể.',
-    quote: 'Slide Chương 3 • Mục 3.1.2: Tư bản bất biến (c) và Tư bản khả biến (v)'
+    quote: 'Giáo trình Chương 3 • Mục 3.1.2: Tư bản bất biến (c) và Tư bản khả biến (v)'
   },
   {
     id: 'q-c3-04',
@@ -65,7 +64,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Sản xuất GTTD tuyệt đối là phương pháp thu được bằng cách kéo dài ngày lao động hoặc tăng cường độ lao động vượt quá thời gian lao động tất yếu, trong điều kiện thời gian lao động tất yếu không đổi.',
-    quote: 'Slide Chương 3 • Mục 3.1.3: Sản xuất GTTD tuyệt đối'
+    quote: 'Giáo trình Chương 3 • Mục 3.1.3: Sản xuất GTTD tuyệt đối'
   },
   {
     id: 'q-c3-05',
@@ -81,7 +80,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'GTTD siêu ngạch thu được do doanh nghiệp cá biệt có năng suất cao hơn mặt bằng xã hội (nhờ cải tiến kỹ thuật, quản lý), làm giá trị cá biệt của sản phẩm thấp hơn giá trị xã hội nhưng vẫn bán theo giá xã hội.',
-    quote: 'Slide Chương 3 • Mục 3.1.3: Giá trị thặng dư siêu ngạch'
+    quote: 'Giáo trình Chương 3 • Mục 3.1.3: Giá trị thặng dư siêu ngạch'
   },
   {
     id: 'q-c3-06',
@@ -97,7 +96,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Bản chất của tích lũy tư bản là biến một phần giá trị thặng dư thành tư bản phụ thêm (tư bản hóa giá trị thặng dư) nhằm tái sản xuất mở rộng quy mô kinh doanh.',
-    quote: 'Slide Chương 3 • Mục 3.2: Tích lũy tư bản và các nhân tố ảnh hưởng'
+    quote: 'Giáo trình Chương 3 • Mục 3.2: Tích lũy tư bản và các nhân tố ảnh hưởng'
   },
   {
     id: 'q-c3-07',
@@ -113,7 +112,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Chi phí sản xuất k = c + v (bù đắp hao phí tư bản ứng trước). Lợi nhuận p chính là GTTD m khi được quan niệm là con đẻ của toàn bộ tư bản ứng trước (k).',
-    quote: 'Slide Chương 3 • Mục 3.3: Lợi nhuận và tỷ suất lợi nhuận'
+    quote: 'Giáo trình Chương 3 • Mục 3.3: Lợi nhuận và tỷ suất lợi nhuận'
   },
 
   // --- CHƯƠNG 5: KTTT ĐỊNH HƯỚNG XÃ HỘI CHỦ NGHĨA Ở VIỆT NAM ---
@@ -131,7 +130,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'KTTT định hướng XHCN ở VN là nền kinh tế vận hành đầy đủ, đồng bộ theo các quy luật của KTTT, đồng thời bảo đảm định hướng XHCN phù hợp với từng chặng đường phát triển của đất nước.',
-    quote: 'Slide Chương 5 • Mục 5.1.1: Khái niệm KTTT định hướng XHCN'
+    quote: 'Giáo trình Chương 5 • Mục 5.1.1: Khái niệm KTTT định hướng XHCN'
   },
   {
     id: 'q-c5-02',
@@ -147,7 +146,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Tính tất yếu bắt nguồn từ 3 lý do: (1) Phù hợp quy luật phát triển khách quan; (2) Do tính ưu việt của KTTT trong thúc đẩy LLSX; (3) Phù hợp nguyện vọng của nhân dân mong muốn dân giàu nước mạnh.',
-    quote: 'Slide Chương 5 • Mục 5.1.2: Tính tất yếu khách quan'
+    quote: 'Giáo trình Chương 5 • Mục 5.1.2: Tính tất yếu khách quan'
   },
   {
     id: 'q-c5-03',
@@ -163,7 +162,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 2,
     explanation: 'Kinh tế nhà nước giữ vai trò chủ đạo, là công cụ định hướng và điều tiết vĩ mô; Kinh tế tư nhân là một động lực quan trọng của nền kinh tế.',
-    quote: 'Slide Chương 5 • Mục 5.1.3: Đặc trưng về quan hệ sở hữu và thành phần kinh tế'
+    quote: 'Giáo trình Chương 5 • Mục 5.1.3: Đặc trưng về quan hệ sở hữu và thành phần kinh tế'
   },
   {
     id: 'q-c5-04',
@@ -179,7 +178,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Đặc trưng phân phối: Phân phối theo kết quả lao động và hiệu quả kinh tế là chủ yếu, kết hợp phân phối theo mức đóng góp vốn cùng các nguồn lực khác và thông qua hệ thống an sinh xã hội.',
-    quote: 'Slide Chương 5 • Mục 5.1.3: Đặc trưng về quan hệ phân phối'
+    quote: 'Giáo trình Chương 5 • Mục 5.1.3: Đặc trưng về quan hệ phân phối'
   },
   {
     id: 'q-c5-05',
@@ -195,7 +194,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 2,
     explanation: 'Đảng ta khẳng định kinh tế tư nhân là một động lực quan trọng của nền kinh tế. Xóa bỏ kinh tế tư nhân là quan điểm sai lầm tả khuynh thời bao cấp.',
-    quote: 'Slide Chương 5 • Mục 5.2: Hoàn thiện thể chế KTTT định hướng XHCN'
+    quote: 'Giáo trình Chương 5 • Mục 5.2: Hoàn thiện thể chế KTTT định hướng XHCN'
   },
   {
     id: 'q-c5-06',
@@ -211,7 +210,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Lợi ích kinh tế cá nhân là động lực trực tiếp và mạnh mẽ nhất thúc đẩy con người lao động sáng tạo. Tôn trọng lợi ích cá nhân chính đáng là nền tảng kết hợp hài hòa lợi ích tập thể và xã hội.',
-    quote: 'Slide Chương 5 • Mục 5.3: Quan hệ lợi ích kinh tế ở Việt Nam'
+    quote: 'Giáo trình Chương 5 • Mục 5.3: Quan hệ lợi ích kinh tế ở Việt Nam'
   },
 
   // --- CHƯƠNG 6: CÔNG NGHIỆP HÓA, HIỆN ĐẠI HÓA & HỘI NHẬP KINH TẾ QUỐC TẾ ---
@@ -229,7 +228,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 2,
     explanation: 'CMCN 4.0 đặc trưng bởi sự hợp nhất của các công nghệ làm mờ ranh giới giữa vật lý, kỹ thuật số và sinh học, với tâm điểm là AI, IoT, Big Data, Robot thông minh và Điện toán đám mây.',
-    quote: 'Slide Chương 6 • Mục 6.1.1: Khái quát về cách mạng công nghiệp'
+    quote: 'Giáo trình Chương 6 • Mục 6.1.1: Khái quát về cách mạng công nghiệp'
   },
   {
     id: 'q-c6-02',
@@ -245,7 +244,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Đặc điểm CNH, HĐH ở VN: Rút ngắn thời gian, kết hợp CNH với HĐH, lấy kinh tế tri thức làm nền tảng, phát triển kinh tế xanh, kinh tế tuần hoàn và chủ động nắm bắt thời cơ của CMCN 4.0.',
-    quote: 'Slide Chương 6 • Mục 6.1.2: Tính tất yếu khách quan và nội dung CNH, HĐH'
+    quote: 'Giáo trình Chương 6 • Mục 6.1.2: Tính tất yếu khách quan và nội dung CNH, HĐH'
   },
   {
     id: 'q-c6-03',
@@ -261,7 +260,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Các nấc thang hội nhập: Bắt đầu từ PTA (ưu đãi thuế quan) → FTA (mậu dịch tự do) → Customs Union (biểu thuế đối ngoại chung) → Common Market (tự do dòng vốn và lao động) → Economic & Monetary Union.',
-    quote: 'Slide Chương 6 • Mục 6.2.1: Các hình thức hội nhập kinh tế quốc tế'
+    quote: 'Giáo trình Chương 6 • Mục 6.2.1: Các hình thức hội nhập kinh tế quốc tế'
   },
   {
     id: 'q-c6-04',
@@ -277,7 +276,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 2,
     explanation: 'Mặt trái của hội nhập: Gia tăng áp lực cạnh tranh cho doanh nghiệp nội địa, nguy cơ tổn thương trước khủng hoảng kinh tế toàn cầu, cạn kiệt tài nguyên và nguy cơ trở thành bãi thải công nghệ lạc hậu.',
-    quote: 'Slide Chương 6 • Mục 6.2.2: Tác động của hội nhập kinh tế quốc tế'
+    quote: 'Giáo trình Chương 6 • Mục 6.2.2: Tác động của hội nhập kinh tế quốc tế'
   },
   {
     id: 'q-c6-05',
@@ -293,7 +292,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Quan điểm chỉ đạo nhất quán của Đảng: Hội nhập kinh tế quốc tế là sự nghiệp của toàn dân; giữ vững độc lập, tự chủ đi đôi với đa phương hóa, đa dạng hóa quan hệ kinh tế quốc tế.',
-    quote: 'Slide Chương 6 • Mục 6.2.3: Phương hướng nâng cao hiệu quả hội nhập'
+    quote: 'Giáo trình Chương 6 • Mục 6.2.3: Phương hướng nâng cao hiệu quả hội nhập'
   },
 
   // --- CÂU HỎI TỔNG HỢP CHƯƠNG 1, 2 & 4 ---
@@ -311,7 +310,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 2,
     explanation: 'Thuật ngữ "Kinh tế chính trị" xuất hiện lần đầu năm 1615 bởi nhà kinh tế học người Pháp A. Montchrestien thuộc trường phái Chủ nghĩa trọng thương.',
-    quote: 'Slide Chương 1 • Mục 1.1: Khái quát sự ra đời của KTCT'
+    quote: 'Giáo trình Chương 1 • Mục 1.1: Khái quát sự ra đời của KTCT'
   },
   {
     id: 'q-c1-02',
@@ -327,7 +326,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Thuật ngữ "Kinh tế chính trị" bắt nguồn từ chữ Hán "kinh bang tế thế", mang hàm nghĩa là khoa học và phương pháp trị nước giúp đời, chăm lo sự ấm no, giàu mạnh cho quốc gia và muôn dân.',
-    quote: 'Slide Chương 1 • Mục 1.1: Thuật ngữ kinh tế chính trị'
+    quote: 'Giáo trình Chương 1 • Mục 1.1: Thuật ngữ kinh tế chính trị'
   },
   {
     id: 'q-c1-03',
@@ -343,14 +342,14 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Đến thế kỷ XVIII, với tác phẩm kinh điển "The Wealth of Nations" (1776), Adam Smith đã chính thức đưa kinh tế chính trị trở thành môn khoa học có hệ thống với 2 mục tiêu: tạo sinh kế cho dân và ngân sách cho nhà nước.',
-    quote: 'Slide Chương 1 • Mục 1.1: Adam Smith (1776)'
+    quote: 'Giáo trình Chương 1 • Mục 1.1: Adam Smith (1776)'
   },
   {
     id: 'q-c1-04',
     chapter: 1,
     chapterTitle: 'Chương 1: Đối tượng, phương pháp & chức năng',
     category: '1.1. Góc độ kinh tế học',
-    question: 'Dưới góc độ kinh tế học chuẩn slide bài giảng MLN122, khái niệm "kinh tế" được hiểu là gì?',
+    question: 'Dưới góc độ khoa học kinh tế, khái niệm "kinh tế" được hiểu là gì?',
     options: [
       'Toàn bộ các hoạt động sản xuất, phân phối, trao đổi, tiêu thụ hàng hóa và dịch vụ của một cộng đồng quốc gia trong một khoảng thời gian',
       'Hoạt động giao dịch tiền tệ, cổ phiếu và trái phiếu trên sàn chứng khoán',
@@ -359,7 +358,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Kinh tế (dưới góc độ kinh tế học) là toàn bộ các hoạt động sản xuất, phân phối, trao đổi, tiêu thụ hàng hóa và dịch vụ của một cộng đồng quốc gia trong một khoảng thời gian nhất định.',
-    quote: 'Slide Chương 1 • Mục 1.1: Góc độ kinh tế học'
+    quote: 'Giáo trình Chương 1 • Mục 1.1: Góc độ kinh tế học'
   },
   {
     id: 'q-c1-05',
@@ -375,7 +374,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Hệ thống 4 khâu của tái sản xuất xã hội gồm: Sản xuất (vai trò quyết định) – Phân phối (định hướng lợi ích) – Trao đổi (cầu nối lưu thông) – Tiêu dùng (mục đích và động lực).',
-    quote: 'Slide Chương 1 • Mục 1.2: Đối tượng nghiên cứu & 4 khâu tái sản xuất'
+    quote: 'Giáo trình Chương 1 • Mục 1.2: Đối tượng nghiên cứu & 4 khâu tái sản xuất'
   },
   {
     id: 'q-c1-06',
@@ -391,7 +390,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Phương pháp trừu tượng hóa khoa học là phương pháp chủ yếu và đặc thù: Gạt bỏ những yếu tố ngẫu nhiên, tạm thời, bề ngoài để đi sâu vào bản chất, tách ra những mối liên hệ tất nhiên, bền vững và khái quát thành quy luật kinh tế.',
-    quote: 'Slide Chương 1 • Mục 1.3: Phương pháp nghiên cứu của KTCT'
+    quote: 'Giáo trình Chương 1 • Mục 1.3: Phương pháp nghiên cứu của KTCT'
   },
   {
     id: 'q-c1-07',
@@ -407,7 +406,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Ph. Ăng-ghen khẳng định: Do điều kiện sản xuất vật chất và trình độ phát triển của LLSX biến đổi không ngừng qua các phương thức sản xuất trong lịch sử, nên không thể có một môn KTCT duy nhất cho mọi thời đại và mọi quốc gia.',
-    quote: 'Slide Chương 1 • Mục 2.1: Đối tượng nghiên cứu theo nghĩa rộng'
+    quote: 'Giáo trình Chương 1 • Mục 2.1: Đối tượng nghiên cứu theo nghĩa rộng'
   },
   {
     id: 'q-c1-08',
@@ -423,14 +422,14 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'KTCT Mác - Lênin nghiên cứu quan hệ sản xuất không cô lập mà đặt trong chỉnh thể biện chứng: Kiến trúc thượng tầng tác động trở lại Cơ sở hạ tầng, và Cơ sở hạ tầng phản ánh Trình độ phát triển của Lực lượng sản xuất.',
-    quote: 'Slide Chương 1 • Mục 2.1: Mối liên hệ biện chứng trong đối tượng nghiên cứu'
+    quote: 'Giáo trình Chương 1 • Mục 2.1: Mối liên hệ biện chứng trong đối tượng nghiên cứu'
   },
   {
     id: 'q-c1-09',
     chapter: 1,
     chapterTitle: 'Chương 1: Đối tượng, phương pháp & chức năng',
     category: '1.2. Mục đích nghiên cứu',
-    question: 'Theo slide bài giảng MLN122, chuỗi logic 5 bước thể hiện mục đích nghiên cứu của Kinh tế chính trị Mác – Lênin là gì?',
+    question: 'Chuỗi logic 5 bước thể hiện mục đích nghiên cứu của Kinh tế chính trị Mác – Lênin là gì?',
     options: [
       'Tìm quy luật kinh tế ➔ Hoạch định chính sách ➔ Giải quyết hài hòa quan hệ lợi ích ➔ Tạo động lực sáng tạo ➔ Thúc đẩy phát triển toàn diện xã hội',
       'Tăng thuế nhập khẩu ➔ Tích lũy vàng bạc kim loại quý ➔ Độc quyền ngoại thương ➔ Mở rộng thị trường thuộc địa',
@@ -438,15 +437,15 @@ export const QUIZ_QUESTIONS = [
       'Xóa bỏ hoàn toàn thị trường ➔ Triệt tiêu các quan hệ trao đổi tiền tệ ➔ Phân phối bình quân cào bằng'
     ],
     correctIndex: 0,
-    explanation: 'Slide Mục 2.2 chỉ rõ chuỗi giá trị mục đích nghiên cứu: Tìm ra các quy luật kinh tế chi phối PTSX => Hoạch định chính sách kinh tế => Giải quyết hài hòa các quan hệ lợi ích => Tạo động lực cho con người sáng tạo => Thúc đẩy sự phát triển toàn diện của xã hội.',
-    quote: 'Slide Chương 1 • Mục 2.2: Mục đích nghiên cứu của KTCT Mác – Lênin'
+    explanation: 'Giáo trình Mục 2.2 chỉ rõ chuỗi giá trị mục đích nghiên cứu: Tìm ra các quy luật kinh tế chi phối PTSX => Hoạch định chính sách kinh tế => Giải quyết hài hòa các quan hệ lợi ích => Tạo động lực cho con người sáng tạo => Thúc đẩy sự phát triển toàn diện của xã hội.',
+    quote: 'Giáo trình Chương 1 • Mục 2.2: Mục đích nghiên cứu của KTCT Mác – Lênin'
   },
   {
     id: 'q-c1-10',
     chapter: 1,
     chapterTitle: 'Chương 1: Đối tượng, phương pháp & chức năng',
     category: '1.3. Các phương pháp nghiên cứu chính',
-    question: 'Theo slide bài giảng MLN122, hệ thống các phương pháp nghiên cứu chính của Kinh tế chính trị Mác – Lênin bao gồm những phương pháp nào?',
+    question: 'Hệ thống các phương pháp nghiên cứu chính của Kinh tế chính trị Mác – Lênin bao gồm những phương pháp nào?',
     options: [
       'Phương pháp trừu tượng hóa khoa học, phương pháp logic & lịch sử, phân tích thống kê và mô hình hóa...',
       'Phương pháp thử nghiệm hóa học vi sinh, giải trình tự gen và đo phóng xạ',
@@ -454,8 +453,8 @@ export const QUIZ_QUESTIONS = [
       'Phương pháp khảo sát ngẫu nhiên cảm xúc người tiêu dùng trên mạng xã hội'
     ],
     correctIndex: 0,
-    explanation: 'Slide Mục 2.3 chuẩn hóa các phương pháp nghiên cứu chính: Phương pháp trừu tượng hóa khoa học (chủ yếu nhất), phương pháp logic & lịch sử, cùng phân tích thống kê, mô hình hóa...',
-    quote: 'Slide Chương 1 • Mục 2.3: Các phương pháp nghiên cứu chính'
+    explanation: 'Giáo trình Mục 2.3 chuẩn hóa các phương pháp nghiên cứu chính: Phương pháp trừu tượng hóa khoa học (chủ yếu nhất), phương pháp logic & lịch sử, cùng phân tích thống kê, mô hình hóa...',
+    quote: 'Giáo trình Chương 1 • Mục 2.3: Các phương pháp nghiên cứu chính'
   },
   {
     id: 'q-c2-01',
@@ -471,7 +470,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Giá trị của hàng hóa là lao động xã hội của người sản xuất kết tinh trong hàng hóa. Giá trị là nội dung, cơ sở của giá trị trao đổi.',
-    quote: 'Slide Chương 2 • Mục 2.1: Thuộc tính của hàng hóa'
+    quote: 'Giáo trình Chương 2 • Mục 2.1: Thuộc tính của hàng hóa'
   },
   {
     id: 'q-c2-02',
@@ -487,7 +486,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 1,
     explanation: 'Lao động cụ thể tạo ra giá trị sử dụng, đồng thời bảo tồn và chuyển dịch giá trị tư liệu sản xuất (c) vào sản phẩm mới; còn Lao động trừu tượng tạo ra giá trị mới (v + m).',
-    quote: 'Slide Chương 2 • Mục 2.1: Tính hai mặt của lao động sản xuất hàng hóa'
+    quote: 'Giáo trình Chương 2 • Mục 2.1: Tính hai mặt của lao động sản xuất hàng hóa'
   },
   {
     id: 'q-c2-03',
@@ -503,14 +502,14 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Tiền đề duy vật lịch sử: Sản xuất vật chất là nền tảng sinh tồn của nhân loại. Con người trước hết phải có các tư liệu sinh hoạt thiết yếu để duy trì sự sống trước khi sáng tạo các giá trị tinh thần khác.',
-    quote: 'Slide Chương 2 • Mục 1.1: Sản xuất hàng hóa'
+    quote: 'Giáo trình Chương 2 • Mục 1.1: Sản xuất hàng hóa'
   },
   {
     id: 'q-c2-04',
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
     category: '2.1. Khái niệm sản xuất hàng hóa',
-    question: 'Khái niệm "Sản xuất hàng hóa" theo lý luận của C. Mác trong slide bài giảng MLN122 được định nghĩa chính xác là gì?',
+    question: 'Khái niệm "Sản xuất hàng hóa" theo lý luận của C. Mác được định nghĩa chính xác là gì?',
     options: [
       'Là kiểu tổ chức hoạt động kinh tế mà ở đó, những người sản xuất ra sản phẩm nhằm mục đích trao đổi, mua bán',
       'Là mô hình kinh tế tự nhiên tự cấp tự túc, sản phẩm làm ra chỉ phục vụ tiêu dùng nội bộ gia đình',
@@ -518,15 +517,15 @@ export const QUIZ_QUESTIONS = [
       'Là hoạt động mua bán trái phiếu chính phủ trên thị trường tài chính quốc tế'
     ],
     correctIndex: 0,
-    explanation: 'Slide Chương 2 Mục 1.1 định nghĩa chuẩn: Sản xuất hàng hóa là kiểu tổ chức hoạt động kinh tế mà ở đó, những người sản xuất ra sản phẩm nhằm mục đích trao đổi, mua bán.',
-    quote: 'Slide Chương 2 • Mục 1.1: Khái niệm sản xuất hàng hóa'
+    explanation: 'Giáo trình Chương 2 Mục 1.1 định nghĩa chuẩn: Sản xuất hàng hóa là kiểu tổ chức hoạt động kinh tế mà ở đó, những người sản xuất ra sản phẩm nhằm mục đích trao đổi, mua bán.',
+    quote: 'Giáo trình Chương 2 • Mục 1.1: Khái niệm sản xuất hàng hóa'
   },
   {
     id: 'q-c2-05',
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
     category: '2.1. Các dạng biểu hiện hàng hóa',
-    question: 'Theo slide bài giảng MLN122, hàng hóa tồn tại dưới những dạng biểu hiện cơ bản nào?',
+    question: 'Hàng hóa tồn tại dưới những dạng biểu hiện cơ bản nào?',
     options: [
       'Dạng hữu hình (sắt, thép, lương thực, thực phẩm...) và Dạng vô hình (dịch vụ thương mại, vận tải, giáo viên, bác sĩ, nghệ sĩ...)',
       'Chỉ tồn tại duy nhất dưới dạng vật thể cầm nắm được; các loại hình dịch vụ không được coi là hàng hóa',
@@ -534,8 +533,8 @@ export const QUIZ_QUESTIONS = [
       'Dạng sở hữu nhà nước và dạng tài sản thế chấp tư nhân'
     ],
     correctIndex: 0,
-    explanation: 'Slide Mục 1.2 nêu rõ: Hàng hóa biểu hiện dưới 2 dạng: Dạng hữu hình (vật thể như sắt, thép, lúa gạo, ô tô...) và Dạng vô hình (phi vật thể như dịch vụ vận tải, thương mại, y tế, giáo dục...).',
-    quote: 'Slide Chương 2 • Mục 1.2: Các dạng biểu hiện của hàng hóa'
+    explanation: 'Giáo trình Mục 1.2 nêu rõ: Hàng hóa biểu hiện dưới 2 dạng: Dạng hữu hình (vật thể như sắt, thép, lúa gạo, ô tô...) và Dạng vô hình (phi vật thể như dịch vụ vận tải, thương mại, y tế, giáo dục...).',
+    quote: 'Giáo trình Chương 2 • Mục 1.2: Các dạng biểu hiện của hàng hóa'
   },
   {
     id: 'q-c2-06',
@@ -551,14 +550,14 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Sự tách biệt kinh tế do chế độ sở hữu khác nhau về TLSX và sản phẩm quy định. Người này muốn tiêu dùng sản phẩm của người khác phải thông qua trao đổi mua bán ngang giá, không thể chiếm đoạt.',
-    quote: 'Slide Chương 2 • Mục 1.1: Sự tách biệt tương đối về kinh tế'
+    quote: 'Giáo trình Chương 2 • Mục 1.1: Sự tách biệt tương đối về kinh tế'
   },
   {
     id: 'q-c2-07',
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
     category: '2.1. Giá trị sử dụng',
-    question: 'Theo slide bài giảng MLN122, khái niệm "Giá trị sử dụng" của hàng hóa được định nghĩa như thế nào và bao gồm những mục đích thỏa mãn nào?',
+    question: 'Khái niệm "Giá trị sử dụng" của hàng hóa được định nghĩa như thế nào và bao gồm những mục đích thỏa mãn nào?',
     options: [
       'Là công dụng của hàng hóa, có thể thỏa mãn những nhu cầu nhất định của con người (nhu cầu tiêu dùng cá nhân như bánh mì hoặc nhu cầu tiêu dùng sản xuất như khung sắt thép)',
       'Là số lượng tiền tệ tối đa mà người mua sẵn sàng chi trả trên thị trường tự do',
@@ -566,15 +565,15 @@ export const QUIZ_QUESTIONS = [
       'Là mức độ khan hiếm tương đối của tài nguyên khoáng sản trong tự nhiên'
     ],
     correctIndex: 0,
-    explanation: 'Slide nêu rõ: Giá trị sử dụng là công dụng của hàng hóa, có thể thỏa mãn những nhu cầu nhất định của con người (ví dụ: bánh mì thỏa mãn nhu cầu ăn uống đời sống, khung sắt thép thỏa mãn nhu cầu xây dựng sản xuất).',
-    quote: 'Slide Chương 2 • Mục 1.2: Giá trị sử dụng của hàng hóa'
+    explanation: 'Giáo trình nêu rõ: Giá trị sử dụng là công dụng của hàng hóa, có thể thỏa mãn những nhu cầu nhất định của con người (ví dụ: bánh mì thỏa mãn nhu cầu ăn uống đời sống, khung sắt thép thỏa mãn nhu cầu xây dựng sản xuất).',
+    quote: 'Giáo trình Chương 2 • Mục 1.2: Giá trị sử dụng của hàng hóa'
   },
   {
     id: 'q-c2-08',
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
     category: '2.1. Giá trị trao đổi',
-    question: 'Slide bài giảng MLN122 định nghĩa "Giá trị trao đổi" của hàng hóa là gì?',
+    question: 'Giá trị trao đổi của hàng hóa được định nghĩa là gì?',
     options: [
       'Là một quan hệ về số lượng, là tỷ lệ theo đó một giá trị sử dụng loại này được trao đổi với những giá trị sử dụng loại khác',
       'Là mức lãi suất chiết khấu do ngân hàng trung ương áp đặt cho giao dịch ngoại tệ',
@@ -582,15 +581,15 @@ export const QUIZ_QUESTIONS = [
       'Là tổng số ngày công lao động mà người mua phải làm thuê cho người bán'
     ],
     correctIndex: 0,
-    explanation: 'Slide Chương 2 Mục 1.2 định nghĩa chuẩn: Để hiểu được giá trị hàng hóa phải đi từ giá trị trao đổi. Giá trị trao đổi là một quan hệ về số lượng, là tỷ lệ theo đó một giá trị sử dụng loại này được trao đổi với những giá trị sử dụng loại khác.',
-    quote: 'Slide Chương 2 • Mục 1.2: Giá trị trao đổi'
+    explanation: 'Giáo trình Chương 2 Mục 1.2 định nghĩa chuẩn: Để hiểu được giá trị hàng hóa phải đi từ giá trị trao đổi. Giá trị trao đổi là một quan hệ về số lượng, là tỷ lệ theo đó một giá trị sử dụng loại này được trao đổi với những giá trị sử dụng loại khác.',
+    quote: 'Giáo trình Chương 2 • Mục 1.2: Giá trị trao đổi'
   },
   {
     id: 'q-c2-09',
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
     category: '2.1. Thí dụ 1m vải = 5kg thóc',
-    question: 'Trong thí dụ của slide bài giảng: "1m vải = 5kg thóc", điều gì là cơ sở chung cho phép hai hàng hóa có giá trị sử dụng khác nhau hoàn toàn có thể trao đổi ngang giá với nhau?',
+    question: 'Trong phương trình trao đổi "1m vải = 5kg thóc", điều gì là cơ sở chung cho phép hai hàng hóa có giá trị sử dụng khác nhau hoàn toàn có thể trao đổi ngang giá với nhau?',
     options: [
       'Chính lao động hao phí để tạo ra hàng hóa là cơ sở chung của việc trao đổi và nó tạo thành giá trị của hàng hóa',
       'Do trọng lượng vật lý và kích thước hình học của 1m vải bằng đúng 5kg thóc',
@@ -598,15 +597,15 @@ export const QUIZ_QUESTIONS = [
       'Do sở thích ngẫu nhiên và cảm tính nhất thời của người mua và người bán'
     ],
     correctIndex: 0,
-    explanation: 'Slide Chương 2 khẳng định: Vải và thóc là 2 giá trị sử dụng khác nhau, nhưng trao đổi được với nhau vì có một điểm chung: Cả 1m vải và 5kg thóc đều là sản phẩm của lao động; chính lao động hao phí để tạo ra chúng là cơ sở chung của trao đổi và tạo thành giá trị hàng hóa.',
-    quote: 'Slide Chương 2 • Mục 1.2: Thí dụ 1m vải = 5kg thóc'
+    explanation: 'Giáo trình Chương 2 khẳng định: Vải và thóc là 2 giá trị sử dụng khác nhau, nhưng trao đổi được với nhau vì có một điểm chung: Cả 1m vải và 5kg thóc đều là sản phẩm của lao động; chính lao động hao phí để tạo ra chúng là cơ sở chung của trao đổi và tạo thành giá trị hàng hóa.',
+    quote: 'Giáo trình Chương 2 • Mục 1.2: Thí dụ 1m vải = 5kg thóc'
   },
   {
     id: 'q-c2-10',
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
     category: '2.1. Bốn đặc tính của Giá trị',
-    question: 'Luận điểm nào sau đây KHÔNG PHẢI là một trong 4 đặc tính cốt lõi của Giá trị hàng hóa được nêu trong slide bài giảng MLN122?',
+    question: 'Luận điểm nào sau đây KHÔNG PHẢI là một trong 4 đặc tính cốt lõi của Giá trị hàng hóa theo lý luận của C. Mác?',
     options: [
       'Giá trị là thuộc tính tự nhiên thuần túy của vật thể và là phạm trù vĩnh viễn tồn tại trong mọi hình thái kinh tế',
       'Là lao động xã hội của người sản xuất kết tinh trong hàng hóa',
@@ -614,15 +613,15 @@ export const QUIZ_QUESTIONS = [
       'Biểu hiện quan hệ kinh tế giữa những người sản xuất hàng hóa và là một phạm trù lịch sử'
     ],
     correctIndex: 0,
-    explanation: 'Slide 4 chỉ rõ 4 đặc tính của Giá trị: (1) Là lao động xã hội kết tinh; (2) Là cơ sở của giá trị trao đổi; (3) Biểu hiện quan hệ kinh tế giữa người sản xuất; (4) Là phạm trù lịch sử (chỉ tồn tại trong sản xuất hàng hóa). Do đó, coi giá trị là "thuộc tính tự nhiên thuần túy và phạm trù vĩnh viễn" là hoàn toàn sai (đó là đặc tính của giá trị sử dụng).',
-    quote: 'Slide Chương 2 • Mục 1.2: Bốn đặc tính của Giá trị hàng hóa'
+    explanation: 'Giáo trình chỉ rõ 4 đặc tính của Giá trị: (1) Là lao động xã hội kết tinh; (2) Là cơ sở của giá trị trao đổi; (3) Biểu hiện quan hệ kinh tế giữa người sản xuất; (4) Là phạm trù lịch sử (chỉ tồn tại trong sản xuất hàng hóa). Do đó, coi giá trị là "thuộc tính tự nhiên thuần túy và phạm trù vĩnh viễn" là hoàn toàn sai (đó là đặc tính của giá trị sử dụng).',
+    quote: 'Giáo trình Chương 2 • Mục 1.2: Bốn đặc tính của Giá trị hàng hóa'
   },
   {
     id: 'q-c2-11',
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
     category: '2.2. Tính hai mặt - Lao động cụ thể',
-    question: 'Theo slide bài giảng MLN122, Lao động Cụ thể bắt nguồn từ Phân công lao động xã hội và mang 4 đặc trưng riêng biệt nào?',
+    question: 'Lao động Cụ thể bắt nguồn từ Phân công lao động xã hội và mang 4 đặc trưng riêng biệt nào?',
     options: [
       'Có mục đích riêng, có đối tượng riêng, có phương pháp/cách thức riêng, và có kết quả riêng',
       'Có tiền lương riêng, có hợp đồng riêng, có trợ cấp riêng, và có địa điểm riêng',
@@ -630,15 +629,15 @@ export const QUIZ_QUESTIONS = [
       'Có thuế suất riêng, có giấy phép riêng, có bảo hiểm riêng, và có chứng nhận xuất xứ riêng'
     ],
     correctIndex: 0,
-    explanation: 'Slide 5 nêu rõ: Lao động Cụ thể bắt nguồn từ Phân công lao động xã hội, có 4 đặc trưng riêng biệt: (1) Mục đích riêng, (2) Đối tượng riêng, (3) Phương pháp, cách thức riêng, (4) Kết quả riêng. Lao động cụ thể tạo ra Giá trị sử dụng của hàng hóa.',
-    quote: 'Slide Chương 2 • Mục 2.1: Lao động Cụ thể & 4 đặc trưng riêng'
+    explanation: 'Giáo trình nêu rõ: Lao động Cụ thể bắt nguồn từ Phân công lao động xã hội, có 4 đặc trưng riêng biệt: (1) Mục đích riêng, (2) Đối tượng riêng, (3) Phương pháp, cách thức riêng, (4) Kết quả riêng. Lao động cụ thể tạo ra Giá trị sử dụng của hàng hóa.',
+    quote: 'Giáo trình Chương 2 • Mục 2.1: Lao động Cụ thể & 4 đặc trưng riêng'
   },
   {
     id: 'q-c2-12',
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
     category: '2.2. Tính vĩnh viễn của Lao động cụ thể',
-    question: 'Vì sao slide bài giảng MLN122 khẳng định "Lao động cụ thể là phạm trù vĩnh viễn"?',
+    question: 'Vì sao Kinh tế chính trị Mác – Lênin khẳng định "Lao động cụ thể là phạm trù vĩnh viễn"?',
     options: [
       'Vì nó gắn liền với giá trị sử dụng, với vật phẩm và tồn tại dưới mọi hình thái kinh tế xã hội loài người',
       'Vì người lao động luôn được ký hợp đồng lao động vô thời hạn với doanh nghiệp',
@@ -646,15 +645,15 @@ export const QUIZ_QUESTIONS = [
       'Vì nhà nước cam kết bảo tồn vĩnh viễn mọi làng nghề thủ công truyền thống'
     ],
     correctIndex: 0,
-    explanation: 'Slide nêu rõ: Lao động cụ thể là phạm trù vĩnh viễn vì nó gắn liền với giá trị sử dụng, với vật phẩm, tồn tại dưới mọi hình thái kinh tế. Chừng nào con người còn tồn tại và cần vật phẩm sinh hoạt thì chừng đó còn cần lao động cụ thể.',
-    quote: 'Slide Chương 2 • Mục 2.1: Tính chất của Lao động cụ thể'
+    explanation: 'Giáo trình nêu rõ: Lao động cụ thể là phạm trù vĩnh viễn vì nó gắn liền với giá trị sử dụng, với vật phẩm, tồn tại dưới mọi hình thái kinh tế. Chừng nào con người còn tồn tại và cần vật phẩm sinh hoạt thì chừng đó còn cần lao động cụ thể.',
+    quote: 'Giáo trình Chương 2 • Mục 2.1: Tính chất của Lao động cụ thể'
   },
   {
     id: 'q-c2-13',
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
     category: '2.2. Bản chất Lao động trừu tượng',
-    question: 'Đặc điểm nào sau đây phản ánh chính xác bản chất của "Lao động trừu tượng" theo slide bài giảng MLN122?',
+    question: 'Đặc điểm nào sau đây phản ánh chính xác bản chất của "Lao động trừu tượng"?',
     options: [
       'Là sự hao phí sức lao động nói chung không kể đến hình thức cụ thể, tạo nên giá trị hàng hóa, là phạm trù lịch sử và phản ánh tính chất tư nhân cùng tính chất xã hội',
       'Là hành vi suy nghĩ viển vông trừu tượng không tạo ra bất kỳ sản phẩm nào cho xã hội',
@@ -662,15 +661,15 @@ export const QUIZ_QUESTIONS = [
       'Là thuộc tính tự nhiên vĩnh viễn không hề thay đổi trong mọi chế độ kinh tế'
     ],
     correctIndex: 0,
-    explanation: 'Slide chỉ rõ 4 nội dung của Lao động trừu tượng: (1) Là hao phí SLĐ nói chung không kể hình thức cụ thể; (2) Tạo nên giá trị của hàng hóa; (3) Là một phạm trù lịch sử; (4) Phản ánh tính chất tư nhân và tính chất xã hội.',
-    quote: 'Slide Chương 2 • Mục 2.1: Lao động trừu tượng'
+    explanation: 'Giáo trình chỉ rõ 4 nội dung của Lao động trừu tượng: (1) Là hao phí SLĐ nói chung không kể hình thức cụ thể; (2) Tạo nên giá trị của hàng hóa; (3) Là một phạm trù lịch sử; (4) Phản ánh tính chất tư nhân và tính chất xã hội.',
+    quote: 'Giáo trình Chương 2 • Mục 2.1: Lao động trừu tượng'
   },
   {
     id: 'q-c2-14',
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
     category: '2.2. Mâu thuẫn cơ bản của sản xuất hàng hóa',
-    question: 'Theo sơ đồ tổng thể của slide bài giảng MLN122, mâu thuẫn cơ bản của nền sản xuất hàng hóa là mâu thuẫn giữa hai yếu tố nào?',
+    question: 'Mâu thuẫn cơ bản của nền sản xuất hàng hóa giản đơn là mâu thuẫn giữa hai yếu tố nào?',
     options: [
       'Mâu thuẫn giữa Lao động tư nhân (cá nhân) và Lao động xã hội',
       'Mâu thuẫn giữa người bán hàng trực tuyến và các đơn vị giao hàng vận chuyển',
@@ -678,8 +677,8 @@ export const QUIZ_QUESTIONS = [
       'Mâu thuẫn giữa người tiêu dùng trẻ tuổi và người tiêu dùng cao tuổi'
     ],
     correctIndex: 0,
-    explanation: 'Slide sơ đồ khẳng định: Mâu thuẫn cơ bản của sản xuất hàng hóa là mâu thuẫn giữa lao động tư nhân/cá nhân (biểu hiện qua lao động cụ thể) và lao động xã hội (biểu hiện qua lao động trừu tượng). Hàng hóa không bán được khi lao động tư nhân không được xã hội thừa nhận.',
-    quote: 'Slide Chương 2 • Mục 2.1: Sơ đồ mâu thuẫn cơ bản của sản xuất hàng hóa'
+    explanation: 'Giáo trình sơ đồ khẳng định: Mâu thuẫn cơ bản của sản xuất hàng hóa là mâu thuẫn giữa lao động tư nhân/cá nhân (biểu hiện qua lao động cụ thể) và lao động xã hội (biểu hiện qua lao động trừu tượng). Hàng hóa không bán được khi lao động tư nhân không được xã hội thừa nhận.',
+    quote: 'Giáo trình Chương 2 • Mục 2.1: Sơ đồ mâu thuẫn cơ bản của sản xuất hàng hóa'
   },
   {
     id: 'q-c2-15',
@@ -694,15 +693,15 @@ export const QUIZ_QUESTIONS = [
       'Chỉ số lạm phát trung bình, Lãi suất vay trung bình, và Tỷ giá hối đoái trung bình'
     ],
     correctIndex: 0,
-    explanation: 'Slide Lượng giá trị hàng hóa chỉ rõ: Thời gian lao động xã hội cần thiết được xác định trong điều kiện bình thường của xã hội với 3 tiêu chuẩn: Trình độ kỹ thuật trung bình, Trình độ khéo léo trung bình và Cường độ lao động trung bình.',
-    quote: 'Slide Chương 2 • Mục 2.2: Thời gian lao động xã hội cần thiết'
+    explanation: 'Giáo trình Lượng giá trị hàng hóa chỉ rõ: Thời gian lao động xã hội cần thiết được xác định trong điều kiện bình thường của xã hội với 3 tiêu chuẩn: Trình độ kỹ thuật trung bình, Trình độ khéo léo trung bình và Cường độ lao động trung bình.',
+    quote: 'Giáo trình Chương 2 • Mục 2.2: Thời gian lao động xã hội cần thiết'
   },
   {
     id: 'q-c2-16',
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
     category: '2.3. Ba nhân tố ảnh hưởng lượng giá trị',
-    question: 'Slide bài giảng MLN122 chỉ ra 3 nhân tố ảnh hưởng đến lượng giá trị hàng hóa gồm những quy luật nào?',
+    question: 'Ba nhân tố chủ yếu ảnh hưởng trực tiếp đến lượng giá trị của hàng hóa bao gồm những yếu tố nào?',
     options: [
       'Tỷ lệ nghịch với năng suất lao động, Tỷ lệ thuận với số lượng lao động kết tinh, và Lao động phức tạp là bội số của lao động giản đơn',
       'Tỷ lệ thuận với giá vàng, Tỷ lệ nghịch với chỉ số chứng khoán, và Tỷ lệ thuận với số lượng tài khoản ngân hàng',
@@ -710,8 +709,8 @@ export const QUIZ_QUESTIONS = [
       'Tỷ lệ nghịch với thuế giá trị gia tăng, Tỷ lệ thuận với khoảng cách vận chuyển, và Lao động chân tay luôn tạo nhiều giá trị hơn lao động trí óc'
     ],
     correctIndex: 0,
-    explanation: 'Slide nêu rõ 3 nhân tố: (1) Tỷ lệ nghịch với năng suất lao động; (2) Tỷ lệ thuận với số lượng lao động kết tinh; (3) Lao động phức tạp là bội số của lao động giản đơn.',
-    quote: 'Slide Chương 2 • Mục 2.2: Các nhân tố ảnh hưởng đến lượng giá trị'
+    explanation: 'Giáo trình nêu rõ 3 nhân tố: (1) Tỷ lệ nghịch với năng suất lao động; (2) Tỷ lệ thuận với số lượng lao động kết tinh; (3) Lao động phức tạp là bội số của lao động giản đơn.',
+    quote: 'Giáo trình Chương 2 • Mục 2.2: Các nhân tố ảnh hưởng đến lượng giá trị'
   },
   {
     id: 'q-c4-01',
@@ -727,7 +726,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'V.I. Lênin đã chỉ ra: Tự do cạnh tranh đẻ ra tập trung sản xuất và sự tập trung sản xuất này, khi phát triển đến một mức độ nhất định, tất yếu dẫn tới độc quyền.',
-    quote: 'Slide Chương 4 • Mục 4.1: Nguyên nhân hình thành độc quyền'
+    quote: 'Giáo trình Chương 4 • Mục 4.1: Nguyên nhân hình thành độc quyền'
   }
 ,
   {
@@ -735,7 +734,7 @@ export const QUIZ_QUESTIONS = [
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
     category: '2.4. Tiến trình các hình thái giá trị',
-    question: 'Theo slide bài giảng MLN122 (Mục 1.3 Tiền tệ), lịch sử phát triển của các hình thái giá trị đã trải qua 4 giai đoạn tuần tự nào?',
+    question: 'Lịch sử phát triển của các hình thái giá trị dẫn tới sự ra đời của Tiền tệ đã trải qua 4 giai đoạn tuần tự nào?',
     options: [
       'Hình thái giản đơn (ngẫu nhiên) ➔ Hình thái mở rộng (đầy đủ) ➔ Hình thái chung của giá trị ➔ Hình thái tiền tệ',
       'Hình thái tiền giấy ➔ Hình thái thẻ tín dụng ➔ Hình thái tiền số ➔ Hình thái đổi hàng trực tiếp',
@@ -743,15 +742,15 @@ export const QUIZ_QUESTIONS = [
       'Hình thái phong kiến ➔ Hình thái tư bản ➔ Hình thái đế quốc ➔ Hình thái toàn cầu hóa'
     ],
     correctIndex: 0,
-    explanation: 'Slide 1.3 Tiền tệ chỉ rõ 4 hình thái giá trị: (1) Hình thái giản đơn/ngẫu nhiên; (2) Hình thái mở rộng/đầy đủ; (3) Hình thái chung của giá trị; (4) Hình thái tiền tệ.',
-    quote: 'Slide Chương 2 • Mục 1.3: Các hình thái biểu hiện của giá trị'
+    explanation: 'Giáo trình.3 Tiền tệ chỉ rõ 4 hình thái giá trị: (1) Hình thái giản đơn/ngẫu nhiên; (2) Hình thái mở rộng/đầy đủ; (3) Hình thái chung của giá trị; (4) Hình thái tiền tệ.',
+    quote: 'Giáo trình Chương 2 • Mục 1.3: Các hình thái biểu hiện của giá trị'
   },
   {
     id: 'q-c2-18',
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
     category: '2.4. Hình thái chung của giá trị',
-    question: 'Trong slide bài giảng MLN122, thí dụ chuẩn nào được đưa ra để minh họa cho "Hình thái chung của giá trị"?',
+    question: 'Hình thái chung của giá trị được biểu hiện qua công thức trao đổi đặc trưng nào?',
     options: [
       '1 cái áo = 10 đấu chè = 40 đấu cà phê = 0,2 gam vàng = } 20 vuông vải (vải làm vật ngang giá chung)',
       '1 mét vải = 5 kg thóc (trao đổi trực tiếp giản đơn)',
@@ -759,8 +758,8 @@ export const QUIZ_QUESTIONS = [
       '1 tấn lúa mì = 2 con cừu'
     ],
     correctIndex: 0,
-    explanation: 'Slide hình thái chung nêu rõ: Giá trị của mọi hàng hóa đều được biểu hiện ở GTSD của một hàng hóa đóng vai trò làm vật ngang giá chung: 1 cái áo = 10 đấu chè = 40 đấu cà phê = 0,2 gam vàng = } 20 vuông vải.',
-    quote: 'Slide Chương 2 • Mục 1.3: Hình thái chung của giá trị'
+    explanation: 'Giáo trình hình thái chung nêu rõ: Giá trị của mọi hàng hóa đều được biểu hiện ở GTSD của một hàng hóa đóng vai trò làm vật ngang giá chung: 1 cái áo = 10 đấu chè = 40 đấu cà phê = 0,2 gam vàng = } 20 vuông vải.',
+    quote: 'Giáo trình Chương 2 • Mục 1.3: Hình thái chung của giá trị'
   },
   {
     id: 'q-c2-19',
@@ -775,15 +774,15 @@ export const QUIZ_QUESTIONS = [
       'Vì mọi loại ngũ cốc và vải vóc đều tự động biến thành vàng sau một thời gian bảo quản'
     ],
     correctIndex: 0,
-    explanation: 'Slide chỉ rõ: Bạc và vàng cùng làm tiền tệ (chế độ song bản vị) vì: Cùng là hàng hóa và có ưu thế tự nhiên (thuần nhất, dễ chia nhỏ, không mòn gỉ, giá trị cao trong thể tích nhỏ).',
-    quote: 'Slide Chương 2 • Mục 1.3: Chế độ song bản vị và ưu thế của vàng/bạc'
+    explanation: 'Giáo trình chỉ rõ: Bạc và vàng cùng làm tiền tệ (chế độ song bản vị) vì: Cùng là hàng hóa và có ưu thế tự nhiên (thuần nhất, dễ chia nhỏ, không mòn gỉ, giá trị cao trong thể tích nhỏ).',
+    quote: 'Giáo trình Chương 2 • Mục 1.3: Chế độ song bản vị và ưu thế của vàng/bạc'
   },
   {
     id: 'q-c2-20',
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
     category: '2.4. Các chủ thể tham gia thị trường',
-    question: 'Theo Slide Session 7, bốn chủ thể cơ bản tham gia vào nền kinh tế thị trường gồm những ai?',
+    question: 'Bốn chủ thể cơ bản tham gia vào nền kinh tế thị trường hiện đại gồm những ai?',
     options: [
       'Người sản xuất, Người tiêu dùng, Các chủ thể trung gian, và Nhà nước',
       'Chủ ngân hàng, Người vay tiền, Cảnh sát kinh tế, và Tòa án',
@@ -792,14 +791,14 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Session 7 phân tích 4 nhóm chủ thể chính: Người sản xuất (tạo ra hàng hóa), Người tiêu dùng (định hướng sản xuất), Chủ thể trung gian (kết nối lưu thông, logistics), và Nhà nước (quản lý, điều tiết vĩ mô).',
-    quote: 'Slide Chương 2 • Session 7: Các chủ thể tham gia thị trường'
+    quote: 'Giáo trình Chương 2 • Session 7: Các chủ thể tham gia thị trường'
   },
   {
     id: 'q-c3-08',
     chapter: 3,
     chapterTitle: 'Chương 3: Giá trị thặng dư',
     category: '3.2. Cấu tạo hữu cơ của tư bản',
-    question: 'Theo Slide Session 10, cấu tạo hữu cơ của tư bản (ký hiệu c/v) là gì và có xu hướng biến động như thế nào khi kỹ thuật phát triển?',
+    question: 'Cấu tạo hữu cơ của tư bản (ký hiệu c/v) là gì và có xu hướng biến động như thế nào khi kỹ thuật phát triển?',
     options: [
       'Là cấu tạo giá trị do cấu tạo kỹ thuật quyết định và phản ánh sự thay đổi của cấu tạo kỹ thuật; có xu hướng ngày càng tăng (c/v tăng)',
       'Là tỷ lệ giữa tiền lương công nhân và lợi nhuận của chủ doanh nghiệp; luôn luôn giữ cố định',
@@ -808,14 +807,14 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Cấu tạo hữu cơ c/v phản ánh sự kết hợp giữa tư bản bất biến (c) và tư bản khả biến (v). Cùng với sự tiến bộ của KH-CN, tỷ lệ máy móc thiết bị (c) tăng nhanh hơn nhân công (v), làm c/v có xu hướng ngày càng tăng.',
-    quote: 'Slide Chương 3 • Session 10: Cấu tạo hữu cơ của tư bản (c/v)'
+    quote: 'Giáo trình Chương 3 • Session 10: Cấu tạo hữu cơ của tư bản (c/v)'
   },
   {
     id: 'q-c3-09',
     chapter: 3,
     chapterTitle: 'Chương 3: Giá trị thặng dư',
     category: '3.2. Tích tụ vs Tập trung tư bản',
-    question: 'Điểm khác biệt căn bản giữa "Tích tụ tư bản" và "Tập trung tư bản" theo Slide Session 10 là gì?',
+    question: 'Điểm khác biệt căn bản giữa "Tích tụ tư bản" và "Tập trung tư bản" là gì?',
     options: [
       'Tích tụ làm tăng cả quy mô tư bản cá biệt lẫn tổng tư bản xã hội; còn Tập trung chỉ làm tăng quy mô tư bản cá biệt thông qua sáp nhập mà không làm tăng ngay tổng tư bản xã hội',
       'Tích tụ chỉ xảy ra trong nông nghiệp, còn tập trung chỉ diễn ra trong các công ty công nghệ',
@@ -823,8 +822,8 @@ export const QUIZ_QUESTIONS = [
       'Tích tụ làm giảm số lượng doanh nghiệp lớn, còn tập trung sinh ra hàng triệu hộ kinh doanh nhỏ'
     ],
     correctIndex: 0,
-    explanation: 'Slide Session 10 phân biệt rõ: Tích tụ tư bản là sự tăng quy mô tư bản cá biệt bằng tích lũy GTTD (tổng tư bản XH tăng). Tập trung tư bản là sự kết hợp nhiều tư bản nhỏ thành tư bản lớn qua cạnh tranh và tín dụng (tổng tư bản XH không đổi ngay lúc sáp nhập).',
-    quote: 'Slide Chương 3 • Session 10: Tích tụ và tập trung tư bản'
+    explanation: 'Giáo trình phân biệt rõ: Tích tụ tư bản là sự tăng quy mô tư bản cá biệt bằng tích lũy GTTD (tổng tư bản XH tăng). Tập trung tư bản là sự kết hợp nhiều tư bản nhỏ thành tư bản lớn qua cạnh tranh và tín dụng (tổng tư bản XH không đổi ngay lúc sáp nhập).',
+    quote: 'Giáo trình Chương 3 • Session 10: Tích tụ và tập trung tư bản'
   },
   {
     id: 'q-c3-10',
@@ -840,14 +839,14 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Cạnh tranh giữa các ngành (luân chuyển vốn từ ngành tỷ suất thấp sang ngành tỷ suất cao) dẫn tới sự san bằng các tỷ suất lợi nhuận thành tỷ suất lợi nhuận bình quân (p̄), giá trị chuyển hóa thành giá cả sản xuất = k + p̄.',
-    quote: 'Slide Chương 3 • Session 11: Lợi nhuận bình quân và giá cả sản xuất'
+    quote: 'Giáo trình Chương 3 • Session 11: Lợi nhuận bình quân và giá cả sản xuất'
   },
   {
     id: 'q-c4-02',
     chapter: 4,
     chapterTitle: 'Chương 4: Cạnh tranh & Độc quyền',
     category: '4.1. Các tổ chức độc quyền',
-    question: 'Theo Slide Session 14, bốn hình thức tổ chức độc quyền cơ bản phát triển từ thấp đến cao trong lịch sử là gì?',
+    question: 'Bốn hình thức tổ chức độc quyền cơ bản phát triển từ thấp đến cao trong lịch sử là gì?',
     options: [
       'Cartel ➔ Syndicate ➔ Trust ➔ Consortium',
       'Công ty TNHH ➔ Công ty Cổ phần ➔ Tập đoàn đa quốc gia ➔ Hợp tác xã',
@@ -855,8 +854,8 @@ export const QUIZ_QUESTIONS = [
       'Startup ➔ Doanh nghiệp vừa ➔ Doanh nghiệp lớn ➔ Siêu tập đoàn'
     ],
     correctIndex: 0,
-    explanation: 'Slide 14 chỉ rõ 4 hình thức tổ chức độc quyền theo thứ tự phát triển: Cartel (thỏa thuận giá/thị phần) -> Syndicate (chung đầu mối tiêu thụ) -> Trust (thống nhất cả SX và lưu thông) -> Consortium (liên minh đa ngành khổng lồ).',
-    quote: 'Slide Chương 4 • Session 14: Các hình thức tổ chức độc quyền'
+    explanation: 'Giáo trình chỉ rõ 4 hình thức tổ chức độc quyền theo thứ tự phát triển: Cartel (thỏa thuận giá/thị phần) -> Syndicate (chung đầu mối tiêu thụ) -> Trust (thống nhất cả SX và lưu thông) -> Consortium (liên minh đa ngành khổng lồ).',
+    quote: 'Giáo trình Chương 4 • Session 14: Các hình thức tổ chức độc quyền'
   },
   {
     id: 'q-c4-03',
@@ -872,7 +871,7 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Lênin chỉ rõ: Tư bản tài chính là sự xâm nhập liên kết lẫn nhau giữa các tổ chức độc quyền ngân hàng với các tổ chức độc quyền công nghiệp. Đầu sỏ tài chính thống trị kinh tế và chính trị thông qua "chế độ tham dự".',
-    quote: 'Slide Chương 4 • Session 14: Tư bản tài chính và đầu sỏ tài chính'
+    quote: 'Giáo trình Chương 4 • Session 14: Tư bản tài chính và đầu sỏ tài chính'
   },
   {
     id: 'q-c4-04',
@@ -887,8 +886,8 @@ export const QUIZ_QUESTIONS = [
       'Tặng không các thiết bị máy móc cũ kỹ cho các nước nghèo mà không thu tiền'
     ],
     correctIndex: 0,
-    explanation: 'Slide Session 14 phân biệt: Xuất khẩu hàng hóa là mang hàng ra bán ở nước ngoài thu tiền; còn Xuất khẩu tư bản là đưa tư bản ra nước ngoài để bóc lột sức lao động và tài nguyên ở nước sở tại, thu về giá trị thặng dư cao.',
-    quote: 'Slide Chương 4 • Session 14: Xuất khẩu tư bản'
+    explanation: 'Giáo trình phân biệt: Xuất khẩu hàng hóa là mang hàng ra bán ở nước ngoài thu tiền; còn Xuất khẩu tư bản là đưa tư bản ra nước ngoài để bóc lột sức lao động và tài nguyên ở nước sở tại, thu về giá trị thặng dư cao.',
+    quote: 'Giáo trình Chương 4 • Session 14: Xuất khẩu tư bản'
   },
   {
     id: 'q-c4-05',
@@ -903,15 +902,15 @@ export const QUIZ_QUESTIONS = [
       'Sự thiếu hụt trầm trọng các tuyến cáp quang biển quốc tế'
     ],
     correctIndex: 0,
-    explanation: 'Slide Session 16 khẳng định giới hạn lịch sử của CNTB: Mâu thuẫn cơ bản giữa tính chất và trình độ xã hội hóa ngày càng cao của LLSX với chế độ chiếm hữu tư nhân TBCN đối với TLSX, dẫn tới bất bình đẳng sâu sắc và khủng hoảng kinh tế chu kỳ.',
-    quote: 'Slide Chương 4 • Session 16: Giới hạn lịch sử của chủ nghĩa tư bản'
+    explanation: 'Giáo trình khẳng định giới hạn lịch sử của CNTB: Mâu thuẫn cơ bản giữa tính chất và trình độ xã hội hóa ngày càng cao của LLSX với chế độ chiếm hữu tư nhân TBCN đối với TLSX, dẫn tới bất bình đẳng sâu sắc và khủng hoảng kinh tế chu kỳ.',
+    quote: 'Giáo trình Chương 4 • Session 16: Giới hạn lịch sử của chủ nghĩa tư bản'
   },
   {
     id: 'q-c5-07',
     chapter: 5,
     chapterTitle: 'Chương 5: KTTT định hướng XHCN & Lợi ích KT',
     category: '5.2. Hoàn thiện thể chế kinh tế thị trường',
-    question: 'Nội dung trọng tâm của việc hoàn thiện thể chế kinh tế thị trường định hướng XHCN ở Việt Nam theo Slide Session 19 là gì?',
+    question: 'Nội dung trọng tâm của việc hoàn thiện thể chế kinh tế thị trường định hướng XHCN ở Việt Nam là gì?',
     options: [
       'Hoàn thiện thể chế về sở hữu, phát triển đồng bộ các yếu tố thị trường và các loại thị trường, gắn tăng trưởng kinh tế với tiến bộ và công bằng xã hội',
       'Xóa bỏ hoàn toàn kinh tế tư nhân và chỉ duy trì các doanh nghiệp 100% vốn nhà nước',
@@ -920,14 +919,14 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Session 19 nêu rõ các nội dung hoàn thiện: (1) Thể chế sở hữu và các thành phần kinh tế; (2) Phát triển đồng bộ các loại thị trường; (3) Gắn tăng trưởng với tiến bộ, công bằng xã hội; (4) Nâng cao năng lực lãnh đạo và quản lý của Nhà nước.',
-    quote: 'Slide Chương 5 • Session 19: Hoàn thiện thể chế KTTT định hướng XHCN'
+    quote: 'Giáo trình Chương 5 • Session 19: Hoàn thiện thể chế KTTT định hướng XHCN'
   },
   {
     id: 'q-c5-08',
     chapter: 5,
     chapterTitle: 'Chương 5: KTTT định hướng XHCN & Lợi ích KT',
     category: '5.3. Quan hệ lợi ích kinh tế',
-    question: 'Theo Slide Session 20 & 21, đâu là động lực trực tiếp và mạnh mẽ nhất thúc đẩy các chủ thể tham gia vào hoạt động kinh tế?',
+    question: 'Đâu là động lực trực tiếp và mạnh mẽ nhất thúc đẩy các chủ thể tham gia vào hoạt động kinh tế?',
     options: [
       'Lợi ích kinh tế thiết thân của mỗi cá nhân và tổ chức',
       'Lời khen thưởng tinh thần trên bảng tin của cơ quan',
@@ -936,14 +935,14 @@ export const QUIZ_QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: 'Lợi ích kinh tế là biểu hiện cụ thể của quan hệ sản xuất, là động lực trực tiếp của con người trong các hoạt động kinh tế - xã hội. Lợi ích cá nhân là cơ sở, kết hợp hài hòa với lợi ích tập thể và xã hội.',
-    quote: 'Slide Chương 5 • Session 20: Bản chất và vai trò của lợi ích kinh tế'
+    quote: 'Giáo trình Chương 5 • Session 20: Bản chất và vai trò của lợi ích kinh tế'
   },
   {
     id: 'q-c6-06',
     chapter: 6,
     chapterTitle: 'Chương 6: CNH - HĐH & Hội nhập kinh tế',
     category: '6.1. Bốn cuộc cách mạng công nghiệp',
-    question: 'Theo Slide Session 24, cuộc Cách mạng công nghiệp lần thứ tư (CMCN 4.0) có đặc trưng cốt lõi nào?',
+    question: 'Cuộc Cách mạng công nghiệp lần thứ tư (CMCN 4.0) có đặc trưng cốt lõi nào?',
     options: [
       'Dựa trên nền tảng kỹ thuật số, tích hợp hệ thống vật lý - không gian mạng (CPS), trí tuệ nhân tạo (AI), dữ liệu lớn (Big Data) và Internet vạn vật (IoT)',
       'Sử dụng động cơ hơi nước và cơ khí hóa ngành dệt may',
@@ -951,15 +950,15 @@ export const QUIZ_QUESTIONS = [
       'Sự xuất hiện của động cơ đốt trong và mạng lưới đường sắt xuyên lục địa'
     ],
     correctIndex: 0,
-    explanation: 'Slide 24 hệ thống hóa 4 cuộc CMCN: CMCN 1.0 (máy hơi nước, cơ khí), CMCN 2.0 (điện năng, sản xuất dây chuyền), CMCN 3.0 (máy tính, tự động hóa, Internet), CMCN 4.0 (AI, Big Data, IoT, hệ thống vật lý không gian mạng).',
-    quote: 'Slide Chương 6 • Session 24: Khái quát các cuộc cách mạng công nghiệp'
+    explanation: 'Giáo trình hệ thống hóa 4 cuộc CMCN: CMCN 1.0 (máy hơi nước, cơ khí), CMCN 2.0 (điện năng, sản xuất dây chuyền), CMCN 3.0 (máy tính, tự động hóa, Internet), CMCN 4.0 (AI, Big Data, IoT, hệ thống vật lý không gian mạng).',
+    quote: 'Giáo trình Chương 6 • Session 24: Khái quát các cuộc cách mạng công nghiệp'
   },
   {
     id: 'q-c6-07',
     chapter: 6,
     chapterTitle: 'Chương 6: CNH - HĐH & Hội nhập kinh tế',
     category: '6.2. Hội nhập kinh tế quốc tế',
-    question: 'Mối quan hệ giữa "Hội nhập kinh tế quốc tế" và "Xây dựng nền kinh tế độc lập tự chủ" ở Việt Nam (Slide Session 29) được xác định như thế nào?',
+    question: 'Mối quan hệ giữa "Hội nhập kinh tế quốc tế" và "Xây dựng nền kinh tế độc lập tự chủ" ở Việt Nam được xác định như thế nào?',
     options: [
       'Là mối quan hệ biện chứng thống nhất: Độc lập tự chủ là tiền đề để hội nhập hiệu quả; hội nhập thành công tạo tiềm lực củng cố vững chắc nền độc lập tự chủ',
       'Là hai quá trình đối lập, bài trừ lẫn nhau: Muốn độc lập tự chủ thì tuyệt đối phải đóng cửa không hội nhập',
@@ -967,7 +966,7 @@ export const QUIZ_QUESTIONS = [
       'Nền kinh tế độc lập tự chủ chỉ cần tự sản xuất nông nghiệp, không cần tham gia chuỗi giá trị toàn cầu'
     ],
     correctIndex: 0,
-    explanation: 'Slide 29 khẳng định: Giữ vững độc lập tự chủ và tích cực, chủ động hội nhập kinh tế quốc tế là thể thống nhất biện chứng; mở rộng hội nhập để tăng thế và lực, giữ vững độc lập để không bị chệch hướng và lệ thuộc.',
-    quote: 'Slide Chương 6 • Session 29: Xây dựng nền kinh tế độc lập tự chủ trong hội nhập'
+    explanation: 'Giáo trình khẳng định: Giữ vững độc lập tự chủ và tích cực, chủ động hội nhập kinh tế quốc tế là thể thống nhất biện chứng; mở rộng hội nhập để tăng thế và lực, giữ vững độc lập để không bị chệch hướng và lệ thuộc.',
+    quote: 'Giáo trình Chương 6 • Session 29: Xây dựng nền kinh tế độc lập tự chủ trong hội nhập'
   }
 ];

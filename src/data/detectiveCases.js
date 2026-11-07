@@ -37,7 +37,7 @@ export const DETECTIVE_CASES = [
     image: './assets/images/cases/case-c1-origin.svg',
     dossierLevel: 'CẤP ĐỘ: CƠ BẢN',
     
-    backgroundStory: 'Một nhóm chuyên gia tư vấn chiến lược tuyên bố: "Xã hội số ngày nay không cần sản xuất vật chất, chỉ cần lưu thông buôn bán và phân tích tâm lý hành vi vi mô là đất nước tự khắc giàu có; kinh tế chính trị chỉ là lý thuyết cũ kỹ". Với tư cách là Chuyên gia Điều tra Kinh tế Chính trị MLN122, bạn hãy phân loại 5 manh mối lịch sử - học thuật chuẩn Slide bài giảng vào 5 ngăn nội dung khoa học để vạch trần sai lầm của quan điểm này và khẳng định bản chất khoa học của KTCT Mác – Lênin!',
+    backgroundStory: 'Một nhóm chuyên gia tư vấn chiến lược tuyên bố: "Xã hội số ngày nay không cần sản xuất vật chất, chỉ cần lưu thông buôn bán và phân tích tâm lý hành vi vi mô là đất nước tự khắc giàu có; kinh tế chính trị chỉ là lý thuyết cũ kỹ". Với tư cách là Chuyên gia Điều tra Kinh tế Chính trị MLN122, bạn hãy phân loại 5 manh mối lịch sử - học thuật chuẩn Giáo trình chuẩn vào 5 ngăn nội dung khoa học để vạch trần sai lầm của quan điểm này và khẳng định bản chất khoa học của KTCT Mác – Lênin!',
     categories: [
       { 
         id: 'muc_1_1_origin', 
@@ -223,7 +223,7 @@ export const DETECTIVE_CASES = [
     image: './assets/images/cases/case-c3-surplus-value.svg',
     dossierLevel: 'CẤP ĐỘ: CƠ BẢN',
     
-    backgroundStory: 'Một nghiên cứu thực tế tại một doanh nghiệp công nghệ lớn tuyên bố: "Doanh thu và lợi nhuận nghìn tỷ của công ty hoàn toàn do hệ thống máy chủ, bằng sáng chế thuật toán tự sinh ra, không hề có việc chiếm đoạt lao động của kỹ sư hay công nhân". Để làm sáng tỏ chân lý khoa học, điều tra viên cần căn cứ vào Lý luận của C. Mác về giá trị thặng dư (Mục 3.1 Slide bài giảng) để phân loại đúng đắn các luận điểm vào từng ngăn nội dung khoa học!',
+    backgroundStory: 'Một nghiên cứu thực tế tại một doanh nghiệp công nghệ lớn tuyên bố: "Doanh thu và lợi nhuận nghìn tỷ của công ty hoàn toàn do hệ thống máy chủ, bằng sáng chế thuật toán tự sinh ra, không hề có việc chiếm đoạt lao động của kỹ sư hay công nhân". Để làm sáng tỏ chân lý khoa học, điều tra viên cần căn cứ vào Lý luận của C. Mác về giá trị thặng dư (Mục 3.1 Giáo trình chuẩn) để phân loại đúng đắn các luận điểm vào từng ngăn nội dung khoa học!',
     categories: [
       { 
         id: 'muc_3_1_1', 
@@ -291,7 +291,7 @@ export const DETECTIVE_CASES = [
     philosophicalVerdict: {
       headline: 'Phá án thành công: Máy tính không tạo ra m; chỉ có hàng hóa sức lao động sống mới sáng tạo ra m!',
       concept: 'Mục 3.1: Nguồn gốc, bản chất và các phương pháp sản xuất giá trị thặng dư',
-      analysis: 'Căn cứ Mục 3.1 Giáo trình và Slide bài giảng MLN122: Tư liệu sản xuất (c) dù hiện đại đến đâu cũng chỉ là Tư bản bất biến, chỉ đóng vai trò phương tiện truyền dẫn giá trị. Nguồn gốc duy nhất sinh ra giá trị thặng dư (m) là việc tiêu dùng hàng hóa sức lao động sống (Tư bản khả biến v) trong thời gian lao động thặng dư. Các nhà tư bản luôn kết hợp tinh vi cả hai phương pháp sản xuất GTTD tuyệt đối (kéo dài ngày làm việc) và GTTD tương đối (tăng năng suất qua ứng dụng khoa học kỹ thuật).',
+      analysis: 'Căn cứ Mục 3.1 Giáo trình và Giáo trình chuẩn MLN122: Tư liệu sản xuất (c) dù hiện đại đến đâu cũng chỉ là Tư bản bất biến, chỉ đóng vai trò phương tiện truyền dẫn giá trị. Nguồn gốc duy nhất sinh ra giá trị thặng dư (m) là việc tiêu dùng hàng hóa sức lao động sống (Tư bản khả biến v) trong thời gian lao động thặng dư. Các nhà tư bản luôn kết hợp tinh vi cả hai phương pháp sản xuất GTTD tuyệt đối (kéo dài ngày làm việc) và GTTD tương đối (tăng năng suất qua ứng dụng khoa học kỹ thuật).',
       xpAwarded: 160
     }
   },
@@ -311,7 +311,7 @@ export const DETECTIVE_CASES = [
     image: './assets/images/cases/case-c3-accumulation.svg',
     dossierLevel: 'CẤP ĐỘ: TRUNG BÌNH',
     
-    backgroundStory: 'Một tập đoàn kinh tế tư nhân thực hiện chiến lược tái đầu tư mở rộng, nhập khẩu dây chuyền robot tự động hóa để tăng năng lực cạnh tranh, đồng thời thâu tóm hàng loạt công ty con. Báo cáo tài chính của tập đoàn chỉ ghi nhận "Chi phí k" và "Lợi nhuận p", tuyên bố lợi nhuận là thành quả kinh doanh của toàn bộ vốn đầu tư chứ không liên quan gì đến bóc lột. Hãy đối chiếu Mục 3.2 và Mục 3.3 Slide bài giảng để sắp xếp đúng các luận điểm lý luận!',
+    backgroundStory: 'Một tập đoàn kinh tế tư nhân thực hiện chiến lược tái đầu tư mở rộng, nhập khẩu dây chuyền robot tự động hóa để tăng năng lực cạnh tranh, đồng thời thâu tóm hàng loạt công ty con. Báo cáo tài chính của tập đoàn chỉ ghi nhận "Chi phí k" và "Lợi nhuận p", tuyên bố lợi nhuận là thành quả kinh doanh của toàn bộ vốn đầu tư chứ không liên quan gì đến bóc lột. Hãy đối chiếu Mục 3.2 và Mục 3.3 Giáo trình chuẩn để sắp xếp đúng các luận điểm lý luận!',
     categories: [
       { 
         id: 'muc_3_2_ban_chat', 
@@ -349,7 +349,7 @@ export const DETECTIVE_CASES = [
         id: 'c2-clue-1',
         text: 'Thực chất của tích lũy tư bản là sự chuyển hóa một phần giá trị thặng dư trở lại thành tư bản phụ thêm để tái sản xuất mở rộng',
         correctCategory: 'muc_3_2_ban_chat',
-        hint: 'Khái niệm khoa học then chốt của Mục 3.2 Slide bài giảng.'
+        hint: 'Khái niệm khoa học then chốt của Mục 3.2 Giáo trình chuẩn.'
       },
       {
         id: 'c2-clue-2',
@@ -487,7 +487,7 @@ export const DETECTIVE_CASES = [
     image: './assets/images/cases/case-c5-socialist-market.svg',
     dossierLevel: 'CẤP ĐỘ: CƠ BẢN',
     
-    backgroundStory: 'Nhiều quan điểm tranh luận về con đường phát triển kinh tế của nước ta: Có người cho rằng phát triển kinh tế thị trường tất yếu phải tư nhân hóa toàn bộ; có ý kiến lại muốn quay về mô hình chỉ huy tập trung bao cấp. Bằng tri thức Mục 5.1 trong Slide bài giảng Chương 5, hãy phân loại chính xác các luận điểm vào đúng các đề mục khoa học!',
+    backgroundStory: 'Nhiều quan điểm tranh luận về con đường phát triển kinh tế của nước ta: Có người cho rằng phát triển kinh tế thị trường tất yếu phải tư nhân hóa toàn bộ; có ý kiến lại muốn quay về mô hình chỉ huy tập trung bao cấp. Bằng tri thức Mục 5.1 trong Giáo trình chuẩn Chương 5, hãy phân loại chính xác các luận điểm vào đúng các đề mục khoa học!',
     categories: [
       { 
         id: 'muc_5_1_1', 
@@ -525,7 +525,7 @@ export const DETECTIVE_CASES = [
         id: 'c3-clue-1',
         text: 'KTTT định hướng XHCN là nền kinh tế vừa tuân theo các quy luật thị trường, vừa được dẫn dắt bởi các nguyên tắc và bản chất của CNXH',
         correctCategory: 'muc_5_1_1',
-        hint: 'Định nghĩa chính xác theo Mục 5.1.1 trong Slide bài giảng.'
+        hint: 'Định nghĩa chính xác theo Mục 5.1.1 trong Giáo trình chuẩn.'
       },
       {
         id: 'c3-clue-2',
@@ -555,7 +555,7 @@ export const DETECTIVE_CASES = [
     philosophicalVerdict: {
       headline: 'Phá án thành công: KTTT định hướng XHCN là mô hình phát triển sáng tạo, tất yếu của Việt Nam!',
       concept: 'Mục 5.1: Khái niệm, Tính tất yếu khách quan và Các đặc trưng của KTTT định hướng XHCN',
-      analysis: 'Theo Mục 5.1 Slide bài giảng: Nền kinh tế thị trường định hướng XHCN ở Việt Nam là mô hình kinh tế tổng quát trong thời kỳ quá độ lên chủ nghĩa xã hội. Nó vận hành đầy đủ theo các quy luật khách quan của thị trường (giá trị, cung cầu, cạnh tranh), đồng thời bảo đảm định hướng XHCN thông qua vai trò chủ đạo của kinh tế nhà nước, sự lãnh đạo của Đảng và nguyên tắc gắn tăng trưởng kinh tế với công bằng xã hội ngay trong từng bước đi.',
+      analysis: 'Theo Mục 5.1 Giáo trình chuẩn: Nền kinh tế thị trường định hướng XHCN ở Việt Nam là mô hình kinh tế tổng quát trong thời kỳ quá độ lên chủ nghĩa xã hội. Nó vận hành đầy đủ theo các quy luật khách quan của thị trường (giá trị, cung cầu, cạnh tranh), đồng thời bảo đảm định hướng XHCN thông qua vai trò chủ đạo của kinh tế nhà nước, sự lãnh đạo của Đảng và nguyên tắc gắn tăng trưởng kinh tế với công bằng xã hội ngay trong từng bước đi.',
       xpAwarded: 180
     }
   },
@@ -575,7 +575,7 @@ export const DETECTIVE_CASES = [
     image: './assets/images/cases/case-c5-institutions.svg',
     dossierLevel: 'CẤP ĐỘ: NÂNG CAO',
     
-    backgroundStory: 'Thực tiễn phát triển kinh tế bộc lộ những bất cập: Hệ thống pháp luật về đất đai còn kẽ hở dẫn đến đầu cơ thổi giá; thị trường vốn và trái phiếu doanh nghiệp thiếu minh bạch; năng lực thực thi và giám sát của bộ máy quản lý nhà nước có lúc còn lúng túng. Những hạn chế này đòi hỏi phải đẩy mạnh hoàn thiện thể chế kinh tế. Căn cứ Mục 5.2 Slide bài giảng, bạn hãy phân loại các luận điểm vào đúng các khía cạnh thể chế!',
+    backgroundStory: 'Thực tiễn phát triển kinh tế bộc lộ những bất cập: Hệ thống pháp luật về đất đai còn kẽ hở dẫn đến đầu cơ thổi giá; thị trường vốn và trái phiếu doanh nghiệp thiếu minh bạch; năng lực thực thi và giám sát của bộ máy quản lý nhà nước có lúc còn lúng túng. Những hạn chế này đòi hỏi phải đẩy mạnh hoàn thiện thể chế kinh tế. Căn cứ Mục 5.2 Giáo trình chuẩn, bạn hãy phân loại các luận điểm vào đúng các khía cạnh thể chế!',
     categories: [
       { 
         id: 'muc_5_2_1', 
@@ -643,7 +643,7 @@ export const DETECTIVE_CASES = [
     philosophicalVerdict: {
       headline: 'Phá án thành công: Hoàn thiện thể chế là chìa khóa mở đường giải phóng sức sản xuất!',
       concept: 'Mục 5.2: Sự cần thiết và Nội dung hoàn thiện thể chế KTTT định hướng XHCN ở Việt Nam',
-      analysis: 'Căn cứ Mục 5.2 Slide bài giảng: Thể chế kinh tế là "luật chơi" quyết định hiệu quả vận hành của nền kinh tế. Sự cần thiết phải hoàn thiện thể chế bắt nguồn từ thực trạng hệ thống thể chế hiện hành chưa đồng bộ và kém hiệu lực. Nội dung hoàn thiện tập trung vào 4 trụ cột: hoàn thiện thể chế sở hữu và thành phần kinh tế; đồng bộ các loại thị trường; gắn tăng trưởng với công bằng xã hội; và nâng cao năng lực lãnh đạo của Đảng, năng lực quản lý của Nhà nước pháp quyền.',
+      analysis: 'Căn cứ Mục 5.2 Giáo trình chuẩn: Thể chế kinh tế là "luật chơi" quyết định hiệu quả vận hành của nền kinh tế. Sự cần thiết phải hoàn thiện thể chế bắt nguồn từ thực trạng hệ thống thể chế hiện hành chưa đồng bộ và kém hiệu lực. Nội dung hoàn thiện tập trung vào 4 trụ cột: hoàn thiện thể chế sở hữu và thành phần kinh tế; đồng bộ các loại thị trường; gắn tăng trưởng với công bằng xã hội; và nâng cao năng lực lãnh đạo của Đảng, năng lực quản lý của Nhà nước pháp quyền.',
       xpAwarded: 190
     }
   },
@@ -663,7 +663,7 @@ export const DETECTIVE_CASES = [
     image: './assets/images/cases/case-c6-industry40.svg',
     dossierLevel: 'CẤP ĐỘ: NÂNG CAO',
     
-    backgroundStory: 'Trong bối cảnh cuộc Cách mạng công nghiệp lần thứ tư (CMCN 4.0) bùng nổ, nhiều doanh nghiệp sản xuất gia công của Việt Nam đứng trước nguy cơ mất đơn hàng vào tay robot và công nghệ tự động hóa. Đứng trước câu hỏi: Việt Nam có cần công nghiệp hóa nữa không và CNH thời kỳ này có gì khác trước? Hãy đối chiếu Mục 6.1 trong Slide bài giảng Chương 6 để sắp xếp đúng các luận điểm lý luận!',
+    backgroundStory: 'Trong bối cảnh cuộc Cách mạng công nghiệp lần thứ tư (CMCN 4.0) bùng nổ, nhiều doanh nghiệp sản xuất gia công của Việt Nam đứng trước nguy cơ mất đơn hàng vào tay robot và công nghệ tự động hóa. Đứng trước câu hỏi: Việt Nam có cần công nghiệp hóa nữa không và CNH thời kỳ này có gì khác trước? Hãy đối chiếu Mục 6.1 trong Giáo trình chuẩn Chương 6 để sắp xếp đúng các luận điểm lý luận!',
     categories: [
       { 
         id: 'muc_6_1_1', 
@@ -701,7 +701,7 @@ export const DETECTIVE_CASES = [
         id: 'c5-clue-1',
         text: 'Cách mạng công nghiệp là những bước nhảy vọt về chất trình độ của tư liệu lao động, thúc đẩy phân công lao động xã hội và năng suất bứt phá',
         correctCategory: 'muc_6_1_1',
-        hint: 'Định nghĩa khái quát về CMCN theo Mục 6.1.1 Slide bài giảng.'
+        hint: 'Định nghĩa khái quát về CMCN theo Mục 6.1.1 Giáo trình chuẩn.'
       },
       {
         id: 'c5-clue-2',
@@ -731,7 +731,7 @@ export const DETECTIVE_CASES = [
     philosophicalVerdict: {
       headline: 'Phá án thành công: CNH, HĐH thích ứng 4.0 là con đường duy nhất để Việt Nam phát triển bứt phá!',
       concept: 'Mục 6.1: Khái quát CMCN và Tính tất yếu, Nội dung CNH, HĐH ở Việt Nam',
-      analysis: 'Theo Mục 6.1 Slide bài giảng Chương 6: Công nghiệp hóa, hiện đại hóa ở Việt Nam là quá trình chuyển đổi căn bản, toàn diện các hoạt động sản xuất kinh doanh từ sử dụng lao động thủ công là chính sang lao động sử dụng phổ biến công nghệ tiên tiến, hiện đại. Trong thời đại CMCN 4.0, Việt Nam không đi theo lộ trình tuần tự cũ mà kết hợp "đi tắt đón đầu", lấy chuyển đổi số, kinh tế tri thức và phát triển bền vững làm động lực then chốt.',
+      analysis: 'Theo Mục 6.1 Giáo trình chuẩn Chương 6: Công nghiệp hóa, hiện đại hóa ở Việt Nam là quá trình chuyển đổi căn bản, toàn diện các hoạt động sản xuất kinh doanh từ sử dụng lao động thủ công là chính sang lao động sử dụng phổ biến công nghệ tiên tiến, hiện đại. Trong thời đại CMCN 4.0, Việt Nam không đi theo lộ trình tuần tự cũ mà kết hợp "đi tắt đón đầu", lấy chuyển đổi số, kinh tế tri thức và phát triển bền vững làm động lực then chốt.',
       xpAwarded: 200
     }
   },
@@ -751,7 +751,7 @@ export const DETECTIVE_CASES = [
     image: './assets/images/cases/case-c6-integration.svg',
     dossierLevel: 'CẤP ĐỘ: NÂNG CAO',
     
-    backgroundStory: 'Hội nhập kinh tế quốc tế mang lại cho nước ta cơ hội mở rộng thị trường xuất khẩu kỷ lục và thu hút hàng trăm tỷ USD vốn đầu tư FDI. Tuy nhiên, đi kèm với đó là sức ép cạnh tranh gay gắt, nguy cơ gian lận xuất xứ hàng hóa và rủi ro bị phụ thuộc vào chuỗi cung ứng bên ngoài. Làm thế nào để vừa hội nhập sâu rộng, vừa giữ vững độc lập tự chủ kinh tế? Hãy phân loại các luận điểm khoa học theo Mục 6.2 Slide bài giảng!',
+    backgroundStory: 'Hội nhập kinh tế quốc tế mang lại cho nước ta cơ hội mở rộng thị trường xuất khẩu kỷ lục và thu hút hàng trăm tỷ USD vốn đầu tư FDI. Tuy nhiên, đi kèm với đó là sức ép cạnh tranh gay gắt, nguy cơ gian lận xuất xứ hàng hóa và rủi ro bị phụ thuộc vào chuỗi cung ứng bên ngoài. Làm thế nào để vừa hội nhập sâu rộng, vừa giữ vững độc lập tự chủ kinh tế? Hãy phân loại các luận điểm khoa học theo Mục 6.2 Giáo trình chuẩn!',
     categories: [
       { 
         id: 'muc_6_2_1', 
@@ -789,7 +789,7 @@ export const DETECTIVE_CASES = [
         id: 'c6-clue-1',
         text: 'Hội nhập kinh tế quốc tế là quá trình gắn kết nền kinh tế của một quốc gia với kinh tế khu vực và thế giới thông qua các nỗ lực tự do hóa thương mại',
         correctCategory: 'muc_6_2_1',
-        hint: 'Khái niệm chuẩn xác được định nghĩa trong Mục 6.2.1 Slide bài giảng.'
+        hint: 'Khái niệm chuẩn xác được định nghĩa trong Mục 6.2.1 Giáo trình chuẩn.'
       },
       {
         id: 'c6-clue-2',
@@ -819,7 +819,7 @@ export const DETECTIVE_CASES = [
     philosophicalVerdict: {
       headline: 'Phá án thành công: Hội nhập toàn diện phải luôn gắn liền với xây dựng nền kinh tế độc lập tự chủ!',
       concept: 'Mục 6.2: Khái niệm, Hình thức, Tác động và Phương hướng nâng cao hiệu quả Hội nhập KT quốc tế',
-      analysis: 'Theo Mục 6.2 Slide bài giảng Chương 6: Hội nhập kinh tế quốc tế là xu thế khách quan của thời đại. Việt Nam chủ động, tích cực hội nhập theo phương châm: đa phương hóa, đa dạng hóa các quan hệ kinh tế quốc tế. Quá trình này đem lại cơ hội phát triển to lớn nhưng cũng đặt ra những thách thức gay gắt. Để hội nhập thành công, Việt Nam phải không ngừng củng cố nội lực, nâng cao năng lực cạnh tranh và kiên quyết giữ vững độc lập tự chủ kinh tế.',
+      analysis: 'Theo Mục 6.2 Giáo trình chuẩn Chương 6: Hội nhập kinh tế quốc tế là xu thế khách quan của thời đại. Việt Nam chủ động, tích cực hội nhập theo phương châm: đa phương hóa, đa dạng hóa các quan hệ kinh tế quốc tế. Quá trình này đem lại cơ hội phát triển to lớn nhưng cũng đặt ra những thách thức gay gắt. Để hội nhập thành công, Việt Nam phải không ngừng củng cố nội lực, nâng cao năng lực cạnh tranh và kiên quyết giữ vững độc lập tự chủ kinh tế.',
       xpAwarded: 200
     }
   }

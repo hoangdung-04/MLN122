@@ -87,7 +87,7 @@ export function renderProfileModal(container, onClose) {
 
         <!-- Core Knowledge Modules -->
         <div class="curriculum-modules-wrap">
-          <div class="curriculum-mod-label" style="color: ${ch.accentColor};">Trọng tâm kiến thức cốt lõi (Slide bài giảng):</div>
+          <div class="curriculum-mod-label" style="color: ${ch.accentColor};">Trọng tâm kiến thức cốt lõi (Giáo trình chuẩn):</div>
           <div class="curriculum-modules-grid">
             ${modulesHTML}
           </div>
@@ -128,7 +128,7 @@ export function renderProfileModal(container, onClose) {
               <span class="badge-pill cert-pill">
                 ✨ CHỨNG NHẬN TƯ DUY KINH TẾ CHÍNH TRỊ • MLN122
               </span>
-              <span class="cert-sub-tag">Chuẩn Giáo trình Bộ GD&amp;ĐT &amp; Slide bài giảng</span>
+              <span class="cert-sub-tag">Chuẩn Giáo trình Bộ GD&amp;ĐT &amp; Giáo trình chuẩn</span>
             </div>
             <h1 class="profile-title">Hồ Sơ Tư Duy Kinh Tế Chính Trị Của Bạn</h1>
             <p class="profile-subtitle">
@@ -207,14 +207,14 @@ export function renderProfileModal(container, onClose) {
             </div>
           </div>
 
-          <!-- Section 3: Comprehensive 6-Chapter Competency Matrix (Slide bài giảng) -->
+          <!-- Section 3: Comprehensive 6-Chapter Competency Matrix (Giáo trình chuẩn) -->
           <div class="profile-curriculum-section">
             <div class="curriculum-sec-header">
               <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
                 <span class="badge-pill" style="background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(16, 185, 129, 0.15)); color: var(--accent-blue); border: 1.5px solid rgba(37, 99, 235, 0.35); font-weight: 850; font-family: var(--font-heading);">
                   🎓 KHUNG TRI THỨC 6 CHƯƠNG MLN122
                 </span>
-                <span style="font-size: 0.85rem; color: var(--text-dim); font-weight: 700;">(Chuẩn Slide bài giảng &amp; Giáo trình Bộ GD&amp;ĐT)</span>
+                <span style="font-size: 0.85rem; color: var(--text-dim); font-weight: 700;">(Chuẩn Giáo trình chuẩn &amp; Giáo trình Bộ GD&amp;ĐT)</span>
               </div>
               <h3 class="curriculum-sec-title">Chi Tiết Năng Lực Lý Luận Từng Chương Môn Học</h3>
               <p class="curriculum-sec-desc">

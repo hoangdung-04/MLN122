@@ -178,7 +178,7 @@ export function renderHandbookModal(container, onClose) {
                 📚 MLN122 • KHO TRI THỨC TOÀN DIỆN
               </span>
               <span class="cert-sub-tag">
-                Cập nhật chuẩn Slide bài giảng &amp; Giáo trình BGD&amp;ĐT
+                Cập nhật chuẩn Giáo trình chuẩn &amp; Giáo trình BGD&amp;ĐT
               </span>
             </div>
             <h1 class="handbook-modal-title">Sổ Tay Kinh Tế Chính Trị Bỏ Túi</h1>
