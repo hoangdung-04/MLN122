@@ -44,3 +44,4 @@ for (const [id, newImg] of Object.entries(mapping)) {
 
 fs.writeFileSync('src/data/scenarios.js', code, 'utf8');
 console.log('Successfully updated all 28 scenario image paths in src/data/scenarios.js!');
+

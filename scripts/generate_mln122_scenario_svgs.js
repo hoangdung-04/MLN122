@@ -1,9 +1,14 @@
 import fs from 'fs';
 import path from 'path';
 
-const outDir = path.resolve('assets/images/scenarios');
-if (!fs.existsSync(outDir)) {
-  fs.mkdirSync(outDir, { recursive: true });
+const outDirs = [
+  path.resolve('assets/images/scenarios'),
+  path.resolve('public/assets/images/scenarios')
+];
+for (const dir of outDirs) {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
 }
 
 function createSVG(config) {
@@ -900,8 +905,11 @@ const scenarioSVGs = {
 
 let count = 0;
 for (const [filename, conf] of Object.entries(scenarioSVGs)) {
-  const filePath = path.join(outDir, filename);
-  fs.writeFileSync(filePath, createSVG(conf), 'utf8');
+  const content = createSVG(conf);
+  for (const dir of outDirs) {
+    fs.writeFileSync(path.join(dir, filename), content, 'utf8');
+  }
   count++;
 }
-console.log(`Generated ${count} accurate MLN122 SVG scenario graphics in assets/images/scenarios/!`);
+console.log(`Generated ${count} accurate MLN122 SVG scenario graphics in public/assets/images/scenarios/ & assets/images/scenarios/!`);
+
