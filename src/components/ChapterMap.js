@@ -43,16 +43,22 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
               }
             </div>
           </div>
-          <div>
-            <div class="topic-tag" style="color: ${ch.accentColor};">${sc.topic}</div>
+          <div class="scenario-item-content">
+            <div class="scenario-topic-tag" style="--tag-accent: ${ch.accentColor};">
+              <span class="topic-dot"></span>
+              <span class="topic-text">${sc.topic}</span>
+            </div>
             <h4>${sc.title}</h4>
-            <p style="font-size: 0.86rem; color: var(--text-muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.55;">
+            <p class="scenario-item-desc">
               ${sc.situation}
             </p>
           </div>
           <div class="scenario-card-footer">
-            <span class="scenario-concept-label" title="${sc.philosophyConcept}">${sc.philosophyConcept}</span>
-            <span class="scenario-cta-btn" style="color: ${ch.accentColor};">Khám phá →</span>
+            <span class="scenario-concept-label" title="${sc.philosophyConcept}">
+              <span class="concept-icon">💡</span>
+              <span class="concept-text">${sc.philosophyConcept}</span>
+            </span>
+            <span class="scenario-cta-btn">Khám phá →</span>
           </div>
         </div>
       `;
@@ -92,7 +98,7 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
     const isSolved = !!detectiveSolved[cs.id];
 
     detectiveCasesHTML += `
-      <div class="scenario-item-card ${isSolved ? 'completed' : ''}" data-case-id="${cs.id}" style="border-left: 4px solid var(--accent-crimson);">
+      <div class="scenario-item-card ${isSolved ? 'completed' : ''}" data-case-id="${cs.id}" style="--card-accent: var(--accent-crimson); border-left: 4px solid var(--accent-crimson);">
         <div class="scenario-thumb-wrapper">
           <img class="scenario-item-img" src="${resolveAssetUrl(cs.image)}" alt="${cs.title}" loading="lazy" onerror="this.onerror=null; this.src='${cs.image}'; this.style.opacity='0.4'" />
           <div class="scenario-status-badge">
@@ -102,16 +108,22 @@ export function renderChapterMap(container, onSelectScenario, onSelectDetective,
             }
           </div>
         </div>
-        <div>
-          <div class="topic-tag" style="color: var(--accent-crimson);">${cs.code} • ${cs.dossierLevel}</div>
+        <div class="scenario-item-content">
+          <div class="scenario-topic-tag" style="--tag-accent: var(--accent-crimson);">
+            <span class="topic-dot"></span>
+            <span class="topic-text">${cs.code} • ${cs.dossierLevel}</span>
+          </div>
           <h4>${cs.title}</h4>
-          <p style="font-size: 0.86rem; color: var(--text-muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.55;">
+          <p class="scenario-item-desc">
             ${cs.backgroundStory}
           </p>
         </div>
         <div class="scenario-card-footer">
-          <span class="scenario-concept-label" style="color: var(--accent-crimson);">Phân loại manh mối</span>
-          <span class="scenario-cta-btn" style="color: var(--accent-crimson);">Vào phá án →</span>
+          <span class="scenario-concept-label" title="Phân loại manh mối điều tra">
+            <span class="concept-icon">🔍</span>
+            <span class="concept-text">Phân loại manh mối</span>
+          </span>
+          <span class="scenario-cta-btn">Vào phá án →</span>
         </div>
       </div>
     `;

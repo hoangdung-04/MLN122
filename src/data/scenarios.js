@@ -92,7 +92,7 @@ export const SCENARIOS = [
   {
     "id": "C1-S3",
     "chapter": 1,
-    "topic": "Mục 1.3 • Chức năng thực tiễn của Kinh tế chính trị",
+    "topic": "Mục 1.3 • Chức năng thực tiễn của KTCT",
     "title": "Định Vị Bản Thân Trong Nền Kinh Tế Thị Trường 4.0",
     "difficulty": "Cơ bản",
     "philosophyConcept": "Chức năng nhận thức & thực tiễn của KTCT",
