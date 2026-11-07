@@ -115,9 +115,9 @@ export function renderScenarioPlayer(container, scenarioId, onBackToMap, onNextS
           <button class="back-to-map-btn" id="scenario-back-btn">
             <span>← Quay lại bản đồ hành trình</span>
           </button>
-          <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <div class="scenario-header-pills">
             <span class="concept-pill">${scenario.philosophyConcept}</span>
-            <span class="badge-pill" style="background: var(--bg-card); color: var(--text-dim); border: 1px solid var(--border-subtle);">
+            <span class="badge-pill difficulty-pill">
               ${scenario.difficulty.toUpperCase()}
             </span>
           </div>
@@ -132,10 +132,13 @@ export function renderScenarioPlayer(container, scenarioId, onBackToMap, onNextS
 
           <!-- Meta Bar -->
           <div class="scenario-meta-bar">
-            <span style="font-family: var(--font-heading); font-weight: 800; color: var(--text-heading); font-size: 0.9rem;">
-              Chương ${scenario.chapter} • ${scenario.topic}
-            </span>
-            <span style="font-size: 0.82rem; color: var(--text-dim); font-weight: 600;">Mã tình huống: ${scenario.id}</span>
+            <div class="meta-left-group">
+              <span class="meta-ch-tag">CHƯƠNG ${scenario.chapter}</span>
+              <span class="meta-topic-text">${scenario.topic}</span>
+            </div>
+            <div class="meta-right-group">
+              <span class="meta-code-tag">Mã tình huống: <strong>${scenario.id}</strong></span>
+            </div>
           </div>
 
           <!-- Body -->
