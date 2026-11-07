@@ -634,6 +634,86 @@ export const QUIZ_QUESTIONS = [
     quote: 'Slide Chương 2 • Mục 2.1: Lao động Cụ thể & 4 đặc trưng riêng'
   },
   {
+    id: 'q-c2-12',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.2. Tính vĩnh viễn của Lao động cụ thể',
+    question: 'Vì sao slide bài giảng MLN122 khẳng định "Lao động cụ thể là phạm trù vĩnh viễn"?',
+    options: [
+      'Vì nó gắn liền với giá trị sử dụng, với vật phẩm và tồn tại dưới mọi hình thái kinh tế xã hội loài người',
+      'Vì người lao động luôn được ký hợp đồng lao động vô thời hạn với doanh nghiệp',
+      'Vì công cụ lao động cổ xưa không bao giờ bị hao mòn hay rỉ sét theo thời gian',
+      'Vì nhà nước cam kết bảo tồn vĩnh viễn mọi làng nghề thủ công truyền thống'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide nêu rõ: Lao động cụ thể là phạm trù vĩnh viễn vì nó gắn liền với giá trị sử dụng, với vật phẩm, tồn tại dưới mọi hình thái kinh tế. Chừng nào con người còn tồn tại và cần vật phẩm sinh hoạt thì chừng đó còn cần lao động cụ thể.',
+    quote: 'Slide Chương 2 • Mục 2.1: Tính chất của Lao động cụ thể'
+  },
+  {
+    id: 'q-c2-13',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.2. Bản chất Lao động trừu tượng',
+    question: 'Đặc điểm nào sau đây phản ánh chính xác bản chất của "Lao động trừu tượng" theo slide bài giảng MLN122?',
+    options: [
+      'Là sự hao phí sức lao động nói chung không kể đến hình thức cụ thể, tạo nên giá trị hàng hóa, là phạm trù lịch sử và phản ánh tính chất tư nhân cùng tính chất xã hội',
+      'Là hành vi suy nghĩ viển vông trừu tượng không tạo ra bất kỳ sản phẩm nào cho xã hội',
+      'Là quá trình thiết kế các bức tranh nghệ thuật trừu tượng của họa sĩ đương đại',
+      'Là thuộc tính tự nhiên vĩnh viễn không hề thay đổi trong mọi chế độ kinh tế'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide chỉ rõ 4 nội dung của Lao động trừu tượng: (1) Là hao phí SLĐ nói chung không kể hình thức cụ thể; (2) Tạo nên giá trị của hàng hóa; (3) Là một phạm trù lịch sử; (4) Phản ánh tính chất tư nhân và tính chất xã hội.',
+    quote: 'Slide Chương 2 • Mục 2.1: Lao động trừu tượng'
+  },
+  {
+    id: 'q-c2-14',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.2. Mâu thuẫn cơ bản của sản xuất hàng hóa',
+    question: 'Theo sơ đồ tổng thể của slide bài giảng MLN122, mâu thuẫn cơ bản của nền sản xuất hàng hóa là mâu thuẫn giữa hai yếu tố nào?',
+    options: [
+      'Mâu thuẫn giữa Lao động tư nhân (cá nhân) và Lao động xã hội',
+      'Mâu thuẫn giữa người bán hàng trực tuyến và các đơn vị giao hàng vận chuyển',
+      'Mâu thuẫn giữa đồng nội tệ và đồng tiền ảo kỹ thuật số',
+      'Mâu thuẫn giữa người tiêu dùng trẻ tuổi và người tiêu dùng cao tuổi'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide sơ đồ khẳng định: Mâu thuẫn cơ bản của sản xuất hàng hóa là mâu thuẫn giữa lao động tư nhân/cá nhân (biểu hiện qua lao động cụ thể) và lao động xã hội (biểu hiện qua lao động trừu tượng). Hàng hóa không bán được khi lao động tư nhân không được xã hội thừa nhận.',
+    quote: 'Slide Chương 2 • Mục 2.1: Sơ đồ mâu thuẫn cơ bản của sản xuất hàng hóa'
+  },
+  {
+    id: 'q-c2-15',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.3. Thời gian lao động xã hội cần thiết',
+    question: 'Thời gian lao động xã hội cần thiết là thời gian cần để sản xuất ra hàng hóa trong điều kiện bình thường của xã hội với 3 tiêu chí trung bình nào?',
+    options: [
+      'Trình độ kỹ thuật trung bình, Trình độ khéo léo trung bình, và Cường độ lao động trung bình',
+      'Mức lương tối thiểu trung bình, Độ tuổi trung bình, và Thời gian nghỉ phép trung bình',
+      'Chi phí tiếp thị trung bình, Tỷ lệ chiết khấu trung bình, và Giá thuê mặt bằng trung bình',
+      'Chỉ số lạm phát trung bình, Lãi suất vay trung bình, và Tỷ giá hối đoái trung bình'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide Lượng giá trị hàng hóa chỉ rõ: Thời gian lao động xã hội cần thiết được xác định trong điều kiện bình thường của xã hội với 3 tiêu chuẩn: Trình độ kỹ thuật trung bình, Trình độ khéo léo trung bình và Cường độ lao động trung bình.',
+    quote: 'Slide Chương 2 • Mục 2.2: Thời gian lao động xã hội cần thiết'
+  },
+  {
+    id: 'q-c2-16',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.3. Ba nhân tố ảnh hưởng lượng giá trị',
+    question: 'Slide bài giảng MLN122 chỉ ra 3 nhân tố ảnh hưởng đến lượng giá trị hàng hóa gồm những quy luật nào?',
+    options: [
+      'Tỷ lệ nghịch với năng suất lao động, Tỷ lệ thuận với số lượng lao động kết tinh, và Lao động phức tạp là bội số của lao động giản đơn',
+      'Tỷ lệ thuận với giá vàng, Tỷ lệ nghịch với chỉ số chứng khoán, và Tỷ lệ thuận với số lượng tài khoản ngân hàng',
+      'Tỷ lệ thuận với ngân sách quảng cáo, Tỷ lệ nghịch với số lượng đối thủ cạnh tranh, và Lao động giản đơn có giá trị cao hơn lao động phức tạp',
+      'Tỷ lệ nghịch với thuế giá trị gia tăng, Tỷ lệ thuận với khoảng cách vận chuyển, và Lao động chân tay luôn tạo nhiều giá trị hơn lao động trí óc'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide nêu rõ 3 nhân tố: (1) Tỷ lệ nghịch với năng suất lao động; (2) Tỷ lệ thuận với số lượng lao động kết tinh; (3) Lao động phức tạp là bội số của lao động giản đơn.',
+    quote: 'Slide Chương 2 • Mục 2.2: Các nhân tố ảnh hưởng đến lượng giá trị'
+  },
+  {
     id: 'q-c4-01',
     chapter: 4,
     chapterTitle: 'Chương 4: Cạnh tranh & Độc quyền',

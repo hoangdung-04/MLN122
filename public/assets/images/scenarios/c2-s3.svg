@@ -6,32 +6,20 @@
       <stop offset="50%" stop-color="#111827" />
       <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
-    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#0284c7" />
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
     </linearGradient>
-    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbbf24" />
-      <stop offset="100%" stop-color="#d97706" />
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0e7490" />
     </linearGradient>
-    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#34d399" />
-      <stop offset="100%" stop-color="#059669" />
-    </linearGradient>
-    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#c084fc" />
-      <stop offset="100%" stop-color="#7c3aed" />
-    </linearGradient>
-    <linearGradient id="roseGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fb7185" />
-      <stop offset="100%" stop-color="#e11d48" />
-    </linearGradient>
-    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#22d3ee" />
-      <stop offset="100%" stop-color="#0891b2" />
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
     </linearGradient>
     <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feGaussianBlur stdDeviation="6" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
@@ -53,38 +41,111 @@
   </g>
 
   <!-- Top Left Badge -->
-  <g transform="translate(36, 30)">
-    <rect width="286" height="30" rx="15" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
-    <circle cx="16" cy="15" r="4.5" fill="#10b981" />
-    <text x="28" y="15" fill="#e2e8f0" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="10.5" font-weight="800" letter-spacing="0.3" dominant-baseline="central">MLN122 • CHƯƠNG 2 • NSLĐ VS CĐLĐ</text>
+  <g transform="translate(36, 24)">
+    <rect width="310" height="28" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+    <circle cx="15" cy="14" r="4" fill="#10b981" />
+    <text x="28" y="14" fill="#e2e8f0" font-family="'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif" font-size="10" font-weight="800" letter-spacing="0.3" dominant-baseline="central">MLN122 • CHƯƠNG 2 • LƯỢNG GIÁ TRỊ</text>
   </g>
 
-  <!-- Top Right Title and Subtitle -->
-  <text x="760" y="44" fill="#10b981" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">NĂNG SUẤT VS CƯỜNG ĐỘ LAO ĐỘNG</text>
-  <text x="760" y="64" fill="#94a3b8" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="end">Tăng NSLĐ (Giá trị 1 sp giảm) vs Tăng CĐLĐ (Giá trị 1 sp không đổi)</text>
+  <!-- Top Right Title & Subtitle -->
+  <text x="764" y="34" fill="#10b981" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end" letter-spacing="0.5">LƯỢNG GIÁ TRỊ VÀ CÁC NHÂN TỐ ẢNH HƯỞNG</text>
+  <text x="764" y="52" fill="#94a3b8" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="end">Thời gian lao động XH cần thiết • Năng suất lao động vs Cường độ lao động</text>
 
-  <!-- Main Illustration Graphics -->
-  
-      <g transform="translate(250, 220)">
-        <rect x="-110" y="-75" width="220" height="150" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2.5"/>
-        <text x="0" y="-40" fill="#34d399" font-family="'Be Vietnam Pro', sans-serif" font-size="14" font-weight="800" text-anchor="middle">TĂNG NĂNG SUẤT LĐ</text>
-        <text x="0" y="-12" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="11" text-anchor="middle">Ứng dụng máy móc &amp; AI ⚡</text>
-        <text x="0" y="15" fill="#6ee7b7" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Sản lượng tổng: TĂNG ⬆️</text>
-        <text x="0" y="42" fill="#f43f5e" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="800" text-anchor="middle">Giá trị 1 sản phẩm: GIẢM ⬇️</text>
+  <!-- LEFT PANEL: THƯỚC ĐO LƯỢNG GIÁ TRỊ (SLIDE 4) -->
+  <g transform="translate(36, 68)">
+    <rect width="350" height="248" rx="14" fill="#0f172a" stroke="#06b6d4" stroke-width="1.8" />
+    <rect width="350" height="32" rx="14" fill="rgba(6, 182, 212, 0.15)" />
+    <text x="175" y="16" fill="#22d3ee" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle" dominant-baseline="central">THƯỚC ĐO LƯỢNG GIÁ TRỊ HÀNG HÓA</text>
+
+    <!-- Definition text -->
+    <text x="20" y="52" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="9.5">• Lượng giá trị do hao phí lao động quyết định,</text>
+    <text x="28" y="66" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="9.5" font-weight="700">đo bằng THƯỚC ĐO THỜI GIAN.</text>
+
+    <!-- Center Card: Thời gian LĐXH cần thiết -->
+    <g transform="translate(20, 80)">
+      <rect width="310" height="52" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" />
+      <text x="155" y="18" fill="#ffffff" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="800" text-anchor="middle">Thời gian lao động xã hội cần thiết</text>
+      <text x="155" y="36" fill="#94a3b8" font-family="'Be Vietnam Pro', sans-serif" font-size="9" text-anchor="middle">Thời gian cần để SX hàng hóa trong ĐK bình thường của XH</text>
+    </g>
+
+    <!-- 3 Standard Conditions Branch -->
+    <g transform="translate(20, 146)">
+      <rect width="310" height="90" rx="8" fill="rgba(6, 182, 212, 0.08)" stroke="#334155" stroke-width="1" />
+      <text x="155" y="16" fill="#22d3ee" font-family="'Be Vietnam Pro', sans-serif" font-size="9.5" font-weight="800" text-anchor="middle">3 ĐIỀU KIỆN BÌNH THƯỜNG CỦA XÃ HỘI:</text>
+
+      <g transform="translate(14, 28)">
+        <circle cx="6" cy="7" r="3" fill="#22d3ee" />
+        <text x="16" y="10" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="9">1. Trình độ kỹ thuật trung bình</text>
       </g>
-
-      <text x="400" y="225" fill="#94a3b8" font-family="'Be Vietnam Pro', sans-serif" font-size="18" font-weight="900" text-anchor="middle">VS</text>
-
-      <g transform="translate(550, 220)">
-        <rect x="-110" y="-75" width="220" height="150" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
-        <text x="0" y="-40" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="14" font-weight="800" text-anchor="middle">TĂNG CƯỜNG ĐỘ LĐ</text>
-        <text x="0" y="-12" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="11" text-anchor="middle">Tăng ca, khẩn trương hơn ⏳</text>
-        <text x="0" y="15" fill="#fde68a" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Sản lượng tổng: TĂNG ⬆️</text>
-        <text x="0" y="42" fill="#f59e0b" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="800" text-anchor="middle">Giá trị 1 sản phẩm: KHÔNG ĐỔI ↔️</text>
+      <g transform="translate(14, 46)">
+        <circle cx="6" cy="7" r="3" fill="#22d3ee" />
+        <text x="16" y="10" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="9">2. Trình độ khéo léo trung bình</text>
       </g>
+      <g transform="translate(14, 64)">
+        <circle cx="6" cy="7" r="3" fill="#22d3ee" />
+        <text x="16" y="10" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="9">3. Cường độ lao động trung bình</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- RIGHT PANEL: 3 NHÂN TỐ ẢNH HƯỞNG (SLIDE 5) -->
+  <g transform="translate(414, 68)">
+    <rect width="350" height="248" rx="14" fill="#0f172a" stroke="#f59e0b" stroke-width="1.8" />
+    <rect width="350" height="32" rx="14" fill="rgba(245, 158, 11, 0.15)" />
+    <text x="175" y="16" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle" dominant-baseline="central">3 NHÂN TỐ ẢNH HƯỞNG ĐẾN LƯỢNG GIÁ TRỊ</text>
+
+    <!-- Factor 1: NSLĐ Tỷ lệ nghịch -->
+    <g transform="translate(18, 44)">
+      <rect width="314" height="56" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.2" />
+      <text x="14" y="20" fill="#34d399" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" font-weight="800">1. TỶ LỆ NGHỊCH VỚI NĂNG SUẤT LĐ (NSLĐ)</text>
+      <text x="14" y="38" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="9">• NSLĐ tăng ➔ Lượng giá trị trong 1 đơn vị sp GIẢM ⬇️</text>
+      <text x="245" y="38" fill="#10b981" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5" font-weight="700">Tối ưu chi phí</text>
+    </g>
+
+    <!-- Factor 2: LĐ kết tinh Tỷ lệ thuận -->
+    <g transform="translate(18, 108)">
+      <rect width="314" height="56" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" />
+      <text x="14" y="20" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" font-weight="800">2. TỶ LỆ THUẬN VỚI SỐ LƯỢNG LĐ KẾT TINH</text>
+      <text x="14" y="38" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="9">• Tổng thời gian hao phí tăng ➔ Tổng giá trị TĂNG ⬆️</text>
+      <text x="245" y="38" fill="#38bdf8" font-family="'Be Vietnam Pro', sans-serif" font-size="8.5" font-weight="700">Quy mô giá trị</text>
+    </g>
+
+    <!-- Factor 3: Lao động phức tạp -->
+    <g transform="translate(18, 172)">
+      <rect width="314" height="64" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.2" />
+      <text x="14" y="18" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" font-weight="800">3. LAO ĐỘNG PHỨC TẠP LÀ BỘI SỐ CỦA GIẢN ĐƠN</text>
+      <text x="14" y="36" fill="#cbd5e1" font-family="'Be Vietnam Pro', sans-serif" font-size="9">• Cùng 1 giờ, LĐ kỹ thuật cao, sáng tạo tạo ra lượng</text>
+      <text x="14" y="50" fill="#facc15" font-family="'Be Vietnam Pro', sans-serif" font-size="9" font-weight="700">giá trị gấp nhiều lần lao động giản đơn.</text>
+    </g>
+  </g>
+
+  <!-- BOTTOM COMPARISON PANEL: NSLĐ VS CƯỜNG ĐỘ LAO ĐỘNG -->
+  <g transform="translate(36, 326)">
+    <rect width="728" height="82" rx="12" fill="#0b1329" stroke="#334155" stroke-width="1.5" />
     
+    <!-- Title banner -->
+    <rect x="0" y="0" width="728" height="22" rx="12" fill="rgba(51, 65, 85, 0.4)" />
+    <text x="364" y="11" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="10" font-weight="800" text-anchor="middle" dominant-baseline="central">SO SÁNH BẢN CHẤT: TĂNG NĂNG SUẤT LAO ĐỘNG VS TĂNG CƯỜNG ĐỘ LAO ĐỘNG</text>
+
+    <!-- Left Box: Tăng NSLĐ -->
+    <g transform="translate(24, 28)">
+      <rect width="325" height="46" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1.2" />
+      <text x="12" y="16" fill="#34d399" font-family="'Be Vietnam Pro', sans-serif" font-size="10" font-weight="800">TĂNG NSLĐ (Công nghệ AI / Tự động hóa):</text>
+      <text x="12" y="32" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="9">Sản lượng tăng ⬆️ • Giá trị 1 đơn vị GIẢM ⬇️ • Không hao kiệt sức</text>
+    </g>
+
+    <!-- VS Text -->
+    <text x="364" y="52" fill="#f43f5e" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="900" text-anchor="middle">⚡</text>
+
+    <!-- Right Box: Tăng CĐLĐ -->
+    <g transform="translate(379, 28)">
+      <rect width="325" height="46" rx="8" fill="#78350f" stroke="#f59e0b" stroke-width="1.2" />
+      <text x="12" y="16" fill="#fbbf24" font-family="'Be Vietnam Pro', sans-serif" font-size="10" font-weight="800">TĂNG CƯỜNG ĐỘ LĐ (Tăng ca ép tiến độ):</text>
+      <text x="12" y="32" fill="#e2e8f0" font-family="'Be Vietnam Pro', sans-serif" font-size="9">Sản lượng tăng ⬆️ • Giá trị 1 đơn vị KHÔNG ĐỔI ↔️ • Hao kiệt sức lực</text>
+    </g>
+  </g>
 
   <!-- Bottom Metadata -->
-  <text x="40" y="422" fill="#475569" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="700">KINH TẾ CHÍNH TRỊ TRONG ĐỜI SỐNG</text>
-  <text x="760" y="422" fill="#475569" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="end">MLN122 • KHOA HỌC KINH TẾ CHÍNH TRỊ MÁC – LÊNIN</text>
+  <text x="40" y="428" fill="#475569" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="10" font-weight="700">KINH TẾ CHÍNH TRỊ TRONG ĐỜI SỐNG</text>
+  <text x="760" y="428" fill="#475569" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="end">MLN122 • KHOA HỌC KINH TẾ CHÍNH TRỊ MÁC – LÊNIN</text>
 </svg>

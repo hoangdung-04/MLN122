@@ -177,6 +177,18 @@ export const DETECTIVE_CASES = [
         text: 'Lao động sản xuất hàng hóa có tính hai mặt: Lao động cụ thể tạo ra giá trị sử dụng, lao động trừu tượng tạo ra thực thể giá trị của hàng hóa',
         correctCategory: 'muc_2_2_two_fold',
         hint: 'Phát kiến vĩ đại của C. Mác về tính hai mặt của lao động sản xuất hàng hóa.'
+      },
+      {
+        id: 'c2-clue-7',
+        text: 'Lao động cụ thể là phạm trù vĩnh viễn gắn liền với vật phẩm; ngày càng phong phú, đa dạng, chuyên môn hóa cao theo sự phát triển của KH-CN',
+        correctCategory: 'muc_2_1_gtsd',
+        hint: 'Slide tính chất Lao động Cụ thể: tồn tại dưới mọi hình thái kinh tế.'
+      },
+      {
+        id: 'c2-clue-8',
+        text: 'Mâu thuẫn cơ bản của sản xuất hàng hóa là mâu thuẫn giữa lao động tư nhân (cá nhân) và lao động xã hội, là mầm mống của mọi khủng hoảng kinh tế',
+        correctCategory: 'muc_2_2_two_fold',
+        hint: 'Sơ đồ mâu thuẫn cơ bản của sản xuất hàng hóa trong Slide 3.'
       }
     ],
     philosophicalVerdict: {

@@ -110,26 +110,37 @@ export const HANDBOOK_ENTRIES = [
       {
         code: '2.2',
         title: 'Tính hai mặt của lao động sản xuất hàng hóa (Phát kiến vĩ đại của C. Mác)',
-        summary: 'Lao động sản xuất hàng hóa bắt nguồn từ Phân công lao động xã hội và có tính hai mặt biện chứng (không phải hai hành vi lao động riêng rẽ):\n' +
-          '• Lao động Cụ thể: Là lao động có ích dưới một hình thức nghề nghiệp chuyên môn nhất định. Có 4 đặc trưng riêng biệt:\n' +
-          '  1. Có mục đích riêng (mục đích tạo ra sản phẩm đặc thù);\n' +
-          '  2. Có đối tượng riêng (nguyên vật liệu đặc trưng, vd: vải đối với thợ may, gỗ đối với thợ mộc);\n' +
-          '  3. Có phương pháp, cách thức riêng (kỹ thuật, quy trình thao tác riêng);\n' +
-          '  4. Có kết quả riêng (sản phẩm thành phẩm có công dụng xác định).\n' +
-          '  ➔ Vai trò: Lao động cụ thể tạo ra Giá trị sử dụng của hàng hóa, bảo tồn và chuyển dịch giá trị TLSX cũ (c) vào sản phẩm mới; là phạm trù vĩnh viễn cùng với sự tồn tại của con người.\n' +
-          '• Lao động Trừu tượng: Là sự tiêu hao sức lao động nói chung của người sản xuất hàng hóa (sự tiêu hao sức óc, thần kinh, cơ bắp) không kể hình thức biểu hiện cụ thể.\n' +
-          '  ➔ Vai trò: Lao động trừu tượng tạo ra Giá trị của hàng hóa (lao động sống tạo ra giá trị mới v + m); là một phạm trù lịch sử.\n' +
-          '• Ý nghĩa lý luận: Phát hiện tính hai mặt của lao động giải thích bản chất mâu thuẫn giữa Lao động tư nhân (biểu hiện qua lao động cụ thể) và Lao động xã hội (biểu hiện qua lao động trừu tượng) - nguồn gốc của mọi mâu thuẫn và khủng hoảng trong kinh tế hàng hóa.',
+        summary: 'Lao động sản xuất hàng hóa bắt nguồn từ 2 điều kiện (Phân công LĐXH và Sự độc lập kinh tế giữa người sản xuất) và mang tính hai mặt biện chứng:\n' +
+          '• Lao động Cụ thể:\n' +
+          '  - Là lao động có ích dưới một hình thức nghề nghiệp chuyên môn nhất định, có 4 đặc trưng riêng: Mục đích riêng, Đối tượng riêng, Phương pháp/cách thức riêng, Kết quả riêng.\n' +
+          '  - Là phạm trù vĩnh viễn vì nó gắn liền với giá trị sử dụng, với vật phẩm, tồn tại dưới mọi hình thái kinh tế.\n' +
+          '  - Tạo ra giá trị sử dụng nhất định của hàng hóa.\n' +
+          '  - Ngày càng phong phú, đa dạng, chuyên môn hóa cao nhằm đáp ứng nhu cầu của thị trường và sự phát triển của khoa học công nghệ.\n' +
+          '• Lao động Trừu tượng:\n' +
+          '  - Là sự hao phí sức lao động (SLĐ) nói chung của người sản xuất không kể đến hình thức cụ thể của nó (hao phí cơ bắp, thần kinh, trí óc).\n' +
+          '  - Tạo nên giá trị của hàng hóa (lao động sống tạo ra giá trị mới v + m).\n' +
+          '  - Là một phạm trù lịch sử (chỉ tồn tại trong nền sản xuất hàng hóa).\n' +
+          '  - Phản ánh tính chất tư nhân và tính chất xã hội của lao động sản xuất hàng hóa.\n' +
+          '• Sơ đồ mâu thuẫn cơ bản của sản xuất hàng hóa:\n' +
+          '  - Lao động cụ thể biểu hiện thành Lao động tư nhân (cá nhân); Lao động trừu tượng biểu hiện thành Lao động xã hội.\n' +
+          '  - Mâu thuẫn giữa Lao động tư nhân và Lao động xã hội là mầm mống của mọi mâu thuẫn và khủng hoảng trong kinh tế hàng hóa (hàng hóa sản xuất ra không bán được do không phù hợp nhu cầu xã hội).',
         lifeLesson: 'Kỹ năng cụ thể giúp bạn làm ra sản phẩm, nhưng khả năng lao động trừu tượng (tư duy logic, quản lý cảm xúc, sức bền trí tuệ) mới tạo ra bước nhảy vọt về giá trị bản thân.'
       },
       {
         code: '2.3',
         title: 'Lượng giá trị hàng hóa và các nhân tố ảnh hưởng',
-        summary: '• Thước đo lượng giá trị: Đo bằng thời gian lao động xã hội cần thiết (thời gian đòi hỏi để sản xuất ra một hàng hóa trong điều kiện sản xuất bình thường, trình độ khéo léo trung bình và cường độ lao động trung bình).\n' +
-          '• 3 nhân tố ảnh hưởng lượng giá trị:\n' +
-          '  1. Năng suất lao động: Số lượng sản phẩm tạo ra trong 1 đơn vị thời gian. Tỷ lệ nghịch với lượng giá trị trong 1 đơn vị hàng hóa.\n' +
-          '  2. Cường độ lao động: Mức độ khẩn trương, nặng nhọc của lao động. Khi cường độ lao động tăng, tổng lượng giá trị tạo ra tăng theo, nhưng lượng giá trị trong 1 đơn vị hàng hóa không đổi.\n' +
-          '  3. Mức độ phức tạp của lao động: Lao động phức tạp là bội số của lao động giản đơn. Trong cùng 1 thời gian, lao động phức tạp tạo ra lượng giá trị lớn hơn nhiều so với lao động giản đơn.',
+        summary: '• Thước đo lượng giá trị hàng hóa: Lượng giá trị của hàng hóa là do lượng lao động hao phí để sản xuất ra hàng hóa quyết định, được đo bằng THƯỚC ĐO THỜI GIAN.\n' +
+          '• Thời gian lao động xã hội cần thiết (TGLĐXHCT): Là thời gian cần để sản xuất một hàng hóa trong điều kiện bình thường của xã hội với 3 tiêu chuẩn trung bình:\n' +
+          '  1. Trình độ kỹ thuật trung bình;\n' +
+          '  2. Trình độ khéo léo trung bình;\n' +
+          '  3. Cường độ lao động trung bình.\n' +
+          '• 3 nhân tố cốt lõi ảnh hưởng đến lượng giá trị hàng hóa:\n' +
+          '  1. Tỷ lệ nghịch với Năng suất lao động: Năng suất lao động tăng lên làm thời gian hao phí trên 1 sản phẩm giảm xuống, do đó lượng giá trị trong 1 đơn vị hàng hóa giảm.\n' +
+          '  2. Tỷ lệ thuận với số lượng lao động kết tinh: Tổng thời gian lao động hao phí tăng thì tổng lượng giá trị hàng hóa tạo ra tăng theo.\n' +
+          '  3. Lao động phức tạp là bội số của lao động giản đơn: Trong cùng một đơn vị thời gian, lao động phức tạp (đòi hỏi đào tạo chuyên sâu) tạo ra lượng giá trị lớn hơn nhiều so với lao động giản đơn.\n' +
+          '• Phân biệt Năng suất lao động vs Cường độ lao động:\n' +
+          '  - Tăng NSLĐ (công nghệ/AI): Số sản phẩm tăng, giá trị 1 sản phẩm giảm, hao phí sức lực không đổi.\n' +
+          '  - Tăng CĐLĐ (tăng ca ép tiến độ): Số sản phẩm tăng, giá trị 1 sản phẩm không đổi, hao phí sức lực tăng tương ứng.',
         lifeLesson: 'Để thoát bẫy thu nhập thấp, con đường duy nhất là chuyển từ lao động giản đơn sang lao động phức tạp bằng cách học tập chuyên môn sâu và áp dụng công nghệ tự động hóa.'
       },
       {

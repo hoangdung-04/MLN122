@@ -312,13 +312,13 @@ export const SCENARIOS = [
   {
     "id": "C2-S3",
     "chapter": 2,
-    "topic": "Mục 2.1 • Năng suất lao động vs Cường độ lao động",
-    "title": "Tăng Ca 14 Giờ Hay Đầu Tư Tự Động Hóa AI?",
+    "topic": "Mục 2.3 • Lượng giá trị hàng hóa: TGLĐXH cần thiết & Các nhân tố ảnh hưởng",
+    "title": "Tăng Ca 14 Giờ Hay Đầu Tư Tự Động Hóa AI? Bản Chất Lượng Giá Trị",
     "difficulty": "Trung bình",
-    "philosophyConcept": "Năng suất lao động & Cường độ lao động",
+    "philosophyConcept": "Lượng giá trị hàng hóa, TGLĐXH cần thiết & Năng suất lao động",
     "image": "./assets/images/scenarios/c2-s3.svg",
-    "situation": "Một công ty thương mại điện tử cần xử lý gấp 50.000 đơn hàng vào dịp Black Friday. Quản lý A đề xuất ép toàn bộ nhân viên tăng ca lên 14 tiếng/ngày (tăng cường độ lao động). Quản lý B đề xuất ứng dụng giải pháp tự động hóa bằng AI để phân loại đơn hàng (tăng năng suất lao động).",
-    "question": "Dưới góc độ quy luật lượng giá trị hàng hóa của C. Mác, phương án nào mang lại hiệu quả kinh tế biện chứng lâu dài?",
+    "situation": "Một trung tâm xử lý logistics thương mại điện tử cần hoàn thành 50.000 đơn hàng vào đợt khuyến mãi lớn. Quản lý A đề xuất ép toàn bộ nhân viên tăng ca lên 14 tiếng/ngày (tăng cường độ lao động). Quản lý B đề xuất đầu tư hệ thống robot phân loại tự động ứng dụng AI kết hợp chuyển đổi nhân sự sang lao động kỹ thuật cao (tăng năng suất lao động và phát triển lao động phức tạp). Ban giám đốc đứng trước bài toán đánh giá chi phí và bản chất lượng giá trị của mỗi đơn vị dịch vụ trong điều kiện bình thường của xã hội.",
+    "question": "Dưới góc độ lý luận về lượng giá trị hàng hóa và các nhân tố ảnh hưởng của C. Mác, phương án nào phản ánh quy luật kinh tế đúng đắn?",
     "dimensionScores": {
       "connection": 30,
       "contradiction": 30,
@@ -329,28 +329,28 @@ export const SCENARIOS = [
     "options": [
       {
         "id": "A",
-        "text": "Tăng năng suất lao động bằng AI: Giảm hao phí lao động trên một đơn vị sản phẩm, tăng khối lượng sản phẩm mà không vắt kiệt sức khỏe người lao động.",
+        "text": "Đầu tư tự động hóa AI để tăng năng suất lao động: Lượng giá trị trong 1 đơn vị sản phẩm tỷ lệ nghịch với NSLĐ (giảm chi phí trên mỗi đơn vị), đồng thời phát huy vai trò lao động phức tạp (bội số của lao động giản đơn) mà không vắt kiệt thể chất người lao động.",
         "isDialectical": true,
-        "consequence": "Công ty hoàn thành chỉ tiêu trước thời hạn, chi phí vận hành đơn vị giảm 40%, nhân viên phấn khởi và giữ vững tinh thần cống hiến.",
-        "philosophicalLens": "Quy luật lượng giá trị: Tăng NSLĐ làm giảm lượng giá trị trong một đơn vị hàng hóa, tạo ra lợi thế cạnh tranh vượt trội; trong khi tăng CĐLĐ chỉ làm tăng tổng sản phẩm cùng với tổng hao phí sức lực mà lượng giá trị 1 đơn vị không đổi."
+        "consequence": "Công ty xử lý vượt định mức, chi phí đơn vị giảm mạnh, tạo lợi thế giá thành vượt trội so với mức hao phí thời gian lao động xã hội cần thiết của thị trường.",
+        "philosophicalLens": "Vận dụng trọn vẹn quy luật lượng giá trị chuẩn Slide: Lượng giá trị tỷ lệ nghịch với NSLĐ; lao động phức tạp tạo nhiều giá trị hơn; trong khi tăng CĐLĐ chỉ làm tăng tổng hao phí sức lực mà lượng giá trị 1 đơn vị hàng hóa không đổi."
       },
       {
         "id": "B",
-        "text": "Ép tăng ca 14 tiếng liên tục vì không muốn tốn tiền đầu tư phần mềm tự động hóa.",
+        "text": "Ép tăng ca 14 tiếng liên tục vì cho rằng chỉ cần kéo dài giờ làm là tự khắc giảm được giá thành đơn vị sản phẩm.",
         "isDialectical": false,
-        "consequence": "Nhân viên kiệt sức, sai sót đơn hàng tăng vọt 35%, nhiều nhân sự chủ chốt đồng loạt nộp đơn nghỉ việc gây khủng hoảng chuỗi vận hành.",
-        "philosophicalLens": "Tăng CĐLĐ có giới hạn sinh học tự nhiên và làm cạn kiệt giá trị hàng hóa sức lao động, mang tính chất bóc lột thô sơ kiểu thế kỷ XIX."
+        "consequence": "Nhân viên kiệt sức, tỷ lệ sai sót và hư hỏng hàng hóa tăng vọt, chi phí đền bù vượt xa tiền lãi và nhiều nhân sự chủ chốt nghỉ việc.",
+        "philosophicalLens": "Nhầm lẫn tai hại giữa NSLĐ và CĐLĐ: Tăng CĐLĐ không làm giảm lượng giá trị 1 đơn vị sản phẩm, lại vấp phải giới hạn sinh lý của con người."
       },
       {
         "id": "C",
-        "text": "Giảm số lượng đơn nhận xuống 50% để không phải tăng ca lẫn đầu tư công nghệ.",
+        "text": "Cắt giảm 50% đơn hàng để duy trì quy trình thủ công lạc hậu, từ chối cả tăng ca lẫn áp dụng công nghệ.",
         "isDialectical": false,
-        "consequence": "Nhường toàn bộ thị phần cho đối thủ cạnh tranh và tụt hậu trên thị trường.",
-        "philosophicalLens": "Bảo thủ trì trệ, từ chối phát triển lực lượng sản xuất trước đòi hỏi khách quan của thị trường."
+        "consequence": "Thời gian lao động cá biệt vượt xa thời gian lao động xã hội cần thiết, doanh nghiệp thua lỗ và nhanh chóng bị thị trường đào thải.",
+        "philosophicalLens": "Bảo thủ, tụt hậu so với trình độ kỹ thuật và trình độ khéo léo trung bình của xã hội."
       }
     ],
-    "explanation": "Tăng năng suất lao động làm giảm thời gian lao động xã hội cần thiết trong 1 đơn vị hàng hóa, nâng cao sức cạnh tranh và tạo dư địa phát triển bền vững.",
-    "coreLesson": "Con đường nâng cao hiệu quả kinh tế chân chính là cải tiến công nghệ và năng suất lao động, không phải vắt kiệt thể lực con người."
+    "explanation": "Lượng giá trị hàng hóa do thời gian lao động xã hội cần thiết quyết định (xác định trong ĐK bình thường của xã hội với kỹ thuật TB, khéo léo TB, cường độ TB) và tỷ lệ nghịch với năng suất lao động.",
+    "coreLesson": "Cải tiến công nghệ, nâng cao năng suất và phát triển lao động phức tạp là con đường duy nhất để hạ giá thành, tăng sức cạnh tranh và phát triển kinh tế bền vững."
   },
   {
     "id": "C2-S4",
