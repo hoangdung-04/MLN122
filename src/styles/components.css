@@ -9,16 +9,22 @@
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-subtle);
-  padding: 0.85rem 0;
+  padding: 0.65rem 0;
   box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04);
   transition: all 0.3s ease;
+}
+
+.site-header .container {
+  max-width: 1440px;
+  padding: 0 1.25rem;
 }
 
 .header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1.25rem;
+  width: 100%;
 }
 
 .brand-logo {
@@ -71,18 +77,25 @@
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  flex-wrap: wrap;
+  gap: 0.45rem;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.nav-actions::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
-  padding: 0.48rem 0.9rem;
+  gap: 0.4rem;
+  padding: 0.42rem 0.75rem;
   border-radius: var(--radius-sm);
   font-family: var(--font-heading);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--text-muted);
   background: var(--bg-card);
@@ -108,17 +121,19 @@
 .xp-counter {
   display: flex;
   align-items: center;
-  gap: 0.45rem;
-  padding: 0.45rem 0.95rem;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
   border-radius: var(--radius-full);
   background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(217, 119, 6, 0.18));
   border: 1px solid rgba(217, 119, 6, 0.35);
   color: var(--accent-amber);
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   box-shadow: 0 2px 8px rgba(245, 158, 11, 0.15);
   animation: pulseGlowSoft 3s infinite ease-in-out;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 /* =================================================================
