@@ -1,4 +1,4 @@
-﻿import { HANDBOOK_ENTRIES } from '../data/handbook.js';
+import { HANDBOOK_ENTRIES } from '../data/handbook.js';
 import { sound } from '../core/audio.js';
 
 export function renderHandbookModal(container, onClose) {
@@ -38,7 +38,7 @@ export function renderHandbookModal(container, onClose) {
         <button class="modal-close-btn" id="handbook-close-btn">✕</button>
 
         <div style="text-align: center; margin-bottom: 1.8rem;">
-          <h2 style="font-size: 1.8rem; margin-bottom: 0.4rem; color: var(--text-heading);">Sổ Tay Triết Học Bỏ Túi</h2>
+          <h2 style="font-size: 1.8rem; margin-bottom: 0.4rem; color: var(--text-heading);">Sổ Tay Kinh Tế Chính Trị Bỏ Túi</h2>
           <p style="font-size: 0.95rem; color: var(--text-muted);">
             Tóm lược kiến thức môn MLN122 gắn liền trực tiếp với bài học thực tiễn đời sống.
           </p>

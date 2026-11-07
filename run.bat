@@ -1,11 +1,11 @@
-﻿@echo off
+@echo off
 cd /d "%~dp0"
-title MLN122 - Triet hoc trong doi song (Philosophy in Life)
+title MLN122 - Kinh te chinh tri trong doi song (Political Economy in Life)
 cls
 
 echo =========================================================================
-echo    MLN122 - TRIET HOC TRONG DOI SONG (PHILOSOPHY IN LIFE)
-echo    "Hoc triet hoc bang cach nhin vao chinh cuoc song."
+echo    MLN122 - KINH TE CHINH TRI TRONG DOI SONG (POLITICAL ECONOMY IN LIFE)
+echo    "Thau hieu quy luat thi truong - Lam chu gia tri va doi song."
 echo =========================================================================
 echo.
 
