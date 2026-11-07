@@ -23,6 +23,88 @@
 
 export const DETECTIVE_CASES = [
   {
+    id: 'CASE-000',
+    code: 'HỒ SƠ KHỞI NGUYÊN',
+    chapterBadge: 'CHƯƠNG 1 • NỀN TẢNG',
+    shortTopic: 'Chương 1: Tiến trình KTCT',
+    title: 'Hồ Sơ Nền Tảng: Đại Án Tiến Trình Tư Tưởng & Bản Chất Khoa Học Của KTCT Mác – Lênin',
+    subtitle: 'Chuẩn Chương 1: Từ "Kinh bang tế thế" (1615), Adam Smith (1776) đến KTCT Mác – Lênin đỉnh cao khoa học',
+    image: './assets/images/cases/case-c1-origin.svg',
+    dossierLevel: 'CẤP ĐỘ: CƠ BẢN',
+    accentColor: '#0284c7',
+    backgroundStory: 'Một nhóm chuyên gia tư vấn chiến lược tuyên bố: "Xã hội số ngày nay không cần sản xuất vật chất, chỉ cần lưu thông buôn bán và phân tích tâm lý hành vi vi mô là đất nước tự khắc giàu có; kinh tế chính trị chỉ là lý thuyết cũ kỹ". Với tư cách là Chuyên gia Điều tra Kinh tế Chính trị MLN122, bạn hãy phân loại 5 manh mối lịch sử - học thuật chuẩn Slide bài giảng vào 5 ngăn nội dung khoa học để vạch trần sai lầm của quan điểm này và khẳng định bản chất khoa học của KTCT Mác – Lênin!',
+    categories: [
+      { 
+        id: 'muc_1_1_origin', 
+        name: 'MỤC 1.1A: KHỞI NGUỒN THUẬT NGỮ (1615 - 1776)', 
+        desc: 'Montchrestien (1615), thương nhân & sức mạnh quốc gia; Adam Smith (1776, The Wealth of Nations) đưa KTCT thành hệ thống khoa học', 
+        color: '#0ea5e9' 
+      },
+      { 
+        id: 'muc_1_1_stages_1', 
+        name: 'MỤC 1.1B: GIAI ĐOẠN 1 (CỔ ĐẠI ĐẾN CUỐI TK XVIII)', 
+        desc: 'Tiến trình phát triển: Tư tưởng cổ trung đại ➔ Chủ nghĩa trọng thương (vàng bạc, lưu thông) ➔ Chủ nghĩa trọng nông ➔ KTCT tư sản cổ điển Anh', 
+        color: '#10b981' 
+      },
+      { 
+        id: 'muc_1_1_stages_2', 
+        name: 'MỤC 1.1C: GIAI ĐOẠN 2 & SỰ RẼ NHÁNH TƯ TƯỞNG', 
+        desc: 'Kế thừa thành KTCT Mác - Lênin vs rẽ nhánh sang Kinh tế học tầm thường (chỉ đi vào tâm lý, hành vi, không phân tích quan hệ xã hội của sản xuất)', 
+        color: '#f59e0b' 
+      },
+      { 
+        id: 'muc_1_1_marx_lenin', 
+        name: 'MỤC 1.1D: KTCT MÁC – LÊNIN ĐỈNH CAO KHOA HỌC', 
+        desc: 'Ra đời những năm 40 TK XIX, tìm ra quy luật PTSX tư bản, phạm trù KTTT và quan hệ giai cấp; Lênin bổ sung thời đại đế quốc và độc quyền', 
+        color: '#ef4444' 
+      },
+      { 
+        id: 'muc_1_2_definition', 
+        name: 'MỤC 1.2: ĐỊNH NGHĨA KHOA HỌC & ĐỐI TƯỢNG NGHIÊN CỨU', 
+        desc: 'Môn khoa học nghiên cứu các quan hệ kinh tế để tìm ra quy luật chi phối nền sản xuất xã hội qua 4 khâu: Sản xuất - Phân phối - Trao đổi - Tiêu dùng', 
+        color: '#8b5cf6' 
+      }
+    ],
+    clues: [
+      {
+        id: 'c0-clue-1',
+        text: 'Trong "Chuyên luận về kinh tế chính trị" (1615), Montchrestien đề xuất môn KTCT, khẳng định sức mạnh nhà nước gắn với sự giàu có quốc gia và thương nhân là gương mặt chính',
+        correctCategory: 'muc_1_1_origin',
+        hint: 'Cột mốc đầu tiên xuất hiện thuật ngữ Political Economy năm 1615 trong Slide Mục 1.1.'
+      },
+      {
+        id: 'c0-clue-2',
+        text: 'Chủ nghĩa trọng thương (TK XV - XVII) coi trọng ngoại thương và tích lũy vàng bạc, sau đó chuyển sang Chủ nghĩa trọng nông đề cao sản xuất nông nghiệp',
+        correctCategory: 'muc_1_1_stages_1',
+        hint: 'Tiến trình phát triển trong Giai đoạn 1 từ cổ đại đến cuối TK XVIII.'
+      },
+      {
+        id: 'c0-clue-3',
+        text: 'Kinh tế học tầm thường chỉ đi vào khái quát tâm lý, hành vi mua bán bề ngoài mà không đi sâu phân tích các quan hệ xã hội trong quan hệ sản xuất',
+        correctCategory: 'muc_1_1_stages_2',
+        hint: 'Hạn chế của dòng kinh tế học tư sản tầm thường được phân tích ở Giai đoạn 2 Slide Mục 1.1.'
+      },
+      {
+        id: 'c0-clue-4',
+        text: 'Kinh tế chính trị Mác ra đời những năm 40 TK XIX tìm ra quy luật giá trị thặng dư; đầu TK XX Lênin bổ sung các đặc điểm kinh tế của CNTB độc quyền',
+        correctCategory: 'muc_1_1_marx_lenin',
+        hint: 'Sự hình thành và phát triển của KTCT Mác - Lênin khoa học và cách mạng.'
+      },
+      {
+        id: 'c0-clue-5',
+        text: 'KTCT nghiên cứu các quan hệ kinh tế để tìm ra quy luật chi phối sự vận động của hiện tượng và hoạt động kinh tế tương ứng với trình độ của nền sản xuất xã hội',
+        correctCategory: 'muc_1_2_definition',
+        hint: 'Định nghĩa khoa học cốt lõi về bản chất môn học trong Slide Chương 1.'
+      }
+    ],
+    philosophicalVerdict: {
+      headline: 'Phá án thành công: Khẳng định bản chất khoa học và vai trò nền tảng của KTCT Mác – Lênin!',
+      concept: 'Chương 1: Tiến trình lịch sử tư tưởng, Đối tượng, Phương pháp và Chức năng của KTCT',
+      analysis: 'Căn cứ toàn diện Slide Chương 1 MLN122: Thuật ngữ bắt nguồn từ "kinh bang tế thế", trải qua các cột mốc vĩ đại của Montchrestien (1615), Adam Smith (1776) và đạt đến đỉnh cao khoa học cách mạng với C. Mác, Ph. Ăng-ghen và V.I. Lênin. Khoa học kinh tế chính trị chỉ rõ: Sản xuất vật chất và quan hệ kinh tế giữa người với người trong 4 khâu (Sản xuất – Phân phối – Trao đổi – Tiêu dùng) mới là cội nguồn quyết định sự giàu có của quốc gia, đập tan luận điểm phiến diện của kinh tế học tầm thường!',
+      xpAwarded: 160
+    }
+  },
+  {
     id: 'CASE-001',
     code: 'HỒ SƠ #001',
     chapterBadge: 'CHƯƠNG 3 • MỤC 3.1',

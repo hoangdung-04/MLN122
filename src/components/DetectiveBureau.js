@@ -157,7 +157,7 @@ export function renderDetectiveBureau(container, caseId, onBackToMap, onSelectOt
             <span class="tab-card-code">${c.code}</span>
             <span class="tab-card-badge">${chapterLabel}</span>
           </div>
-          <div class="tab-card-topic">${shortTopics[idx]}</div>
+          <div class="tab-card-topic">${c.shortTopic || c.subtitle?.split(":")[0] || ("Hồ sơ " + (idx+1))}</div>
           <div class="tab-card-status">
             ${solved 
               ? '<span class="status-pill-solved">✓ Đã phá giải</span>' 

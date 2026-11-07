@@ -112,6 +112,6 @@ export const SPECIAL_MODULES = [
     desc: 'Hóa thân thành Chuyên gia Điều tra Kinh tế: Phá giải các nghịch lý thị trường, bóc trần bản chất giá trị thặng dư, quy luật tích lũy tư bản, thể chế KTTT định hướng XHCN và chiến lược CNH 4.0 hội nhập quốc tế!',
     accentColor: '#dc2626',
     icon: 'search',
-    totalCases: 6
+    totalCases: 7
   }
 ];
