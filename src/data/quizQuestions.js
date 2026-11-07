@@ -729,5 +729,245 @@ export const QUIZ_QUESTIONS = [
     explanation: 'V.I. Lênin đã chỉ ra: Tự do cạnh tranh đẻ ra tập trung sản xuất và sự tập trung sản xuất này, khi phát triển đến một mức độ nhất định, tất yếu dẫn tới độc quyền.',
     quote: 'Slide Chương 4 • Mục 4.1: Nguyên nhân hình thành độc quyền'
   }
+,
+  {
+    id: 'q-c2-17',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.4. Tiến trình các hình thái giá trị',
+    question: 'Theo slide bài giảng MLN122 (Mục 1.3 Tiền tệ), lịch sử phát triển của các hình thái giá trị đã trải qua 4 giai đoạn tuần tự nào?',
+    options: [
+      'Hình thái giản đơn (ngẫu nhiên) ➔ Hình thái mở rộng (đầy đủ) ➔ Hình thái chung của giá trị ➔ Hình thái tiền tệ',
+      'Hình thái tiền giấy ➔ Hình thái thẻ tín dụng ➔ Hình thái tiền số ➔ Hình thái đổi hàng trực tiếp',
+      'Hình thái độc quyền ➔ Hình thái tự do ➔ Hình thái bao cấp ➔ Hình thái kinh tế mở',
+      'Hình thái phong kiến ➔ Hình thái tư bản ➔ Hình thái đế quốc ➔ Hình thái toàn cầu hóa'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide 1.3 Tiền tệ chỉ rõ 4 hình thái giá trị: (1) Hình thái giản đơn/ngẫu nhiên; (2) Hình thái mở rộng/đầy đủ; (3) Hình thái chung của giá trị; (4) Hình thái tiền tệ.',
+    quote: 'Slide Chương 2 • Mục 1.3: Các hình thái biểu hiện của giá trị'
+  },
+  {
+    id: 'q-c2-18',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.4. Hình thái chung của giá trị',
+    question: 'Trong slide bài giảng MLN122, thí dụ chuẩn nào được đưa ra để minh họa cho "Hình thái chung của giá trị"?',
+    options: [
+      '1 cái áo = 10 đấu chè = 40 đấu cà phê = 0,2 gam vàng = } 20 vuông vải (vải làm vật ngang giá chung)',
+      '1 mét vải = 5 kg thóc (trao đổi trực tiếp giản đơn)',
+      '1 ounce vàng = 2.000 Đô la Mỹ',
+      '1 tấn lúa mì = 2 con cừu'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide hình thái chung nêu rõ: Giá trị của mọi hàng hóa đều được biểu hiện ở GTSD của một hàng hóa đóng vai trò làm vật ngang giá chung: 1 cái áo = 10 đấu chè = 40 đấu cà phê = 0,2 gam vàng = } 20 vuông vải.',
+    quote: 'Slide Chương 2 • Mục 1.3: Hình thái chung của giá trị'
+  },
+  {
+    id: 'q-c2-19',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.4. Bản chất tiền tệ & Chế độ song bản vị',
+    question: 'Vì sao vàng và bạc được lịch sử lựa chọn để cố định làm vật ngang giá chung độc quyền (tiền tệ)?',
+    options: [
+      'Vì cùng là hàng hóa có giá trị và có ưu thế tự nhiên: thuần nhất về chất, dễ chia nhỏ gộp lại, không mòn gỉ, giá trị cao trong thể tích nhỏ',
+      'Vì chính phủ các nước ban hành sắc lệnh cưỡng chế người dân phải dùng vàng bạc',
+      'Vì số lượng vàng bạc trong lòng đất là vô tận không bao giờ cạn kiệt',
+      'Vì mọi loại ngũ cốc và vải vóc đều tự động biến thành vàng sau một thời gian bảo quản'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide chỉ rõ: Bạc và vàng cùng làm tiền tệ (chế độ song bản vị) vì: Cùng là hàng hóa và có ưu thế tự nhiên (thuần nhất, dễ chia nhỏ, không mòn gỉ, giá trị cao trong thể tích nhỏ).',
+    quote: 'Slide Chương 2 • Mục 1.3: Chế độ song bản vị và ưu thế của vàng/bạc'
+  },
+  {
+    id: 'q-c2-20',
+    chapter: 2,
+    chapterTitle: 'Chương 2: Hàng hóa & Thị trường',
+    category: '2.4. Các chủ thể tham gia thị trường',
+    question: 'Theo Slide Session 7, bốn chủ thể cơ bản tham gia vào nền kinh tế thị trường gồm những ai?',
+    options: [
+      'Người sản xuất, Người tiêu dùng, Các chủ thể trung gian, và Nhà nước',
+      'Chủ ngân hàng, Người vay tiền, Cảnh sát kinh tế, và Tòa án',
+      'Nông dân, Thợ thủ công, Địa chủ, và Thương nhân nước ngoài',
+      'Công ty công nghệ, Người sáng tạo nội dung, Kỹ sư AI, và Nhà đầu tư mạo hiểm'
+    ],
+    correctIndex: 0,
+    explanation: 'Session 7 phân tích 4 nhóm chủ thể chính: Người sản xuất (tạo ra hàng hóa), Người tiêu dùng (định hướng sản xuất), Chủ thể trung gian (kết nối lưu thông, logistics), và Nhà nước (quản lý, điều tiết vĩ mô).',
+    quote: 'Slide Chương 2 • Session 7: Các chủ thể tham gia thị trường'
+  },
+  {
+    id: 'q-c3-08',
+    chapter: 3,
+    chapterTitle: 'Chương 3: Giá trị thặng dư',
+    category: '3.2. Cấu tạo hữu cơ của tư bản',
+    question: 'Theo Slide Session 10, cấu tạo hữu cơ của tư bản (ký hiệu c/v) là gì và có xu hướng biến động như thế nào khi kỹ thuật phát triển?',
+    options: [
+      'Là cấu tạo giá trị do cấu tạo kỹ thuật quyết định và phản ánh sự thay đổi của cấu tạo kỹ thuật; có xu hướng ngày càng tăng (c/v tăng)',
+      'Là tỷ lệ giữa tiền lương công nhân và lợi nhuận của chủ doanh nghiệp; luôn luôn giữ cố định',
+      'Là tổng số giờ làm việc trong ngày chia cho số lượng máy móc thiết bị; có xu hướng giảm',
+      'Là tỷ lệ chia cổ tức hàng năm của các công ty cổ phần niêm yết'
+    ],
+    correctIndex: 0,
+    explanation: 'Cấu tạo hữu cơ c/v phản ánh sự kết hợp giữa tư bản bất biến (c) và tư bản khả biến (v). Cùng với sự tiến bộ của KH-CN, tỷ lệ máy móc thiết bị (c) tăng nhanh hơn nhân công (v), làm c/v có xu hướng ngày càng tăng.',
+    quote: 'Slide Chương 3 • Session 10: Cấu tạo hữu cơ của tư bản (c/v)'
+  },
+  {
+    id: 'q-c3-09',
+    chapter: 3,
+    chapterTitle: 'Chương 3: Giá trị thặng dư',
+    category: '3.2. Tích tụ vs Tập trung tư bản',
+    question: 'Điểm khác biệt căn bản giữa "Tích tụ tư bản" và "Tập trung tư bản" theo Slide Session 10 là gì?',
+    options: [
+      'Tích tụ làm tăng cả quy mô tư bản cá biệt lẫn tổng tư bản xã hội; còn Tập trung chỉ làm tăng quy mô tư bản cá biệt thông qua sáp nhập mà không làm tăng ngay tổng tư bản xã hội',
+      'Tích tụ chỉ xảy ra trong nông nghiệp, còn tập trung chỉ diễn ra trong các công ty công nghệ',
+      'Tích tụ do nhà nước thực hiện, còn tập trung do người lao động tự nguyện đóng góp',
+      'Tích tụ làm giảm số lượng doanh nghiệp lớn, còn tập trung sinh ra hàng triệu hộ kinh doanh nhỏ'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide Session 10 phân biệt rõ: Tích tụ tư bản là sự tăng quy mô tư bản cá biệt bằng tích lũy GTTD (tổng tư bản XH tăng). Tập trung tư bản là sự kết hợp nhiều tư bản nhỏ thành tư bản lớn qua cạnh tranh và tín dụng (tổng tư bản XH không đổi ngay lúc sáp nhập).',
+    quote: 'Slide Chương 3 • Session 10: Tích tụ và tập trung tư bản'
+  },
+  {
+    id: 'q-c3-10',
+    chapter: 3,
+    chapterTitle: 'Chương 3: Giá trị thặng dư',
+    category: '3.3. Tỷ suất lợi nhuận bình quân',
+    question: 'Sự cạnh tranh giữa các ngành sản xuất khác nhau trong CNTB dẫn tới kết quả tất yếu nào?',
+    options: [
+      'Hình thành Tỷ suất lợi nhuận bình quân (p̄) và Giá trị hàng hóa chuyển hóa thành Giá cả sản xuất (k + p̄)',
+      'Tất cả các ngành sản xuất đều bị phá sản và nền kinh tế quay trở lại thời kỳ đổi hàng',
+      'Nhà nước ban hành lệnh cấm doanh nghiệp chuyển dịch vốn đầu tư giữa các ngành',
+      'Mọi sản phẩm trên thị trường đều được bán theo giá do người tiêu dùng tự do quyết định'
+    ],
+    correctIndex: 0,
+    explanation: 'Cạnh tranh giữa các ngành (luân chuyển vốn từ ngành tỷ suất thấp sang ngành tỷ suất cao) dẫn tới sự san bằng các tỷ suất lợi nhuận thành tỷ suất lợi nhuận bình quân (p̄), giá trị chuyển hóa thành giá cả sản xuất = k + p̄.',
+    quote: 'Slide Chương 3 • Session 11: Lợi nhuận bình quân và giá cả sản xuất'
+  },
+  {
+    id: 'q-c4-02',
+    chapter: 4,
+    chapterTitle: 'Chương 4: Cạnh tranh & Độc quyền',
+    category: '4.1. Các tổ chức độc quyền',
+    question: 'Theo Slide Session 14, bốn hình thức tổ chức độc quyền cơ bản phát triển từ thấp đến cao trong lịch sử là gì?',
+    options: [
+      'Cartel ➔ Syndicate ➔ Trust ➔ Consortium',
+      'Công ty TNHH ➔ Công ty Cổ phần ➔ Tập đoàn đa quốc gia ➔ Hợp tác xã',
+      'Kinh tế gia đình ➔ Hộ kinh doanh ➔ Doanh nghiệp tư nhân ➔ Doanh nghiệp nhà nước',
+      'Startup ➔ Doanh nghiệp vừa ➔ Doanh nghiệp lớn ➔ Siêu tập đoàn'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide 14 chỉ rõ 4 hình thức tổ chức độc quyền theo thứ tự phát triển: Cartel (thỏa thuận giá/thị phần) -> Syndicate (chung đầu mối tiêu thụ) -> Trust (thống nhất cả SX và lưu thông) -> Consortium (liên minh đa ngành khổng lồ).',
+    quote: 'Slide Chương 4 • Session 14: Các hình thức tổ chức độc quyền'
+  },
+  {
+    id: 'q-c4-03',
+    chapter: 4,
+    chapterTitle: 'Chương 4: Cạnh tranh & Độc quyền',
+    category: '4.1. Tư bản tài chính & Đầu sỏ tài chính',
+    question: 'Tư bản tài chính được hình thành từ quá trình lịch sử nào theo phân tích của V.I. Lênin?',
+    options: [
+      'Sự thâm nhập và dung hợp lẫn nhau giữa tổ chức độc quyền ngân hàng và tổ chức độc quyền công nghiệp',
+      'Sự hợp nhất giữa quỹ tiền tệ quốc tế IMF và ngân hàng thế giới WB',
+      'Quá trình in thêm thật nhiều tiền mặt giấy và tiền polymer của ngân hàng nhà nước',
+      'Sự đóng góp tiền tiết kiệm của hàng triệu công nhân trong các nhà máy'
+    ],
+    correctIndex: 0,
+    explanation: 'Lênin chỉ rõ: Tư bản tài chính là sự xâm nhập liên kết lẫn nhau giữa các tổ chức độc quyền ngân hàng với các tổ chức độc quyền công nghiệp. Đầu sỏ tài chính thống trị kinh tế và chính trị thông qua "chế độ tham dự".',
+    quote: 'Slide Chương 4 • Session 14: Tư bản tài chính và đầu sỏ tài chính'
+  },
+  {
+    id: 'q-c4-04',
+    chapter: 4,
+    chapterTitle: 'Chương 4: Cạnh tranh & Độc quyền',
+    category: '4.1. Xuất khẩu tư bản',
+    question: 'Bản chất của "Xuất khẩu tư bản" - một trong 5 đặc điểm kinh tế của độc quyền - là gì?',
+    options: [
+      'Xuất khẩu giá trị ra nước ngoài (đầu tư trực tiếp FDI hoặc cho vay FPI) nhằm chiếm đoạt giá trị thặng dư ở các nước nhập khẩu tư bản',
+      'Chỉ xuất khẩu các container hàng hóa tiêu dùng ra các siêu thị nước ngoài',
+      'Đưa công nhân và kỹ sư trong nước ra nước ngoài đi du lịch nghỉ dưỡng định kỳ',
+      'Tặng không các thiết bị máy móc cũ kỹ cho các nước nghèo mà không thu tiền'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide Session 14 phân biệt: Xuất khẩu hàng hóa là mang hàng ra bán ở nước ngoài thu tiền; còn Xuất khẩu tư bản là đưa tư bản ra nước ngoài để bóc lột sức lao động và tài nguyên ở nước sở tại, thu về giá trị thặng dư cao.',
+    quote: 'Slide Chương 4 • Session 14: Xuất khẩu tư bản'
+  },
+  {
+    id: 'q-c4-05',
+    chapter: 4,
+    chapterTitle: 'Chương 4: Cạnh tranh & Độc quyền',
+    category: '4.2. Vai trò lịch sử của CNTB',
+    question: 'Giới hạn lịch sử lớn nhất của chủ nghĩa tư bản được kinh tế chính trị Mác – Lênin chỉ ra là gì?',
+    options: [
+      'Mâu thuẫn nan giải giữa tính chất xã hội hóa cao của LLSX với chế độ chiếm hữu tư nhân TBCN về tư liệu sản xuất',
+      'Không đủ nguồn nhân lực có trình độ cử nhân đại học để vận hành máy móc',
+      'Sự cạn kiệt của giấy in tiền trên phạm vi toàn cầu',
+      'Sự thiếu hụt trầm trọng các tuyến cáp quang biển quốc tế'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide Session 16 khẳng định giới hạn lịch sử của CNTB: Mâu thuẫn cơ bản giữa tính chất và trình độ xã hội hóa ngày càng cao của LLSX với chế độ chiếm hữu tư nhân TBCN đối với TLSX, dẫn tới bất bình đẳng sâu sắc và khủng hoảng kinh tế chu kỳ.',
+    quote: 'Slide Chương 4 • Session 16: Giới hạn lịch sử của chủ nghĩa tư bản'
+  },
+  {
+    id: 'q-c5-07',
+    chapter: 5,
+    chapterTitle: 'Chương 5: KTTT định hướng XHCN & Lợi ích KT',
+    category: '5.2. Hoàn thiện thể chế kinh tế thị trường',
+    question: 'Nội dung trọng tâm của việc hoàn thiện thể chế kinh tế thị trường định hướng XHCN ở Việt Nam theo Slide Session 19 là gì?',
+    options: [
+      'Hoàn thiện thể chế về sở hữu, phát triển đồng bộ các yếu tố thị trường và các loại thị trường, gắn tăng trưởng kinh tế với tiến bộ và công bằng xã hội',
+      'Xóa bỏ hoàn toàn kinh tế tư nhân và chỉ duy trì các doanh nghiệp 100% vốn nhà nước',
+      'Tự do hóa hoàn toàn và xóa bỏ vai trò quản lý điều tiết vĩ mô của nhà nước',
+      'Cấm các ngân hàng thương mại cho vay vốn phát triển công nghệ cao'
+    ],
+    correctIndex: 0,
+    explanation: 'Session 19 nêu rõ các nội dung hoàn thiện: (1) Thể chế sở hữu và các thành phần kinh tế; (2) Phát triển đồng bộ các loại thị trường; (3) Gắn tăng trưởng với tiến bộ, công bằng xã hội; (4) Nâng cao năng lực lãnh đạo và quản lý của Nhà nước.',
+    quote: 'Slide Chương 5 • Session 19: Hoàn thiện thể chế KTTT định hướng XHCN'
+  },
+  {
+    id: 'q-c5-08',
+    chapter: 5,
+    chapterTitle: 'Chương 5: KTTT định hướng XHCN & Lợi ích KT',
+    category: '5.3. Quan hệ lợi ích kinh tế',
+    question: 'Theo Slide Session 20 & 21, đâu là động lực trực tiếp và mạnh mẽ nhất thúc đẩy các chủ thể tham gia vào hoạt động kinh tế?',
+    options: [
+      'Lợi ích kinh tế thiết thân của mỗi cá nhân và tổ chức',
+      'Lời khen thưởng tinh thần trên bảng tin của cơ quan',
+      'Các danh hiệu thi đua ngắn hạn không gắn với thu nhập',
+      'Sự tò mò ngẫu nhiên về thị trường chứng khoán'
+    ],
+    correctIndex: 0,
+    explanation: 'Lợi ích kinh tế là biểu hiện cụ thể của quan hệ sản xuất, là động lực trực tiếp của con người trong các hoạt động kinh tế - xã hội. Lợi ích cá nhân là cơ sở, kết hợp hài hòa với lợi ích tập thể và xã hội.',
+    quote: 'Slide Chương 5 • Session 20: Bản chất và vai trò của lợi ích kinh tế'
+  },
+  {
+    id: 'q-c6-06',
+    chapter: 6,
+    chapterTitle: 'Chương 6: CNH - HĐH & Hội nhập kinh tế',
+    category: '6.1. Bốn cuộc cách mạng công nghiệp',
+    question: 'Theo Slide Session 24, cuộc Cách mạng công nghiệp lần thứ tư (CMCN 4.0) có đặc trưng cốt lõi nào?',
+    options: [
+      'Dựa trên nền tảng kỹ thuật số, tích hợp hệ thống vật lý - không gian mạng (CPS), trí tuệ nhân tạo (AI), dữ liệu lớn (Big Data) và Internet vạn vật (IoT)',
+      'Sử dụng động cơ hơi nước và cơ khí hóa ngành dệt may',
+      'Ứng dụng điện năng và sản xuất hàng loạt trên dây chuyền băng chuyền',
+      'Sự xuất hiện của động cơ đốt trong và mạng lưới đường sắt xuyên lục địa'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide 24 hệ thống hóa 4 cuộc CMCN: CMCN 1.0 (máy hơi nước, cơ khí), CMCN 2.0 (điện năng, sản xuất dây chuyền), CMCN 3.0 (máy tính, tự động hóa, Internet), CMCN 4.0 (AI, Big Data, IoT, hệ thống vật lý không gian mạng).',
+    quote: 'Slide Chương 6 • Session 24: Khái quát các cuộc cách mạng công nghiệp'
+  },
+  {
+    id: 'q-c6-07',
+    chapter: 6,
+    chapterTitle: 'Chương 6: CNH - HĐH & Hội nhập kinh tế',
+    category: '6.2. Hội nhập kinh tế quốc tế',
+    question: 'Mối quan hệ giữa "Hội nhập kinh tế quốc tế" và "Xây dựng nền kinh tế độc lập tự chủ" ở Việt Nam (Slide Session 29) được xác định như thế nào?',
+    options: [
+      'Là mối quan hệ biện chứng thống nhất: Độc lập tự chủ là tiền đề để hội nhập hiệu quả; hội nhập thành công tạo tiềm lực củng cố vững chắc nền độc lập tự chủ',
+      'Là hai quá trình đối lập, bài trừ lẫn nhau: Muốn độc lập tự chủ thì tuyệt đối phải đóng cửa không hội nhập',
+      'Chỉ cần hội nhập mở cửa hoàn toàn, độc lập tự chủ kinh tế không còn ý nghĩa trong thế kỷ XXI',
+      'Nền kinh tế độc lập tự chủ chỉ cần tự sản xuất nông nghiệp, không cần tham gia chuỗi giá trị toàn cầu'
+    ],
+    correctIndex: 0,
+    explanation: 'Slide 29 khẳng định: Giữ vững độc lập tự chủ và tích cực, chủ động hội nhập kinh tế quốc tế là thể thống nhất biện chứng; mở rộng hội nhập để tăng thế và lực, giữ vững độc lập để không bị chệch hướng và lệ thuộc.',
+    quote: 'Slide Chương 6 • Session 29: Xây dựng nền kinh tế độc lập tự chủ trong hội nhập'
+  }
 ];
-

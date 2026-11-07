@@ -363,6 +363,89 @@ export const DETECTIVE_CASES = [
   },
 
   {
+    id: 'CASE-002B',
+    code: 'HỒ SƠ ĐỘC QUYỀN',
+    chapterBadge: 'CHƯƠNG 4 • CẠNH TRANH & ĐỘC QUYỀN',
+    shortTopic: 'Chương 4: Độc quyền & CNTB',
+    title: 'Hồ Sơ Đại Án Độc Quyền: 5 Đặc Điểm Kinh Tế & Biểu Hiện Mới Của Tư Bản Tài Chính',
+    subtitle: 'Chuẩn Chương 4: Cartel - Syndicate - Trust - Consortium, Xuất khẩu tư bản và Vai trò lịch sử của CNTB',
+    image: './assets/images/cases/case-c4-monopoly.svg',
+    dossierLevel: 'CẤP ĐỘ: NÂNG CAO',
+    accentColor: '#a855f7',
+    backgroundStory: 'Một liên minh siêu tập đoàn công nghệ và tài chính đa quốc gia áp đặt giá cả độc quyền mua và bán trên thị trường toàn cầu, thâu tóm các công ty khởi nghiệp và chi phối chính sách của nhiều chính phủ. Ban thanh tra kinh tế cần vận dụng Lý luận của V.I. Lênin về 5 đặc điểm kinh tế của độc quyền và vai trò lịch sử của CNTB (Slide Chương 4 MLN122) để phân loại đúng các bằng chứng vào từng ngăn hồ sơ!',
+    categories: [
+      { 
+        id: 'muc_4_1_to_chuc', 
+        name: 'TỔ CHỨC ĐỘC QUYỀN & TÍCH TỤ TƯ BẢN', 
+        desc: 'Cartel, Syndicate, Trust, Consortium; chi phối thị phần và giá cả độc quyền cao', 
+        color: '#a855f7' 
+      },
+      { 
+        id: 'muc_4_1_tai_chinh', 
+        name: 'TƯ BẢN TÀI CHÍNH & ĐẦU SỎ TÀI CHÍNH', 
+        desc: 'Dung hợp độc quyền ngân hàng và công nghiệp; thống trị kinh tế qua "chế độ tham dự"', 
+        color: '#38bdf8' 
+      },
+      { 
+        id: 'muc_4_1_xuat_khau', 
+        name: 'XUẤT KHẨU TƯ BẢN & PHÂN CHIA THẾ GIỚI', 
+        desc: 'Xuất khẩu giá trị ra nước ngoài thu GTTD; phân chia thị trường của TNCs và phân chia lãnh thổ', 
+        color: '#f59e0b' 
+      },
+      { 
+        id: 'muc_4_2_vai_tro', 
+        name: 'VAI TRÒ & GIỚI HẠN LỊCH SỬ CỦA CNTB', 
+        desc: 'Thúc đẩy LLSX phát triển; mâu thuẫn xã hội hóa với chiếm hữu tư nhân TBCN', 
+        color: '#f43f5e' 
+      }
+    ],
+    clues: [
+      {
+        id: 'c4-clue-1',
+        text: '4 hình thức tổ chức độc quyền phát triển từ thấp đến cao: Cartel (giá/thị phần) ➔ Syndicate (tiêu thụ) ➔ Trust (SX & lưu thông) ➔ Consortium (đa ngành)',
+        correctCategory: 'muc_4_1_to_chuc',
+        hint: 'Slide Session 14 phân tích các hình thức tổ chức độc quyền trong lịch sử.'
+      },
+      {
+        id: 'c4-clue-2',
+        text: 'Tư bản tài chính là sự thâm nhập, dung hợp lẫn nhau giữa tổ chức độc quyền ngân hàng và tổ chức độc quyền công nghiệp',
+        correctCategory: 'muc_4_1_tai_chinh',
+        hint: 'Định nghĩa khoa học của V.I. Lênin về tư bản tài chính trong Slide Session 14.'
+      },
+      {
+        id: 'c4-clue-3',
+        text: 'Đầu sỏ tài chính chi phối toàn bộ đời sống kinh tế và chính trị của xã hội tư bản thông qua "chế độ tham dự" sở hữu cổ phần khống chế',
+        correctCategory: 'muc_4_1_tai_chinh',
+        hint: 'Cơ chế thống trị của đầu sỏ tài chính qua mạng lưới công ty mẹ - con.'
+      },
+      {
+        id: 'c4-clue-4',
+        text: 'Xuất khẩu tư bản là xuất khẩu giá trị ra nước ngoài (FDI, FPI) nhằm chiếm đoạt giá trị thặng dư cao tại các nước sở tại',
+        correctCategory: 'muc_4_1_xuat_khau',
+        hint: 'Đặc điểm kinh tế thứ ba của độc quyền: Xuất khẩu tư bản khác với xuất khẩu hàng hóa.'
+      },
+      {
+        id: 'c4-clue-5',
+        text: 'Các tập đoàn tư bản xuyên quốc gia (TNCs) tiến hành thỏa hiệp phân chia thị trường thế giới và nguồn nguyên liệu toàn cầu',
+        correctCategory: 'muc_4_1_xuat_khau',
+        hint: 'Sự phân chia thị trường thế giới giữa các liên minh độc quyền quốc tế.'
+      },
+      {
+        id: 'c4-clue-6',
+        text: 'Giới hạn lịch sử lớn nhất của CNTB là mâu thuẫn giữa tính chất xã hội hóa ngày càng cao của LLSX với chế độ chiếm hữu tư nhân TBCN',
+        correctCategory: 'muc_4_2_vai_tro',
+        hint: 'Slide Session 16 về vai trò và giới hạn lịch sử của chủ nghĩa tư bản.'
+      }
+    ],
+    philosophicalVerdict: {
+      headline: 'Phá án thành công: Vạch trần bản chất áp đặt của độc quyền và tính tất yếu lịch sử bị thay thế của CNTB!',
+      concept: 'Chương 4: Cạnh tranh và độc quyền trong nền kinh tế thị trường',
+      analysis: 'Căn cứ các Slide Session 13-16 Chương 4: Độc quyền sinh ra từ tự do cạnh tranh nhưng không thủ tiêu cạnh tranh mà làm cạnh tranh thêm gay gắt. Đầu sỏ tài chính và các tổ chức độc quyền (Cartel, Syndicate, Trust, Consortium) áp đặt giá cả độc quyền để thu lợi nhuận độc quyền cao. Mâu thuẫn giữa trình độ xã hội hóa ngày càng lớn của LLSX với chế độ chiếm hữu tư nhân TBCN là giới hạn lịch sử khách quan, đặt tiền đề tất yếu cho một hình thái kinh tế - xã hội tiến bộ hơn ra đời!',
+      xpAwarded: 190
+    }
+  },
+
+  {
     id: 'CASE-003',
     code: 'HỒ SƠ #003',
     chapterBadge: 'CHƯƠNG 5 • MỤC 5.1',

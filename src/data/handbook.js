@@ -145,13 +145,26 @@ export const HANDBOOK_ENTRIES = [
       },
       {
         code: '2.4',
-        title: 'Bản chất tiền tệ và các quy luật kinh tế thị trường cơ bản',
-        summary: '• Bản chất tiền tệ: Là hàng hóa đặc biệt được tách ra làm vật ngang giá chung cho toàn bộ thế giới hàng hóa. Có 5 chức năng: Thước đo giá trị, Phương tiện lưu thông, Phương tiện cất trữ, Phương tiện thanh toán, Tiền tệ thế giới.\n' +
+        title: 'Lịch sử ra đời của tiền tệ, các quy luật thị trường & vai trò các chủ thể',
+        summary: '• Lịch sử phát triển của các hình thái giá trị dẫn tới sự ra đời của Tiền tệ:\n' +
+          '  1. Hình thái giản đơn (ngẫu nhiên): Giá trị của hàng hóa A biểu hiện qua giá trị sử dụng của hàng hóa B (B làm vật ngang giá). Xuất hiện cuối thời cộng sản nguyên thủy; là mầm mống của tiền, vật ngang giá là hình thái phôi thai của tiền.\n' +
+          '  2. Hình thái mở rộng (đầy đủ): Khi LLSX phát triển, hàng hóa đem trao đổi nhiều hơn; một hàng hóa có quan hệ trao đổi với nhiều hàng hóa khác (A = B = C = D...).\n' +
+          '  3. Hình thái chung của giá trị: Giá trị của mọi hàng hóa đều được biểu hiện ở GTSD của một hàng hóa đóng vai trò làm vật ngang giá chung. Ví dụ chuẩn slide: 1 cái áo = 10 đấu chè = 40 đấu cà phê = 0,2 gam vàng = } 20 vuông vải (vải làm vật ngang giá chung cho toàn vùng).\n' +
+          '  4. Hình thái tiền tệ: Khi sản xuất và trao đổi phát triển mở rộng giữa các vùng, vật ngang giá chung được cố định độc quyền ở kim loại quý (vàng, bạc): 1 cái áo = 10 đấu chè = 40 đấu cà phê = 20 vuông vải = } 0,2 gam vàng.\n' +
+          '• Chế độ song bản vị & Ưu thế tự nhiên của Vàng/Bạc:\n' +
+          '  - Chế độ song bản vị: Bạc & vàng cùng làm chức năng tiền tệ.\n' +
+          '  - Ưu thế tự nhiên: Vàng, bạc thuần nhất về chất, dễ chia nhỏ hoặc gộp lại, không bị hư hỏng mòn gỉ, và chứa đựng lượng giá trị lớn trong một thể tích nhỏ.\n' +
+          '• 5 chức năng của tiền tệ: Thước đo giá trị, Phương tiện lưu thông, Phương tiện cất trữ, Phương tiện thanh toán, Tiền tệ thế giới.\n' +
           '• 4 quy luật thị trường cốt lõi:\n' +
-          '  1. Quy luật giá trị: Sản xuất và lưu thông hàng hóa phải dựa trên hao phí lao động xã hội cần thiết; giá cả vận động xoay quanh trục giá trị.\n' +
-          '  2. Quy luật cung – cầu: Điều tiết quan hệ giữa cung ứng và nhu cầu hàng hóa, tác động trực tiếp đến giá cả thị trường.\n' +
-          '  3. Quy luật lưu thông tiền tệ: Số lượng tiền cần thiết cho lưu thông: M = (P.Q - G1 - G2 + G3) / V.\n' +
-          '  4. Quy luật cạnh tranh: Động lực thúc đẩy cải tiến kỹ thuật, nâng cao năng suất, đồng thời đào thải những đơn vị kinh doanh kém hiệu quả.',
+          '  1. Quy luật giá trị: Sản xuất và lưu thông hàng hóa phải dựa trên hao phí lao động xã hội cần thiết; giá cả xoay quanh trục giá trị (Tổng giá cả = Tổng giá trị trên phạm vi toàn xã hội).\n' +
+          '  2. Quy luật cung – cầu: Điều tiết giá cả thị trường và phân bổ các nguồn lực sản xuất.\n' +
+          '  3. Quy luật lưu thông tiền tệ: Số lượng tiền cần thiết cho lưu thông M = (P.Q - G1 - G2 + G3) / V.\n' +
+          '  4. Quy luật cạnh tranh: Động lực nội tại thúc đẩy đổi mới công nghệ, nâng cao năng suất và đào thải đơn vị kém hiệu quả.\n' +
+          '• Các chủ thể tham gia thị trường (Slide Session 7):\n' +
+          '  - Người sản xuất: Trực tiếp tạo ra hàng hóa, dịch vụ đáp ứng nhu cầu thị trường, tìm kiếm lợi nhuận.\n' +
+          '  - Người tiêu dùng: Mua hàng hóa, dịch vụ thỏa mãn nhu cầu sinh hoạt; là động lực và định hướng cho sản xuất.\n' +
+          '  - Các chủ thể trung gian: Thương nhân, nhà phân phối, sàn TMĐT, logistics kết nối cung - cầu, giảm chi phí giao dịch.\n' +
+          '  - Nhà nước: Kiến tạo môi trường thể chế pháp lý, khắc phục các khuyết tật thị trường (độc quyền, ô nhiễm môi trường, bất bình đẳng), điều tiết vĩ mô.',
         lifeLesson: 'Tôn trọng quy luật thị trường, không đầu tư theo cảm tính đám đông (FOMO), luôn bám sát giá trị thực của tài sản và dòng tiền.'
       }
     ]
