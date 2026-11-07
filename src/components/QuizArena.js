@@ -282,25 +282,8 @@ export function renderQuizArena(container, onBackToMap) {
               </div>
             </div>
 
-            <!-- Lifeline Intro -->
-            <div class="lobby-lifelines-box">
-              <span style="font-weight: 800; font-size: 0.85rem; color: var(--text-dim); text-transform: uppercase;">
-                3 Quyền trợ giúp đặc quyền Quizizz:
-              </span>
-              <div class="lobby-lifeline-chips">
-                <span class="lifeline-chip">💡 50:50 (Xóa 2 đáp án sai)</span>
-                <span class="lifeline-chip">⏳ Đóng băng thời gian (+15s)</span>
-                <span class="lifeline-chip">🔍 Soi rọi Lăng kính Mác – Lênin</span>
-              </div>
-            </div>
-
-            <!-- Keyboard shortcut hint -->
-            <div style="margin-top: 1.2rem; font-size: 0.82rem; color: var(--text-dim);">
-              ⌨️ <em>Mẹo: Bạn có thể dùng bàn phím bấm A, B, C, D (hoặc 1, 2, 3, 4) và phím Enter để thao tác siêu tốc!</em>
-            </div>
-
             <!-- Start Button -->
-            <div style="margin-top: 1.5rem;">
+            <div style="margin-top: 1rem;">
               <button class="btn-quiz-start" id="quiz-start-btn">
                 <span>🚀 BẮT ĐẦU VÀO ĐẤU TRƯỜNG →</span>
               </button>
@@ -379,7 +362,6 @@ export function renderQuizArena(container, onBackToMap) {
                 <div class="opt-text-label">${optText}</div>
                 ${badgeLabel}
               </div>
-              <span class="opt-key-hint">Phím [${style.letter}]</span>
             </button>
           `;
         }
@@ -396,7 +378,7 @@ export function renderQuizArena(container, onBackToMap) {
                 ${isCorrect ? `🎉 CHÍNH XÁC! +${lastAnswer.pointsGained.toLocaleString()} PTS!` : (lastAnswer.selectedIndex === -1 ? '⏰ HẾT THỜI GIAN!' : '❌ CHƯA CHÍNH XÁC!')}
               </div>
               <button class="btn-quiz-next animate-bounce-subtle" id="quiz-next-btn">
-                <span>CÂU TIẾP THEO (Enter) →</span>
+                <span>CÂU TIẾP THEO →</span>
               </button>
             </div>
             <p class="feedback-explanation">
