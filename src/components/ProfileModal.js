@@ -56,13 +56,11 @@ export function renderProfileModal(container, onClose) {
 
     curriculumCardsHTML += `
       <div class="profile-chapter-card" style="--ch-color: ${ch.accentColor};">
+        <!-- Card Header: Code Badge (Left) & Completion Status (Right) -->
         <div class="profile-chapter-head">
-          <div>
-            <span class="badge-pill ch-code-pill" style="background: ${ch.accentColor}18; color: ${ch.accentColor}; border: 1px solid ${ch.accentColor}40;">
-              ${ch.code} • ${ch.badge}
-            </span>
-            <h5 class="profile-ch-title">${ch.title}</h5>
-          </div>
+          <span class="badge-pill ch-code-pill" style="background: ${ch.accentColor}18; color: ${ch.accentColor}; border: 1px solid ${ch.accentColor}40;">
+            ${ch.code}
+          </span>
           <div class="ch-status-box">
             ${isCompleted 
               ? `<span class="badge-pill ch-done-pill">✓ ĐÃ HOÀN THÀNH</span>` 
@@ -71,10 +69,23 @@ export function renderProfileModal(container, onClose) {
           </div>
         </div>
 
-        <div class="profile-progress-track" style="margin: 0.65rem 0 0.85rem; height: 6px;">
-          <div class="profile-progress-fill" style="width: ${percent}%; background: ${ch.accentColor};"></div>
+        <!-- Topic Subtitle -->
+        <div class="ch-badge-theme" style="color: ${ch.accentColor};">
+          ✦ ${ch.badge}
         </div>
 
+        <!-- Full Width Title -->
+        <h5 class="profile-ch-title">${ch.title}</h5>
+
+        <!-- Progress Track & Percentage -->
+        <div class="ch-progress-wrap">
+          <div class="profile-progress-track">
+            <div class="profile-progress-fill" style="width: ${percent}%; background: ${ch.accentColor};"></div>
+          </div>
+          <span class="ch-percent-num" style="color: ${ch.accentColor};">${percent}%</span>
+        </div>
+
+        <!-- Core Knowledge Modules -->
         <div class="curriculum-modules-wrap">
           <div class="curriculum-mod-label" style="color: ${ch.accentColor};">Trọng tâm kiến thức cốt lõi (Slide bài giảng):</div>
           <div class="curriculum-modules-grid">
