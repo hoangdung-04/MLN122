@@ -8,7 +8,7 @@ export const CHAPTERS = [
     desc: 'Lịch sử phát triển của kinh tế chính trị, đối tượng nghiên cứu quan hệ sản xuất & trao đổi, phương pháp trừu tượng hóa khoa học và 4 chức năng cốt lõi.',
     accentColor: '#0284c7',
     icon: 'compass',
-    totalScenarios: 3,
+    totalScenarios: 5,
     modules: [
       { id: '1.1', title: '1.1. Sự ra đời và các giai đoạn phát triển của Kinh tế chính trị Mác – Lênin' },
       { id: '1.2', title: '1.2. Đối tượng và mục đích nghiên cứu của Kinh tế chính trị Mác – Lênin' },

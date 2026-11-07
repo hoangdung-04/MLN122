@@ -314,6 +314,86 @@ export const QUIZ_QUESTIONS = [
     quote: 'Slide Chương 1 • Mục 1.1: Khái quát sự ra đời của KTCT'
   },
   {
+    id: 'q-c1-02',
+    chapter: 1,
+    chapterTitle: 'Chương 1: Đối tượng, phương pháp & chức năng',
+    category: '1.1. Thuật ngữ KTCT',
+    question: 'Thuật ngữ "kinh tế chính trị" viết ngắn gọn từ cụm từ gốc Hán – Việt nào và mang hàm nghĩa gì?',
+    options: [
+      '"Kinh bang tế thế" – Phương pháp để trị nước và giúp đời',
+      '"Kinh doanh tế vi" – Phương pháp buôn bán nhỏ lẻ thu lợi nhuận',
+      '"Chính sách kinh tài" – Quản lý ngân khố của triều đình phong kiến',
+      '"Bang giao thế cuộc" – Chiến lược ngoại giao thương mại quốc tế'
+    ],
+    correctIndex: 0,
+    explanation: 'Thuật ngữ "Kinh tế chính trị" bắt nguồn từ chữ Hán "kinh bang tế thế", mang hàm nghĩa là khoa học và phương pháp trị nước giúp đời, chăm lo sự ấm no, giàu mạnh cho quốc gia và muôn dân.',
+    quote: 'Slide Chương 1 • Mục 1.1: Thuật ngữ kinh tế chính trị'
+  },
+  {
+    id: 'q-c1-03',
+    chapter: 1,
+    chapterTitle: 'Chương 1: Đối tượng, phương pháp & chức năng',
+    category: '1.1. KTCT Cổ điển Anh',
+    question: 'Nhà kinh tế học nào đã đưa kinh tế chính trị trở thành một môn khoa học có tính hệ thống với các phạm trù và khái niệm chuyên ngành vào thế kỷ XVIII?',
+    options: [
+      'Adam Smith với tác phẩm "Của cải của các quốc gia" (The Wealth of Nations - 1776)',
+      'David Ricardo với tác phẩm "Những nguyên lý của kinh tế chính trị"',
+      'François Quesnay với tác phẩm "Biểu kinh tế"',
+      'Thomas Malthus với lý luận về bẫy dân số'
+    ],
+    correctIndex: 0,
+    explanation: 'Đến thế kỷ XVIII, với tác phẩm kinh điển "The Wealth of Nations" (1776), Adam Smith đã chính thức đưa kinh tế chính trị trở thành môn khoa học có hệ thống với 2 mục tiêu: tạo sinh kế cho dân và ngân sách cho nhà nước.',
+    quote: 'Slide Chương 1 • Mục 1.1: Adam Smith (1776)'
+  },
+  {
+    id: 'q-c1-04',
+    chapter: 1,
+    chapterTitle: 'Chương 1: Đối tượng, phương pháp & chức năng',
+    category: '1.1. Góc độ kinh tế học',
+    question: 'Dưới góc độ kinh tế học chuẩn slide bài giảng MLN122, khái niệm "kinh tế" được hiểu là gì?',
+    options: [
+      'Toàn bộ các hoạt động sản xuất, phân phối, trao đổi, tiêu thụ hàng hóa và dịch vụ của một cộng đồng quốc gia trong một khoảng thời gian',
+      'Hoạt động giao dịch tiền tệ, cổ phiếu và trái phiếu trên sàn chứng khoán',
+      'Hoạt động chi tiêu công và thu thuế xuất nhập khẩu của ngân sách nhà nước',
+      'Kỹ năng tiết kiệm tiền và quản lý tài chính cá nhân trong đời sống'
+    ],
+    correctIndex: 0,
+    explanation: 'Kinh tế (dưới góc độ kinh tế học) là toàn bộ các hoạt động sản xuất, phân phối, trao đổi, tiêu thụ hàng hóa và dịch vụ của một cộng đồng quốc gia trong một khoảng thời gian nhất định.',
+    quote: 'Slide Chương 1 • Mục 1.1: Góc độ kinh tế học'
+  },
+  {
+    id: 'q-c1-05',
+    chapter: 1,
+    chapterTitle: 'Chương 1: Đối tượng, phương pháp & chức năng',
+    category: '1.2. Bốn khâu tái sản xuất',
+    question: 'Đối tượng nghiên cứu của KTCT Mác – Lênin bao trùm các quan hệ sản xuất trong 4 khâu nào của quá trình tái sản xuất xã hội?',
+    options: [
+      'Sản xuất – Phân phối – Trao đổi – Tiêu dùng',
+      'Thiết kế – Vận hành – Tiếp thị – Bán hàng',
+      'Đầu tư – Xây dựng – Khai thác – Thu hồi vốn',
+      'Thu gom nguyên liệu – Đóng gói – Lưu kho – Xuất khẩu'
+    ],
+    correctIndex: 0,
+    explanation: 'Hệ thống 4 khâu của tái sản xuất xã hội gồm: Sản xuất (vai trò quyết định) – Phân phối (định hướng lợi ích) – Trao đổi (cầu nối lưu thông) – Tiêu dùng (mục đích và động lực).',
+    quote: 'Slide Chương 1 • Mục 1.2: Đối tượng nghiên cứu & 4 khâu tái sản xuất'
+  },
+  {
+    id: 'q-c1-06',
+    chapter: 1,
+    chapterTitle: 'Chương 1: Đối tượng, phương pháp & chức năng',
+    category: '1.3. Phương pháp nghiên cứu',
+    question: 'Phương pháp nghiên cứu quan trọng và đặc thù nhất của Kinh tế chính trị Mác – Lênin là gì?',
+    options: [
+      'Phương pháp trừu tượng hóa khoa học',
+      'Phương pháp thử nghiệm thực địa trong phòng thí nghiệm',
+      'Phương pháp khảo sát ngẫu nhiên trên mạng xã hội',
+      'Phương pháp trực giác cảm tính của nhà nghiên cứu'
+    ],
+    correctIndex: 0,
+    explanation: 'Phương pháp trừu tượng hóa khoa học là phương pháp chủ yếu và đặc thù: Gạt bỏ những yếu tố ngẫu nhiên, tạm thời, bề ngoài để đi sâu vào bản chất, tách ra những mối liên hệ tất nhiên, bền vững và khái quát thành quy luật kinh tế.',
+    quote: 'Slide Chương 1 • Mục 1.3: Phương pháp nghiên cứu của KTCT'
+  },
+  {
     id: 'q-c2-01',
     chapter: 2,
     chapterTitle: 'Chương 2: Hàng hóa & Thị trường',

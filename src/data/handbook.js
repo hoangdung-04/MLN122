@@ -8,7 +8,7 @@ export const HANDBOOK_ENTRIES = [
   // =========================================================================
   // CHƯƠNG 1
   // =========================================================================
-  {
+{
     chapter: 1,
     chapterCode: 'CHƯƠNG 1',
     chapterTitle: 'Đối Tượng, Phương Pháp Nghiên Cứu & Chức Năng Của Kinh Tế Chính Trị Mác – Lênin',
@@ -19,40 +19,56 @@ export const HANDBOOK_ENTRIES = [
     topics: [
       {
         code: '1.1',
-        title: 'Sự ra đời và các giai đoạn phát triển của Kinh tế chính trị',
-        summary: 'Thuật ngữ "Kinh tế chính trị" (Political Economy) xuất hiện lần đầu năm 1615 trong tác phẩm "Chuyên luận về kinh tế chính trị" của nhà kinh tế Pháp A. Montchrestien. Tiến trình phát triển trải qua 4 giai đoạn lớn:\n' +
-          '• Chủ nghĩa trọng thương (TK XV – XVII): Coi trọng ngoại thương, lưu thông tiền tệ và tích lũy kim loại quý (vàng, bạc).\n' +
-          '• Chủ nghĩa trọng nông (TK XVII – XVIII): Chuyển nghiên cứu sang sản xuất nông nghiệp, đề cao tự do kinh tế (Quesnay, Turgot).\n' +
-          '• Kinh tế chính trị cổ điển Anh (cuối TK XVIII – đầu TK XIX): Đỉnh cao với A. Smith và D. Ricardo, đặt nền móng cho lý luận giá trị lao động, chứng minh lao động là nguồn gốc của của cải.\n' +
-          '• Kinh tế chính trị Mác – Lênin (từ giữa TK XIX): C. Mác và Ph. Ăng-ghen sáng lập đỉnh cao khoa học và cách mạng, kế thừa tinh hoa cổ điển Anh, phát hiện ra quy luật giá trị thặng dư. Đầu TK XX, V.I. Lênin phát triển lý luận trong thời đại độc quyền và đế quốc chủ nghĩa.',
-        lifeLesson: 'Hiểu cội nguồn lịch sử của tư duy kinh tế giúp chúng ta không bị mê hoặc bởi những trào lưu đầu cơ ngắn hạn, mà luôn nhìn nhận nền kinh tế từ gốc rễ sản xuất vật chất.'
+        title: 'Khái quát sự hình thành và phát triển của Kinh tế chính trị Mác – Lênin',
+        summary: '• Cội nguồn thuật ngữ: "Kinh tế chính trị" viết ngắn gọn từ cụm từ gốc Hán – Việt "Kinh bang tế thế" (nghĩa là Phương pháp để trị nước và giúp đời).\n' +
+          '• Định nghĩa Kinh tế (góc độ kinh tế học): Toàn bộ các hoạt động sản xuất, phân phối, trao đổi, tiêu thụ hàng hóa và dịch vụ của một cộng đồng quốc gia trong một khoảng thời gian nhất định.\n' +
+          '• Cột mốc Antoine de Montchrestien (1575 – 1621): Năm 1615, trong tác phẩm "Chuyên luận về kinh tế chính trị" (Traité de l\'économie politique), thuật ngữ "Political Economy" lần đầu tiên xuất hiện. Ông cho rằng sức mạnh nhà nước gắn liền với sự giàu có của quốc gia và thương nhân là gương mặt chính của nền kinh tế.\n' +
+          '• Cột mốc Adam Smith (1723 – 1790): Năm 1776, với kiệt tác "Của cải của các quốc gia" (The Wealth of Nations), A. Smith đã đưa kinh tế chính trị trở thành một môn khoa học có tính hệ thống với các phạm trù và khái niệm chuyên ngành, hướng tới 2 mục tiêu lớn: (1) Tạo nguồn thu dồi dào và sinh kế phong phú cho người dân; (2) Cung cấp nguồn ngân sách dồi dào cho nhà nước.\n' +
+          '• Hai giai đoạn phát triển lịch sử lớn:\n' +
+          '  - Giai đoạn 1 (Từ cổ đại đến cuối TK XVIII): Trải qua tư tưởng kinh tế thời cổ, trung đại ➔ Chủ nghĩa trọng thương (TK XV – XVII, coi trọng vàng bạc và ngoại thương) ➔ Chủ nghĩa trọng nông (TK XVII – XVIII, đề cao nông nghiệp) ➔ Kinh tế chính trị tư sản cổ điển Anh (giữa TK XVII – cuối TK XVIII, A. Smith, D. Ricardo, đặt nền móng lý luận giá trị lao động).\n' +
+          '  - Giai đoạn 2 (Từ sau TK XVIII đến nay): C. Mác và Ph. Ăng-ghen kế thừa tinh hoa cổ điển Anh, sáng lập Kinh tế chính trị Mác – Lênin khoa học và cách mạng, phát hiện ra quy luật giá trị thặng dư; V.I. Lênin tiếp tục phát triển trong thời đại độc quyền. Dòng thứ hai rẽ nhánh sang kinh tế học tầm thường / kinh tế học hiện đại (chỉ khái quát tâm lý, hành vi bề ngoài mà không phân tích sâu quan hệ xã hội của sản xuất).',
+        lifeLesson: 'Hiểu cội nguồn "kinh bang tế thế" giúp người học có cái nhìn vĩ mô và trách nhiệm: Kinh tế học không chỉ là mánh lới buôn bán cá nhân, mà là khoa học phụng sự sự thịnh vượng của nhân dân và quốc gia.'
       },
       {
         code: '1.2',
         title: 'Đối tượng và mục đích nghiên cứu của Kinh tế chính trị Mác – Lênin',
-        summary: '• Đối tượng nghiên cứu: Các quan hệ xã hội của sản xuất và trao đổi (quan hệ sở hữu TLSX, tổ chức quản lý, phân phối sản phẩm) trong sự liên hệ biện chứng với lực lượng sản xuất và kiến trúc thượng tầng tương ứng.\n' +
-          '• Phân biệt với Kinh tế học vi mô/vĩ mô: KTCT Mác – Lênin không nghiên cứu kỹ thuật sản xuất đơn thuần mà đi sâu vào bản chất quan hệ giữa con người với con người thông qua của cải.\n' +
-          '• Mục đích nghiên cứu: Phát hiện ra các quy luật kinh tế khách quan chi phối sự sản xuất, phân phối, trao đổi và tiêu dùng của cải vật chất trong các giai đoạn phát triển của xã hội loài người.',
-        lifeLesson: 'Trong mọi tổ chức hay dự án khởi nghiệp, giải quyết tốt quan hệ con người (phân chia lợi ích công bằng, cơ chế hợp tác) là yếu tố quyết định thành bại, chứ không chỉ có kỹ thuật sản phẩm.'
+        summary: '• Định nghĩa kinh điển của Ph. Ăng-ghen: "Kinh tế chính trị là khoa học về những quy luật chi phối sự sản xuất vật chất và sự trao đổi những tư liệu sinh hoạt vật chất trong xã hội loài người".\n' +
+          '• Đối tượng nghiên cứu theo 2 nghĩa:\n' +
+          '  - Nghĩa hẹp: Nghiên cứu quan hệ sản xuất và trao đổi trong một phương thức sản xuất nhất định.\n' +
+          '  - Nghĩa rộng: Nghiên cứu các hệ thống quan hệ xã hội của sản xuất và trao đổi qua các giai đoạn lịch sử khác nhau (không có một môn kinh tế chính trị duy nhất cho mọi quốc gia và mọi thời đại).\n' +
+          '• Nghiên cứu trọn vẹn 4 khâu của quá trình tái sản xuất xã hội:\n' +
+          '  1. Sản xuất: Giữ vai trò quyết định, sáng tạo ra của cải vật chất.\n' +
+          '  2. Phân phối: Xác định tỷ lệ của cải cho từng chủ thể và định hướng lợi ích.\n' +
+          '  3. Trao đổi: Là cầu nối lưu thông, đưa sản phẩm từ người sản xuất đến người dùng.\n' +
+          '  4. Tiêu dùng: Mục đích cuối cùng, thỏa mãn nhu cầu và kích thích chu kỳ sản xuất mới.\n' +
+          '• Mối liên hệ tổng thể: Nghiên cứu quan hệ sản xuất trong sự tác động biện chứng với Kiến trúc thượng tầng, Cơ sở hạ tầng và Trình độ phát triển của Lực lượng sản xuất.\n' +
+          '• Mục đích nghiên cứu tối cao: Tìm ra những quy luật kinh tế chi phối sự vận động và phát triển của phương thức sản xuất ➔ Làm cơ sở hoạch định các chính sách kinh tế khoa học ➔ Giải quyết hài hòa các quan hệ về lợi ích ➔ Tạo động lực to lớn cho con người sáng tạo ➔ Thúc đẩy sự phát triển toàn diện của toàn xã hội.',
+        lifeLesson: 'Mọi thất bại trong kinh doanh hay quản lý thường bắt nguồn từ sự đứt gãy giữa 4 khâu hoặc xung đột lợi ích bất công; giải quyết đúng quan hệ con người và chia sẻ lợi ích hài hòa là chìa khóa phát triển bền vững.'
       },
       {
         code: '1.3',
-        title: 'Phương pháp nghiên cứu đặc thù: Trừu tượng hóa khoa học',
-        summary: '• Phương pháp trừu tượng hóa khoa học là phương pháp quan trọng nhất: Gạt bỏ những yếu tố ngẫu nhiên, tạm thời, bề ngoài của hiện tượng kinh tế để đi sâu vào bản chất, tách ra những mối liên hệ tất nhiên, bền vững và khái quát thành các phạm trù, quy luật kinh tế.\n' +
-          '• Các phương pháp kết hợp: Logic kết hợp với lịch sử, phân tích và tổng hợp, thống kê kinh tế, mô hình hóa và khảo sát thực tiễn.',
-        lifeLesson: 'Trước "bão thông tin" và dữ liệu nhiễu loạn trên thị trường, người có tư duy trừu tượng hóa khoa học sẽ giữ được cái đầu lạnh để nhận diện đúng xu hướng và bản chất quy luật cốt lõi.'
+        title: 'Phương pháp nghiên cứu đặc thù của Kinh tế chính trị Mác – Lênin',
+        summary: '• Phương pháp quan trọng và đặc thù nhất: Phương pháp trừu tượng hóa khoa học.\n' +
+          '  - Bản chất: Gạt bỏ những yếu tố ngẫu nhiên, tạm thời, hiện tượng bề ngoài của đời sống kinh tế để đi sâu vào bản chất bên trong, tách ra những mối liên hệ tất nhiên, bền vững và khái quát thành các phạm trù, quy luật kinh tế khách quan.\n' +
+          '  - Điểm dừng trừu tượng: Không được trừu tượng hóa một cách chủ quan, siêu hình làm biến dạng bản chất hiện thực khách quan.\n' +
+          '• Các phương pháp nghiên cứu phối hợp chặt chẽ:\n' +
+          '  - Phương pháp logic kết hợp với lịch sử: Nắm bắt bản chất quy luật theo tiến trình phát sinh, phát triển và chuyển hóa thực tế.\n' +
+          '  - Phương pháp phân tích và tổng hợp: Mổ xẻ chi tiết từng bộ phận rồi hợp nhất trong chỉnh thể thống nhất.\n' +
+          '  - Phương pháp thống kê kinh tế & mô hình hóa: Định lượng hóa các quan hệ tỷ lệ để kiểm chứng lý thuyết.\n' +
+          '  - Khảo sát thực tiễn: Đối chiếu lý luận với thực tiễn sản xuất xã hội sinh động.',
+        lifeLesson: 'Giữa thời đại bùng nổ dữ liệu số (Big Data), phương pháp trừu tượng hóa khoa học giúp bạn lọc sạch "nhiễu" thông tin, không bị cảm xúc thị trường đánh lừa để nhìn thấu quy luật vận động bản chất.'
       },
       {
         code: '1.4',
         title: 'Bốn chức năng cốt lõi của Kinh tế chính trị Mác – Lênin',
-        summary: '• Chức năng nhận thức: Cung cấp hệ thống tri thức khoa học về bản chất các hiện tượng, quy luật kinh tế của nền sản xuất xã hội.\n' +
-          '• Chức năng thực tiễn: Giúp người học và nhà hoạch định chính sách vận dụng quy luật kinh tế vào sản xuất, kinh doanh và quản trị quốc gia.\n' +
-          '• Chức năng tư tưởng: Xây dựng thế giới quan khoa học, niềm tin vào con đường phát triển tiến bộ xã hội và lý tưởng nhân văn XHCN.\n' +
-          '• Chức năng phương pháp luận: Là nền tảng lý luận và phương pháp cho các khoa học kinh tế chuyên ngành (Kinh tế phát triển, Tài chính - Ngân hàng, Quản trị kinh doanh).',
-        lifeLesson: 'Học kinh tế không phải để thuộc lòng định nghĩa, mà để nâng cao tư duy phản biện, định vị bản thân và ra các quyết định nghề nghiệp, tài chính sáng suốt.'
+        summary: '• 1. Chức năng nhận thức: Cung cấp hệ thống tri thức lý luận khoa học, bản chất quy luật chi phối nền sản xuất và thị trường; hiểu rõ cội nguồn của cải, giá trị thặng dư và quy luật phát triển xã hội.\n' +
+          '• 2. Chức năng thực tiễn: Giúp người lao động, doanh nhân và nhà quản lý vận dụng sáng tạo các quy luật kinh tế vào đời sống; hoạch định chính sách kinh tế vĩ mô, nâng cao hiệu quả sản xuất kinh doanh và quản trị rủi ro.\n' +
+          '• 3. Chức năng tư tưởng: Xây dựng thế giới quan khoa học duy vật biện chứng, bồi đắp niềm tin vào con đường phát triển tiến bộ xã hội, kiên định lý tưởng độc lập dân tộc gắn liền với CNXH tại Việt Nam.\n' +
+          '• 4. Chức năng phương pháp luận: Là nền tảng thế giới quan và phương pháp luận khoa học cho toàn bộ hệ thống các khoa học kinh tế ngành (Kinh tế phát triển, Tài chính - Ngân hàng, Quản trị kinh doanh, Marketing, Kinh tế quốc tế...).',
+        lifeLesson: 'Nắm vững 4 chức năng giúp bạn chuyển hóa tri thức sách vở thành bản lĩnh sống: Có nhận thức đúng thì hành động thực tiễn mới hiệu quả, có tư tưởng vững vàng thì không dao động trước biến động thị trường.'
       }
     ]
-  },
+  },,
 
   // =========================================================================
   // CHƯƠNG 2

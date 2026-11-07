@@ -133,6 +133,93 @@ export const SCENARIOS = [
     "coreLesson": "Hiểu quy luật kinh tế chính là chiếc chìa khóa để chủ động làm chủ tương lai và sự nghiệp trong nền kinh tế thị trường."
   },
 
+  {
+    "id": "C1-S4",
+    "chapter": 1,
+    "topic": "Mục 1.1 • Tiến trình phát triển từ 'Kinh bang tế thế' đến KTCT Mác – Lênin",
+    "title": "Ảo Tưởng 'Làm Giàu Không Sản Xuất': Buôn Bán Kiếm Chênh Lệch Hay Cội Nguồn Của Cải Quốc Gia?",
+    "difficulty": "Trung bình",
+    "philosophyConcept": "Cội nguồn của cải & Sự chuyển biến tư tưởng kinh tế (Trọng thương ➔ Cổ điển ➔ Mác – Lênin)",
+    "image": "./assets/images/scenarios/c1-s4.svg",
+    "situation": "Trong một buổi tọa đàm sinh viên khởi nghiệp, Tuấn tự tin thuyết trình về mô hình dropshipping và giao dịch chênh lệch giá (arbitrage) trên các sàn thương mại điện tử quốc tế. Tuấn khẳng định: 'Thời đại này chỉ cần giỏi buôn bán, ăn chênh lệch và tích lũy tiền tệ là quốc gia giàu mạnh; sản xuất vật chất vừa cực nhọc vừa lỗi thời, cứ để các nước nghèo làm!'. Ngược lại, Lan - một sáng lập viên xưởng chế biến nông sản công nghệ cao - cho rằng của cải đích thực của xã hội phải bắt nguồn từ hoạt động sản xuất tạo ra của cải vật chất, còn thương mại chỉ là khâu lưu thông.",
+    "question": "Theo tiến trình phát triển từ thời Chủ nghĩa Trọng thương (A. Montchrestien 1615), KTCT Cổ điển Anh (A. Smith 1776) đến KTCT Mác – Lênin, nhận định nào phản ánh đúng đắn cội nguồn của sự thịnh vượng kinh tế?",
+    "dimensionScores": {
+      "connection": 30,
+      "contradiction": 25,
+      "depth": 20,
+      "objective": 15,
+      "practice": 10
+    },
+    "options": [
+      {
+        "id": "A",
+        "text": "Sự giàu có thực sự của mọi quốc gia đều bắt nguồn từ sản xuất vật chất; hoạt động lưu thông và thương mại chỉ đóng vai trò phân phối, trao đổi giúp hiện thực hóa giá trị chứ không thể tự tạo thêm của cải mới nếu thiếu sản xuất.",
+        "isDialectical": true,
+        "consequence": "Lan đầu tư vào chiều sâu chế biến sản phẩm, tạo ra giá trị sử dụng và giá trị thặng dư thực chất cho xã hội; dự án phát triển bền vững và tạo công ăn việc làm lâu dài.",
+        "philosophicalLens": "Kế thừa và phát triển đỉnh cao của KTCT Mác – Lênin: Khắc phục hạn chế của Chủ nghĩa Trọng thương (tưởng của cải sinh ra từ lưu thông mua bán) và Trọng nông (chỉ thấy nông nghiệp); khẳng định lao động sản xuất vật chất là cội nguồn của mọi của cải xã hội."
+      },
+      {
+        "id": "B",
+        "text": "Hoàn toàn đồng ý với Tuấn: Chỉ cần tập trung vào các dịch vụ tài chính, trung gian bán hàng và tích lũy thật nhiều tiền tệ thì xã hội sẽ tự khắc giàu sang mà không cần bận tâm sản xuất.",
+        "isDialectical": false,
+        "consequence": "Xã hội rơi vào nền kinh tế bong bóng tài chính, hàng hóa thiết yếu khan hiếm, khi có khủng hoảng chuỗi cung ứng xảy ra thì tiền tệ bị mất giá nghiêm trọng.",
+        "philosophicalLens": "Mắc phải sai lầm ấu trĩ của Chủ nghĩa Trọng thương thời kỳ thế kỷ XV - XVII: Tuyệt đối hóa vai trò lưu thông tiền tệ, ngộ nhận tiền tệ và vàng bạc là của cải duy nhất."
+      },
+      {
+        "id": "C",
+        "text": "Cực đoan hóa quan điểm ngược lại: Xóa bỏ toàn bộ các sàn thương mại điện tử và dịch vụ trung gian, chỉ cho phép duy nhất các xưởng sản xuất vật chất hoạt động.",
+        "isDialectical": false,
+        "consequence": "Hàng hóa sản xuất ra bị ứ đọng, không đến được tay người tiêu dùng, chi phí kết nối tăng vọt và nền kinh tế bị tê liệt.",
+        "philosophicalLens": "Phủ nhận vai trò biện chứng của khâu trao đổi và lưu thông; tách rời quan hệ sản xuất khỏi sự vận động thông suốt của chu kỳ tái sản xuất xã hội."
+      }
+    ],
+    "explanation": "KTCT Mác – Lênin chỉ rõ: Sản xuất vật chất là cơ sở tồn tại và phát triển của xã hội loài người. Lưu thông và trao đổi có vai trò thúc đẩy hoặc kìm hãm sản xuất nhưng không trực tiếp sáng tạo ra của cải mới.",
+    "coreLesson": "Không một nền kinh tế nào có thể thịnh vượng bền vững nếu chỉ dựa vào đầu cơ trung gian và buôn bán chênh lệch mà bỏ quên nền tảng sản xuất vật chất."
+  },
+  {
+    "id": "C1-S5",
+    "chapter": 1,
+    "topic": "Mục 1.2 • Bốn khâu của quá trình tái sản xuất & Mục đích của KTCT",
+    "title": "Nghịch Lý Kho Hàng Tồn: Khi 'Sản Xuất Tốt' Nhưng Bế Tắc Phân Phối & Trao Đổi",
+    "difficulty": "Nâng cao",
+    "philosophyConcept": "Mối quan hệ hữu cơ 4 khâu: Sản xuất – Phân phối – Trao đổi – Tiêu dùng",
+    "image": "./assets/images/scenarios/c1-s5.svg",
+    "situation": "Một doanh nghiệp dệt may xuất khẩu vừa đầu tư hàng chục tỷ đồng nâng cấp dây chuyền dệt tự động, công suất tăng vọt tạo ra hàng trăm nghìn bộ quần áo chất lượng cao (Khâu Sản xuất xuất sắc). Tuy nhiên, để bù đắp chi phí máy móc, lãnh đạo công ty cắt giảm mạnh lương thưởng của công nhân (Khâu Phân phối méo mó), đồng thời hệ thống kênh phân phối nội địa bị buông lỏng và phí trung gian quá cao (Khâu Trao đổi ách tắc). Kết quả trớ trêu: Hàng tồn kho chất kín kho bãi phải bán đại hạ giá chịu lỗ, người lao động mất động lực đình công, trong khi hàng triệu người dân có nhu cầu thực tế lại không thể tiếp cận sản phẩm.",
+    "question": "Dưới giác độ đối tượng nghiên cứu của KTCT Mác – Lênin về 4 khâu tái sản xuất và giải quyết hài hòa các quan hệ lợi ích, ban lãnh đạo doanh nghiệp cần hành động như thế nào?",
+    "dimensionScores": {
+      "connection": 35,
+      "contradiction": 25,
+      "depth": 20,
+      "objective": 10,
+      "practice": 10
+    },
+    "options": [
+      {
+        "id": "A",
+        "text": "Tái thiết lập tính đồng bộ giữa 4 khâu: Khôi phục chính sách phân phối lợi ích thỏa đáng cho người lao động để kích thích động lực, cắt giảm các tầng nấc trung gian trao đổi bất hợp lý và mở rộng kênh tiếp cận người tiêu dùng để khép kín chu trình tái sản xuất.",
+        "isDialectical": true,
+        "consequence": "Người lao động hăng hái nâng cao năng suất, hàng hóa lưu thông trơn tru tới tay người tiêu dùng, dòng vốn luân chuyển nhanh và doanh nghiệp vượt qua nguy cơ phá sản.",
+        "philosophicalLens": "Vận dụng đúng quy luật vận động của 4 khâu tái sản xuất xã hội: Sản xuất quyết định, nhưng Phân phối và Trao đổi là mắt xích trung gian quyết định việc giá trị có được hiện thực hóa ở khâu Tiêu dùng hay không; lợi ích kinh tế chính là động lực kết nối con người."
+      },
+      {
+        "id": "B",
+        "text": "Tiếp tục siết chặt lương thưởng công nhân hơn nữa và chỉ tập trung vay thêm vốn ngân hàng để sản xuất dồn dập với hy vọng 'cứ làm ra nhiều hàng tự khắc sẽ bán được'.",
+        "isDialectical": false,
+        "consequence": "Doanh nghiệp vỡ nợ vì chi phí lãi vay và chi phí lưu kho, công nhân đồng loạt nghỉ việc và nhà máy buộc phải đóng cửa.",
+        "philosophicalLens": "Sai lầm duy ý chí, xem sản xuất là khâu biệt lập, cắt đứt mối liên hệ hữu cơ với phân phối và tiêu dùng."
+      },
+      {
+        "id": "C",
+        "text": "Dừng toàn bộ dây chuyền sản xuất, đem toàn bộ tài sản đi gửi tiết kiệm ngân hàng để lấy lãi an toàn mà không cần kinh doanh nữa.",
+        "isDialectical": false,
+        "consequence": "Máy móc hao mòn vô hình và rỉ sét, mất hoàn toàn thị phần và thương hiệu, doanh nghiệp biến mất khỏi thị trường.",
+        "philosophicalLens": "Tư duy đầu hàng tiêu cực, triệt tiêu động lực lao động sáng tạo và làm tê liệt quá trình vận động của tư bản."
+      }
+    ],
+    "explanation": "Quá trình tái sản xuất xã hội là thể thống nhất của 4 khâu: Sản xuất - Phân phối - Trao đổi - Tiêu dùng. Nếu phân phối bất công và trao đổi ách tắc thì sản xuất dù hiện đại đến đâu cũng rơi vào khủng hoảng thừa cục bộ.",
+    "coreLesson": "Kinh doanh và quản trị kinh tế muốn bền vững phải hài hòa lợi ích giữa các khâu và các bên tham gia; chỉ chăm chăm vào sản xuất mà bỏ quên phân phối và người tiêu dùng là con đường ngắn nhất dẫn tới thất bại."
+  },
+
   // =================================================================
   // CHƯƠNG 2: HÀNG HÓA, THỊ TRƯỜNG & CÁC CHỦ THỂ KINH TẾ
   // =================================================================
